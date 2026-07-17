@@ -8,56 +8,45 @@ export default function NewsletterSection() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // TODO: Integrar com backend/Supabase
     setSubmitted(true);
     setEmail("");
     setTimeout(() => setSubmitted(false), 3000);
   };
 
   return (
-    <section id="newsletter" className="w-full py-24 sm:py-32 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
-      {/* Background Gradient */}
-      <div className="absolute inset-0 -z-10 bg-gradient-to-br from-white via-blue-50/50 to-green-50/30"></div>
-      <div className="absolute top-0 right-0 -z-10 w-96 h-96 bg-gradient-to-br from-brand-primary/10 to-transparent rounded-full blur-3xl"></div>
+    <section id="newsletter" className="w-full py-16 px-4 sm:px-6 lg:px-8 bg-black">
+      <div className="max-w-2xl mx-auto text-center">
+        <h2 className="text-3xl font-bold text-white mb-4">
+          Receba apoio toda semana
+        </h2>
+        <p className="text-gray-300 mb-8">
+          Dicas práticas e um lembrete de que você não está sozinho.
+        </p>
 
-      <div className="max-w-2xl mx-auto">
-        <div className="text-center mb-12">
-          <h2 className="font-display text-4xl sm:text-5xl font-bold text-text-dark mb-4">
-            Receba apoio
-            <span className="block bg-gradient-to-r from-brand-primary to-brand-secondary bg-clip-text text-transparent">
-              toda semana
-            </span>
-          </h2>
-
-          <p className="font-body text-lg text-text-light font-medium">
-            Dicas práticas e um lembrete de que você não está sozinho.
-          </p>
-        </div>
-
-        <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3">
+        <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 mb-4">
           <input
             type="email"
             placeholder="seu@email.com"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
-            className="flex-1 px-6 py-3.5 rounded-full bg-white border-2 border-blue-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-primary text-text-dark placeholder:text-text-light text-sm transition-all shadow-lg shadow-blue-500/10"
+            className="flex-1 px-4 py-3 bg-white text-gray-900 placeholder:text-gray-500 focus:outline-none"
           />
           <button
             type="submit"
-            className="px-8 py-3.5 bg-gradient-to-r from-brand-primary to-brand-secondary text-white rounded-full font-bold shadow-lg shadow-blue-500/30 hover:shadow-xl hover:shadow-blue-500/40 hover:scale-105 transition-all duration-300 whitespace-nowrap text-sm"
+            className="px-8 py-3 bg-brand-primary text-white font-bold hover:bg-blue-700 transition whitespace-nowrap"
           >
             Inscrever
           </button>
         </form>
 
         {submitted && (
-          <p className="text-center mt-6 text-brand-primary font-bold text-sm animate-pulse">
+          <p className="text-brand-primary font-bold text-sm">
             ✓ Obrigado! Verifique seu email para confirmar.
           </p>
         )}
 
-        <p className="text-xs text-text-light text-center mt-8 font-medium">
+        <p className="text-xs text-gray-500 mt-4">
           Sem spam. Apenas conteúdo relevante e acolhimento.
         </p>
       </div>
