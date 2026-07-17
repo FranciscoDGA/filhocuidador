@@ -12,15 +12,21 @@ const config: Config = {
         body: ['var(--font-inter)'],
       },
       colors: {
-        // Brand colors
-        'brand-primary': '#4A7B9D', // azul-ardósia
-        'brand-secondary': '#7A9E7E', // verde-salvia
-        'brand-accent': '#C47B5A', // terracota
+        // Brand colors - Refined
+        'brand-primary': '#2563eb', // azul vibrante
+        'brand-secondary': '#10b981', // verde esmeralda
+        'brand-accent': '#f59e0b', // âmbar ouro
+        'brand-dark': '#1f2937', // charcoal
+
+        // Gradients - complementary colors
+        'gradient-start': '#667eea',
+        'gradient-end': '#764ba2',
 
         // Neutrals
-        'cream': '#FAFAF7', // branco-creme
-        'text-dark': '#2D3748', // cinza-chumbo
-        'border-light': '#E8E8E0',
+        'cream': '#f9fafb', // branco puro
+        'text-dark': '#1f2937', // charcoal
+        'text-light': '#6b7280', // cinza médio
+        'border-light': '#e5e7eb',
 
         background: 'var(--background)',
         foreground: 'var(--foreground)',
