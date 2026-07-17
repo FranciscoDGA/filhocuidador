@@ -1,163 +1,225 @@
-import Layout from "@/components/layout/Layout";
-import { Metadata } from "next";
-import fs from "fs";
-import path from "path";
-import matter from "gray-matter";
 import Link from "next/link";
 
-interface ArticleParams {
-  params: {
-    slug: string;
-  };
-}
+const mockArticles: { [key: string]: any } = {
+  "reconhecendo-burnout-cuidador": {
+    title: "Reconhecendo o Burnout do Cuidador",
+    excerpt: "Sinais de alerta para quando você está no limite.",
+    category: "Saúde Emocional",
+    readTime: 8,
+    date: "17 de julho, 2024",
+    content: `
+      <p>Cuidar de um pai idoso é um privilégio, mas também é exaustivo. Há noites em claro, preocupações constantes, decisões difíceis que caem sobre seus ombros.</p>
 
-// Read markdown file
-function getArticle(slug: string) {
-  const articlesDir = path.join(process.cwd(), "content/articles");
-  const filePath = path.join(articlesDir, `${slug}.md`);
+      <h2>Sinais de Alerta</h2>
 
-  if (!fs.existsSync(filePath)) {
-    return null;
-  }
+      <p>Você pode estar desenvolvendo burnout se:</p>
+      <ul>
+        <li>Sente cansaço constante mesmo após dormir</li>
+        <li>Tem dificuldade de concentração ou memória</li>
+        <li>Experimenta mudanças de humor frequentes</li>
+        <li>Sente ressentimento em relação ao seu pai idoso</li>
+        <li>Negligencia sua própria saúde</li>
+        <li>Isola-se de amigos e família</li>
+        <li>Sente desesperança ou vazio</li>
+      </ul>
 
-  const content = fs.readFileSync(filePath, "utf-8");
-  const { data, content: body } = matter(content);
+      <h2>O Que Fazer</h2>
 
-  return { data, body };
-}
+      <p><strong>1. Reconheça seus limites</strong> - Você não pode fazer tudo sozinho.</p>
 
-export async function generateMetadata({
-  params,
-}: ArticleParams): Promise<Metadata> {
-  const article = getArticle(params.slug);
+      <p><strong>2. Procure suporte</strong> - Converse com amigos, família ou um terapeuta.</p>
 
-  if (!article) {
-    return {
-      title: "Artigo não encontrado",
-    };
-  }
+      <p><strong>3. Cuide de si mesmo</strong> - Reserve tempo para algo que goste.</p>
 
-  return {
-    title: `${article.data.title} | Filho Cuidador`,
-    description: article.data.excerpt,
-    openGraph: {
-      title: article.data.title,
-      description: article.data.excerpt,
-      type: "article",
-    },
-  };
-}
+      <p><strong>4. Considere ajuda profissional</strong> - Um psicólogo pode oferecer ferramentas importantes.</p>
 
-export default function ArticlePage({ params }: ArticleParams) {
-  const article = getArticle(params.slug);
+      <p>Sua exaustão é válida. Sua saúde importa.</p>
+    `,
+    relatedArticles: [
+      { id: 2, slug: "comunicacao-irmaos-nao-ajudam", title: "Quando o Irmão Não Quer Ajudar" },
+      { id: 3, slug: "bpc-loas-guia-completo", title: "BPC: Guia Completo 2024" },
+    ],
+  },
+  "bpc-loas-guia-completo": {
+    title: "BPC (Benefício de Prestação Continuada): Guia Completo 2024",
+    excerpt: "Como solicitar o BPC, quem tem direito, documentos e passo a passo.",
+    category: "Jurídico & Financeiro",
+    readTime: 12,
+    date: "20 de julho, 2024",
+    content: `
+      <p>Se seu pai idoso tem dificuldade financeira e uma deficiência, o BPC pode ser uma ajuda fundamental.</p>
+
+      <h2>O que é BPC?</h2>
+
+      <p>O Benefício de Prestação Continuada é um benefício assistencial de um salário mínimo mensal para pessoa idosa com 65 anos ou mais.</p>
+
+      <h2>Quem tem direito?</h2>
+
+      <ul>
+        <li>Pessoa idosa: 65 anos ou mais</li>
+        <li>Pessoa com deficiência: de qualquer idade</li>
+        <li>Renda per capita familiar não ultrapasse 1/4 do salário mínimo</li>
+      </ul>
+
+      <h2>Como Solicitar</h2>
+
+      <p><strong>Passo 1:</strong> Marque atendimento no INSS (telefone 135)</p>
+      <p><strong>Passo 2:</strong> Reúna todos os documentos</p>
+      <p><strong>Passo 3:</strong> Compareça ao atendimento</p>
+      <p><strong>Passo 4:</strong> Acompanhe a análise pelo portal</p>
+    `,
+    relatedArticles: [
+      { id: 1, slug: "reconhecendo-burnout-cuidador", title: "Reconhecendo o Burnout" },
+      { id: 3, slug: "comunicacao-irmaos-nao-ajudam", title: "Comunicação com Irmãos" },
+    ],
+  },
+  "comunicacao-irmaos-nao-ajudam": {
+    title: "Quando o Irmão Não Quer Ajudar: Como Comunicar",
+    excerpt: "Estratégias práticas para conversar com irmãos.",
+    category: "Família",
+    readTime: 10,
+    date: "10 de agosto, 2024",
+    content: `
+      <p>É comum que um filho acabe sendo o cuidador principal enquanto irmãos parecem desaparecer.</p>
+
+      <h2>Antes de Conversar</h2>
+
+      <p>Prepare-se emocionalmente. Não é uma acusação — é um pedido.</p>
+
+      <h2>Como Iniciar a Conversa</h2>
+
+      <p><strong>"Preciso conversar com você sobre papai/mamãe. Tenho me sentido sobrecarregado."</strong></p>
+
+      <p>Seja específico. Em vez de "você não ajuda", diga: "Precisamos de ajuda com visitas médicas."</p>
+
+      <h2>Se Eles Disserem Não</h2>
+
+      <ul>
+        <li>Pergunte qual é a barreira</li>
+        <li>Ofereça alternativas (dinheiro em vez de tempo)</li>
+        <li>Estabeleça limites claros</li>
+      </ul>
+    `,
+    relatedArticles: [
+      { id: 1, slug: "reconhecendo-burnout-cuidador", title: "Reconhecendo o Burnout" },
+      { id: 2, slug: "bpc-loas-guia-completo", title: "BPC: Guia Completo" },
+    ],
+  },
+};
+
+export default function ArticlePage({ params }: { params: { slug: string } }) {
+  const article = mockArticles[params.slug];
 
   if (!article) {
     return (
-      <Layout>
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-          <h1 className="text-4xl font-bold mb-4">Artigo não encontrado</h1>
-          <Link href="/artigos" className="text-blue-600 hover:text-blue-800">
-            ← Voltar para artigos
+      <div className="min-h-screen flex items-center justify-center px-4 bg-white">
+        <div className="text-center max-w-2xl">
+          <h1 className="font-display text-4xl font-light text-text-dark mb-4">
+            Artigo não encontrado
+          </h1>
+          <p className="text-text-dark/70 mb-8">
+            Desculpe, não conseguimos encontrar esse artigo.
+          </p>
+          <Link href="/artigos" className="text-text-dark font-semibold hover:text-text-dark/70 transition">
+            Voltar aos artigos →
           </Link>
         </div>
-      </Layout>
+      </div>
     );
   }
 
-  const { data, body } = article;
-
-  // Simple markdown to HTML conversion
-  const htmlContent = body
-    .split("\n")
-    .map((line: string) => {
-      if (line.startsWith("## ")) {
-        return `<h2 class="text-2xl font-bold mt-6 mb-3">${line.replace("## ", "")}</h2>`;
-      }
-      if (line.startsWith("### ")) {
-        return `<h3 class="text-xl font-bold mt-4 mb-2">${line.replace("### ", "")}</h3>`;
-      }
-      if (line.startsWith("- ")) {
-        return `<li class="ml-6 mb-2">${line.replace("- ", "")}</li>`;
-      }
-      if (line.startsWith("> ")) {
-        return `<blockquote class="border-l-4 border-blue-600 pl-4 py-2 my-4 bg-blue-50">${line.replace("> ", "")}</blockquote>`;
-      }
-      if (line.startsWith("**") && line.endsWith("**")) {
-        return `<strong>${line.replace(/\*\*/g, "")}</strong>`;
-      }
-      if (line === "") return "";
-      return `<p class="mb-4">${line}</p>`;
-    })
-    .join("\n");
-
   return (
-    <Layout>
-      <article className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <Link href="/artigos" className="text-blue-600 hover:text-blue-800 mb-6 block">
-          ← Voltar para artigos
-        </Link>
+    <main className="bg-white min-h-screen py-16 sm:py-20">
+      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Breadcrumb */}
+        <div className="mb-12 flex items-center gap-2 text-sm text-text-dark/70">
+          <Link href="/" className="hover:text-text-dark transition">Início</Link>
+          <span>/</span>
+          <Link href="/artigos" className="hover:text-text-dark transition">Artigos</Link>
+          <span>/</span>
+          <span className="text-text-dark font-medium">{article.title}</span>
+        </div>
 
-        <header className="mb-8">
-          <div className="flex gap-2 mb-4">
-            <span className="text-sm font-semibold text-blue-600 bg-blue-50 px-3 py-1 rounded">
-              {data.category}
-            </span>
-            <span className="text-sm text-gray-500">{data.readTime} min de leitura</span>
+        {/* Featured Image */}
+        <div className="aspect-video bg-gradient-to-br from-gray-200 to-gray-100 rounded-2xl mb-16 flex items-center justify-center border border-gray-200">
+          <svg className="w-20 h-20 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+          </svg>
+        </div>
+
+        {/* Article Header */}
+        <div className="mb-12">
+          <div className="inline-block px-3 py-1 bg-gray-100 text-text-dark/70 rounded-full text-xs font-semibold mb-6">
+            {article.category}
           </div>
 
-          <h1 className="text-4xl font-bold mb-4">{data.title}</h1>
+          <h1 className="font-display text-5xl sm:text-6xl font-light text-text-dark mb-6 leading-tight">
+            {article.title}
+          </h1>
 
-          <div className="flex items-center justify-between text-gray-600 border-t border-b py-4">
-            <div>
-              <p className="font-semibold">{data.author}</p>
-              <time>{data.date}</time>
-            </div>
+          <div className="flex flex-wrap items-center gap-4 text-sm text-text-dark/70 border-b border-gray-200 pb-6">
+            <span>{article.readTime} min de leitura</span>
+            <span>•</span>
+            <span>{article.date}</span>
           </div>
-        </header>
+        </div>
 
-        <div
-          className="prose prose-lg max-w-none mb-8"
-          dangerouslySetInnerHTML={{ __html: htmlContent }}
-        />
-
-        {/* Disclaimer */}
-        <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 my-8">
-          <p className="text-sm text-gray-700">
-            <strong>Disclaimer:</strong> Este conteúdo é informativo. Consulte sempre um profissional de saúde.
+        {/* Health Disclaimer */}
+        <div className="bg-amber-50 border border-amber-200 rounded-lg p-6 mb-12">
+          <p className="text-sm text-amber-900">
+            <strong>⚠️ Aviso Importante:</strong> Conteúdo informativo. Consulte sempre um profissional de saúde.
           </p>
         </div>
 
-        {/* Share */}
-        <div className="mt-12 pt-8 border-t">
-          <p className="text-gray-600 mb-4">Compartilhe este artigo:</p>
+        {/* Article Content */}
+        <div className="prose prose-sm max-w-none mb-16 text-text-dark/80 leading-relaxed">
+          <div dangerouslySetInnerHTML={{ __html: article.content }} />
+        </div>
+
+        {/* Share Buttons */}
+        <div className="border-t border-b border-gray-200 py-8 mb-12">
+          <p className="text-sm font-semibold text-text-dark mb-4">Compartilhar:</p>
           <div className="flex gap-4">
             <a
-              href={`https://www.facebook.com/sharer/sharer.php?u=https://filhocuidador.com.br/artigos/${data.slug}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-600 hover:text-blue-800"
-            >
-              Facebook
-            </a>
-            <a
-              href={`https://twitter.com/intent/tweet?url=https://filhocuidador.com.br/artigos/${data.slug}&text=${encodeURIComponent(data.title)}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-400 hover:text-blue-600"
-            >
-              Twitter
-            </a>
-            <a
-              href={`https://wa.me/?text=${encodeURIComponent(`Confira este artigo: ${data.title} - https://filhocuidador.com.br/artigos/${data.slug}`)}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-green-600 hover:text-green-800"
+              href={`https://wa.me/?text=${encodeURIComponent(article.title + " - https://filhocuidador.com.br")}`}
+              className="inline-flex items-center gap-2 px-4 py-2 bg-green-100 text-green-700 rounded-full hover:bg-green-200 transition font-semibold text-sm"
             >
               WhatsApp
             </a>
+            <a
+              href={`https://www.facebook.com/sharer/sharer.php?u=https://filhocuidador.com.br`}
+              className="inline-flex items-center gap-2 px-4 py-2 bg-blue-100 text-blue-700 rounded-full hover:bg-blue-200 transition font-semibold text-sm"
+            >
+              Facebook
+            </a>
           </div>
         </div>
-      </article>
-    </Layout>
+
+        {/* Related Articles */}
+        {article.relatedArticles && article.relatedArticles.length > 0 && (
+          <div>
+            <h2 className="font-display text-2xl font-light text-text-dark mb-8">
+              Artigos Relacionados
+            </h2>
+            <div className="space-y-4">
+              {article.relatedArticles.map((related: any) => (
+                <Link
+                  key={related.id}
+                  href={`/artigos/${related.slug}`}
+                  className="block p-6 bg-gray-50 border border-gray-200 rounded-xl hover:border-gray-300 hover:bg-gray-100 transition-all duration-300 group"
+                >
+                  <h3 className="font-display text-lg font-semibold text-text-dark group-hover:text-text-dark/80 transition-colors">
+                    {related.title}
+                  </h3>
+                  <p className="text-sm text-text-dark/70 mt-2">
+                    Leia o artigo →
+                  </p>
+                </Link>
+              ))}
+            </div>
+          </div>
+        )}
+      </div>
+    </main>
   );
 }
