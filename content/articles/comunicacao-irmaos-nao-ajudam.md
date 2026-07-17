@@ -6,7 +6,7 @@ date: "10 de agosto, 2024"
 author: "Equipe Filho Cuidador"
 excerpt: "Estratégias práticas para conversar com irmãos que não colaboram no cuidado."
 readTime: 10
-image: "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=800"
+image: "https://images.unsplash.com/photo-1476610182048-b716b8518aae?w=800&q=80"
 seo:
   keywords: ["irmão não ajuda", "família não colabora", "conflito familiar", "comunicação irmãos"]
   metaDescription: "Como lidar quando irmão não ajuda com cuidado do pai. Estratégias de comunicação."

@@ -6,7 +6,7 @@ date: "2024-07-23"
 author: "Equipe Filho Cuidador"
 excerpt: "A culpa de estar cansado. A raiva de irmãos que não ajudam. A exaustão sem fim. Você não está sozinho. Essas emoções são completamente normais."
 readTime: 8
-image: "/images/articles/culpa-raiva-emocoes.jpg"
+image: "https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?w=800&q=80"
 ---
 
 ## A Santidade Falsa do Cuidado

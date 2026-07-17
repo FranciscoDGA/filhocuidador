@@ -6,7 +6,7 @@ date: "2 de agosto, 2024"
 author: "Equipe Filho Cuidador"
 excerpt: "Seu pai está aqui mas não é mais o mesmo. É luto. É normal. Saiba como processar."
 readTime: 10
-image: "https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=800"
+image: "https://images.unsplash.com/photo-1499209974431-9dddcece7f88?w=800&q=80"
 seo:
   keywords: ["luto antecipado", "pai mãe mudou", "Alzheimer mudança personalidade", "como lidar perdas"]
   metaDescription: "Guia sobre luto antecipado. Como lidar com mudanças no pai/mãe idosos e cuidar de si."

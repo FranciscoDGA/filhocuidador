@@ -6,7 +6,7 @@ date: "6 de agosto, 2024"
 author: "Equipe Filho Cuidador"
 excerpt: "Como garantir noite segura para idoso. Prevenção de quedas, equipamentos, monitoramento."
 readTime: 11
-image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800"
+image: "https://images.unsplash.com/photo-1448375240586-882707db888b?w=800&q=80"
 seo:
   keywords: ["segurança noite idoso", "queda noturna", "sono seguro idoso", "monitoramento noite", "cama segura idoso"]
   metaDescription: "Estratégias para garantir noites seguras para idosos. Prevenção de quedas e acidentes noturnos."

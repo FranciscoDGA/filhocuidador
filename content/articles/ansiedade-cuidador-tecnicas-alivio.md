@@ -6,7 +6,7 @@ date: "15 de agosto, 2024"
 author: "Equipe Filho Cuidador"
 excerpt: "Controle a ansiedade com técnicas respiratórias, meditação e ajustes práticos do dia a dia."
 readTime: 9
-image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=800"
+image: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=800&q=80"
 seo:
   keywords: ["ansiedade cuidador", "técnicas respiração ansiedade", "meditação cuidador", "calma cuidador idoso"]
   metaDescription: "Técnicas práticas para controlar ansiedade enquanto cuida de pai/mãe idoso."

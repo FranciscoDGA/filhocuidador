@@ -6,7 +6,7 @@ date: "10 de agosto, 2024"
 author: "Equipe Filho Cuidador"
 excerpt: "Como aceitar que pai/mãe está mudando. Luto pelas perdas e redescoberta da relação."
 readTime: 10
-image: "https://images.unsplash.com/photo-1506439773649-6e0eb8cfb237?w=800"
+image: "https://images.unsplash.com/photo-1476610182048-b716b8518aae?w=800&q=80"
 seo:
   keywords: ["envelhecimento pai", "aceitação mudanças", "luto pelas perdas", "relação pai idoso", "ressignificar relacionamento"]
   metaDescription: "Como lidar com as mudanças do envelhecimento de pai/mãe e ressignificar a relação."

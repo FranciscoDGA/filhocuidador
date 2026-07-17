@@ -6,7 +6,7 @@ date: "31 de julho, 2024"
 author: "Equipe Filho Cuidador"
 excerpt: "Conheça todos os direitos legais do idoso no Brasil: saúde, transporte, benefícios, proteção."
 readTime: 14
-image: "https://images.unsplash.com/photo-1581092162562-40038f56b656?w=800"
+image: "https://images.unsplash.com/photo-1426604966848-d7adac402bff?w=800&q=80"
 seo:
   keywords: ["direitos idoso", "estatuto idoso", "lei idoso brasil", "proteção idoso"]
   metaDescription: "Guia completo sobre direitos do idoso no Brasil. Saúde, benefícios, transporte, proteção legal."

@@ -6,7 +6,7 @@ date: "2024-07-20"
 author: "Equipe Filho Cuidador"
 excerpt: "Entenda como solicitar o BPC, quem tem direito, documentos necessários e como apresentar o pedido ao INSS. Guia passo a passo para 2024."
 readTime: 12
-image: "/images/articles/bpc-guia.jpg"
+image: "https://images.unsplash.com/photo-1470115636492-6d2b56f9146d?w=800&q=80"
 ---
 
 ## O que é o BPC?

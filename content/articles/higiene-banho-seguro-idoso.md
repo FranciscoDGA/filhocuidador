@@ -6,7 +6,7 @@ date: "3 de agosto, 2024"
 author: "Equipe Filho Cuidador"
 excerpt: "Como dar banho seguro em idoso imóvel ou com mobilidade reduzida. Dicas de higiene diária."
 readTime: 11
-image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800"
+image: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=800&q=80"
 seo:
   keywords: ["banho idoso imóvel", "como dar banho em idoso", "higiene idoso acamado", "banho seguro idoso"]
   metaDescription: "Guia prático para dar banho seguro em idoso. Passo-a-passo, medidas de segurança e dicas."

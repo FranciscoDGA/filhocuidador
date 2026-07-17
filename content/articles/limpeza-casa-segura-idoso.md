@@ -6,7 +6,7 @@ date: "4 de agosto, 2024"
 author: "Equipe Filho Cuidador"
 excerpt: "Como manter casa limpa e segura. Limpeza estratégica sem toxinas."
 readTime: 10
-image: "https://images.unsplash.com/photo-1530836369250-ef72a3f26f0d?w=800"
+image: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=800&q=80"
 seo:
   keywords: ["limpeza casa idoso", "desinfecção", "produtos seguros idoso", "higiene casa"]
   metaDescription: "Dicas de limpeza segura para casa com idoso. Produtos não-tóxicos e rotina eficiente."

@@ -6,7 +6,7 @@ date: "11 de agosto, 2024"
 author: "Equipe Filho Cuidador"
 excerpt: "Por que cuidador não dorme. Técnicas para recuperar sono profundo e contínuo."
 readTime: 10
-image: "https://images.unsplash.com/photo-1534067783941-51c7e75f5951?w=800"
+image: "https://images.unsplash.com/photo-1470115636492-6d2b56f9146d?w=800&q=80"
 seo:
   keywords: ["insônia cuidador", "sono profundo", "cuidador não dorme", "qualidade sono", "dormir melhor"]
   metaDescription: "Técnicas práticas para cuidadores recuperarem sono profundo. Estratégias noite segura."

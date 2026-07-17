@@ -6,7 +6,7 @@ date: "12 de agosto, 2024"
 author: "Equipe Filho Cuidador"
 excerpt: "Combater isolamento social enquanto cuida. Técnicas para manter conexões e comunidade."
 readTime: 9
-image: "https://images.unsplash.com/photo-1529148482759-b8b9f00b71d3?w=800"
+image: "https://images.unsplash.com/photo-1518152006812-edab27b069fa?w=800&q=80"
 seo:
   keywords: ["isolamento cuidador", "socializar enquanto cuida", "solidão cuidador", "comunidade cuidadores"]
   metaDescription: "Estratégias para combater isolamento social sendo cuidador de pai/mãe idoso."

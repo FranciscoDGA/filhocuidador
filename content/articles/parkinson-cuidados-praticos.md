@@ -6,7 +6,7 @@ date: "8 de agosto, 2024"
 author: "Equipe Filho Cuidador"
 excerpt: "Sintomas do Parkinson, medicamentos, e como adaptar vida para mobilidade reduzida."
 readTime: 12
-image: "https://images.unsplash.com/photo-1631217315440-e95e1c79f14d?w=800"
+image: "https://images.unsplash.com/photo-1426604966848-d7adac402bff?w=800&q=80"
 seo:
   keywords: ["Parkinson cuidados", "sintomas Parkinson", "medicamentos Parkinson", "cuidador Parkinson"]
   metaDescription: "Guia de cuidados para Parkinson. Sintomas, medicamentos e adaptações práticas."

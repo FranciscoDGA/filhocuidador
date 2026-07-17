@@ -6,7 +6,7 @@ date: "9 de agosto, 2024"
 author: "Equipe Filho Cuidador"
 excerpt: "Como construir resiliência. Onde encontrar esperança quando tudo parece escuro."
 readTime: 10
-image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=800"
+image: "https://images.unsplash.com/photo-1448375240586-882707db888b?w=800&q=80"
 seo:
   keywords: ["resiliência cuidador", "esperança enquanto cuida", "força cuidador", "motivação cuidador"]
   metaDescription: "Como encontrar resiliência e esperança enquanto cuida de pai/mãe. Estratégias práticas."

@@ -6,7 +6,7 @@ date: "2024-07-26"
 author: "Equipe Filho Cuidador"
 excerpt: "Quando seu pai não consegue mais assinar documentos. Interdição ou curatela? Qual é a diferença e qual você precisa."
 readTime: 11
-image: "/images/articles/interdicao-curatela.jpg"
+image: "https://images.unsplash.com/photo-1516728778615-2d590ea1855e?w=800&q=80"
 ---
 
 ## Quando Você Enfrenta a Pergunta

@@ -6,7 +6,7 @@ date: "31 de julho, 2024"
 author: "Equipe Filho Cuidador"
 excerpt: "Como gerenciar diabetes de idoso. Prevenção de hipoglicemia, controle e complicações."
 readTime: 12
-image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800"
+image: "https://images.unsplash.com/photo-1448375240586-882707db888b?w=800&q=80"
 seo:
   keywords: ["diabetes idoso", "glicemia idoso", "hipoglicemia", "complicações diabetes", "controle diabetes"]
   metaDescription: "Guia prático de cuidados com diabetes em idoso. Medicamentos, alimentação, complicações."

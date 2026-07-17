@@ -6,7 +6,7 @@ date: "29 de julho, 2024"
 author: "Equipe Filho Cuidador"
 excerpt: "Entenda quem recebe pensão, quanto é o valor, e como solicitar após morte de cônjuge ou pai."
 readTime: 11
-image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800"
+image: "https://images.unsplash.com/photo-1516728778615-2d590ea1855e?w=800&q=80"
 seo:
   keywords: ["pensão por morte INSS", "quem tem direito pensão", "valor pensão morte 2024"]
   metaDescription: "Guia sobre pensão por morte: quem recebe, valores e como solicitar em 2024."
