@@ -1,147 +1,106 @@
-import { Metadata } from "next";
-import Layout from "@/components/layout/Layout";
-
-export const metadata: Metadata = {
-  title: "Política de Privacidade | Filho Cuidador",
-  description: "Nossa política de privacidade e como protegemos seus dados conforme a LGPD.",
-};
+import Link from "next/link";
 
 export default function PrivacidadePage() {
   return (
-    <Layout>
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <h1 className="text-5xl md:text-6xl font-bold mb-12">Política de Privacidade</h1>
+    <main className="bg-cream min-h-screen py-16 sm:py-20 lg:py-24">
+      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Breadcrumb */}
+        <div className="mb-8 flex items-center gap-2 text-sm text-text-dark/70">
+          <Link href="/" className="hover:text-brand-primary transition">
+            Início
+          </Link>
+          <span>/</span>
+          <span className="text-text-dark font-medium">Privacidade (LGPD)</span>
+        </div>
 
-        <div className="prose prose-invert max-w-none space-y-8 text-gray-700 dark:text-gray-300">
-          <section>
-            <h2 className="text-3xl font-bold mb-4 text-gray-900 dark:text-white">1. Introdução</h2>
-            <p>
-              O respeito à sua privacidade é fundamental para nós. Esta Política de Privacidade explica como coletamos,
-              usamos, compartilhamos e protegemos seus dados pessoais conforme a Lei Geral de Proteção de Dados (LGPD - Lei 13.709/2018).
-            </p>
-          </section>
+        {/* Content */}
+        <div className="prose prose-sm max-w-none">
+          <h1 className="font-display text-4xl sm:text-5xl font-bold text-text-dark mb-8 leading-tight">
+            Política de Privacidade e LGPD
+          </h1>
 
-          <section>
-            <h2 className="text-3xl font-bold mb-4 text-gray-900 dark:text-white">2. Que Dados Coletamos</h2>
-            <p>Podemos coletar as seguintes informações:</p>
-            <ul className="list-disc list-inside space-y-2">
-              <li><strong>Dados de E-mail:</strong> Nome e endereço de e-mail (para newsletter)</li>
-              <li><strong>Dados de Navegação:</strong> IP, navegador, páginas visitadas (via Google Analytics)</li>
-              <li><strong>Cookies:</strong> Para melhorar experiência e análise de uso</li>
-              <li><strong>Dados de Formulários:</strong> Informações que você voluntariamente compartilha através de contato</li>
-            </ul>
-          </section>
+          <h2 className="font-display text-2xl font-bold text-text-dark mt-8 mb-4">
+            1. Coleta de Dados
+          </h2>
 
-          <section>
-            <h2 className="text-3xl font-bold mb-4 text-gray-900 dark:text-white">3. Base Legal para Tratamento</h2>
-            <p>Tratamos seus dados com base em:</p>
-            <ul className="list-disc list-inside space-y-2">
-              <li><strong>Consentimento:</strong> Quando você se inscreve na newsletter</li>
-              <li><strong>Interesse Legítimo:</strong> Para melhorar nossos serviços e segurança</li>
-              <li><strong>Cumprimento Legal:</strong> Quando exigido por lei</li>
-            </ul>
-          </section>
+          <p className="text-text-dark/80 leading-relaxed mb-6">
+            O Filho Cuidador coleta informações apenas quando você voluntariamente nos fornece, como ao se inscrever em nossa newsletter ou preencher um formulário de contato.
+          </p>
 
-          <section>
-            <h2 className="text-3xl font-bold mb-4 text-gray-900 dark:text-white">4. Como Usamos Seus Dados</h2>
-            <ul className="list-disc list-inside space-y-2">
-              <li>Enviar conteúdo da newsletter que você solicitou</li>
-              <li>Melhorar e personalizar sua experiência no site</li>
-              <li>Analisar padrões de uso para criar conteúdo melhor</li>
-              <li>Responder a suas solicitações de contato</li>
-              <li>Cumprir obrigações legais</li>
-            </ul>
-          </section>
+          <p className="text-text-dark/80 leading-relaxed mb-6">
+            Os dados coletados podem incluir:
+          </p>
 
-          <section>
-            <h2 className="text-3xl font-bold mb-4 text-gray-900 dark:text-white">5. Compartilhamento de Dados</h2>
-            <p>
-              Seus dados podem ser compartilhados com terceiros confiáveis apenas quando necessário:
-            </p>
-            <ul className="list-disc list-inside space-y-2">
-              <li><strong>Google Analytics:</strong> Para análise de tráfego (dados anônimos)</li>
-              <li><strong>Plataforma de Newsletter:</strong> Para entrega de e-mails</li>
-              <li><strong>Vercel (hospedagem):</strong> Para manter o site online</li>
-              <li><strong>Autoridades legais:</strong> Quando exigido por lei</li>
-            </ul>
-            <p className="mt-4">
-              Nunca vendemos seus dados pessoais a terceiros.
-            </p>
-          </section>
+          <ul className="list-disc list-inside text-text-dark/80 space-y-2 mb-6">
+            <li>Nome e email (para inscrição na newsletter)</li>
+            <li>Mensagens e informações fornecidas através do formulário de contato</li>
+            <li>Dados de navegação (através de cookies e analytics)</li>
+          </ul>
 
-          <section>
-            <h2 className="text-3xl font-bold mb-4 text-gray-900 dark:text-white">6. Seus Direitos (LGPD)</h2>
-            <p>Você tem direito a:</p>
-            <ul className="list-disc list-inside space-y-2">
-              <li><strong>Acessar:</strong> Seus dados e como estão sendo usados</li>
-              <li><strong>Corrigir:</strong> Dados imprecisos ou incompletos</li>
-              <li><strong>Deletar:</strong> Solicitar exclusão ("direito ao esquecimento")</li>
-              <li><strong>Revogar:</strong> Seu consentimento para newsletter a qualquer momento</li>
-              <li><strong>Portabilidade:</strong> Receber dados em formato estruturado</li>
-              <li><strong>Opor-se:</strong> Ao tratamento dos dados</li>
-            </ul>
-            <p className="mt-4">
-              Para exercer qualquer direito, contate: <strong>esesdec@gmail.com</strong>
-            </p>
-          </section>
+          <h2 className="font-display text-2xl font-bold text-text-dark mt-8 mb-4">
+            2. Uso dos Dados
+          </h2>
 
-          <section>
-            <h2 className="text-3xl font-bold mb-4 text-gray-900 dark:text-white">7. Segurança</h2>
-            <p>
-              Implementamos medidas técnicas e organizacionais para proteger seus dados contra acesso não autorizado,
-              alteração, divulgação ou destruição. No entanto, nenhuma transmissão de internet é 100% segura.
-            </p>
-          </section>
+          <p className="text-text-dark/80 leading-relaxed mb-6">
+            Usamos seus dados para:
+          </p>
 
-          <section>
-            <h2 className="text-3xl font-bold mb-4 text-gray-900 dark:text-white">8. Retenção de Dados</h2>
-            <p>
-              Mantemos seus dados pessoais apenas pelo tempo necessário para:
-            </p>
-            <ul className="list-disc list-inside space-y-2">
-              <li>Fornecer o serviço solicitado</li>
-              <li>Cumprir obrigações legais</li>
-              <li>Resolver disputas</li>
-            </ul>
-            <p className="mt-4">
-              Você pode solicitar a exclusão a qualquer momento.
-            </p>
-          </section>
+          <ul className="list-disc list-inside text-text-dark/80 space-y-2 mb-6">
+            <li>Enviar conteúdo da newsletter (se inscrito)</li>
+            <li>Responder a dúvidas e mensagens</li>
+            <li>Melhorar nosso site e conteúdo</li>
+            <li>Cumprir obrigações legais</li>
+          </ul>
 
-          <section>
-            <h2 className="text-3xl font-bold mb-4 text-gray-900 dark:text-white">9. Cookies</h2>
-            <p>
-              Usamos cookies para melhorar sua experiência. Você pode configurar seu navegador para recusar cookies,
-              mas isso pode afetar a funcionalidade do site.
-            </p>
-          </section>
+          <h2 className="font-display text-2xl font-bold text-text-dark mt-8 mb-4">
+            3. Compartilhamento de Dados
+          </h2>
 
-          <section>
-            <h2 className="text-3xl font-bold mb-4 text-gray-900 dark:text-white">10. Alterações a Esta Política</h2>
-            <p>
-              Podemos atualizar esta política ocasionalmente. Notificaremos sobre mudanças significativas por e-mail
-              ou através de destaque no site.
-            </p>
-          </section>
+          <p className="text-text-dark/80 leading-relaxed mb-6">
+            Não compartilhamos seus dados pessoais com terceiros sem seu consentimento, exceto quando exigido por lei.
+          </p>
 
-          <section>
-            <h2 className="text-3xl font-bold mb-4 text-gray-900 dark:text-white">11. Contato</h2>
-            <p>
-              Para dúvidas sobre privacidade:
-            </p>
-            <ul className="list-disc list-inside space-y-2">
-              <li><strong>E-mail:</strong> esesdec@gmail.com</li>
-              <li><strong>Responsável LGPD:</strong> Equipe Filho Cuidador</li>
-            </ul>
-          </section>
+          <h2 className="font-display text-2xl font-bold text-text-dark mt-8 mb-4">
+            4. Seus Direitos (LGPD)
+          </h2>
 
-          <section className="mt-12 p-6 bg-blue-50 dark:bg-blue-950 rounded-lg border border-blue-200 dark:border-blue-800">
-            <p className="text-sm text-blue-900 dark:text-blue-100">
-              <strong>Última atualização:</strong> 17 de julho, 2026
-            </p>
-          </section>
+          <p className="text-text-dark/80 leading-relaxed mb-6">
+            De acordo com a Lei Geral de Proteção de Dados (LGPD), você tem direito a:
+          </p>
+
+          <ul className="list-disc list-inside text-text-dark/80 space-y-2 mb-6">
+            <li><strong>Acessar:</strong> Saber quais dados temos sobre você</li>
+            <li><strong>Corrigir:</strong> Solicitar correção de dados incorretos</li>
+            <li><strong>Deletar:</strong> Solicitar a exclusão de seus dados</li>
+            <li><strong>Portabilidade:</strong> Receber seus dados em formato transferível</li>
+            <li><strong>Objeto:</strong> Se opor ao processamento de seus dados</li>
+          </ul>
+
+          <p className="text-text-dark/80 leading-relaxed mb-6">
+            Para exercer qualquer desses direitos, entre em contato conosco em <a href="mailto:esesdec@gmail.com" className="text-brand-primary hover:text-brand-accent transition">esesdec@gmail.com</a>.
+          </p>
+
+          <h2 className="font-display text-2xl font-bold text-text-dark mt-8 mb-4">
+            5. Segurança
+          </h2>
+
+          <p className="text-text-dark/80 leading-relaxed mb-6">
+            Implementamos medidas de segurança para proteger seus dados contra acesso não autorizado. No entanto, nenhum método de transmissão pela internet é 100% seguro.
+          </p>
+
+          <h2 className="font-display text-2xl font-bold text-text-dark mt-8 mb-4">
+            6. Alterações nesta Política
+          </h2>
+
+          <p className="text-text-dark/80 leading-relaxed mb-6">
+            Podemos atualizar esta política de privacidade a qualquer momento. Alterações significativas serão notificadas através do nosso site.
+          </p>
+
+          <p className="text-text-dark/80 leading-relaxed mb-6">
+            <strong>Última atualização:</strong> 17 de julho de 2024
+          </p>
         </div>
       </div>
-    </Layout>
+    </main>
   );
 }
