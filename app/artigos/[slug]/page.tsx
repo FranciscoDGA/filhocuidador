@@ -1,21 +1,31 @@
 import Link from "next/link";
 import { getArticleBySlug, getAllArticles } from "@/lib/articles";
+import Image from "next/image";
 
-export default function ArticlePage({ params }: { params: { slug: string } }) {
-  const article = getArticleBySlug(params.slug);
+// Add generateStaticParams to prerender all 50 articles
+export function generateStaticParams() {
+  const articles = getAllArticles();
+  return articles.map((article) => ({
+    slug: article.slug,
+  }));
+}
+
+export default async function ArticlePage({ params }: { params: Promise<{ slug: string }> }) {
+  const resolvedParams = await params;
+  const article = await getArticleBySlug(resolvedParams.slug);
   const allArticles = getAllArticles();
 
   if (!article) {
     return (
       <div className="min-h-screen flex items-center justify-center px-4 bg-white">
         <div className="text-center max-w-2xl">
-          <h1 className="font-display text-4xl font-light text-text-dark mb-4">
+          <h1 className="text-4xl font-bold text-gray-900 mb-4">
             Artigo não encontrado
           </h1>
-          <p className="text-text-dark/70 mb-8">
+          <p className="text-gray-500 mb-8">
             Desculpe, não conseguimos encontrar esse artigo.
           </p>
-          <Link href="/artigos" className="text-text-dark font-semibold hover:text-text-dark/70 transition">
+          <Link href="/artigos" className="text-gray-900 font-semibold hover:text-gray-600 transition">
             Voltar aos artigos →
           </Link>
         </div>
@@ -24,66 +34,85 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
   }
 
   return (
-    <main className="bg-white min-h-screen py-16 sm:py-20">
+    <main className="bg-white min-h-screen pt-16 pb-24">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Breadcrumb */}
-        <div className="mb-12 flex items-center gap-2 text-sm text-text-dark/70">
-          <Link href="/" className="hover:text-text-dark transition">Início</Link>
+        <div className="mb-12 flex items-center gap-2 text-sm text-gray-500 font-medium">
+          <Link href="/" className="hover:text-gray-900 transition">Início</Link>
           <span>/</span>
-          <Link href="/artigos" className="hover:text-text-dark transition">Artigos</Link>
+          <Link href="/artigos" className="hover:text-gray-900 transition">Artigos</Link>
           <span>/</span>
-          <span className="text-text-dark font-medium">{article.title}</span>
-        </div>
-
-        {/* Featured Image */}
-        <div className="aspect-video bg-gradient-to-br from-gray-200 to-gray-100 rounded-2xl mb-16 flex items-center justify-center border border-gray-200">
-          <svg className="w-20 h-20 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-          </svg>
+          <span className="text-gray-900 line-clamp-1">{article.title}</span>
         </div>
 
         {/* Article Header */}
         <div className="mb-12">
-          <div className="inline-block px-3 py-1 bg-gray-100 text-text-dark/70 rounded-full text-xs font-semibold mb-6">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-gray-200 text-xs font-medium text-gray-600 mb-6">
+            <span className="w-1.5 h-1.5 rounded-full bg-gray-400"></span>
             {article.category}
           </div>
 
-          <h1 className="font-display text-5xl sm:text-6xl font-light text-text-dark mb-6 leading-tight">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight tracking-tight">
             {article.title}
           </h1>
 
-          <div className="flex flex-wrap items-center gap-4 text-sm text-text-dark/70 border-b border-gray-200 pb-6">
+          <div className="flex flex-wrap items-center gap-4 text-sm text-gray-500 border-b border-gray-100 pb-8">
+            <span className="font-medium text-gray-900">{article.author}</span>
+            <span>•</span>
             <span>{article.readTime} min de leitura</span>
             <span>•</span>
             <span>{article.date}</span>
           </div>
         </div>
 
+        {/* Featured Image */}
+        {article.image ? (
+          <div className="relative w-full aspect-video rounded-3xl overflow-hidden mb-16 shadow-sm border border-gray-100">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img 
+              src={article.image} 
+              alt={article.title}
+              className="object-cover w-full h-full"
+            />
+          </div>
+        ) : (
+          <div className="aspect-video bg-gray-100 rounded-3xl mb-16 flex items-center justify-center border border-gray-50">
+            <svg className="w-16 h-16 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+            </svg>
+          </div>
+        )}
+
         {/* Health Disclaimer */}
-        <div className="bg-amber-50 border border-amber-200 rounded-lg p-6 mb-12">
-          <p className="text-sm text-amber-900">
-            <strong>⚠️ Aviso Importante:</strong> Conteúdo informativo. Consulte sempre um profissional de saúde.
+        <div className="bg-gray-50 border border-gray-100 rounded-2xl p-6 mb-12">
+          <p className="text-sm text-gray-600">
+            <strong className="text-gray-900">⚠️ Aviso Importante:</strong> Este artigo é um conteúdo informativo. Consulte sempre um profissional de saúde qualificado.
           </p>
         </div>
 
         {/* Article Content */}
-        <div className="prose prose-sm max-w-none mb-16 text-text-dark/80 leading-relaxed">
+        {/* We use prose-lg for a better reading experience matching Foks template */}
+        <div className="prose prose-gray prose-lg max-w-none mb-16 text-gray-700 leading-relaxed">
           <div dangerouslySetInnerHTML={{ __html: article.content }} />
         </div>
 
         {/* Share Buttons */}
-        <div className="border-t border-b border-gray-200 py-8 mb-12">
-          <p className="text-sm font-semibold text-text-dark mb-4">Compartilhar:</p>
+        <div className="border-t border-b border-gray-100 py-8 mb-16">
+          <p className="text-sm font-bold text-gray-900 mb-4 tracking-wider uppercase">Compartilhar artigo</p>
           <div className="flex gap-4">
             <a
-              href={`https://wa.me/?text=${encodeURIComponent(article.title + " - https://filhocuidador.com.br")}`}
-              className="inline-flex items-center gap-2 px-4 py-2 bg-green-100 text-green-700 rounded-full hover:bg-green-200 transition font-semibold text-sm"
+              href={`https://wa.me/?text=${encodeURIComponent(article.title + " - https://filhocuidador.com.br/artigos/" + article.slug)}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-5 py-2.5 bg-gray-50 text-gray-900 rounded-xl hover:bg-gray-100 border border-gray-200 transition font-semibold text-sm"
             >
               WhatsApp
             </a>
             <a
-              href={`https://www.facebook.com/sharer/sharer.php?u=https://filhocuidador.com.br`}
-              className="inline-flex items-center gap-2 px-4 py-2 bg-blue-100 text-blue-700 rounded-full hover:bg-blue-200 transition font-semibold text-sm"
+              href={`https://www.facebook.com/sharer/sharer.php?u=https://filhocuidador.com.br/artigos/${article.slug}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-5 py-2.5 bg-gray-50 text-gray-900 rounded-xl hover:bg-gray-100 border border-gray-200 transition font-semibold text-sm"
             >
               Facebook
             </a>
@@ -91,26 +120,26 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
         </div>
 
         {/* Related Articles */}
-        {article && (
+        {allArticles && (
           <div>
-            <h2 className="text-2xl font-bold text-gray-900 mb-8">
-              Artigos Relacionados
+            <h2 className="text-2xl font-bold text-gray-900 mb-8 tracking-tight">
+              Recomendados para você
             </h2>
-            <div className="space-y-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               {allArticles
                 .filter((a) => a.category === article.category && a.slug !== article.slug)
-                .slice(0, 3)
+                .slice(0, 4)
                 .map((related) => (
                   <Link
                     key={related.id}
                     href={`/artigos/${related.slug}`}
-                    className="block p-6 bg-gray-50 border border-gray-200 rounded-lg hover:border-gray-300 hover:bg-gray-100 transition-all duration-300 group"
+                    className="block p-6 bg-white border border-gray-100 rounded-2xl hover:shadow-md hover:border-gray-200 transition-all duration-300 group"
                   >
-                    <h3 className="text-lg font-bold text-gray-900 group-hover:text-brand-primary transition-colors">
+                    <h3 className="text-lg font-bold text-gray-900 group-hover:text-gray-600 transition-colors leading-snug mb-2">
                       {related.title}
                     </h3>
-                    <p className="text-sm text-gray-600 mt-2">
-                      Leia o artigo →
+                    <p className="text-sm text-gray-400 font-medium mt-auto">
+                      Ler artigo →
                     </p>
                   </Link>
                 ))}

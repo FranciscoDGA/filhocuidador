@@ -1,3 +1,9 @@
+import fs from 'fs';
+import path from 'path';
+import matter from 'gray-matter';
+import { remark } from 'remark';
+import html from 'remark-html';
+
 export interface Article {
   id: number;
   slug: string;
@@ -8,580 +14,97 @@ export interface Article {
   author: string;
   date: string;
   readTime: number;
+  image?: string;
+  seo?: {
+    keywords?: string[];
+    metaDescription?: string;
+  }
 }
 
-export const articles: Article[] = [
-  // Saúde Emocional
-  {
-    id: 1,
-    slug: "reconhecendo-burnout-cuidador",
-    title: "Reconhecendo o Burnout do Cuidador",
-    excerpt: "Sinais de alerta para quando você está no limite. E sim, sua exaustão é legítima.",
-    content: "Cuidar de um pai idoso é uma tarefa exaustiva que pode levar ao burnout. Reconheça os sinais e busque ajuda profissional quando necessário.",
-    category: "Saúde Emocional",
-    author: "Equipe Filho Cuidador",
-    date: "17 de julho, 2024",
-    readTime: 8,
-  },
-  {
-    id: 2,
-    slug: "auto-cuidado-essencial",
-    title: "Auto-cuidado é Essencial, Não Luxo",
-    excerpt: "Entenda por que cuidar de si mesmo é fundamental para ser um melhor cuidador.",
-    content: "O auto-cuidado não é egoísmo. É uma necessidade para manter sua saúde mental e física enquanto cuida de alguém.",
-    category: "Saúde Emocional",
-    author: "Equipe Filho Cuidador",
-    date: "15 de julho, 2024",
-    readTime: 6,
-  },
-  {
-    id: 3,
-    slug: "lidando-com-culpa-cuidador",
-    title: "Lidando com a Culpa do Cuidador",
-    excerpt: "A culpa é comum, mas não define você. Conheça estratégias para lidar com esses sentimentos.",
-    content: "Muitos cuidadores sentem culpa. Este artigo explora as raízes dessa culpa e oferece técnicas para gerenciá-la.",
-    category: "Saúde Emocional",
-    author: "Equipe Filho Cuidador",
-    date: "12 de julho, 2024",
-    readTime: 7,
-  },
-  {
-    id: 4,
-    slug: "ansiedade-cuidadores",
-    title: "Ansiedade em Cuidadores: Como Identificar e Tratar",
-    excerpt: "Ansiedade é comum em quem cuida. Saiba como reconhecê-la e buscar ajuda.",
-    content: "A ansiedade afeta muitos cuidadores. Conheça os sintomas e opções de tratamento disponíveis.",
-    category: "Saúde Emocional",
-    author: "Equipe Filho Cuidador",
-    date: "10 de julho, 2024",
-    readTime: 8,
-  },
-  {
-    id: 5,
-    slug: "meditacao-pratica",
-    title: "Meditação e Mindfulness na Prática",
-    excerpt: "Técnicas simples de meditação para reduzir o estresse do dia a dia.",
-    content: "Aprenda técnicas de meditação que podem ser praticadas em apenas 5-10 minutos por dia.",
-    category: "Saúde Emocional",
-    author: "Equipe Filho Cuidador",
-    date: "8 de julho, 2024",
-    readTime: 6,
-  },
-  {
-    id: 6,
-    slug: "apoio-emocional-grupos",
-    title: "Importância do Apoio Emocional em Grupos",
-    excerpt: "Conectar-se com outros cuidadores pode fazer toda a diferença.",
-    content: "Grupos de apoio e comunidades online podem oferecer suporte emocional essencial para cuidadores.",
-    category: "Saúde Emocional",
-    author: "Equipe Filho Cuidador",
-    date: "6 de julho, 2024",
-    readTime: 7,
-  },
+const contentDirectory = path.join(process.cwd(), 'content/articles');
 
-  // Jurídico & Financeiro
-  {
-    id: 7,
-    slug: "bpc-loas-guia-completo",
-    title: "BPC (Benefício de Prestação Continuada): Guia Completo 2024",
-    excerpt: "Como solicitar o BPC, quem tem direito, documentos necessários e passo a passo.",
-    content: "Guia prático sobre como solicitar o BPC, incluindo documentação necessária e prazos.",
-    category: "Jurídico & Financeiro",
-    author: "Equipe Filho Cuidador",
-    date: "20 de julho, 2024",
-    readTime: 12,
-  },
-  {
-    id: 8,
-    slug: "aposentadoria-cuidador",
-    title: "Direitos de Aposentadoria do Cuidador",
-    excerpt: "Quais são seus direitos como cuidador familiar em termos de aposentadoria.",
-    content: "Saiba quais benefícios previdenciários estão disponíveis para cuidadores familiares.",
-    category: "Jurídico & Financeiro",
-    author: "Equipe Filho Cuidador",
-    date: "18 de julho, 2024",
-    readTime: 10,
-  },
-  {
-    id: 9,
-    slug: "direitos-trabalhistas",
-    title: "Direitos Trabalhistas do Cuidador",
-    excerpt: "Como proteger seus direitos se trabalha como cuidador formal.",
-    content: "Informações sobre legislação trabalhista para profissionais que trabalham como cuidadores.",
-    category: "Jurídico & Financeiro",
-    author: "Equipe Filho Cuidador",
-    date: "16 de julho, 2024",
-    readTime: 9,
-  },
-  {
-    id: 10,
-    slug: "pensao-viuvez",
-    title: "Pensão por Viuvez: Tudo o Que Você Precisa Saber",
-    excerpt: "Como solicitar pensão por viuvez e quem tem direito.",
-    content: "Guia completo sobre benefícios de pensão por viuvez no Brasil.",
-    category: "Jurídico & Financeiro",
-    author: "Equipe Filho Cuidador",
-    date: "14 de julho, 2024",
-    readTime: 11,
-  },
-  {
-    id: 11,
-    slug: "planejamento-financeiro",
-    title: "Planejamento Financeiro para Cuidadores",
-    excerpt: "Como organizar as finanças enquanto cuida de alguém.",
-    content: "Dicas práticas de planejamento financeiro para cuidadores que precisam equilibrar despesas.",
-    category: "Jurídico & Financeiro",
-    author: "Equipe Filho Cuidador",
-    date: "12 de julho, 2024",
-    readTime: 8,
-  },
-  {
-    id: 12,
-    slug: "procuracao-poderes",
-    title: "Procuração e Poderes: Como Proteger Seus Interesses",
-    excerpt: "Entenda os diferentes tipos de procuração e como usá-los.",
-    content: "Informações sobre procuração legal e representação de incapazes no Brasil.",
-    category: "Jurídico & Financeiro",
-    author: "Equipe Filho Cuidador",
-    date: "10 de julho, 2024",
-    readTime: 10,
-  },
-
-  // Família
-  {
-    id: 13,
-    slug: "comunicacao-irmaos-nao-ajudam",
-    title: "Quando o Irmão Não Quer Ajudar: Como Comunicar",
-    excerpt: "Estratégias práticas para conversar com irmãos que não colaboram no cuidado.",
-    content: "Técnicas de comunicação não-violenta para abordar conflitos familiares sobre responsabilidades de cuidado.",
-    category: "Família",
-    author: "Equipe Filho Cuidador",
-    date: "10 de agosto, 2024",
-    readTime: 10,
-  },
-  {
-    id: 14,
-    slug: "conflitos-familiares",
-    title: "Resolvendo Conflitos Familiares Durante o Cuidado",
-    excerpt: "Estratégias para manter a harmonia familiar enquanto cuida.",
-    content: "Como lidar com conflitos que surgem quando um membro da família precisa de cuidados constantes.",
-    category: "Família",
-    author: "Equipe Filho Cuidador",
-    date: "8 de agosto, 2024",
-    readTime: 9,
-  },
-  {
-    id: 15,
-    slug: "limites-saudaveis",
-    title: "Estabelecendo Limites Saudáveis com a Família",
-    excerpt: "Como manter limites sem sentir culpa ou rejeição.",
-    content: "Aprender a dizer 'não' é essencial para manter sua saúde mental enquanto cuida.",
-    category: "Família",
-    author: "Equipe Filho Cuidador",
-    date: "6 de agosto, 2024",
-    readTime: 8,
-  },
-  {
-    id: 16,
-    slug: "conversas-dificeis",
-    title: "Tendo Conversas Difíceis com Pais Idosos",
-    excerpt: "Como conversar sobre morte, herança e decisões médicas.",
-    content: "Orientações para abordar tópicos delicados com seus pais de forma respeitosa.",
-    category: "Família",
-    author: "Equipe Filho Cuidador",
-    date: "4 de agosto, 2024",
-    readTime: 11,
-  },
-  {
-    id: 17,
-    slug: "papel-conjuge-filhos",
-    title: "Equilibrando seu Papel como Cônjuge e Filho Cuidador",
-    excerpt: "Como manter sua relação conjugal enquanto cuida de um pai.",
-    content: "Estratégias para não permitir que responsabilidades de cuidado prejudiquem seu casamento.",
-    category: "Família",
-    author: "Equipe Filho Cuidador",
-    date: "2 de agosto, 2024",
-    readTime: 9,
-  },
-  {
-    id: 18,
-    slug: "envolvimento-familia-ampla",
-    title: "Como Envolver a Família Ampla no Cuidado",
-    excerpt: "Distribuindo responsabilidades entre primos, tios e outros familiares.",
-    content: "Estratégias para engajar toda a rede familiar para compartilhar responsabilidades de cuidado.",
-    category: "Família",
-    author: "Equipe Filho Cuidador",
-    date: "31 de julho, 2024",
-    readTime: 8,
-  },
-
-  // Cuidados Práticos
-  {
-    id: 19,
-    slug: "higiene-pessoal",
-    title: "Higiene Pessoal do Idoso: Dicas Práticas",
-    excerpt: "Como manter a higiene e dignidade do seu pai idoso.",
-    content: "Passo a passo para ajudar na higiene pessoal com respeito e cuidado.",
-    category: "Cuidados Práticos",
-    author: "Equipe Filho Cuidador",
-    date: "2 de agosto, 2024",
-    readTime: 7,
-  },
-  {
-    id: 20,
-    slug: "medicamentos",
-    title: "Gerenciamento de Medicamentos: Um Guia Prático",
-    excerpt: "Como organizar e controlar medicamentos de forma segura.",
-    content: "Sistema prático para garantir que medicamentos sejam tomados no horário correto.",
-    category: "Cuidados Práticos",
-    author: "Equipe Filho Cuidador",
-    date: "31 de julho, 2024",
-    readTime: 8,
-  },
-  {
-    id: 21,
-    slug: "mobilidade",
-    title: "Técnicas de Mobilização e Transferência",
-    excerpt: "Como ajudar seu pai a se mover com segurança.",
-    content: "Técnicas corretas de mobilização para evitar lesões tanto no idoso quanto no cuidador.",
-    category: "Cuidados Práticos",
-    author: "Equipe Filho Cuidador",
-    date: "29 de julho, 2024",
-    readTime: 9,
-  },
-  {
-    id: 22,
-    slug: "alimentacao",
-    title: "Nutrição Adequada para Idosos",
-    excerpt: "Como garantir uma alimentação saudável e nutritiva.",
-    content: "Guia prático sobre necessidades nutricionais de idosos e como preparar refeições adequadas.",
-    category: "Cuidados Práticos",
-    author: "Equipe Filho Cuidador",
-    date: "27 de julho, 2024",
-    readTime: 8,
-  },
-  {
-    id: 23,
-    slug: "prevencao-quedas",
-    title: "Prevenção de Quedas em Casa",
-    excerpt: "Como tornar a casa segura para um idoso.",
-    content: "Medidas práticas para reduzir riscos de quedas e acidentes domésticos.",
-    category: "Cuidados Práticos",
-    author: "Equipe Filho Cuidador",
-    date: "25 de julho, 2024",
-    readTime: 7,
-  },
-  {
-    id: 24,
-    slug: "sono-repouso",
-    title: "Melhorando o Sono e Repouso",
-    excerpt: "Estratégias para ajudar seu pai a dormir melhor.",
-    content: "Técnicas para criar um ambiente propício ao sono e lidar com insônia em idosos.",
-    category: "Cuidados Práticos",
-    author: "Equipe Filho Cuidador",
-    date: "23 de julho, 2024",
-    readTime: 6,
-  },
-
-  // Alzheimer e Demência
-  {
-    id: 25,
-    slug: "entendendo-alzheimer",
-    title: "Entendendo o Alzheimer: Os Primeiros Sinais",
-    excerpt: "Como reconhecer os sinais iniciais do Alzheimer.",
-    content: "Informações sobre sintomas iniciais e progressão do Alzheimer para melhor compreensão e ação.",
-    category: "Alzheimer & Demência",
-    author: "Equipe Filho Cuidador",
-    date: "21 de julho, 2024",
-    readTime: 10,
-  },
-  {
-    id: 26,
-    slug: "comunicando-alzheimer",
-    title: "Comunicação Efetiva com Pessoa com Alzheimer",
-    excerpt: "Técnicas para se comunicar melhor com alguém com demência.",
-    content: "Estratégias de comunicação adaptadas para diferentes estágios do Alzheimer.",
-    category: "Alzheimer & Demência",
-    author: "Equipe Filho Cuidador",
-    date: "19 de julho, 2024",
-    readTime: 9,
-  },
-  {
-    id: 27,
-    slug: "comportamento-desafiador",
-    title: "Lidando com Comportamentos Desafiadores",
-    excerpt: "Como manejar agressividade, apatia e outros comportamentos.",
-    content: "Técnicas práticas para lidar com comportamentos difíceis comuns no Alzheimer.",
-    category: "Alzheimer & Demência",
-    author: "Equipe Filho Cuidador",
-    date: "17 de julho, 2024",
-    readTime: 11,
-  },
-  {
-    id: 28,
-    slug: "preservando-memoria",
-    title: "Preservando Memória e Qualidade de Vida",
-    excerpt: "Atividades que estimulam a mente e preservam qualidade de vida.",
-    content: "Propostas de atividades estimulantes e seguras para pessoa com Alzheimer.",
-    category: "Alzheimer & Demência",
-    author: "Equipe Filho Cuidador",
-    date: "15 de julho, 2024",
-    readTime: 8,
-  },
-  {
-    id: 29,
-    slug: "parkinson-cuidado",
-    title: "Cuidados Específicos para Parkinson",
-    excerpt: "Particularidades no cuidado de quem tem Parkinson.",
-    content: "Informações sobre sintomas, tratamento e cuidados específicos para Parkinson.",
-    category: "Alzheimer & Demência",
-    author: "Equipe Filho Cuidador",
-    date: "13 de julho, 2024",
-    readTime: 9,
-  },
-  {
-    id: 30,
-    slug: "acidente-vascular",
-    title: "Cuidados Após Acidente Vascular Cerebral",
-    excerpt: "Reabilitação e adaptação após AVC.",
-    content: "Guia de recuperação e cuidados para pessoa que sofreu acidente vascular cerebral.",
-    category: "Alzheimer & Demência",
-    author: "Equipe Filho Cuidador",
-    date: "11 de julho, 2024",
-    readTime: 10,
-  },
-
-  // Artigos Adicionais (31-50)
-  {
-    id: 31,
-    slug: "diabetes-idoso",
-    title: "Gerenciando Diabetes em Idosos",
-    excerpt: "Cuidados especiais para diabéticos idosos.",
-    content: "Informações práticas sobre controle de diabetes em pessoas idosas.",
-    category: "Saúde Emocional",
-    author: "Equipe Filho Cuidador",
-    date: "9 de julho, 2024",
-    readTime: 8,
-  },
-  {
-    id: 32,
-    slug: "hipertensao",
-    title: "Hipertensão em Idosos: Tudo o Que Você Precisa Saber",
-    excerpt: "Controle de pressão arterial elevada.",
-    content: "Guia completo sobre hipertensão e seu manejo em idosos.",
-    category: "Saúde Emocional",
-    author: "Equipe Filho Cuidador",
-    date: "7 de julho, 2024",
-    readTime: 7,
-  },
-  {
-    id: 33,
-    slug: "incontinencia",
-    title: "Incontinência Urinária: Desmistificando e Resolvendo",
-    excerpt: "Como lidar com incontinência de forma prática.",
-    content: "Informações sobre causas, prevenção e tratamento de incontinência em idosos.",
-    category: "Cuidados Práticos",
-    author: "Equipe Filho Cuidador",
-    date: "5 de julho, 2024",
-    readTime: 7,
-  },
-  {
-    id: 34,
-    slug: "visao-audicao",
-    title: "Problemas de Visão e Audição em Idosos",
-    excerpt: "Como adaptar-se a mudanças sensoriais.",
-    content: "Dicas para lidar com deficiência visual e auditiva na terceira idade.",
-    category: "Cuidados Práticos",
-    author: "Equipe Filho Cuidador",
-    date: "3 de julho, 2024",
-    readTime: 6,
-  },
-  {
-    id: 35,
-    slug: "adaptacoes-casa",
-    title: "Adaptações da Casa para Idoso",
-    excerpt: "Renovações práticas e acessíveis para segurança.",
-    content: "Guia de adaptações domésticas para facilitar mobilidade e segurança de idosos.",
-    category: "Cuidados Práticos",
-    author: "Equipe Filho Cuidador",
-    date: "1 de julho, 2024",
-    readTime: 9,
-  },
-  {
-    id: 36,
-    slug: "tecnologia-cuidado",
-    title: "Tecnologia que Ajuda no Cuidado",
-    excerpt: "Ferramentas digitais que facilitam a vida do cuidador.",
-    content: "Aplicativos e dispositivos que podem ajudar no monitoramento e cuidado de idosos.",
-    category: "Cuidados Práticos",
-    author: "Equipe Filho Cuidador",
-    date: "29 de junho, 2024",
-    readTime: 8,
-  },
-  {
-    id: 37,
-    slug: "creches-idosos",
-    title: "Day Care para Idosos: Uma Opção Viável?",
-    excerpt: "Benefícios e como escolher uma creche de idosos.",
-    content: "Informações sobre dia clinicos e centros de convivência para idosos.",
-    category: "Cuidados Práticos",
-    author: "Equipe Filho Cuidador",
-    date: "27 de junho, 2024",
-    readTime: 8,
-  },
-  {
-    id: 38,
-    slug: "asilo-decisao",
-    title: "Quando Considerar um Asilo: Guia Prático",
-    excerpt: "Como tomar essa decisão difícil.",
-    content: "Reflexões e orientações práticas sobre institucionalização de idosos.",
-    category: "Jurídico & Financeiro",
-    author: "Equipe Filho Cuidador",
-    date: "25 de junho, 2024",
-    readTime: 11,
-  },
-  {
-    id: 39,
-    slug: "acompanhante-profissional",
-    title: "Contratando um Acompanhante Profissional",
-    excerpt: "Como encontrar e contratar um bom cuidador.",
-    content: "Dicas para contratar um cuidador profissional confiável e competente.",
-    category: "Jurídico & Financeiro",
-    author: "Equipe Filho Cuidador",
-    date: "23 de junho, 2024",
-    readTime: 9,
-  },
-  {
-    id: 40,
-    slug: "seguro-saude",
-    title: "Seguros e Planos de Saúde para Idosos",
-    excerpt: "Escolhendo a melhor cobertura de saúde.",
-    content: "Guia sobre opções de seguros e planos de saúde adequados para idosos.",
-    category: "Jurídico & Financeiro",
-    author: "Equipe Filho Cuidador",
-    date: "21 de junho, 2024",
-    readTime: 10,
-  },
-  {
-    id: 41,
-    slug: "cuidado-distancia",
-    title: "Cuidando de Pais que Moram Longe",
-    excerpt: "Estratégias para cuidador de longa distância.",
-    content: "Dicas práticas para quem precisa cuidar de pais em outra cidade ou estado.",
-    category: "Família",
-    author: "Equipe Filho Cuidador",
-    date: "19 de junho, 2024",
-    readTime: 9,
-  },
-  {
-    id: 42,
-    slug: "comunicacao-pais",
-    title: "Conversas Sobre o Futuro com Seus Pais",
-    excerpt: "Preparando a família para cenários futuros.",
-    content: "Como iniciar discussões sobre preferências futuras e cuidados paliativos.",
-    category: "Família",
-    author: "Equipe Filho Cuidador",
-    date: "17 de junho, 2024",
-    readTime: 10,
-  },
-  {
-    id: 43,
-    slug: "heranca-discussao",
-    title: "Discutindo Herança Sem Criar Conflitos",
-    excerpt: "Como abordar tópicos financeiros e hereditários.",
-    content: "Orientações para conversas delicadas sobre herança e testamento.",
-    category: "Jurídico & Financeiro",
-    author: "Equipe Filho Cuidador",
-    date: "15 de junho, 2024",
-    readTime: 11,
-  },
-  {
-    id: 44,
-    slug: "luto-preparacao",
-    title: "Preparando-se para o Luto",
-    excerpt: "Processando antecipadamente as emoções.",
-    content: "Como lidar com a antecipação da perda e preparar-se emocionalmente.",
-    category: "Saúde Emocional",
-    author: "Equipe Filho Cuidador",
-    date: "13 de junho, 2024",
-    readTime: 10,
-  },
-  {
-    id: 45,
-    slug: "processando-luto",
-    title: "Processando o Luto Após a Perda",
-    excerpt: "Caminhos para lidar com a morte de um ente querido.",
-    content: "Orientações e suporte para o processo de luto após perda de um familiar.",
-    category: "Saúde Emocional",
-    author: "Equipe Filho Cuidador",
-    date: "11 de junho, 2024",
-    readTime: 11,
-  },
-  {
-    id: 46,
-    slug: "reabilitacao-pos-luto",
-    title: "Reconstruindo Vida Após o Luto",
-    excerpt: "Retomando a vida após a morte de um pai.",
-    content: "Estratégias para reconstruir identidade e propósito após luto de um familiar.",
-    category: "Saúde Emocional",
-    author: "Equipe Filho Cuidador",
-    date: "9 de junho, 2024",
-    readTime: 9,
-  },
-  {
-    id: 47,
-    slug: "autocuidado-cuidador",
-    title: "Autocuidado: Sua Responsabilidade como Cuidador",
-    excerpt: "Por que cuidar de você é tão importante quanto cuidar de outro.",
-    content: "Reflexão sobre por que autocuidado é essencial para cuidadores sustentáveis.",
-    category: "Saúde Emocional",
-    author: "Equipe Filho Cuidador",
-    date: "7 de junho, 2024",
-    readTime: 7,
-  },
-  {
-    id: 48,
-    slug: "exercicio-saude",
-    title: "Exercício e Movimento para Saúde do Cuidador",
-    excerpt: "Mantendo seu corpo e mente saudáveis.",
-    content: "Importância do exercício físico para cuidadores e como incorporar atividade na rotina.",
-    category: "Saúde Emocional",
-    author: "Equipe Filho Cuidador",
-    date: "5 de junho, 2024",
-    readTime: 6,
-  },
-  {
-    id: 49,
-    slug: "alimentacao-cuidador",
-    title: "Alimentação Saudável para o Cuidador",
-    excerpt: "Nutrição prática quando sua vida é caótica.",
-    content: "Dicas de alimentação saudável para cuidadores que têm pouco tempo.",
-    category: "Cuidados Práticos",
-    author: "Equipe Filho Cuidador",
-    date: "3 de junho, 2024",
-    readTime: 6,
-  },
-  {
-    id: 50,
-    slug: "comunidade-apoio",
-    title: "Encontrando Sua Comunidade de Apoio",
-    excerpt: "Conectando-se com outros cuidadores e recursos.",
-    content: "Guia para encontrar grupos de apoio, comunidades online e recursos para cuidadores.",
-    category: "Família",
-    author: "Equipe Filho Cuidador",
-    date: "1 de junho, 2024",
-    readTime: 7,
-  },
-];
-
-export function getArticleBySlug(slug: string): Article | undefined {
-  return articles.find((article) => article.slug === slug);
+// Utility to parse dates in format "7 de agosto, 2024" or standard JS dates to sort them.
+function parsePortugueseDate(dateString: string): number {
+  const months: { [key: string]: number } = {
+    'janeiro': 0, 'fevereiro': 1, 'março': 2, 'abril': 3, 'maio': 4, 'junho': 5,
+    'julho': 6, 'agosto': 7, 'setembro': 8, 'outubro': 9, 'novembro': 10, 'dezembro': 11,
+    'jan': 0, 'fev': 1, 'mar': 2, 'abr': 3, 'mai': 4, 'jun': 5,
+    'jul': 6, 'ago': 7, 'set': 8, 'out': 9, 'nov': 10, 'dez': 11
+  };
+  
+  try {
+    const parts = dateString.toLowerCase().replace(',', '').split(' ');
+    if (parts.length >= 3) {
+      let day = parseInt(parts[0]);
+      let monthPart = parts.find(p => months[p] !== undefined) || 'janeiro';
+      let month = months[monthPart];
+      let year = parseInt(parts[parts.length - 1]);
+      return new Date(year, month, day).getTime();
+    }
+  } catch (e) {
+    return 0; // Fallback
+  }
+  return new Date(dateString).getTime() || 0;
 }
 
 export function getAllArticles(): Article[] {
-  return articles;
+  // Check if directory exists
+  if (!fs.existsSync(contentDirectory)) {
+    return [];
+  }
+
+  // Get file names under /content/articles
+  const fileNames = fs.readdirSync(contentDirectory);
+  
+  const allArticlesData = fileNames.filter(fileName => fileName.endsWith('.md')).map((fileName, index) => {
+    // Remove ".md" from file name to get slug if not provided in frontmatter
+    const fallbackSlug = fileName.replace(/\.md$/, '');
+
+    // Read markdown file as string
+    const fullPath = path.join(contentDirectory, fileName);
+    const fileContents = fs.readFileSync(fullPath, 'utf8');
+
+    // Use gray-matter to parse the post metadata section
+    const matterResult = matter(fileContents);
+
+    return {
+      id: index + 1,
+      slug: matterResult.data.slug || fallbackSlug,
+      title: matterResult.data.title || fallbackSlug,
+      excerpt: matterResult.data.excerpt || '',
+      content: matterResult.content, // Raw markdown for now, parsed in getArticleBySlug
+      category: matterResult.data.category || 'Geral',
+      author: matterResult.data.author || 'Equipe Filho Cuidador',
+      date: matterResult.data.date || 'Data Desconhecida',
+      readTime: matterResult.data.readTime || 5,
+      image: matterResult.data.image || '',
+      seo: matterResult.data.seo || {},
+    };
+  });
+  
+  // Sort articles by date (descending)
+  return allArticlesData.sort((a, b) => {
+    const dateA = parsePortugueseDate(a.date);
+    const dateB = parsePortugueseDate(b.date);
+    return dateB - dateA;
+  });
 }
 
-export function getArticlesByCategory(category: string): Article[] {
-  return articles.filter((article) => article.category === category);
+export async function getArticleBySlug(slug: string): Promise<Article | undefined> {
+  const allArticles = getAllArticles();
+  const article = allArticles.find(a => a.slug === slug);
+  
+  if (!article) return undefined;
+  
+  // Convert markdown to HTML
+  const processedContent = await remark()
+    .use(html)
+    .process(article.content);
+    
+  const contentHtml = processedContent.toString();
+  
+  return {
+    ...article,
+    content: contentHtml
+  };
 }
