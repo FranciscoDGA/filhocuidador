@@ -1,114 +1,9 @@
 import Link from "next/link";
-
-const mockArticles: { [key: string]: any } = {
-  "reconhecendo-burnout-cuidador": {
-    title: "Reconhecendo o Burnout do Cuidador",
-    excerpt: "Sinais de alerta para quando você está no limite.",
-    category: "Saúde Emocional",
-    readTime: 8,
-    date: "17 de julho, 2024",
-    content: `
-      <p>Cuidar de um pai idoso é um privilégio, mas também é exaustivo. Há noites em claro, preocupações constantes, decisões difíceis que caem sobre seus ombros.</p>
-
-      <h2>Sinais de Alerta</h2>
-
-      <p>Você pode estar desenvolvendo burnout se:</p>
-      <ul>
-        <li>Sente cansaço constante mesmo após dormir</li>
-        <li>Tem dificuldade de concentração ou memória</li>
-        <li>Experimenta mudanças de humor frequentes</li>
-        <li>Sente ressentimento em relação ao seu pai idoso</li>
-        <li>Negligencia sua própria saúde</li>
-        <li>Isola-se de amigos e família</li>
-        <li>Sente desesperança ou vazio</li>
-      </ul>
-
-      <h2>O Que Fazer</h2>
-
-      <p><strong>1. Reconheça seus limites</strong> - Você não pode fazer tudo sozinho.</p>
-
-      <p><strong>2. Procure suporte</strong> - Converse com amigos, família ou um terapeuta.</p>
-
-      <p><strong>3. Cuide de si mesmo</strong> - Reserve tempo para algo que goste.</p>
-
-      <p><strong>4. Considere ajuda profissional</strong> - Um psicólogo pode oferecer ferramentas importantes.</p>
-
-      <p>Sua exaustão é válida. Sua saúde importa.</p>
-    `,
-    relatedArticles: [
-      { id: 2, slug: "comunicacao-irmaos-nao-ajudam", title: "Quando o Irmão Não Quer Ajudar" },
-      { id: 3, slug: "bpc-loas-guia-completo", title: "BPC: Guia Completo 2024" },
-    ],
-  },
-  "bpc-loas-guia-completo": {
-    title: "BPC (Benefício de Prestação Continuada): Guia Completo 2024",
-    excerpt: "Como solicitar o BPC, quem tem direito, documentos e passo a passo.",
-    category: "Jurídico & Financeiro",
-    readTime: 12,
-    date: "20 de julho, 2024",
-    content: `
-      <p>Se seu pai idoso tem dificuldade financeira e uma deficiência, o BPC pode ser uma ajuda fundamental.</p>
-
-      <h2>O que é BPC?</h2>
-
-      <p>O Benefício de Prestação Continuada é um benefício assistencial de um salário mínimo mensal para pessoa idosa com 65 anos ou mais.</p>
-
-      <h2>Quem tem direito?</h2>
-
-      <ul>
-        <li>Pessoa idosa: 65 anos ou mais</li>
-        <li>Pessoa com deficiência: de qualquer idade</li>
-        <li>Renda per capita familiar não ultrapasse 1/4 do salário mínimo</li>
-      </ul>
-
-      <h2>Como Solicitar</h2>
-
-      <p><strong>Passo 1:</strong> Marque atendimento no INSS (telefone 135)</p>
-      <p><strong>Passo 2:</strong> Reúna todos os documentos</p>
-      <p><strong>Passo 3:</strong> Compareça ao atendimento</p>
-      <p><strong>Passo 4:</strong> Acompanhe a análise pelo portal</p>
-    `,
-    relatedArticles: [
-      { id: 1, slug: "reconhecendo-burnout-cuidador", title: "Reconhecendo o Burnout" },
-      { id: 3, slug: "comunicacao-irmaos-nao-ajudam", title: "Comunicação com Irmãos" },
-    ],
-  },
-  "comunicacao-irmaos-nao-ajudam": {
-    title: "Quando o Irmão Não Quer Ajudar: Como Comunicar",
-    excerpt: "Estratégias práticas para conversar com irmãos.",
-    category: "Família",
-    readTime: 10,
-    date: "10 de agosto, 2024",
-    content: `
-      <p>É comum que um filho acabe sendo o cuidador principal enquanto irmãos parecem desaparecer.</p>
-
-      <h2>Antes de Conversar</h2>
-
-      <p>Prepare-se emocionalmente. Não é uma acusação — é um pedido.</p>
-
-      <h2>Como Iniciar a Conversa</h2>
-
-      <p><strong>"Preciso conversar com você sobre papai/mamãe. Tenho me sentido sobrecarregado."</strong></p>
-
-      <p>Seja específico. Em vez de "você não ajuda", diga: "Precisamos de ajuda com visitas médicas."</p>
-
-      <h2>Se Eles Disserem Não</h2>
-
-      <ul>
-        <li>Pergunte qual é a barreira</li>
-        <li>Ofereça alternativas (dinheiro em vez de tempo)</li>
-        <li>Estabeleça limites claros</li>
-      </ul>
-    `,
-    relatedArticles: [
-      { id: 1, slug: "reconhecendo-burnout-cuidador", title: "Reconhecendo o Burnout" },
-      { id: 2, slug: "bpc-loas-guia-completo", title: "BPC: Guia Completo" },
-    ],
-  },
-};
+import { getArticleBySlug, getAllArticles } from "@/lib/articles";
 
 export default function ArticlePage({ params }: { params: { slug: string } }) {
-  const article = mockArticles[params.slug];
+  const article = getArticleBySlug(params.slug);
+  const allArticles = getAllArticles();
 
   if (!article) {
     return (
@@ -196,26 +91,29 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
         </div>
 
         {/* Related Articles */}
-        {article.relatedArticles && article.relatedArticles.length > 0 && (
+        {article && (
           <div>
-            <h2 className="font-display text-2xl font-light text-text-dark mb-8">
+            <h2 className="text-2xl font-bold text-gray-900 mb-8">
               Artigos Relacionados
             </h2>
             <div className="space-y-4">
-              {article.relatedArticles.map((related: any) => (
-                <Link
-                  key={related.id}
-                  href={`/artigos/${related.slug}`}
-                  className="block p-6 bg-gray-50 border border-gray-200 rounded-xl hover:border-gray-300 hover:bg-gray-100 transition-all duration-300 group"
-                >
-                  <h3 className="font-display text-lg font-semibold text-text-dark group-hover:text-text-dark/80 transition-colors">
-                    {related.title}
-                  </h3>
-                  <p className="text-sm text-text-dark/70 mt-2">
-                    Leia o artigo →
-                  </p>
-                </Link>
-              ))}
+              {allArticles
+                .filter((a) => a.category === article.category && a.slug !== article.slug)
+                .slice(0, 3)
+                .map((related) => (
+                  <Link
+                    key={related.id}
+                    href={`/artigos/${related.slug}`}
+                    className="block p-6 bg-gray-50 border border-gray-200 rounded-lg hover:border-gray-300 hover:bg-gray-100 transition-all duration-300 group"
+                  >
+                    <h3 className="text-lg font-bold text-gray-900 group-hover:text-brand-primary transition-colors">
+                      {related.title}
+                    </h3>
+                    <p className="text-sm text-gray-600 mt-2">
+                      Leia o artigo →
+                    </p>
+                  </Link>
+                ))}
             </div>
           </div>
         )}
