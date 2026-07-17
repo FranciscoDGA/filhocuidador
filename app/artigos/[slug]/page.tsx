@@ -65,6 +65,24 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
           </div>
         </div>
 
+        {/* Featured Image */}
+        {article.image ? (
+          <div className="relative w-full aspect-video rounded-3xl overflow-hidden mb-16 shadow-sm border border-gray-100">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img 
+              src={article.image} 
+              alt={article.title}
+              className="object-cover w-full h-full"
+            />
+          </div>
+        ) : (
+          <div className="aspect-video bg-gray-100 rounded-3xl mb-16 flex items-center justify-center border border-gray-50">
+            <svg className="w-16 h-16 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+            </svg>
+          </div>
+        )}
+
         {/* Health Disclaimer */}
         <div className="bg-gray-50 border border-gray-100 rounded-2xl p-6 mb-12">
           <p className="text-sm text-gray-600">
