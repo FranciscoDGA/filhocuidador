@@ -69,15 +69,15 @@ export default function CategoryPage({ params }: { params: { category: string } 
 
   if (!category) {
     return (
-      <div className="min-h-screen flex items-center justify-center px-4">
+      <div className="min-h-screen flex items-center justify-center px-4 bg-white">
         <div className="text-center max-w-2xl">
-          <h1 className="font-display text-4xl font-bold text-text-dark mb-4">
+          <h1 className="font-display text-4xl font-light text-text-dark mb-4">
             Categoria não encontrada
           </h1>
           <p className="text-text-dark/70 mb-8">
             Desculpe, não conseguimos encontrar essa categoria.
           </p>
-          <Link href="/" className="text-brand-primary font-medium hover:text-brand-accent transition">
+          <Link href="/" className="text-text-dark font-semibold hover:text-text-dark/70 transition">
             Voltar à página inicial →
           </Link>
         </div>
@@ -86,21 +86,18 @@ export default function CategoryPage({ params }: { params: { category: string } 
   }
 
   return (
-    <main className="bg-cream min-h-screen py-16 sm:py-20 lg:py-24">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <main className="bg-white min-h-screen py-24 sm:py-32">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Breadcrumb */}
-        <div className="mb-8 flex items-center gap-2 text-sm text-text-dark/70">
-          <Link href="/" className="hover:text-brand-primary transition">
-            Início
-          </Link>
+        <div className="mb-12 flex items-center gap-2 text-sm text-text-dark/70">
+          <Link href="/" className="hover:text-text-dark transition">Início</Link>
           <span>/</span>
           <span className="text-text-dark font-medium">{category.name}</span>
         </div>
 
         {/* Category Header */}
-        <div className="mb-12">
-          <div className="text-5xl mb-4">{category.emoji}</div>
-          <h1 className="font-display text-4xl sm:text-5xl font-bold text-text-dark mb-4">
+        <div className="mb-16">
+          <h1 className="font-display text-5xl sm:text-6xl font-light text-text-dark mb-4">
             {category.name}
           </h1>
           <p className="text-lg text-text-dark/70 max-w-2xl">
@@ -113,28 +110,28 @@ export default function CategoryPage({ params }: { params: { category: string } 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {articles.map((article) => (
               <Link key={article.id} href={`/artigos/${article.slug}`}>
-                <article className="h-full flex flex-col bg-white rounded-lg overflow-hidden border border-border-light hover:shadow-lg transition-shadow duration-300 cursor-pointer">
+                <article className="h-full flex flex-col bg-white rounded-xl overflow-hidden border border-gray-200 hover:border-gray-300 hover:shadow-lg transition-all duration-300 cursor-pointer group">
                   {/* Image Placeholder */}
-                  <div className="aspect-video bg-gradient-to-br from-brand-primary/10 via-brand-secondary/10 to-brand-accent/10 flex items-center justify-center">
-                    <svg className="w-12 h-12 text-text-dark/20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <div className="aspect-video bg-gradient-to-br from-gray-200 to-gray-100 flex items-center justify-center group-hover:from-gray-300 group-hover:to-gray-200 transition-colors">
+                    <svg className="w-12 h-12 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
                     </svg>
                   </div>
 
                   <div className="p-6 flex flex-col flex-grow">
                     {/* Title */}
-                    <h3 className="font-display text-xl font-bold text-text-dark mb-3 leading-tight line-clamp-2">
+                    <h3 className="font-display text-lg font-semibold text-text-dark mb-3 leading-snug line-clamp-2 group-hover:text-text-dark/80 transition-colors">
                       {article.title}
                     </h3>
 
                     {/* Excerpt */}
-                    <p className="text-text-dark/70 text-sm mb-4 line-clamp-2 flex-grow">
+                    <p className="text-text-dark/60 text-sm mb-6 line-clamp-2 flex-grow">
                       {article.excerpt}
                     </p>
 
                     {/* Meta */}
-                    <div className="flex items-center gap-3 text-xs text-text-dark/50 border-t border-border-light pt-4">
-                      <span>{article.readTime} min de leitura</span>
+                    <div className="flex items-center gap-3 text-xs text-text-dark/50 border-t border-gray-100 pt-4">
+                      <span>{article.readTime} min</span>
                       <span>•</span>
                       <span>{article.date}</span>
                     </div>
@@ -144,11 +141,11 @@ export default function CategoryPage({ params }: { params: { category: string } 
             ))}
           </div>
         ) : (
-          <div className="text-center py-16">
+          <div className="text-center py-20">
             <p className="text-lg text-text-dark/70 mb-8">
-              Ainda não temos artigos nessa categoria, mas em breve teremos!
+              Ainda não temos artigos nessa categoria.
             </p>
-            <Link href="/artigos" className="text-brand-primary font-medium hover:text-brand-accent transition">
+            <Link href="/artigos" className="text-text-dark font-semibold hover:text-text-dark/70 transition">
               Ver todos os artigos →
             </Link>
           </div>
