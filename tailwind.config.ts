@@ -12,21 +12,21 @@ const config: Config = {
         body: ['var(--font-inter)'],
       },
       colors: {
-        // Brand colors - Refined
-        'brand-primary': '#2563eb', // azul vibrante
-        'brand-secondary': '#10b981', // verde esmeralda
-        'brand-accent': '#f59e0b', // âmbar ouro
-        'brand-dark': '#1f2937', // charcoal
+        // Brand colors - Refined to match Foks (minimalist/monochrome)
+        'brand-primary': '#111827', // very dark gray/black
+        'brand-secondary': '#4b5563', // medium gray
+        'brand-accent': '#000000', // black
+        'brand-dark': '#111827', 
 
-        // Gradients - complementary colors
-        'gradient-start': '#667eea',
-        'gradient-end': '#764ba2',
+        // Gradients (less used in Foks, but kept neutral)
+        'gradient-start': '#374151',
+        'gradient-end': '#111827',
 
         // Neutrals
-        'cream': '#f9fafb', // branco puro
-        'text-dark': '#1f2937', // charcoal
-        'text-light': '#6b7280', // cinza médio
-        'border-light': '#e5e7eb',
+        'cream': '#ffffff', // pure white for Foks
+        'text-dark': '#111827', // almost black
+        'text-light': '#6b7280', // softer gray
+        'border-light': '#f3f4f6', // very soft gray
 
         background: 'var(--background)',
         foreground: 'var(--foreground)',
