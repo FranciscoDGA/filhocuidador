@@ -2,92 +2,120 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="border-t border-gray-200 dark:border-gray-800 mt-20">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-8">
+    <footer className="border-t border-border-light bg-white mt-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        {/* Logo + Tagline */}
+        <div className="mb-12 pb-8 border-b border-border-light">
+          <h3 className="font-display text-2xl font-bold text-brand-primary mb-2">
+            Filho Cuidador
+          </h3>
+          <p className="text-brand-secondary font-medium">
+            Você não está sozinho nessa
+          </p>
+        </div>
+
+        {/* Links Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mb-12">
           <div>
-            <h4 className="font-semibold text-sm mb-4">Conteúdo</h4>
-            <ul className="space-y-2 text-sm text-gray-600 dark:text-gray-400">
+            <h4 className="font-display font-bold text-text-dark text-sm mb-4">
+              Conteúdo
+            </h4>
+            <ul className="space-y-3 text-sm">
               <li>
-                <Link href="/artigos" className="hover:text-gray-900 dark:hover:text-gray-100">
-                  Artigos
+                <Link href="/artigos" className="text-text-dark/70 hover:text-brand-primary transition">
+                  Todos os Artigos
                 </Link>
               </li>
               <li>
-                <Link href="/artigos?category=saude-emocional" className="hover:text-gray-900 dark:hover:text-gray-100">
+                <Link href="/saude-emocional" className="text-text-dark/70 hover:text-brand-primary transition">
                   Saúde Emocional
                 </Link>
               </li>
               <li>
-                <Link href="/artigos?category=cuidados-praticos" className="hover:text-gray-900 dark:hover:text-gray-100">
+                <Link href="/cuidados-praticos" className="text-text-dark/70 hover:text-brand-primary transition">
                   Cuidados Práticos
                 </Link>
               </li>
+              <li>
+                <Link href="/orientacao-juridica" className="text-text-dark/70 hover:text-brand-primary transition">
+                  Orientação Jurídica
+                </Link>
+              </li>
             </ul>
           </div>
 
           <div>
-            <h4 className="font-semibold text-sm mb-4">Comunidade</h4>
-            <ul className="space-y-2 text-sm text-gray-600 dark:text-gray-400">
+            <h4 className="font-display font-bold text-text-dark text-sm mb-4">
+              Comunidade
+            </h4>
+            <ul className="space-y-3 text-sm">
               <li>
-                <Link href="/contato" className="hover:text-gray-900 dark:hover:text-gray-100">
-                  Contato
+                <Link href="/sobre" className="text-text-dark/70 hover:text-brand-primary transition">
+                  Sobre Nós
                 </Link>
               </li>
               <li>
-                <a href="mailto:esesdec@gmail.com" className="hover:text-gray-900 dark:hover:text-gray-100">
-                  E-mail
-                </a>
+                <Link href="/contato" className="text-text-dark/70 hover:text-brand-primary transition">
+                  Entre em Contato
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-gray-900 dark:hover:text-gray-100">
-                  Newsletter
+                <a href="mailto:esesdec@gmail.com" className="text-text-dark/70 hover:text-brand-primary transition">
+                  E-mail
                 </a>
               </li>
             </ul>
           </div>
 
           <div>
-            <h4 className="font-semibold text-sm mb-4">Legal</h4>
-            <ul className="space-y-2 text-sm text-gray-600 dark:text-gray-400">
+            <h4 className="font-display font-bold text-text-dark text-sm mb-4">
+              Legal
+            </h4>
+            <ul className="space-y-3 text-sm">
               <li>
-                <Link href="/privacidade" className="hover:text-gray-900 dark:hover:text-gray-100">
+                <Link href="/privacidade" className="text-text-dark/70 hover:text-brand-primary transition">
                   Privacidade (LGPD)
                 </Link>
               </li>
               <li>
-                <Link href="/termos" className="hover:text-gray-900 dark:hover:text-gray-100">
+                <Link href="/termos" className="text-text-dark/70 hover:text-brand-primary transition">
                   Termos de Uso
-                </Link>
-              </li>
-              <li>
-                <Link href="/sobre" className="hover:text-gray-900 dark:hover:text-gray-100">
-                  Sobre Nós
                 </Link>
               </li>
             </ul>
           </div>
 
           <div>
-            <h4 className="font-semibold text-sm mb-4">Recursos</h4>
-            <ul className="space-y-2 text-sm text-gray-600 dark:text-gray-400">
-              <li>
-                <span className="hover:text-gray-900 dark:hover:text-gray-100">
-                  Quietly Caring
-                </span>
+            <h4 className="font-display font-bold text-text-dark text-sm mb-4">
+              Emergência
+            </h4>
+            <ul className="space-y-3 text-sm">
+              <li className="text-text-dark/70">
+                <strong>SAMU:</strong> 192
               </li>
-              <li className="text-xs">
-                Informação e acolhimento para filhos que cuidam.
+              <li className="text-text-dark/70">
+                <strong>CVV:</strong> 188
+              </li>
+              <li className="text-text-dark/70">
+                <strong>Suicida:</strong> 0800 006 1766
               </li>
             </ul>
           </div>
         </div>
 
-        <div className="border-t border-gray-200 dark:border-gray-800 pt-8 text-center text-sm text-gray-600 dark:text-gray-400">
-          <p>&copy; 2024 Filho Cuidador. Todos os direitos reservados.</p>
-          <p className="mt-2">
-            Este conteúdo é informativo. Consulte sempre um profissional de saúde.
-          </p>
+        {/* Bottom Section */}
+        <div className="border-t border-border-light pt-8">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-4 mb-4">
+            <p className="text-xs text-text-dark/60">
+              © 2024 Filho Cuidador. Todos os direitos reservados.
+            </p>
+          </div>
+
+          <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4">
+            <p className="text-xs text-yellow-900">
+              <strong>⚠️ Aviso Importante:</strong> Este conteúdo é informativo. Consulte sempre um profissional de saúde para questões médicas ou psicológicas.
+            </p>
+          </div>
         </div>
       </div>
     </footer>

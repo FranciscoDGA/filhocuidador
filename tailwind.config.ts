@@ -7,12 +7,32 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        display: ['var(--font-playfair)'],
+        body: ['var(--font-inter)'],
+      },
       colors: {
+        // Brand colors
+        'brand-primary': '#4A7B9D', // azul-ardósia
+        'brand-secondary': '#7A9E7E', // verde-salvia
+        'brand-accent': '#C47B5A', // terracota
+
+        // Neutrals
+        'cream': '#FAFAF7', // branco-creme
+        'text-dark': '#2D3748', // cinza-chumbo
+        'border-light': '#E8E8E0',
+
         background: 'var(--background)',
         foreground: 'var(--foreground)',
         muted: 'var(--muted)',
         border: 'var(--border)',
         accent: 'var(--accent)',
+      },
+      fontSize: {
+        base: '17px',
+      },
+      spacing: {
+        'safe': 'max(1rem, env(safe-area-inset-left))',
       },
     },
   },
