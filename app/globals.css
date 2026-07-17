@@ -139,28 +139,6 @@
   }
 }
 
-@layer components {
-  .prose {
-    @apply max-w-prose mx-auto;
-  }
-
-  .prose p {
-    @apply mb-4;
-  }
-
-  .prose h1 {
-    @apply text-4xl font-bold mb-6;
-  }
-
-  .prose h2 {
-    @apply text-3xl font-bold mb-4 mt-8;
-  }
-
-  .prose h3 {
-    @apply text-2xl font-semibold mb-3 mt-6;
-  }
-}
-
 ::-webkit-scrollbar {
   width: 10px;
   height: 10px;
