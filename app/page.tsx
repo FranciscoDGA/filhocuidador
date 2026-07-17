@@ -22,6 +22,14 @@ export default function Home() {
       readTime: 8,
       date: "17 de julho, 2024",
     },
+    {
+      slug: "bpc-loas-guia-completo",
+      title: "BPC (Benefício de Prestação Continuada): Guia Completo 2024",
+      excerpt: "Como solicitar o BPC, quem tem direito, documentos necessários e passo a passo.",
+      category: "Jurídico & Financeiro",
+      readTime: 12,
+      date: "20 de julho, 2024",
+    },
   ];
 
   const authors = [
