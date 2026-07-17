@@ -30,18 +30,18 @@ export default function Footer() {
             <h4 className="font-semibold text-sm mb-4">Comunidade</h4>
             <ul className="space-y-2 text-sm text-gray-600 dark:text-gray-400">
               <li>
-                <Link href="/comunidade" className="hover:text-gray-900 dark:hover:text-gray-100">
-                  Forum
+                <Link href="/contato" className="hover:text-gray-900 dark:hover:text-gray-100">
+                  Contato
                 </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-gray-900 dark:hover:text-gray-100">
-                  WhatsApp
+                <a href="mailto:esesdec@gmail.com" className="hover:text-gray-900 dark:hover:text-gray-100">
+                  E-mail
                 </a>
               </li>
               <li>
                 <a href="#" className="hover:text-gray-900 dark:hover:text-gray-100">
-                  Contato
+                  Newsletter
                 </a>
               </li>
             </ul>
@@ -52,22 +52,34 @@ export default function Footer() {
             <ul className="space-y-2 text-sm text-gray-600 dark:text-gray-400">
               <li>
                 <Link href="/privacidade" className="hover:text-gray-900 dark:hover:text-gray-100">
-                  Privacidade
+                  Privacidade (LGPD)
                 </Link>
               </li>
               <li>
                 <Link href="/termos" className="hover:text-gray-900 dark:hover:text-gray-100">
-                  Termos
+                  Termos de Uso
+                </Link>
+              </li>
+              <li>
+                <Link href="/sobre" className="hover:text-gray-900 dark:hover:text-gray-100">
+                  Sobre Nós
                 </Link>
               </li>
             </ul>
           </div>
 
           <div>
-            <h4 className="font-semibold text-sm mb-4">Sobre</h4>
-            <p className="text-sm text-gray-600 dark:text-gray-400">
-              Portal de informação e acolhimento para filhos cuidadores.
-            </p>
+            <h4 className="font-semibold text-sm mb-4">Recursos</h4>
+            <ul className="space-y-2 text-sm text-gray-600 dark:text-gray-400">
+              <li>
+                <span className="hover:text-gray-900 dark:hover:text-gray-100">
+                  Quietly Caring
+                </span>
+              </li>
+              <li className="text-xs">
+                Informação e acolhimento para filhos que cuidam.
+              </li>
+            </ul>
           </div>
         </div>
 
