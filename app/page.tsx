@@ -1,150 +1,137 @@
 import Link from "next/link";
 import Layout from "@/components/layout/Layout";
+import FeaturedArticle from "@/components/blog/FeaturedArticle";
 import ArticleCard from "@/components/blog/ArticleCard";
+import TrendingTopics from "@/components/blog/TrendingTopics";
+import AuthorCard from "@/components/blog/AuthorCard";
 
 export default function Home() {
+  const trendingTopics = [
+    { name: "Saúde Emocional", count: 12, slug: "saude-emocional" },
+    { name: "Cuidados Práticos", count: 8, slug: "cuidados-praticos" },
+    { name: "Jurídico", count: 5, slug: "juridico" },
+    { name: "Alzheimer", count: 7, slug: "alzheimer" },
+  ];
+
+  const recentArticles = [
+    {
+      slug: "reconhecendo-burnout-cuidador",
+      title: "Reconhecendo o Burnout do Cuidador",
+      excerpt: "Sinais de alerta para quando você está no limite. E sim, sua exaustão é legítima.",
+      category: "Saúde Emocional",
+      readTime: 8,
+      date: "17 de julho, 2024",
+    },
+  ];
+
+  const authors = [
+    {
+      name: "Equipe Filho Cuidador",
+      role: "Criadora de Conteúdo",
+      bio: "Dedicada a trazer informação confiável e acolhimento para cuidadores familiares.",
+      articleCount: 12,
+    },
+  ];
+
   return (
     <Layout>
-      {/* Hero Section */}
-      <section className="bg-gradient-to-b from-blue-50 to-white py-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6">
-            Você não está sozinha no cuidado
+      {/* Hero / Intro Section */}
+      <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <div className="mb-20">
+          <h1 className="text-5xl md:text-6xl font-bold leading-tight mb-8">
+            Quietly Caring
           </h1>
-          <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-            Orientação prática, acolhimento emocional e informação confiável para filhos que cuidam de pais idosos. O portal que fala COM você, não SOBRE seu pai.
+          <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-400 max-w-2xl leading-relaxed">
+            Um espaço para filhos que cuidam. Informação prática, acolhimento emocional e
+            orientação confiável para quem cuida de pais idosos com doenças neurodegenerativas.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              href="/artigos"
-              className="bg-blue-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-700 transition"
-            >
-              Ler Artigos
-            </Link>
-            <Link
-              href="/comunidade"
-              className="border-2 border-blue-600 text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-blue-50 transition"
-            >
-              Entrar na Comunidade
-            </Link>
-          </div>
+        </div>
+
+        {/* Trending Topics */}
+        <TrendingTopics topics={trendingTopics} />
+
+        <div className="mb-24 h-px bg-gray-200 dark:bg-gray-800" />
+      </section>
+
+      {/* Featured Article */}
+      <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mb-24">
+        <FeaturedArticle
+          slug="reconhecendo-burnout-cuidador"
+          title="Reconhecendo o Burnout do Cuidador: Quando Você Precisa de Ajuda"
+          excerpt="Cuidar de um pai idoso é um privilégio, mas também é exaustivo. Entenda os sinais de burnout, a culpa que você sente, e quando procurar ajuda profissional."
+          category="Saúde Emocional"
+          author="Equipe Filho Cuidador"
+          date="17 de julho, 2024"
+        />
+      </section>
+
+      {/* Recent Articles Grid */}
+      <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mb-24">
+        <div className="flex items-center justify-between mb-12">
+          <h2 className="text-3xl font-bold">Recent Articles</h2>
+          <Link
+            href="/artigos"
+            className="text-sm font-medium text-blue-600 dark:text-blue-400 hover:opacity-75 transition"
+          >
+            View all →
+          </Link>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+          {recentArticles.map((article) => (
+            <ArticleCard key={article.slug} {...article} />
+          ))}
         </div>
       </section>
 
-      {/* Trust Indicators */}
-      <section className="bg-white py-12 px-4 sm:px-6 lg:px-8 border-b">
-        <div className="max-w-4xl mx-auto">
-          <p className="text-center text-gray-600 mb-8">
-            ⚠️ <strong>Disclaimer:</strong> Nosso conteúdo é informativo. Consulte sempre um profissional de saúde.
-          </p>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 text-center">
-            <div>
-              <p className="text-3xl font-bold text-blue-600">+50</p>
-              <p className="text-gray-600">Artigos publicados</p>
-            </div>
-            <div>
-              <p className="text-3xl font-bold text-blue-600">80%</p>
-              <p className="text-gray-600">Mulheres cuidadoras</p>
-            </div>
-            <div>
-              <p className="text-3xl font-bold text-blue-600">5</p>
-              <p className="text-gray-600">Pilares de conteúdo</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Pillars Section */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-12">Conteúdo que importa</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="bg-white p-6 rounded-lg shadow">
-              <h3 className="text-xl font-bold mb-3">💭 Saúde Emocional</h3>
-              <p className="text-gray-600">
-                Burnout, culpa, raiva, luto antecipado. Sua saúde mental importa.
-              </p>
-            </div>
-            <div className="bg-white p-6 rounded-lg shadow">
-              <h3 className="text-xl font-bold mb-3">👨‍⚕️ Cuidados Práticos</h3>
-              <p className="text-gray-600">
-                Alimentação, medicação, higiene, segurança em casa. Guias passo a passo.
-              </p>
-            </div>
-            <div className="bg-white p-6 rounded-lg shadow">
-              <h3 className="text-xl font-bold mb-3">⚖️ Jurídico & Financeiro</h3>
-              <p className="text-gray-600">
-                Procuração, interdição, BPC, LOAS, home care. Informação descomplicada.
-              </p>
-            </div>
-            <div className="bg-white p-6 rounded-lg shadow">
-              <h3 className="text-xl font-bold mb-3">🧠 Doenças</h3>
-              <p className="text-gray-600">
-                Alzheimer, Parkinson, AVC, demência. Entenda fases, sintomas e o que esperar.
-              </p>
-            </div>
-            <div className="bg-white p-6 rounded-lg shadow">
-              <h3 className="text-xl font-bold mb-3">👨‍👩‍👧 Família & Conflitos</h3>
-              <p className="text-gray-600">
-                Irmãos que não ajudam, cuidador solo, divisão de custos. Você não está sozinho.
-              </p>
-            </div>
-            <div className="bg-white p-6 rounded-lg shadow">
-              <h3 className="text-xl font-bold mb-3">📚 E-books & Guias</h3>
-              <p className="text-gray-600">
-                Recursos em PDF para baixar e compartilhar com a família.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Recent Articles */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-6xl mx-auto">
-          <div className="flex justify-between items-center mb-12">
-            <h2 className="text-3xl font-bold">Leitura Recomendada</h2>
-            <Link
-              href="/artigos"
-              className="text-blue-600 font-semibold hover:text-blue-800"
-            >
-              Ver todos →
-            </Link>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <ArticleCard
-              slug="reconhecendo-burnout-cuidador"
-              title="Reconhecendo o Burnout do Cuidador"
-              excerpt="Sinais de alerta para quando você está no limite. E sim, sua exaustão é legítima."
-              category="Saúde Emocional"
-              readTime={8}
-              date="17 de julho, 2024"
+      {/* Authors Section */}
+      <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mb-24">
+        <h3 className="text-3xl font-bold mb-12">Featured Creators</h3>
+        <div className="space-y-4">
+          {authors.map((author) => (
+            <AuthorCard
+              key={author.name}
+              name={author.name}
+              role={author.role}
+              bio={author.bio}
+              articleCount={author.articleCount}
             />
-          </div>
+          ))}
         </div>
       </section>
 
-      {/* Newsletter */}
-      <section className="bg-blue-600 text-white py-12 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-2xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-4">Receba conteúdo na sua caixa</h2>
-          <p className="mb-6 text-blue-100">
-            Um email por semana com artigos, dicas e recursos para você.
+      {/* Newsletter Section */}
+      <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mb-24">
+        <div className="rounded-lg border border-gray-200 dark:border-gray-800 p-12 text-center">
+          <h2 className="text-3xl font-bold mb-4">Subscribe to the Newsletter</h2>
+          <p className="text-gray-600 dark:text-gray-400 mb-8 max-w-xl mx-auto">
+            Receba conteúdo semanal direto na sua caixa de entrada. Artigos, dicas práticas e
+            acolhimento para quem cuida.
           </p>
-          <form className="flex flex-col sm:flex-row gap-2">
+          <form className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
             <input
               type="email"
               placeholder="seu@email.com"
-              className="flex-1 px-4 py-3 rounded text-gray-900"
+              className="flex-1 px-4 py-3 rounded bg-gray-100 dark:bg-gray-900 border border-gray-300 dark:border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-600 text-gray-900 dark:text-gray-100"
               required
             />
             <button
               type="submit"
-              className="bg-blue-800 hover:bg-blue-900 px-8 py-3 rounded font-semibold transition"
+              className="px-6 py-3 rounded bg-gray-900 dark:bg-white text-white dark:text-gray-900 font-medium hover:opacity-90 transition"
             >
-              Inscrever
+              Subscribe
             </button>
           </form>
+        </div>
+      </section>
+
+      {/* Disclaimer */}
+      <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mb-20">
+        <div className="p-6 rounded-lg bg-yellow-50 dark:bg-yellow-950 border border-yellow-200 dark:border-yellow-800">
+          <p className="text-sm text-yellow-900 dark:text-yellow-100">
+            <strong>⚠️ Aviso Importante:</strong> Este conteúdo é informativo. Consulte sempre um profissional de
+            saúde para questões médicas ou psicológicas.
+          </p>
         </div>
       </section>
     </Layout>
