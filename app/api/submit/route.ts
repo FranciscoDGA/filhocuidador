@@ -17,38 +17,28 @@ export async function POST(request: Request) {
       case "newsletter":
         result = await supabase.from("newsletter").insert({
           "e-mail": data.email,
-          ativo: true,
         });
         break;
 
       case "question":
         result = await supabase.from("questions").insert({
           nome: data.name,
-          "e-mail": data.email,
-          categoria: data.category,
           pergunta: data.question,
-          status: "pending",
         });
         break;
 
       case "testimonial":
         result = await supabase.from("testimonials").insert({
           nome: data.name,
-          cidade: data.city,
           texto: data.text,
-          avaliação: data.rating,
-          aprovado: false,
         });
         break;
 
       case "diary":
         result = await supabase.from("diaries").insert({
           nome: data.name,
-          cidade: data.city,
-          idade: data.age,
           história: data.story,
           "e-mail": data.email,
-          status: "pending",
         });
         break;
 
