@@ -1,19 +1,9 @@
 "use client";
 
-import { useState } from "react";
 import Link from "next/link";
+import NewsletterForm from "@/components/forms/NewsletterForm";
 
 export default function Footer() {
-  const [email, setEmail] = useState("");
-  const [submitted, setSubmitted] = useState(false);
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    setSubmitted(true);
-    setEmail("");
-    setTimeout(() => setSubmitted(false), 3000);
-  };
-
   return (
     <footer className="bg-brand-primary text-white pt-20 pb-10 px-4 sm:px-6 lg:px-8 mt-24">
       <div className="max-w-[1400px] mx-auto">
@@ -29,28 +19,7 @@ export default function Footer() {
           <p className="text-sm sm:text-base text-white/40 font-body mb-8 leading-relaxed">
             Dicas práticas, orientação jurídica e acolhimento emocional direto no seu email. Sem spam, sem floreios.
           </p>
-
-          <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row items-center justify-center gap-3 max-w-md mx-auto">
-            <input
-              type="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              placeholder="Seu email"
-              className="w-full sm:flex-1 px-5 py-3 bg-transparent border border-white/15 text-white placeholder:text-white/25 text-sm focus:outline-none focus:border-white/40 transition-colors"
-              required
-            />
-            <button
-              type="submit"
-              className="w-full sm:w-auto px-8 py-3 bg-white text-brand-primary text-sm font-medium hover:bg-white/90 transition-colors"
-            >
-              Inscrever-se
-            </button>
-          </form>
-          {submitted && (
-            <p className="text-xs mt-4 text-white/50">
-              Obrigado! Verifique seu email para confirmar.
-            </p>
-          )}
+          <NewsletterForm />
         </div>
 
         {/* Links Grid */}

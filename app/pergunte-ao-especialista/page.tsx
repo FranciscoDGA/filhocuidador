@@ -1,12 +1,16 @@
-"use client";
-
-import { useState } from "react";
 import Link from "next/link";
+import type { Metadata } from "next";
+import QuestionForm from "@/components/forms/QuestionForm";
+
+export const metadata: Metadata = {
+  title: "Pergunte ao Especialista",
+  description: "Envie sua dúvida e nossos especialistas respondem. Perguntas frequentes sobre Alzheimer, demência, jurídico e cuidados.",
+};
 
 const faqData = [
   {
     q: "Minha mãe não quer tomar remédio. O que faço?",
-    a: "Essa é uma das dúvidas mais comuns. Primeiro, verifique se o medicamento pode ser diluído em alimento ou líquido. converse com o médico sobre alternativas (spray, injetável). Nunca force — isso pode gerar trauma. Tente criar uma rotina: sempre no mesmo horário, com algo que ela goste.",
+    a: "Essa é uma das dúvidas mais comuns. Primeiro, verifique se o medicamento pode ser diluído em alimento ou líquido. Converse com o médico sobre alternativas (spray, injetável). Nunca force — isso pode gerar trauma. Tente criar uma rotina: sempre no mesmo horário, com algo que ela goste.",
     specialist: "Dra. Patricia Tura — Neurologista",
     category: "Medicação",
   },
@@ -24,7 +28,7 @@ const faqData = [
   },
   {
     q: "Estou me sentindo culpado por ter raiva do idoso. Isso é normal?",
-    a: "Completamente normal. Raiva não significa que você não ama. Significa que você está sobrecarregado. Cuidador que não admite raiva está reprimindo emoções que podem explodir depois. Busque um psicólogo. Groupos de apoio também ajudam muito.",
+    a: "Completamente normal. Raiva não significa que você não ama. Significa que você está sobrecarregado. Cuidador que não admite raiva está reprimindo emoções que podem explodir depois. Busque um psicólogo. Grupos de apoio também ajudam muito.",
     specialist: "Dra. Renata Menezes — Psicóloga",
     category: "Emocional",
   },
@@ -36,25 +40,29 @@ const faqData = [
   },
 ];
 
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqData.map((item) => ({
+    "@type": "Question",
+    name: item.q,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: item.a,
+    },
+  })),
+};
+
 export default function PergunteEspecialistaPage() {
-  const [formData, setFormData] = useState({ name: "", email: "", question: "", category: "" });
-  const [submitted, setSubmitted] = useState(false);
-  const [selectedCategory, setSelectedCategory] = useState("Todas");
-
   const categories = ["Todas", ...Array.from(new Set(faqData.map((f) => f.category)))];
-
-  const filtered = selectedCategory === "Todas"
-    ? faqData
-    : faqData.filter((f) => f.category === selectedCategory);
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    setSubmitted(true);
-    setFormData({ name: "", email: "", question: "", category: "" });
-  };
 
   return (
     <main className="bg-bg-base min-h-screen py-12 lg:py-16">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
+
       <div className="max-w-[1000px] mx-auto px-4 sm:px-6">
         <div className="mb-8 flex items-center gap-2 text-[11px] text-brand-secondary/50">
           <Link href="/" className="hover:text-brand-primary transition">Início</Link>
@@ -79,86 +87,7 @@ export default function PergunteEspecialistaPage() {
           <h2 className="text-lg font-display font-medium text-brand-primary mb-6">
             Envie Sua Pergunta
           </h2>
-
-          {submitted ? (
-            <div className="text-center py-8">
-              <div className="w-12 h-12 bg-green-50 border border-green-200 flex items-center justify-center mx-auto mb-4">
-                <svg className="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                </svg>
-              </div>
-              <h3 className="text-sm font-display font-medium text-brand-primary mb-2">
-                Pergunta enviada!
-              </h3>
-              <p className="text-xs text-brand-secondary/60 mb-4">
-                Responderemos em até 48 horas por email.
-              </p>
-              <button
-                onClick={() => setSubmitted(false)}
-                className="text-[11px] font-medium tracking-wide uppercase text-brand-primary border-b border-brand-primary/20 hover:border-brand-primary/60 pb-0.5 transition-colors"
-              >
-                Enviar outra pergunta
-              </button>
-            </div>
-          ) : (
-            <form onSubmit={handleSubmit} className="space-y-4">
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div>
-                  <label className="text-[11px] font-medium text-brand-secondary/60 block mb-1.5">Nome</label>
-                  <input
-                    type="text"
-                    value={formData.name}
-                    onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                    className="w-full px-4 py-2.5 border border-border-base text-sm text-brand-primary focus:outline-none focus:border-brand-primary/30 transition-colors"
-                    required
-                  />
-                </div>
-                <div>
-                  <label className="text-[11px] font-medium text-brand-secondary/60 block mb-1.5">Email</label>
-                  <input
-                    type="email"
-                    value={formData.email}
-                    onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                    className="w-full px-4 py-2.5 border border-border-base text-sm text-brand-primary focus:outline-none focus:border-brand-primary/30 transition-colors"
-                    required
-                  />
-                </div>
-              </div>
-              <div>
-                <label className="text-[11px] font-medium text-brand-secondary/60 block mb-1.5">Categoria</label>
-                <select
-                  value={formData.category}
-                  onChange={(e) => setFormData({ ...formData, category: e.target.value })}
-                  className="w-full px-4 py-2.5 border border-border-base text-sm text-brand-primary focus:outline-none focus:border-brand-primary/30 transition-colors bg-white"
-                >
-                  <option value="">Selecione</option>
-                  <option value="Medicação">Medicação</option>
-                  <option value="Comportamento">Comportamento</option>
-                  <option value="Jurídico">Jurídico</option>
-                  <option value="Emocional">Emocional</option>
-                  <option value="Segurança">Segurança</option>
-                  <option value="Alimentação">Alimentação</option>
-                  <option value="Outro">Outro</option>
-                </select>
-              </div>
-              <div>
-                <label className="text-[11px] font-medium text-brand-secondary/60 block mb-1.5">Sua Pergunta</label>
-                <textarea
-                  value={formData.question}
-                  onChange={(e) => setFormData({ ...formData, question: e.target.value })}
-                  rows={5}
-                  className="w-full px-4 py-2.5 border border-border-base text-sm text-brand-primary focus:outline-none focus:border-brand-primary/30 transition-colors resize-none"
-                  required
-                />
-              </div>
-              <button
-                type="submit"
-                className="px-8 py-3 bg-brand-primary text-white text-[13px] font-medium tracking-wide uppercase hover:bg-brand-primary/90 transition-colors"
-              >
-                Enviar Pergunta
-              </button>
-            </form>
-          )}
+          <QuestionForm />
         </div>
 
         {/* Perguntas frequentes */}
@@ -169,24 +98,8 @@ export default function PergunteEspecialistaPage() {
             </h2>
           </div>
 
-          <div className="flex flex-wrap gap-2 mb-6">
-            {categories.map((cat) => (
-              <button
-                key={cat}
-                onClick={() => setSelectedCategory(cat)}
-                className={`text-[11px] font-medium tracking-wide uppercase px-4 py-2 border transition-colors ${
-                  selectedCategory === cat
-                    ? "bg-brand-primary text-white border-brand-primary"
-                    : "border-border-base text-brand-secondary hover:border-brand-primary/30"
-                }`}
-              >
-                {cat}
-              </button>
-            ))}
-          </div>
-
           <div className="space-y-4">
-            {filtered.map((item, i) => (
+            {faqData.map((item, i) => (
               <div key={i} className="bg-white border border-border-base p-6">
                 <div className="flex items-start gap-3 mb-3">
                   <span className="text-[10px] font-medium tracking-wider uppercase text-brand-accent bg-brand-accent/10 px-2 py-1 shrink-0">

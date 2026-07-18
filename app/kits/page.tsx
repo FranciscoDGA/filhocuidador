@@ -8,52 +8,52 @@ export const metadata: Metadata = {
 
 const kits = [
   {
+    slug: "primeiras-24h-alzheimer",
     title: "Kit: Primeiras 24h com Alzheimer",
     description: "O que fazer nas primeiras 24h após o diagnóstico. Checklists, contatos e passo a passo.",
     items: ["Checklist de documentos", "Lista de médicos especialistas", "Guia de primeiros cuidados", "Modelo de organização de medicamentos"],
     category: "Diagnóstico",
     pages: 12,
-    format: "PDF",
   },
   {
+    slug: "agressividade-confusao",
     title: "Kit: Agressividade e Confusão",
     description: "10 técnicas práticas para lidar com episódios de agressividade, confusão e agitação.",
     items: ["Técnicas de comunicação", "Lista de emergência 24h", "Guia de medicamentos de resgate", "Modelo de registro de episódios"],
     category: "Comportamento",
     pages: 15,
-    format: "PDF",
   },
   {
+    slug: "casa-segura",
     title: "Kit: Casa Segura",
     description: "Como adaptar sua casa para um idoso com demência — cômodo por cômodo.",
     items: ["Checklist por cômodo", "Lista de compras", "Guia de instalação de barras", "Dicas de iluminação"],
     category: "Segurança",
     pages: 10,
-    format: "PDF",
   },
   {
+    slug: "direitos-cuidador",
     title: "Kit: Direitos do Cuidador",
     description: "Todos os benefícios governamentais, direitos trabalhistas e orientação jurídica.",
     items: ["Guia BPC/LOAS", "Modelo de procuração", "Lista de benefícios por estado", "Contatos de Defensoria Pública"],
     category: "Jurídico",
     pages: 18,
-    format: "PDF",
   },
   {
+    slug: "alimentacao-saudavel",
     title: "Kit: Alimentação Saudável",
     description: "Cardápios, dicas de alimentação e receitas para idosos com demência.",
     items: ["Cardápio semanal", "Receitas fáceis", "Dicas para dificuldade de deglutição", "Lista de alimentos有益"],
     category: "Nutrição",
     pages: 14,
-    format: "PDF",
   },
   {
+    slug: "cuidador-sobrevivente",
     title: "Kit: Cuidador Sobrevivente",
     description: "Guia completo para cuidador que está no limite. Burnout, autoajuda e recursos.",
     items: ["Quiz de burnout", "Guia de autoajuda", "Lista de grupos de apoio", "Contatos de emergência psicológica"],
     category: "Saúde Mental",
     pages: 16,
-    format: "PDF",
   },
 ];
 
@@ -87,7 +87,7 @@ export default function KitsPage() {
                   {kit.category}
                 </span>
                 <span className="text-[10px] text-brand-secondary/40">
-                  {kit.pages} páginas • {kit.format}
+                  {kit.pages} páginas
                 </span>
               </div>
               <h3 className="text-base font-display font-medium text-brand-primary mb-2">
@@ -106,9 +106,12 @@ export default function KitsPage() {
                   </li>
                 ))}
               </ul>
-              <button className="w-full px-6 py-3 bg-brand-primary text-white text-[13px] font-medium tracking-wide uppercase hover:bg-brand-primary/90 transition-colors">
-                Baixar Grátis
-              </button>
+              <Link
+                href={`/kits/${kit.slug}`}
+                className="block w-full text-center px-6 py-3 bg-brand-primary text-white text-[13px] font-medium tracking-wide uppercase hover:bg-brand-primary/90 transition-colors"
+              >
+                Acessar Kit
+              </Link>
             </div>
           ))}
         </div>

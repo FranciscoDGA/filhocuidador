@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { submitTestimonial } from "@/lib/actions";
 
 const testimonials = [
   {
@@ -46,10 +47,15 @@ export default function DepoimentosPage() {
   const [formData, setFormData] = useState({ name: "", city: "", text: "", rating: 5 });
   const [submitted, setSubmitted] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setSubmitted(true);
-    setFormData({ name: "", city: "", text: "", rating: 5 });
+    try {
+      await submitTestimonial(formData);
+      setSubmitted(true);
+      setFormData({ name: "", city: "", text: "", rating: 5 });
+    } catch {
+      alert("Erro ao enviar. Tente novamente.");
+    }
   };
 
   return (

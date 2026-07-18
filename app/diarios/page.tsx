@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
+import DiarySubmitForm from "@/components/forms/DiarySubmitForm";
 
 export const metadata: Metadata = {
   title: "Diários de Cuidadores",
@@ -94,24 +95,15 @@ export default function DiariosPage() {
           </p>
         </div>
 
-        {/* CTA Submissão */}
-        <div className="bg-brand-primary/[0.03] border border-border-base p-6 mb-12">
-          <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-            <div>
-              <h3 className="text-sm font-display font-medium text-brand-primary mb-1">
-                Compartilhe sua história
-              </h3>
-              <p className="text-xs text-brand-secondary/60">
-                Sua experiência pode ajudar milhares de outros cuidadores.
-              </p>
-            </div>
-            <Link
-              href="/depoimentos"
-              className="text-[11px] font-medium tracking-wide uppercase text-brand-primary border border-brand-primary/20 hover:bg-brand-primary hover:text-white px-5 py-2 transition-all duration-300 shrink-0"
-            >
-              Enviar História
-            </Link>
-          </div>
+        {/* Formulário de Submissão */}
+        <div className="bg-white border border-border-base p-6 lg:p-8 mb-12">
+          <h3 className="text-lg font-display font-medium text-brand-primary mb-2">
+            Compartilhe sua história
+          </h3>
+          <p className="text-xs text-brand-secondary/60 mb-6">
+            Sua experiência pode ajudar milhares de outros cuidadores. Preencha e envie.
+          </p>
+          <DiarySubmitForm />
         </div>
 
         {/* Diaries Grid */}
