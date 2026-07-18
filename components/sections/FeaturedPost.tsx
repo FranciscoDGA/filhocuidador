@@ -8,7 +8,7 @@ export default function FeaturedPost({ article }: { article: Article }) {
 
   return (
     <section className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 py-8">
-      <Link href={`/artigos/${article.slug}`} className="group relative block w-full aspect-[2/1] min-h-[500px] rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-300">
+      <Link href={`/artigos/${article.slug}`} className="group relative block w-full aspect-[2/1] min-h-[500px] rounded-[5px] overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-300">
         <Image
           src={article.image || "https://images.unsplash.com/photo-1576765608535-5f04d1e3f289"}
           alt={article.title}

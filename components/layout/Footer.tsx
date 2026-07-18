@@ -15,11 +15,11 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-[#101828] text-white pt-24 pb-12 px-4 sm:px-6 lg:px-8 mt-24 rounded-t-[40px] md:rounded-t-[80px]">
+    <footer className="bg-[#101828] text-white pt-12 pb-8 px-4 sm:px-6 lg:px-8 mt-12 rounded-t-[40px] md:rounded-t-[80px]">
       <div className="max-w-[1400px] mx-auto">
         
         {/* Top CTA Section */}
-        <div className="text-center max-w-3xl mx-auto mb-20">
+        <div className="text-center max-w-3xl mx-auto mb-12">
           <h2 className="text-3xl sm:text-5xl font-display font-semibold mb-6">
             Vamos caminhar juntos nisso
           </h2>
@@ -49,7 +49,7 @@ export default function Footer() {
         </div>
 
         {/* Links Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 mb-16 border-t border-gray-800 pt-16">
+        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 mb-8 border-t border-gray-800 pt-8">
           <div className="col-span-2 lg:col-span-2">
             <div className="flex items-center gap-3 mb-6">
               <div className="w-8 h-8 bg-brand-primary text-white rounded-lg flex items-center justify-center font-bold text-lg leading-none">
@@ -67,10 +67,10 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold text-gray-300 mb-4">Conteúdo</h4>
             <ul className="space-y-3 text-sm text-gray-500">
-              <li><Link href="/categorias/saude-emocional" className="hover:text-white transition-colors">Saúde Emocional</Link></li>
-              <li><Link href="/categorias/cuidados-praticos" className="hover:text-white transition-colors">Cuidados Práticos</Link></li>
-              <li><Link href="/categorias/entendendo-doenca" className="hover:text-white transition-colors">A Doença</Link></li>
-              <li><Link href="/categorias/juridico" className="hover:text-white transition-colors">Jurídico</Link></li>
+              <li><Link href="/saude-emocional" className="hover:text-white transition-colors">Saúde Emocional</Link></li>
+              <li><Link href="/cuidados-praticos" className="hover:text-white transition-colors">Cuidados Práticos</Link></li>
+              <li><Link href="/entendendo-doenca" className="hover:text-white transition-colors">A Doença</Link></li>
+              <li><Link href="/juridico" className="hover:text-white transition-colors">Jurídico</Link></li>
             </ul>
           </div>
 

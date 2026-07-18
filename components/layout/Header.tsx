@@ -24,10 +24,10 @@ export default function Header() {
             <Link href="/" className="text-gray-600 hover:text-gray-900 font-medium text-sm transition-colors">
               Início
             </Link>
-            <Link href="/categorias/saude-emocional" className="text-gray-600 hover:text-gray-900 font-medium text-sm transition-colors">
+            <Link href="/saude-emocional" className="text-gray-600 hover:text-gray-900 font-medium text-sm transition-colors">
               Saúde Emocional
             </Link>
-            <Link href="/categorias/cuidados-praticos" className="text-gray-600 hover:text-gray-900 font-medium text-sm transition-colors">
+            <Link href="/cuidados-praticos" className="text-gray-600 hover:text-gray-900 font-medium text-sm transition-colors">
               Cuidados
             </Link>
             <Link href="/sobre" className="text-gray-600 hover:text-gray-900 font-medium text-sm transition-colors">
