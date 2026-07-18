@@ -2,12 +2,12 @@
 @plugin "@tailwindcss/typography";
 
 @theme {
-  --color-brand-primary: #4A7B9D;
-  --color-brand-secondary: #7A9E7E;
-  --color-brand-accent: #C47B5A;
-  --color-bg-base: #FAFAF7;
-  --color-text-base: #2D3748;
-  --color-border-base: #E8E8E0;
+  --color-brand-primary: #1a1a1a;
+  --color-brand-secondary: #4a4a4a;
+  --color-brand-accent: #8b7355;
+  --color-bg-base: #fafaf8;
+  --color-text-base: #1a1a1a;
+  --color-border-base: #e8e6e3;
   
   --font-display: var(--font-playfair);
   --font-body: var(--font-inter);
@@ -15,41 +15,49 @@
 
 @layer base {
   :root {
-    --background: #FAFAF7;
-    --foreground: #2D3748;
-    --muted: #78716f;
-    --border: #E8E8E0;
-    --accent: #C47B5A;
+    --background: #fafaf8;
+    --foreground: #1a1a1a;
+    --muted: #6b6b6b;
+    --border: #e8e6e3;
+    --accent: #8b7355;
     color-scheme: light !important;
   }
 
   html {
     scroll-behavior: smooth;
-    background: #FAFAF7 !important;
+    background: #fafaf8 !important;
   }
 
   body {
-    background: #FAFAF7 !important;
+    background: #fafaf8 !important;
     color: var(--foreground);
     font-family: var(--font-inter), sans-serif;
-    line-height: 1.6;
+    line-height: 1.7;
+    letter-spacing: -0.01em;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    color: #2D3748;
+    color: #1a1a1a;
     font-family: var(--font-playfair), serif;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
   }
 
   a {
-    transition: color 0.3s ease;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     cursor: pointer;
   }
 
   strong {
-    font-weight: 700;
+    font-weight: 600;
   }
 
   em {
     font-style: italic;
+  }
+
+  ::selection {
+    background: #1a1a1a;
+    color: #fafaf8;
   }
 }

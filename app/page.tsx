@@ -7,11 +7,10 @@ export default function Home() {
   const featuredArticle = articles.length > 0 ? articles[0] : null;
 
   return (
-    <main className="bg-white min-h-screen">
+    <main className="bg-bg-base min-h-screen">
       {featuredArticle && <FeaturedPost article={featuredArticle} />}
       
       <RecentArticlesSection />
-      
     </main>
   );
 }

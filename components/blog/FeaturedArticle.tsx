@@ -23,38 +23,38 @@ export default function FeaturedArticle({
     <Link href={`/artigos/${slug}`}>
       <article className="group cursor-pointer mb-12">
         {image && (
-          <div className="relative h-96 w-full mb-6 overflow-hidden rounded-lg bg-gray-100">
+          <div className="relative h-80 w-full mb-6 overflow-hidden bg-gray-100">
             <img
               src={image}
               alt={title}
-              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+              className="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-700"
             />
           </div>
         )}
 
         <div className="space-y-4">
-          <div className="flex items-center gap-2">
-            <span className="text-sm font-medium text-blue-600 bg-blue-50 dark:bg-blue-950 dark:text-blue-400 px-3 py-1 rounded-full">
+          <div className="flex items-center gap-3">
+            <span className="text-[10px] font-medium text-brand-accent tracking-[0.15em] uppercase">
               {category}
             </span>
-            <span className="text-sm text-gray-500 dark:text-gray-400">
+            <span className="text-[10px] text-brand-secondary/40">
               {date}
             </span>
           </div>
 
-          <h1 className="text-4xl md:text-5xl font-bold leading-tight group-hover:opacity-75 transition-opacity">
+          <h1 className="text-3xl md:text-4xl font-display font-medium leading-tight group-hover:text-brand-secondary transition-colors">
             {title}
           </h1>
 
-          <p className="text-xl text-gray-600 dark:text-gray-400 leading-relaxed">
+          <p className="text-base text-brand-secondary/60 leading-relaxed font-light">
             {excerpt}
           </p>
 
-          <div className="flex items-center gap-2 pt-4">
-            <div className="w-10 h-10 rounded-full bg-gradient-to-br from-blue-400 to-purple-500" />
+          <div className="flex items-center gap-3 pt-4 border-t border-border-base">
+            <div className="w-8 h-8 rounded-full bg-gray-200" />
             <div>
-              <p className="font-medium text-sm">{author}</p>
-              <p className="text-xs text-gray-500 dark:text-gray-400">{date}</p>
+              <p className="font-medium text-xs text-brand-primary">{author}</p>
+              <p className="text-[10px] text-brand-secondary/40">{date}</p>
             </div>
           </div>
         </div>

@@ -31,24 +31,24 @@ export default function ColumnistsSection() {
 
   return (
     <div>
-      <div className="mb-8 flex items-center gap-2">
-        <h2 className="text-2xl md:text-3xl font-display font-bold text-gray-900 tracking-wide">Colunistas</h2>
-        <div className="flex-1 h-px bg-gray-200"></div>
+      <div className="mb-10 flex items-center gap-4">
+        <h2 className="text-sm font-medium text-brand-primary tracking-widest uppercase">Colunistas</h2>
+        <div className="flex-1 h-px bg-border-base"></div>
       </div>
 
       <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
         {columnists.map((col) => (
           <Link href={`/colunistas/${col.id}`} key={col.id} className="group block">
-            <div className="relative w-24 h-24 md:w-32 md:h-32 mx-auto mb-4 rounded-full overflow-hidden border-2 border-transparent group-hover:border-gray-900 transition-colors">
+            <div className="relative w-20 h-20 md:w-24 md:h-24 mx-auto mb-4 rounded-full overflow-hidden border border-border-base group-hover:border-brand-primary/30 transition-colors">
               <Image 
                 src={col.image} 
                 alt={col.name} 
                 fill 
-                className="object-cover transition-transform duration-500 group-hover:scale-110" 
+                className="object-cover" 
               />
             </div>
-            <h3 className="font-display font-bold text-lg text-gray-900 group-hover:text-gray-600 transition">{col.name}</h3>
-            <p className="text-sm font-serif text-gray-500">{col.role}</p>
+            <h3 className="font-display font-medium text-sm text-brand-primary group-hover:text-brand-secondary transition">{col.name}</h3>
+            <p className="text-xs text-brand-secondary/50 mt-1">{col.role}</p>
           </Link>
         ))}
       </div>

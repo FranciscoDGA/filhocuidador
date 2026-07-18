@@ -3,19 +3,21 @@ import Image from "next/image";
 import { getAllArticles } from "@/lib/articles";
 
 export default function RecentArticlesSection() {
-  // Pegamos a partir do segundo artigo, pois o primeiro estará no Hero (Featured)
   const articles = getAllArticles().slice(1, 7);
 
   return (
-    <section className="py-16 bg-white">
+    <section className="py-20 lg:py-28 bg-bg-base">
       <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="mb-10">
-          <h2 className="text-2xl font-display font-semibold text-text-base">
-            Postagens recentes
+        <div className="mb-14">
+          <span className="text-[11px] font-medium tracking-[0.2em] uppercase text-brand-secondary mb-4 block">
+            Últimas
+          </span>
+          <h2 className="text-2xl md:text-3xl font-display font-medium text-brand-primary">
+            Postagens Recentes
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-14">
           {articles.map((article) => (
             <Link
               key={article.slug}
@@ -23,31 +25,31 @@ export default function RecentArticlesSection() {
               className="group flex flex-col items-start"
             >
               {/* Image Container */}
-              <div className="relative w-full aspect-[16/10] rounded-[5px] overflow-hidden mb-5 bg-gray-100">
+              <div className="relative w-full aspect-[16/10] overflow-hidden mb-6 bg-gray-100">
                 {article.image && (
                   <Image
                     src={article.image}
                     alt={article.title}
                     fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    className="object-cover group-hover:scale-[1.02] transition-transform duration-700"
                   />
                 )}
               </div>
 
               {/* Content */}
-              <span className="text-brand-primary font-medium text-sm mb-2 uppercase tracking-wide">
+              <span className="text-[11px] font-medium tracking-[0.15em] uppercase text-brand-accent mb-3">
                 {article.category || "Saúde Emocional"}
               </span>
-              <h3 className="text-xl font-bold font-display text-text-base mb-3 leading-snug group-hover:text-brand-primary transition-colors">
+              <h3 className="text-lg lg:text-xl font-display font-medium text-brand-primary mb-3 leading-snug group-hover:text-brand-secondary transition-colors">
                 {article.title}
               </h3>
-              <p className="text-text-base/70 line-clamp-2 text-base font-body mb-5">
+              <p className="text-brand-secondary/70 line-clamp-2 text-sm font-body mb-6 leading-relaxed">
                 {article.excerpt}
               </p>
 
               {/* Author & Date */}
               <div className="mt-auto flex items-center gap-3">
-                <div className="w-10 h-10 rounded-full bg-gray-200 overflow-hidden relative">
+                <div className="w-8 h-8 rounded-full bg-gray-200 overflow-hidden relative">
                   <Image 
                     src={`https://ui-avatars.com/api/?name=${encodeURIComponent(article.author)}&background=random`} 
                     alt={article.author}
@@ -56,20 +58,20 @@ export default function RecentArticlesSection() {
                   />
                 </div>
                 <div className="flex flex-col">
-                  <span className="text-sm font-semibold text-text-base">{article.author}</span>
-                  <span className="text-sm text-text-base/60">{article.date}</span>
+                  <span className="text-xs font-medium text-brand-primary">{article.author}</span>
+                  <span className="text-xs text-brand-secondary/50">{article.date}</span>
                 </div>
               </div>
             </Link>
           ))}
         </div>
 
-        <div className="mt-16 text-center">
+        <div className="mt-16 lg:mt-20 text-center">
           <Link
             href="/artigos"
-            className="inline-flex items-center justify-center px-6 py-3 border border-gray-300 rounded-lg text-sm font-semibold text-text-base hover:bg-gray-50 transition-colors"
+            className="inline-flex items-center text-[13px] font-medium tracking-wide uppercase text-brand-primary border-b border-brand-primary/20 hover:border-brand-primary/60 pb-1 transition-colors"
           >
-            Carregar mais...
+            Ver todos os artigos
           </Link>
         </div>
       </div>

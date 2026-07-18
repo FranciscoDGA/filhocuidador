@@ -24,40 +24,41 @@ export default function ArticleCard({
     <Link href={`/artigos/${slug}`}>
       <article className="group cursor-pointer">
         {image && (
-          <div className="relative h-64 w-full mb-6 overflow-hidden rounded-lg bg-gray-100 dark:bg-gray-900">
+          <div className="relative h-56 w-full mb-5 overflow-hidden bg-gray-100">
             <Image
               src={image}
               alt={title}
               fill
-              className="object-cover group-hover:scale-105 transition-transform duration-300"
+              className="object-cover group-hover:scale-[1.02] transition-transform duration-700"
             />
           </div>
         )}
 
         <div className="space-y-3">
           <div className="flex items-center gap-2">
-            <span className="text-xs font-medium text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-950 px-2 py-1 rounded-full">
+            <span className="text-[10px] font-medium text-brand-accent tracking-[0.15em] uppercase">
               {category}
             </span>
-            <span className="text-xs text-gray-500 dark:text-gray-400">
+            <span className="text-[10px] text-brand-secondary/40">
               {readTime} min
             </span>
           </div>
 
-          <h3 className="text-2xl font-bold leading-tight group-hover:opacity-75 transition-opacity">
+          <h3 className="text-lg font-display font-medium leading-snug group-hover:text-brand-secondary transition-colors">
             {title}
           </h3>
 
-          <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
+          <p className="text-sm text-brand-secondary/60 leading-relaxed font-light">
             {excerpt}
           </p>
 
-          <div className="flex items-center justify-between pt-4 border-t border-gray-200 dark:border-gray-800">
-            <time className="text-sm text-gray-500 dark:text-gray-400">
+          <div className="flex items-center justify-between pt-4 border-t border-border-base">
+            <time className="text-xs text-brand-secondary/40">
               {date}
             </time>
-            <span className="text-sm font-medium text-blue-600 dark:text-blue-400 group-hover:translate-x-1 transition-transform">
-              Read →
+            <span className="text-xs font-medium text-brand-primary group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">
+              Ler
+              <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
             </span>
           </div>
         </div>

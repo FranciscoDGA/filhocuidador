@@ -12,22 +12,20 @@ export default function CategorySection({ title, categorySlug, layout = "light" 
   const isDark = layout === "dark";
   
   const allArticles = getAllArticles();
-  
-  // Apenas uma lógica simples para pegar 4 artigos. Em um cenário real, você filtraria por `categorySlug`.
-  // Para evitar que a seção fique vazia enquanto você não tem categorias configuradas, vamos pegar artigos aleatórios ou recentes.
-  const articles = allArticles.slice(4, 8); // Skip the ones used in Featured
+  const articles = allArticles.slice(4, 8);
   
   if (articles.length === 0) return null;
 
   return (
-    <div className={isDark ? "bg-black text-white p-8 md:p-12 -mx-4 sm:-mx-6 lg:-mx-8 rounded-none md:rounded-xl" : ""}>
+    <div className={isDark ? "bg-brand-primary text-white p-8 md:p-12 -mx-4 sm:-mx-6 lg:-mx-8" : ""}>
       <div className="mb-8 flex items-center gap-4">
-        <h2 className={`text-2xl md:text-3xl font-display font-bold ${isDark ? 'text-white' : 'text-gray-900'} tracking-wide`}>
+        <h2 className={`text-sm font-medium tracking-widest uppercase ${isDark ? 'text-white' : 'text-brand-primary'}`}>
           {title}
         </h2>
-        <Link href={`/categorias/${categorySlug}`} className={`text-sm ${isDark ? 'text-gray-300 hover:text-white' : 'text-gray-500 hover:text-black'} flex items-center gap-1 transition`}>
+        <div className="flex-1 h-px bg-border-base"></div>
+        <Link href={`/categorias/${categorySlug}`} className={`text-xs ${isDark ? 'text-white/50 hover:text-white' : 'text-brand-secondary/50 hover:text-brand-primary'} flex items-center gap-1 transition tracking-wider uppercase`}>
           Ver todos
-          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
+          <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
         </Link>
       </div>
 
@@ -41,16 +39,16 @@ export default function CategorySection({ title, categorySlug, layout = "light" 
                     src={article.image} 
                     alt={article.title} 
                     fill 
-                    className="object-cover transition-transform duration-500 group-hover:scale-105" 
+                    className="object-cover transition-transform duration-700 group-hover:scale-[1.02]" 
                   />
                 ) : (
-                  <div className="w-full h-full flex items-center justify-center bg-gray-200 text-gray-400 text-sm">Sem Imagem</div>
+                  <div className="w-full h-full flex items-center justify-center bg-gray-100 text-brand-secondary/30 text-xs">Sem Imagem</div>
                 )}
               </div>
-              <h4 className={`text-lg font-display font-bold leading-tight mb-2 ${isDark ? 'text-white' : 'text-gray-900'}`}>
+              <h4 className={`text-sm font-display font-medium leading-snug mb-2 ${isDark ? 'text-white' : 'text-brand-primary'}`}>
                 {article.title}
               </h4>
-              <p className={`text-sm font-serif line-clamp-2 ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>
+              <p className={`text-xs font-light line-clamp-2 ${isDark ? 'text-white/40' : 'text-brand-secondary/60'}`}>
                 {article.excerpt}
               </p>
             </Link>
