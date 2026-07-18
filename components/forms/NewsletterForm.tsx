@@ -15,8 +15,9 @@ export default function NewsletterForm() {
       await subscribeNewsletter(email);
       setSubmitted(true);
       setEmail("");
-    } catch {
-      alert("Erro ao inscrever. Tente novamente.");
+    } catch (err: unknown) {
+      const msg = err instanceof Error ? err.message : "Erro desconhecido";
+      alert("Erro: " + msg);
     } finally {
       setLoading(false);
     }
