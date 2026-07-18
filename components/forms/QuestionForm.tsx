@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import { submitQuestion } from "@/lib/actions";
 
 export default function QuestionForm() {
   const [formData, setFormData] = useState({ name: "", email: "", question: "", category: "" });
@@ -10,7 +9,13 @@ export default function QuestionForm() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
-      await submitQuestion(formData);
+      const res = await fetch("/api/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ type: "question", data: formData }),
+      });
+      const json = await res.json();
+      if (json.error) throw new Error(json.error);
       setSubmitted(true);
       setFormData({ name: "", email: "", question: "", category: "" });
     } catch {

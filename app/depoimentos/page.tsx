@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { submitTestimonial } from "@/lib/actions";
 
 const testimonials = [
   {
@@ -50,7 +49,13 @@ export default function DepoimentosPage() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
-      await submitTestimonial(formData);
+      const res = await fetch("/api/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ type: "testimonial", data: formData }),
+      });
+      const json = await res.json();
+      if (json.error) throw new Error(json.error);
       setSubmitted(true);
       setFormData({ name: "", city: "", text: "", rating: 5 });
     } catch {

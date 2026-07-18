@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import { submitDiary } from "@/lib/actions";
 
 export default function DiarySubmitForm() {
   const [formData, setFormData] = useState({ name: "", city: "", age: 0, story: "", email: "" });
@@ -10,7 +9,13 @@ export default function DiarySubmitForm() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
-      await submitDiary(formData);
+      const res = await fetch("/api/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ type: "diary", data: formData }),
+      });
+      const json = await res.json();
+      if (json.error) throw new Error(json.error);
       setSubmitted(true);
       setFormData({ name: "", city: "", age: 0, story: "", email: "" });
     } catch {

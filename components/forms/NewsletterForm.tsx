@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import { subscribeNewsletter } from "@/lib/actions";
 
 export default function NewsletterForm() {
   const [email, setEmail] = useState("");
@@ -12,7 +11,13 @@ export default function NewsletterForm() {
     e.preventDefault();
     setLoading(true);
     try {
-      await subscribeNewsletter(email);
+      const res = await fetch("/api/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ type: "newsletter", data: { email } }),
+      });
+      const json = await res.json();
+      if (json.error) throw new Error(json.error);
       setSubmitted(true);
       setEmail("");
     } catch (err: unknown) {
