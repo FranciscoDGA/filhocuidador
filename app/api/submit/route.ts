@@ -22,23 +22,29 @@ export async function POST(request: Request) {
 
       case "question":
         result = await supabase.from("questions").insert({
-          nome: data.name,
-          pergunta: data.question,
+          name: data.name,
+          email: data.email,
+          category: data.category,
+          question: data.question,
         });
         break;
 
       case "testimonial":
         result = await supabase.from("testimonials").insert({
-          nome: data.name,
-          texto: data.text,
+          name: data.name,
+          city: data.city,
+          text: data.text,
+          rating: data.rating,
         });
         break;
 
       case "diary":
         result = await supabase.from("diaries").insert({
-          nome: data.name,
-          história: data.story,
-          "e-mail": data.email,
+          name: data.name,
+          city: data.city,
+          age: data.age,
+          story: data.story,
+          email: data.email,
         });
         break;
 
