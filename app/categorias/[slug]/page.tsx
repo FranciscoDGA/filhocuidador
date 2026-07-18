@@ -8,67 +8,36 @@ const categoryData: Record<string, {
   description: string;
   icon: React.ReactNode;
   longDescription: string;
-  commonSearches: string[];
 }> = {
   "entendendo-a-doenca": {
     name: "Entendendo a Doença",
     description: "Alzheimer, Parkinson, AVC, demência senil — o que esperar de cada fase",
     icon: <Brain className="w-6 h-6" />,
     longDescription: "Entender o que está acontecendo com o seu pai é o primeiro passo para cuidar melhor. Aqui você encontra informações claras sobre Alzheimer, Parkinson, AVC e outras doenças — sem linguagem médica complicada, sempre do ponto de vista de quem cuida.",
-    commonSearches: [
-      "minha mãe não me reconhece mais",
-      "sinais de Alzheimer no idoso",
-      "quanto tempo vive quem tem Alzheimer",
-      "fases da demência senil",
-    ],
   },
   "cuidados-praticos": {
     name: "Cuidados Práticos",
     description: "Alimentação, medicação, segurança em casa, higiene, sono",
     icon: <Home className="w-6 h-6" />,
     longDescription: "O dia a dia do cuidador é cheio de dúvidas práticas: como dar banho com segurança? Como lidar com a incontinência? Como adaptar a casa para evitar quedas? Aqui você encontra orientação clara e aplicável.",
-    commonSearches: [
-      "como dar banho em idoso dependente",
-      "casa segura para idoso com demência",
-      "alimentação para idoso com disfagia",
-      "como lidar com idoso agressivo",
-    ],
   },
   "saude-emocional": {
     name: "Saúde do Cuidador",
     description: "Burnout, culpa, raiva, luto antecipado, como pedir ajuda",
     icon: <HeartPulse className="w-6 h-6" />,
     longDescription: "Cuidar de alguém que está se deteriorando é uma das experiências mais desgastantes que existem. A culpa, a raiva, o esgotamento — tudo isso é normal. Aqui falamos abertamente sobre a saúde emocional de quem cuida.",
-    commonSearches: [
-      "cuidador esgotado o que fazer",
-      "sinto raiva do meu pai com Alzheimer",
-      "culpa de não cuidar bem do pai",
-      "depressão do cuidador",
-    ],
   },
   "juridico": {
     name: "Questões Jurídicas e Financeiras",
     description: "Procuração, interdição, BPC, LOAS, plano de saúde, home care",
     icon: <Scale className="w-6 h-6" />,
     longDescription: "Burocracia é a última coisa que você precisa no meio do caos. Mas direitos são importantes. Aqui explicamos procuração, interdição, benefícios do INSS, cobertura de plano de saúde — tudo em linguagem acessível.",
-    commonSearches: [
-      "como tirar procuração para pai com demência",
-      "BPC para idoso com Alzheimer",
-      "plano de saúde é obrigado a cobrir home care",
-      "interdição de idoso com demência",
-    ],
   },
   "familia": {
     name: "Família e Conflitos",
     description: "Irmãos que não ajudam, cuidador solo, distância geográfica",
     icon: <Users className="w-6 h-6" />,
     longDescription: "Quando um filho cuida e os outros não ajudam, a família inteira sofre. Conflitos entre irmãos, solidão do cuidador, distância geográfica — temas difíceis que ninguém fala, mas que precisam ser conversados.",
-    commonSearches: [
-      "meu irmão não ajuda a cuidar do meu pai",
-      "como dividir custos entre irmãos",
-      "cuidador solo não tem ajuda",
-      "família não entende o cuidador",
-    ],
   },
 };
 
@@ -134,14 +103,14 @@ export default async function CategoryPage({ params }: { params: Promise<{ slug:
       <div className="bg-white border-b border-border-base">
         <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
           {/* Breadcrumb */}
-          <div className="mb-6 flex items-center gap-2 text-xs text-brand-secondary/50">
+          <div className="mb-6 flex items-center gap-2 text-[11px] text-brand-secondary/50">
             <Link href="/" className="hover:text-brand-primary transition">Início</Link>
             <span>/</span>
             <span className="text-brand-primary">{category.name}</span>
           </div>
 
-          <div className="flex items-start gap-4 mb-6">
-            <div className="w-12 h-12 border border-border-base flex items-center justify-center text-brand-secondary">
+          <div className="flex items-start gap-4">
+            <div className="w-12 h-12 border border-border-base flex items-center justify-center text-brand-secondary shrink-0">
               {category.icon}
             </div>
             <div>
@@ -151,23 +120,6 @@ export default async function CategoryPage({ params }: { params: Promise<{ slug:
               <p className="text-base text-brand-secondary max-w-2xl">
                 {category.longDescription}
               </p>
-            </div>
-          </div>
-
-          {/* Buscas Comuns */}
-          <div className="mt-8">
-            <span className="text-[10px] font-medium tracking-[0.15em] uppercase text-brand-secondary/40 mb-3 block">
-              Buscas frequentes
-            </span>
-            <div className="flex flex-wrap gap-2">
-              {category.commonSearches.map((search) => (
-                <span 
-                  key={search}
-                  className="text-xs text-brand-secondary/60 border border-border-base px-3 py-1.5"
-                >
-                  "{search}"
-                </span>
-              ))}
             </div>
           </div>
         </div>
