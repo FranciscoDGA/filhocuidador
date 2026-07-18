@@ -13,11 +13,11 @@ const navItems = [
 ];
 
 const secondaryItems = [
-  { label: "Conselho", href: "/conselho" },
-  { label: "Ferramentas", href: "/ferramentas" },
-  { label: "Comunidade", href: "/comunidade" },
-  { label: "Produtos", href: "/produtos" },
-  { label: "Jurídico", href: "/categorias/juridico" },
+  { label: "Diários", href: "/diarios" },
+  { label: "Pergunte", href: "/pergunte-ao-especialista" },
+  { label: "Kits", href: "/kits" },
+  { label: "Vídeos", href: "/videos" },
+  { label: "Depoimentos", href: "/depoimentos" },
 ];
 
 export default function Header() {
