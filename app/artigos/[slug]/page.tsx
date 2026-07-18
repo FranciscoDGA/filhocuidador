@@ -1,7 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
 import { getArticleBySlug, getAllArticles } from "@/lib/articles";
-import { Facebook, MessageCircle } from "lucide-react";
 
 export function generateStaticParams() {
   const articles = getAllArticles();
@@ -99,7 +98,6 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-6 py-3 bg-[#25D366] text-white rounded-full hover:bg-[#20bd5a] transition shadow-sm font-semibold"
                 >
-                  <MessageCircle size={20} />
                   WhatsApp
                 </a>
                 <a
@@ -108,7 +106,6 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-6 py-3 bg-[#1877F2] text-white rounded-full hover:bg-[#166fe5] transition shadow-sm font-semibold"
                 >
-                  <Facebook size={20} />
                   Facebook
                 </a>
               </div>
