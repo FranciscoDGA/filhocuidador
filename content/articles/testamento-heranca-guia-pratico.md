@@ -6,7 +6,7 @@ date: "30 de julho, 2024"
 author: "Equipe Filho Cuidador"
 excerpt: "Como fazer testamento, direitos hereditários, como distribuir bens e evitar conflitos familiares."
 readTime: 13
-image: "https://images.unsplash.com/photo-1426604966848-d7adac402bff?w=800&q=80"
+image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&q=80"
 seo:
   keywords: ["testamento idoso", "como fazer testamento", "herança filho", "direitos hereditários"]
   metaDescription: "Guia completo sobre testamento e herança. Saiba como fazer, direitos e evitar conflitos."

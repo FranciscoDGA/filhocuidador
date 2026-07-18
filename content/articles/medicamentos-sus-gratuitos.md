@@ -6,7 +6,7 @@ date: "4 de agosto, 2024"
 author: "Equipe Filho Cuidador"
 excerpt: "Lista completa de medicamentos gratuitos no SUS, como solicitar e onde buscar."
 readTime: 9
-image: "https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?w=800&q=80"
+image: "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=800&q=80"
 seo:
   keywords: ["medicamentos SUS gratuitos", "farmácia SUS", "como pedir medicamento SUS", "medicamentos idoso"]
   metaDescription: "Guia completo: medicamentos gratuitos pelo SUS para idosos. Como solicitar e buscar."

@@ -6,7 +6,7 @@ date: "27 de julho, 2024"
 author: "Equipe Filho Cuidador"
 excerpt: "Osteoporose em idoso: fratura, prevenção, tratamento, segurança da casa."
 readTime: 10
-image: "https://images.unsplash.com/photo-1470115636492-6d2b56f9146d?w=800&q=80"
+image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&q=80"
 seo:
   keywords: ["osteoporose idoso", "queda idoso fratura", "prevenção osteoporose", "cálcio vitamina D", "DEXA"]
   metaDescription: "Como prevenir osteoporose e quedas em idoso. Medicação, nutrição, segurança."

@@ -6,7 +6,7 @@ date: "23 de julho, 2024"
 author: "Equipe Filho Cuidador"
 excerpt: "Como cuidar de pai/mãe idoso enquanto cria filhos pequenos. Dicas práticas."
 readTime: 11
-image: "https://images.unsplash.com/photo-1518152006812-edab27b069fa?w=800&q=80"
+image: "https://images.unsplash.com/photo-1476703993599-0035a21b17a9?w=800&q=80"
 seo:
   keywords: ["filhos pequenos cuidador", "avó vovó idoso", "famlia multigeracional", "três gerações"]
   metaDescription: "Estratégias para cuidar de pai/mãe idoso enquanto cria filhos pequenos."

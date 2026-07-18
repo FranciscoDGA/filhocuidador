@@ -6,7 +6,7 @@ date: "13 de agosto, 2024"
 author: "Equipe Filho Cuidador"
 excerpt: "Como manter relacionamentos amorosos, amigos e família enquanto cuida de pai/mãe idoso."
 readTime: 11
-image: "https://images.unsplash.com/photo-1472214103451-9374bd1c798e?w=800&q=80"
+image: "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=800&q=80"
 seo:
   keywords: ["relacionamento cuidador", "casamento cuidador idoso", "namoro enquanto cuida", "família relação"]
   metaDescription: "Estratégias para manter relacionamentos saudáveis enquanto cuida de pai/mãe."
