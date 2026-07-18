@@ -17,14 +17,60 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Filho Cuidador | Você não está sozinho nessa",
-  description: "Portal de informação, acolhimento e orientação prática para filhos que cuidam de pais idosos com doenças neurodegenerativas e crônicas.",
-  keywords: ["cuidador", "idoso", "Alzheimer", "Parkinson", "demência", "cuidados"],
+  title: {
+    default: "Filho Cuidador | O portal para quem cuida de pais com demência",
+    template: "%s | Filho Cuidador",
+  },
+  description: "O único portal brasileiro que fala com filhos que cuidam de pais com Alzheimer, Parkinson, AVC e outras demências. Informação, acolhimento e orientação prática.",
+  keywords: [
+    "cuidador de idoso",
+    "filho cuidador",
+    "Alzheimer",
+    "Parkinson",
+    "demência",
+    "cuidados com idosos",
+    "burnout cuidador",
+    "procuração idoso",
+    "BPC idoso",
+    "como cuidar de pai com Alzheimer",
+  ],
+  authors: [{ name: "Filho Cuidador" }],
+  creator: "Filho Cuidador",
   openGraph: {
-    title: "Filho Cuidador",
-    description: "Você não está sozinho nessa",
     type: "website",
+    locale: "pt_BR",
     url: "https://filhocuidador.com.br",
+    siteName: "Filho Cuidador",
+    title: "Filho Cuidador | O portal para quem cuida de pais com demência",
+    description: "Informação, acolhimento e orientação prática para filhos que cuidam de pais com Alzheimer, Parkinson, AVC e outras doenças.",
+    images: [
+      {
+        url: "https://filhocuidador.com.br/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Filho Cuidador - Portal de acolhimento para cuidadores",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Filho Cuidador | O portal para quem cuida de pais com demência",
+    description: "Informação, acolhimento e orientação prática para filhos que cuidam de pais com Alzheimer, Parkinson, AVC e outras doenças.",
+    images: ["https://filhocuidador.com.br/og-image.jpg"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  alternates: {
+    canonical: "https://filhocuidador.com.br",
   },
 };
 
@@ -38,7 +84,11 @@ export default function RootLayout({
       lang="pt-BR"
       className={`${playfair.variable} ${inter.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col bg-bg-base text-text-base font-body selection:bg-brand-secondary selection:text-white">
+      <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="canonical" href="https://filhocuidador.com.br" />
+      </head>
+      <body className="min-h-full flex flex-col bg-bg-base text-text-base font-body selection:bg-brand-primary selection:text-white">
         <Header />
         <div className="flex-grow">
           {children}

@@ -1,88 +1,112 @@
 import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Sobre o Filho Cuidador",
+  description: "Conheça a missão do Filho Cuidador: o único portal brasileiro dedicado a filhos que cuidam de pais com demência, Alzheimer e outras doenças.",
+  openGraph: {
+    title: "Sobre o Filho Cuidador",
+    description: "O único portal brasileiro que fala com quem cuida, não sobre o idoso.",
+  },
+};
 
 export default function SobrePage() {
   return (
-    <main className="bg-cream min-h-screen py-16 sm:py-20 lg:py-24">
+    <main className="bg-bg-base min-h-screen py-12 lg:py-16">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Breadcrumb */}
-        <div className="mb-8 flex items-center gap-2 text-sm text-text-dark/70">
+        <div className="mb-8 flex items-center gap-2 text-[11px] text-brand-secondary/50">
           <Link href="/" className="hover:text-brand-primary transition">
             Início
           </Link>
           <span>/</span>
-          <span className="text-text-dark font-medium">Sobre</span>
+          <span className="text-brand-primary">Sobre</span>
         </div>
 
         {/* Content */}
-        <div className="prose prose-sm max-w-none">
-          <h1 className="font-display text-4xl sm:text-5xl font-bold text-text-dark mb-8 leading-tight">
+        <article>
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-display font-medium text-brand-primary mb-8 leading-tight">
             Sobre o Filho Cuidador
           </h1>
 
-          <p className="text-lg text-text-dark/80 leading-relaxed mb-6">
-            O <strong>Filho Cuidador</strong> é um portal dedicado a filhos adultos que cuidam de pais idosos com doenças neurodegenerativas e crônicas. Somos um espaço de informação, acolhimento e orientação prática para quem vive essa realidade.
-          </p>
+          <div className="space-y-6 text-base text-brand-secondary/80 leading-[1.8]">
+            <p>
+              O <strong className="text-brand-primary">Filho Cuidador</strong> é um portal dedicado a filhos adultos que cuidam de pais idosos com doenças neurodegenerativas e crônicas. Somos um espaço de informação, acolhimento e orientação prática para quem vive essa realidade.
+            </p>
 
-          <h2 className="font-display text-2xl font-bold text-text-dark mt-8 mb-4">
-            Nossa Missão
-          </h2>
+            <h2 className="text-xl font-display font-medium text-brand-primary pt-4">
+              Por que existe este site?
+            </h2>
 
-          <p className="text-text-dark/80 leading-relaxed mb-6">
-            Reconhecemos que cuidar de um pai idoso é um privilégio, mas também é exaustivo. Muitas vezes, você se sente sozinho nessa jornada—sem saber por onde começar, sem alguém que entenda de verdade o que você está passando.
-          </p>
+            <p>
+              No Brasil, são mais de 11 milhões de cuidadores informais. A maioria são mulheres entre 35 e 55 anos que assumiram a responsabilidade de cuidar de um pai ou mãe sem preparo, sem apoio e sem saber por onde começar.
+            </p>
 
-          <p className="text-text-dark/80 leading-relaxed mb-6">
-            Nossa missão é oferecer:
-          </p>
+            <p>
+              Quando buscam ajuda no Google, encontram conteúdo frio, genérico ou acadêmico. Nada que fale <em>com</em> eles — sempre fala <em>sobre</em> o idoso.
+            </p>
 
-          <ul className="list-disc list-inside text-text-dark/80 space-y-2 mb-6">
-            <li><strong>Informação confiável:</strong> Sobre doenças, cuidados, direitos e benefícios</li>
-            <li><strong>Acolhimento emocional:</strong> Validando sua experiência e reconhecendo seus sentimentos</li>
-            <li><strong>Orientação prática:</strong> Dicas do dia a dia que realmente funcionam</li>
-            <li><strong>Comunidade:</strong> Saber que você não está sozinho nissa</li>
-          </ul>
+            <p>
+              O Filho Cuidador nasceu para preencher esse vazio. Todo conteúdo é escrito do ponto de vista de quem cuida, com linguagem acessível, empatia real e informação confiável.
+            </p>
 
-          <h2 className="font-display text-2xl font-bold text-text-dark mt-8 mb-4">
-            Quem Somos
-          </h2>
+            <h2 className="text-xl font-display font-medium text-brand-primary pt-4">
+              Nossa Missão
+            </h2>
 
-          <p className="text-text-dark/80 leading-relaxed mb-6">
-            A equipe Filho Cuidador é composta por profissionais de saúde, psicólogos, assistentes sociais e cuidadores com experiência prática. Cada artigo é escrito com cuidado, rigor e compaixão.
-          </p>
+            <p>
+              Oferecer informação confiável, acolhimento emocional e orientação prática para filhos que cuidam de pais com demência e outras doenças. Para que ninguém precise passar por isso sozinho.
+            </p>
 
-          <h2 className="font-display text-2xl font-bold text-text-dark mt-8 mb-4">
-            Política de Conteúdo
-          </h2>
+            <ul className="space-y-2 pl-4">
+              <li className="flex items-start gap-2">
+                <span className="text-brand-accent mt-1">•</span>
+                <span><strong className="text-brand-primary">Informação confiável:</strong> Sobre doenças, cuidados, direitos e benefícios</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-brand-accent mt-1">•</span>
+                <span><strong className="text-brand-primary">Acolhimento emocional:</strong> Validando sua experiência e reconhecendo seus sentimentos</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-brand-accent mt-1">•</span>
+                <span><strong className="text-brand-primary">Orientação prática:</strong> Dicas do dia a dia que realmente funcionam</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-brand-accent mt-1">•</span>
+                <span><strong className="text-brand-primary">Comunidade:</strong> Saber que você não está sozinho nessa</span>
+              </li>
+            </ul>
 
-          <p className="text-text-dark/80 leading-relaxed mb-6">
-            Todos os nossos artigos são baseados em:
-          </p>
+            <h2 className="text-xl font-display font-medium text-brand-primary pt-4">
+              Política de Conteúdo
+            </h2>
 
-          <ul className="list-disc list-inside text-text-dark/80 space-y-2 mb-6">
-            <li>Pesquisa científica e evidência</li>
-            <li>Diretrizes de órgãos públicos (INSS, Ministério da Saúde)</li>
-            <li>Experiência prática de cuidadores</li>
-            <li>Consulta com profissionais especializados</li>
-          </ul>
+            <p>
+              Todos os nossos artigos são baseados em pesquisa científica, diretrizes de órgãos públicos (INSS, Ministério da Saúde), experiência prática de cuidadores e consulta com profissionais especializados.
+            </p>
 
-          <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-6 my-8">
-            <p className="text-sm text-yellow-900">
-              <strong>⚠️ Aviso Importante:</strong> Nenhum conteúdo deste portal substitui a consulta com um profissional de saúde. Se você ou seu pai precisam de atendimento médico, busque um profissional qualificado.
+            <div className="bg-brand-primary/[0.03] border border-border-base p-5 my-8">
+              <p className="text-xs text-brand-secondary/70 leading-relaxed">
+                <strong className="text-brand-primary">Aviso importante:</strong> Nenhum conteúdo deste portal substitui a consulta com um profissional de saúde ou jurídico. Se você ou seu familiar precisam de atendimento, busque um profissional qualificado.
+              </p>
+            </div>
+
+            <h2 className="text-xl font-display font-medium text-brand-primary pt-4">
+              Contato
+            </h2>
+
+            <p>
+              Tem dúvidas, sugestões ou gostaria de colaborar? Gostaríamos de ouvir você.
+            </p>
+
+            <p>
+              <strong className="text-brand-primary">Email:</strong>{" "}
+              <a href="mailto:contato@filhocuidador.com.br" className="text-brand-primary hover:text-brand-accent transition underline underline-offset-2">
+                contato@filhocuidador.com.br
+              </a>
             </p>
           </div>
-
-          <h2 className="font-display text-2xl font-bold text-text-dark mt-8 mb-4">
-            Contato
-          </h2>
-
-          <p className="text-text-dark/80 leading-relaxed mb-6">
-            Tem dúvidas ou sugestões? Gostaríamos de ouvir você.
-          </p>
-
-          <p>
-            <strong>Email:</strong> <a href="mailto:esesdec@gmail.com" className="text-brand-primary hover:text-brand-accent transition">esesdec@gmail.com</a>
-          </p>
-        </div>
+        </article>
       </div>
     </main>
   );
