@@ -1,6 +1,11 @@
 "use server";
 
-import { supabaseAdmin } from "@/lib/supabase/server";
+import { createClient } from "@supabase/supabase-js";
+
+const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || "";
+const supabaseKey = process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || "";
+
+const supabase = createClient(supabaseUrl, supabaseKey);
 
 export async function submitQuestion(data: {
   name: string;
@@ -8,7 +13,7 @@ export async function submitQuestion(data: {
   category: string;
   question: string;
 }) {
-  const { error } = await supabaseAdmin.from("questions").insert({
+  const { error } = await supabase.from("questions").insert({
     nome: data.name,
     "e-mail": data.email,
     categoria: data.category,
@@ -26,7 +31,7 @@ export async function submitTestimonial(data: {
   text: string;
   rating: number;
 }) {
-  const { error } = await supabaseAdmin.from("testimonials").insert({
+  const { error } = await supabase.from("testimonials").insert({
     nome: data.name,
     cidade: data.city,
     texto: data.text,
@@ -45,7 +50,7 @@ export async function submitDiary(data: {
   story: string;
   email: string;
 }) {
-  const { error } = await supabaseAdmin.from("diaries").insert({
+  const { error } = await supabase.from("diaries").insert({
     nome: data.name,
     cidade: data.city,
     idade: data.age,
@@ -59,7 +64,7 @@ export async function submitDiary(data: {
 }
 
 export async function subscribeNewsletter(email: string) {
-  const { error } = await supabaseAdmin.from("newsletter").insert({
+  const { error } = await supabase.from("newsletter").insert({
     "e-mail": email,
     ativo: true,
   });
@@ -75,7 +80,7 @@ export async function subscribeNewsletter(email: string) {
 }
 
 export async function getApprovedTestimonials() {
-  const { data, error } = await supabaseAdmin
+  const { data, error } = await supabase
     .from("testimonials")
     .select("*")
     .eq("aprovado", true)
@@ -86,7 +91,7 @@ export async function getApprovedTestimonials() {
 }
 
 export async function getPublishedQuestions() {
-  const { data, error } = await supabaseAdmin
+  const { data, error } = await supabase
     .from("questions")
     .select("*")
     .eq("status", "published")
