@@ -18,6 +18,8 @@ Seu pai/mãe tem DPOC (era fumante).
 
 **Tosse constante, falta de ar, cansaço.**
 
+Veja também nosso guia sobre [gerenciamento de medicamentos](/artigos/gerenciamento-medicamentos-idoso) para organizar inaladores e medicações.
+
 **DPOC = Pulmões danificados permanentemente**
 
 Não tem cura, mas **controle = melhor qualidade vida.**
@@ -104,6 +106,8 @@ Não tem cura, mas **controle = melhor qualidade vida.**
 
 **Importância:** Infecção respiratória = crise DPOC
 
+Saiba mais sobre [prevenção de quedas](/artigos/prevencao-quedas-casa-guia-pratico) para manter o idoso seguro em casa.
+
 ### Evitar Poluição
 
 - Sem fumaça (ativa)
@@ -152,6 +156,8 @@ Não tem cura, mas **controle = melhor qualidade vida.**
 **Mal usado = não funciona**
 
 Peça fisioterapeuta ou farmacêutico DEMONSTRAR.
+
+Leia também sobre [mobilidade e posicionamento](/artigos/mobilidade-posicionamento-idoso) para ajudar o idoso a se locomover com segurança.
 
 ## Tosse e Muco
 

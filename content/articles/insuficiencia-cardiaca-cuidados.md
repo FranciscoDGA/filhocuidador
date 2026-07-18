@@ -18,6 +18,8 @@ Seu pai/mãe foi diagnosticado com **insuficiência cardíaca**.
 
 **Significa:** Coração não bombeia sangue eficientemente
 
+Veja também nosso guia sobre [gerenciamento de medicamentos](/artigos/gerenciamento-medicamentos-idoso) para organizar as medicações cardíacas.
+
 **Resultado:** Sangue se acumula (pulmões = falta de ar; pernas = inchaço)
 
 **Prognóstico:** Grave, mas controlável
@@ -144,6 +146,8 @@ Ganho > 2kg = acúmulo líquido = procure médico
 
 **Paradoxo:** Coração fraco = repouso, MAS exercício leve ajuda
 
+Leia também sobre [diabetes em idosos](/artigos/diabetes-idoso-cuidados) para entender doenças que podem coexistir.
+
 ### Ideal
 
 - Caminhada leve 10-15 min/dia
@@ -172,6 +176,8 @@ Ganho > 2kg = acúmulo líquido = procure médico
 
 **P: Quanto tempo vive com insuficiência cardíaca?**
 R: Varia muito. Bem controlada: anos. Grave: meses. Depende dele e medicação.
+
+Leia também sobre [hipertensão em idosos](/artigos/hipertensao-pressao-alta-idoso) para entender pressão alta que pode causar insuficiência cardíaca.
 
 **P: Precisa de marcapasso/transplante?**
 R: Depende gravidade. Médico cardiologista decide. Alguns precisam, outros não.

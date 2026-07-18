@@ -75,6 +75,8 @@ Meses/anos de sono ruim = corpo perde capacidade de "adormecer bem".
 
 **Não é dramático. É real.**
 
+Leia mais sobre [sinais de burnout em cuidadores](/artigos/burnout-cuidador-sinais-alerta) para identificar quando o estresse está afetando sua saúde.
+
 ## Estratégia 1: Câmera/Baby Monitor
 
 **Solução para hipervigilância.**
@@ -263,6 +265,8 @@ Se pai acordar muito por demência:
 - Antipsicótico leve (se necessário)
 
 **Resultado:** Pai dorme melhor = você dorme melhor
+
+Veja também nosso artigo sobre [noites seguras para o idoso](/artigos/noites-seguras-idoso-sono) para melhorar a qualidade do sono dele.
 
 ## Estratégia 7: O Que Evitar
 

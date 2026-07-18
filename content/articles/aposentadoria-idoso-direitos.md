@@ -29,6 +29,8 @@ A aposentadoria no Brasil é gerenciada pelo **INSS** (Instituto Nacional do Seg
 - Mulheres: 62 anos (contribuição mínima 15 anos)
 - Valor: em torno de 70-90% do último salário
 
+Saiba mais sobre [BPC e benefício de prestação continuada](/artigos/bpc-loas-guia-completo) para idosos com renda baixa.
+
 **Aposentadoria por Tempo de Contribuição**
 - Homens: 35 anos de contribuição
 - Mulheres: 30 anos de contribuição
@@ -138,6 +140,8 @@ Seu pai/mãe pode ter direito a:
 - **Renda por incapacidade temporária**
 - **Auxílio-acidente** (se teve acidente)
 
+Leia também sobre [pensão por morte e seus direitos](/artigos/pensao-morte-direitos-valores) para entender os valores e requisitos.
+
 ## Quando Procurar Ajuda Profissional?
 
 👨‍⚖️ **Consulte um advogado previdenciário se:**
@@ -154,6 +158,8 @@ Seu pai/mãe pode ter direito a:
 
 **P: Meu pai pode trabalhar recebendo aposentadoria?**
 R: Sim, se for autônomo ou MEI. Mas se for CLT, é interrompida. Consulte o INSS.
+
+Leia também sobre [direitos do idoso pelo Estatuto](/artigos/direitos-idoso-estatuto-lei) para conhecer todos os benefícios disponíveis.
 
 **P: Quanto tempo leva para receber a primeira parcela?**
 R: Geralmente 30-45 dias após aprovação.

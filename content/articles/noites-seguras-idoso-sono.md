@@ -188,6 +188,8 @@ Se sundowning piora:
 - Troca antes de dormir
 - Troca ao acordar (se acordar)
 
+Leia também sobre [insônia do cuidador](/artigos/insonia-cuidador-sono-qualidade) para recuperar sono de qualidade.
+
 ### Protetor de Colchão
 
 - [ ] Lençol impermeável embaixo
@@ -244,6 +246,8 @@ Se noite:
 
 **P: Devo deixar ele amarrado na cama?**
 R: Nunca. Violência e ilegal. Use protetor lateral, camera, medicação se necessário, mas não amarre.
+
+Saiba mais sobre [adaptações da casa para segurança](/artigos/adaptacoes-casa-idoso-seguranca) para manter seu pai seguro.
 
 **P: Cama motorizada é necessária?**
 R: Não. Cara. Protetor lateral + camera = suficiente maioria dos casos.

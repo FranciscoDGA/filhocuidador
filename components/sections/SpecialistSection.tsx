@@ -44,7 +44,7 @@ export default function SpecialistSection() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
           {faqs.map((faq, i) => (
-            <div key={i} className="bg-white border border-border-base p-6">
+            <div key={i} className="bg-white border border-border-base p-6 rounded-[5px]">
               <span className="text-[10px] font-medium tracking-wider uppercase text-brand-accent mb-3 block">
                 {faq.category}
               </span>

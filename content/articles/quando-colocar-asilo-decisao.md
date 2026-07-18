@@ -59,6 +59,8 @@ Você pensa: "Sou péssima filha colocando ele em asilo"
 - Negligenciando filhos/trabalho
 - Psicose/colapso emocional
 
+Leia também sobre [direitos do idoso pelo Estatuto](/artigos/direitos-idoso-estatuto-lei) para conhecer todos os benefícios disponíveis.
+
 **Asilo = você continua viva e funcional**
 
 ### Critério 4: Problemas Médicos Complexos
@@ -101,6 +103,8 @@ Você pensa: "Sou péssima filha colocando ele em asilo"
 
 ✅ Mantém em casa: "Sou egoísta, deixo ele sofrer"
 ✅ Coloca em asilo: "Sou péssima filha, abandonei"
+
+Leia também sobre [interdição vs curatela](/artigos/interdicao-vs-curatela-qual-usar) para entender quando seu pai precisa de representação legal.
 
 **AMBOS = ilógico, mas real**
 
@@ -214,6 +218,8 @@ Pai se sente abandonado? Normal. Continue visitando.
 
 **P: Vou me sentir culpada para sempre?**
 R: Talvez. Terapia ajuda a processar. Com tempo, culpa diminui (nunca 0%).
+
+Leia também sobre [procuração de idoso](/artigos/procuracao-idoso-modelo-passo-passo) para entender como representar legalmente seu pai.
 
 **P: Posso trazer ele de volta se não funciona?**
 R: Sim. Experimentação é válida.

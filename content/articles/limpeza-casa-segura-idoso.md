@@ -43,6 +43,8 @@ Limpe:
 - [ ] Assento (foco = urina)
 - [ ] Piso (pode ter xixi/cocô)
 
+Saiba mais sobre [higiene e banho seguro do idoso](/artigos/higiene-banho-seguro-idoso) para técnicas práticas de cuidado.
+
 **Semanal:**
 - [ ] Espelho
 - [ ] Azulejo
@@ -93,6 +95,8 @@ Limpe:
 - [ ] Passar pano úmido (pó profundo)
 
 **Foco:** Queda por escorregão
+
+Saiba mais sobre [prevenção de quedas](/artigos/prevencao-quedas-casa-guia-pratico) para um guia completo.
 
 ## Produtos Seguros para Idoso
 
@@ -234,6 +238,8 @@ Limpe:
 - Não misture cloro com amoníaco (Sidol, Veja)
 - Não deixa produto tóxico acessível a idoso
 - Não use muito perfume (cheiro forte = tosse)
+
+Leia mais sobre [adaptações da casa para segurança](/artigos/adaptacoes-casa-idoso-seguranca) para manter seu pai seguro.
 
 ### ✅ FAÇA
 

@@ -65,7 +65,7 @@ export default function KitsSection() {
             <Link
               key={kit.slug}
               href={`/kits/${kit.slug}`}
-              className="group bg-white border border-border-base p-5 hover:border-brand-accent/40 transition-colors"
+              className="group bg-white border border-border-base p-5 rounded-[5px] hover:border-brand-accent/40 transition-colors"
             >
               <div className="flex items-center justify-between mb-3">
                 <span className="text-[10px] font-medium tracking-wider uppercase text-brand-accent">

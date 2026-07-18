@@ -69,6 +69,8 @@ Culpa emocional te prende.
 
 **Isolamento + cuidado = bomba-relógio**
 
+Leia mais sobre [sinais de burnout em cuidadores](/artigos/burnout-cuidador-sinais-alerta) para identificar quando o estresse está afetando sua saúde.
+
 ## Estratégia 1: Tipo de Socialização
 
 Não precisa ser "sair à noite". Existem várias formas.
@@ -231,6 +233,8 @@ Manter vivo **uma coisa só sua:**
 
 **Por quê:** Mantém sua identidade viva. Não é tudo sobre pai.
 
+Saiba mais sobre [autocuidado para cuidadores](/artigos/autocuidado-self-care-cuidador) e como investir em si mesmo sem culpa.
+
 ### Aula/Curso Online
 
 **Grátis:**
@@ -244,6 +248,8 @@ Manter vivo **uma coisa só sua:**
 
 **P: Pai fica agressivo quando saio.**
 R: Agressão = manipulação (consciente ou não). Mantenha limite. Ele vai se acostumar.
+
+Leia também sobre [depressão em cuidadores](/artigos/depressao-cuidador-sinais-ajuda) para entender quando o isolamento está afetando sua saúde mental.
 
 **P: Sinto culpa de estar feliz enquanto ele sofre.**
 R: Culpa = ilusão. Sua felicidade não piora o dele. Na verdade, cuidador feliz = cuida melhor.

@@ -18,6 +18,8 @@ Seu pai/mãe não consegue controlar xixi ou cocô.
 
 **Realidade desconfortável?** Sim.
 
+Veja também nosso guia sobre [higiene do banho seguro](/artigos/higiene-banho-seguro-idoso) para estratégias de limpeza e prevenção de infecções.
+
 **Vergonha dele?** Enorme.
 
 **Sua responsabilidade?** Lidar com dignidade.
@@ -100,6 +102,8 @@ Ajuda médico entender padrão:
 - [ ] Hora medicação
 
 **Mantenha por 3-5 dias. Leve ao médico.**
+
+Veja também sobre [mobilidade e posicionamento](/artigos/mobilidade-posicionamento-idoso) para ajudar o idoso a se locomover até o banheiro.
 
 ## Estratégia 2: Tipo de Fralda
 
@@ -245,6 +249,8 @@ Se suspeita UTI:
 **Procure médico se:** > 1 semana sem evacuar
 
 ## Estratégia 6: Lida Emocional
+
+Leia também sobre [gerenciamento de medicamentos](/artigos/gerenciamento-medicamentos-idoso) para organizar medicações que podem causar incontinência.
 
 ### Vergonha Dele
 

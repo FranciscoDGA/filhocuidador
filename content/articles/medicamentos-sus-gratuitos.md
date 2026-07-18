@@ -122,10 +122,14 @@ Se seu pai toma **medicamentos controlados** (psicofármacos, analgésicos forte
 - [ ] Farmácia SUS dispensa gratuitamente
 - [ ] Renovação mensal (não pode repetir na receita)
 
+Leia também sobre [gerenciamento de medicamentos](/artigos/gerenciamento-medicamentos-idoso) para organização de medicações.
+
 ## Dúvidas Frequentes
 
 **P: Medicamento no SUS é de qualidade inferior?**
 R: Não. Mesma qualidade, preço só não existe.
+
+Leia também sobre [BPC/LOAS para idosos](/artigos/bpc-loas-guia-completo) para benefícios financeiros disponíveis.
 
 **P: Demora quanto para conseguir?**
 R: Imediato na farmácia. Às vezes produto "falta" e espera alguns dias.
@@ -139,3 +143,5 @@ R: Peça "similar" ou genérico ao médico. Ou pague particular.
 ---
 
 **💡 Dica:** Pergunte ao médico: "Este medicamento tem no SUS?" Economize muito.
+
+Leia também sobre [direitos do idoso](/artigos/direitos-idoso-estatuto-lei) para garantir direitos legais.

@@ -34,6 +34,8 @@ seo:
 - **Validade**: 1-2 anos
 - **O que precisa**: Cópia da procuração
 
+Saiba mais sobre [direitos do idoso pelo Estatuto](/artigos/direitos-idoso-estatuto-lei) para conhecer todos os benefícios disponíveis.
+
 ### 2. **Procuração Pública** (mais formal)
 - Para vender imóvel
 - Para contratos grandes
@@ -61,7 +63,7 @@ Antes de fazer a procuração, certifique-se:
 - [ ] Sabe qual é o seu CPF (para colocar na procuração)
 
 **Se seu pai está com Alzheimer avançado ou não consegue assinar?**
-→ Você precisa de **Curatela**, não procuração. Leia nosso artigo sobre "Interdição vs Curatela".
+→ Você precisa de **Curatela**, não procuração. Leia nosso artigo sobre [interdição vs curatela](/artigos/interdicao-vs-curatela-qual-usar).
 
 ---
 
@@ -220,6 +222,8 @@ Testemunhas (opcional, mas recomendado):
 
 **P: Quanto tempo vale?**
 R: Procuração pública (cartório) = indeterminada. Comum = 1-2 anos (você renova se precisar).
+
+Leia também sobre [BPC e benefício de prestação continuada](/artigos/bpc-loas-guia-completo) para entender como solicitar benefícios.
 
 **P: Posso fazer procuração se meu pai está acamado?**
 R: Sim, mas um dos notários precisa ir até a casa (pode custar mais). Ou você leva seu pai no cartório mesmo acamado.

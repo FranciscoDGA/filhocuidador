@@ -186,6 +186,8 @@ Casamento vai sofrer ENQUANTO pai/mãe vive com você.
 - Infidelidade suspeita
 - Abusos (físico/emocional)
 
+Leia também sobre [dinâmica familiar e mudança de papéis](/artigos/dinamica-familiar-mudanca-papeis) para entender como a relação se transforma.
+
 ### Procure Ajuda
 
 **Terapia de Casal:**
@@ -209,6 +211,8 @@ Você tem escolha:
 
 **P: Marido quer que coloque mãe em asilo.**
 R: Conversem honestamente. Se viável (financeiro, emocional), talvez seja opção. Se não, ele deve aceitar.
+
+Leia também sobre [comunicação com irmãos que não ajudam](/artigos/comunicacao-irmaos-nao-ajudam) para estratégias de comunicação familiar.
 
 **P: Já não tenho vontade sexual.**
 R: Normal com cuidado intenso. Procure médico (pode ser depressão, hormônios). Terapia ajuda.

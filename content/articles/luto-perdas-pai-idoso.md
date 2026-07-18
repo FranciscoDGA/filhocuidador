@@ -110,6 +110,8 @@ Se você está aqui:
 
 Parecem iguais, mas diferem:
 
+Leia também sobre [depressão do cuidador](/artigos/depressao-cuidador-sinais-ajuda) para identificar sinais de depressão.
+
 ### Luto Antecipado
 
 - Tristeza **em resposta** a perdas reais
@@ -185,6 +187,8 @@ Se pai não reconhece mais: Que tipo de relacionamento podem ter **agora**?
 - Grupos religiosos (se aplicável)
 - Grupos online
 
+Leia também sobre [guia prático do cuidador de Alzheimer](/artigos/alzheimer-guia-pratico-cuidador) para estratégias específicas de cuidado.
+
 Conversar com quem ENTENDE diminui isolamento.
 
 ### Passo 6: Terapia
@@ -221,6 +225,8 @@ R: Não. Doença progride. Você não causa. Culpa é ilusão (ainda que doloros
 3. **Registre** memórias (fotos, vídeos, histórias)
 4. **Procure** grupos de apoio
 5. **Marque** terapia (essencial)
+
+Leia também sobre [culpa e perdão na família](/artigos/culpa-perdao-familia) para lidar com sentimentos difíceis.
 
 ---
 

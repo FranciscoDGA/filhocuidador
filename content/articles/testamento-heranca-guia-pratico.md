@@ -54,6 +54,8 @@ O código civil decide quem herda (ordem de prioridade):
 
 Feito em **Cartório de Notas** com presença de tabelião e testemunhas.
 
+Leia também sobre [procuração de idoso](/artigos/procuracao-idoso-modelo-passo-passo) para entender como representar legalmente seu pai.
+
 **Vantagens:**
 - ✅ Mais seguro e válido
 - ✅ Não pode ser adulterado
@@ -176,6 +178,8 @@ No cartório:
 **Legítima** = Parte que Lei garante aos filhos (mínimo 50%)
 - Filhos sempre recebem ao menos 50% dos bens
 
+Leia também sobre [interdição vs curatela](/artigos/interdicao-vs-curatela-qual-usar) para entender quando seu pai precisa de representação legal.
+
 **Testamentária** = Parte que pode distribuir livremente (até 50%)
 - Pode deixar para quem quiser (amigos, ONGs)
 
@@ -232,6 +236,8 @@ Testamento pode ser **revogado** ou **alterado**:
 
 **P: Testamento pode ser contestado?**
 R: Sim, se provado falsificação ou vício de consentimento. Por isso use cartório!
+
+Leia também sobre [direitos do idoso pelo Estatuto](/artigos/direitos-idoso-estatuto-lei) para conhecer todos os benefícios disponíveis.
 
 **P: Devo dizer aos filhos sobre testamento?**
 R: Recomendado. Evita surpresa e conflito.

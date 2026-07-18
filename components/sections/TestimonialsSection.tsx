@@ -44,7 +44,7 @@ export default function TestimonialsSection() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {testimonials.map((t, i) => (
-            <div key={i} className="bg-white border border-border-base p-6">
+            <div key={i} className="bg-white border border-border-base p-6 rounded-[5px]">
               <div className="flex items-center gap-1 mb-3">
                 {Array.from({ length: t.rating }).map((_, j) => (
                   <svg key={j} className="w-4 h-4 text-brand-accent" fill="currentColor" viewBox="0 0 24 24">

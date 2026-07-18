@@ -79,6 +79,8 @@ Você tem 5+ desses últimas 2+ semanas? Procure médico/psicólogo.
 
 Cuidar 24/7 dispara hormônio de estresse (**cortisol**). Cérebro fica em "modo de sobrevivência".
 
+Leia mais sobre [sinais de burnout em cuidadores](/artigos/burnout-cuidador-sinais-alerta) para entender quando o estresse se torna perigoso.
+
 ### Razão 2: Perda de Identidade
 
 Você **era** profissional, amiga, esposa. Agora é "cuidadora". A mudança identitária duele.
@@ -90,6 +92,8 @@ Ver pai/mãe mudando (esquecimento, mudança de personalidade) é **luto vivo**.
 ### Razão 4: Isolamento
 
 Sem tempo para amigos, lazer, romance. Isolamento *causa* depressão.
+
+Saiba como [combater o isolamento social](/artigos/isolamento-socializar-cuidador) enquanto cuida do seu pai.
 
 ### Razão 5: Impotência
 
@@ -216,6 +220,8 @@ Além profissional, **você** deve:
 - [ ] Danos físicos a si mesma
 - [ ] Perdeu contato com realidade (alucinações)
 - [ ] Não consegue sair da cama por 24h
+
+Leia também nosso artigo sobre [ansiedade do cuidador e técnicas de alívio](/artigos/ansiedade-cuidador-tecnicas-alivio) para manejar melhor seus sintomas.
 
 **Se está assim agora:**
 - **CVV (Centro de Valorização da Vida): 188** (24/7, gratuito)

@@ -73,6 +73,8 @@ Gasta R$ 5.000 com saúde pai
 - Desconta R$ 2.275/ano por dependente (2024)
 - Automático (não precisa comprovar gasto)
 
+Saiba mais sobre [direitos do idoso pelo Estatuto](/artigos/direitos-idoso-estatuto-lei) para conhecer todos os benefícios disponíveis.
+
 **Como qualificar:**
 - Pai/mãe não trabalha / ganha < R$ 28.559/ano
 - Você financia > 50% despesas
@@ -97,6 +99,8 @@ Gasta R$ 5.000 com saúde pai
 **Você pode descontar:**
 - Alguns estados permitem (varia por Lei Estadual)
 - Procure especialista em imposto
+
+Leia também sobre [aposentadoria do idoso](/artigos/aposentadoria-idoso-direitos) para entender os diferentes tipos de benefício.
 
 **Complicado:** Melhor consultar contador
 
@@ -240,6 +244,8 @@ Se você:
 
 **P: Preciso comprovar gasto logo?**
 R: Não imediato. Mas se Receita pedir (até 5 anos depois), precisa documentação. Guarde sempre.
+
+Leia também sobre [testamento e herança](/artigos/testamento-heranca-guia-pratico) para proteger o patrimônio da família.
 
 **P: Posso descontar cuidador profissional?**
 R: Varia por estado. Consulte contador. Geralmente não.

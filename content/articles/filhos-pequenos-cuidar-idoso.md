@@ -163,6 +163,8 @@ Pai/Mãe
 - Filhos têm atenção sua
 - Seu esgotamento reduz
 
+Leia também sobre [dinâmica familiar e mudança de papéis](/artigos/dinamica-familiar-mudanca-papeis) para entender como a relação se transforma.
+
 **Sim é caro. Mas sua saúde vale.**
 
 ## Estratégia 5: Comunicação com Filhos
@@ -210,12 +212,16 @@ Crianças PRECISAM:
 - Expressar tristeza
 - Lembrar avó
 
+Leia também sobre [casamento e cuidado de pai/mãe](/artigos/casamento-relacionamento-cuidando-pai) para manter seu relacionamento saudável.
+
 **Evitar:** Esconder, minimizar, forçar esquecimento
 
 ## Dúvidas Frequentes
 
 **P: Devo deixar filhos sair da escola pra cuidar do avó?**
 R: Não. Educação é prioridade. Cuidador profissional se necessário.
+
+Leia também sobre [comunicação com irmãos que não ajudam](/artigos/comunicacao-irmaos-nao-ajudam) para estratégias de comunicação familiar.
 
 **P: Filhos ressentem tempo que dou ao avó?**
 R: Possivelmente. Comunique, valide sentimento, mas mantenha limite (você faz o melhor).

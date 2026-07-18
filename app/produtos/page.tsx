@@ -111,7 +111,7 @@ export default function ProdutosPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {products.map((product) => (
-              <div key={product.title} className="bg-white border border-border-base p-6 flex flex-col">
+              <div key={product.title} className="bg-white border border-border-base p-6 flex flex-col rounded-[5px]">
                 <div className="flex items-center justify-between mb-4">
                   <span className="text-[10px] font-medium tracking-wider uppercase text-brand-secondary/40">
                     {product.badge}
@@ -157,7 +157,7 @@ export default function ProdutosPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {services.map((service) => (
-              <div key={service.title} className="bg-white border border-border-base p-6">
+              <div key={service.title} className="bg-white border border-border-base p-6 rounded-[5px]">
                 <h3 className="text-sm font-display font-medium text-brand-primary mb-2">
                   {service.title}
                 </h3>
@@ -193,7 +193,7 @@ export default function ProdutosPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {affiliates.map((category) => (
-              <div key={category.category} className="bg-white border border-border-base p-6">
+              <div key={category.category} className="bg-white border border-border-base p-6 rounded-[5px]">
                 <h3 className="text-xs font-medium tracking-wider uppercase text-brand-secondary/40 mb-4">
                   {category.category}
                 </h3>

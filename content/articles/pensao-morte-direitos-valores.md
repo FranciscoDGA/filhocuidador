@@ -31,6 +31,8 @@ A pensão **não é automática**. Apenas estas pessoas têm direito:
 - Casamento anterior ao óbito (mínimo 2 anos)
 - ⚠️ **Exceção**: Se cônjuge tinha 44+ anos e contribuinte tinha 60+ (ou vice-versa), pode ser menor que 2 anos
 
+Leia também sobre [BPC e benefício de prestação continuada](/artigos/bpc-loas-guia-completo) para idosos com renda baixa.
+
 **Recebe**: 50% (primeira pessoa) ou mais se tiver filhos/dependentes
 
 ### Companheiro/a (União Estável)
@@ -177,10 +179,14 @@ Se valor está errado, você pode:
 - [ ] Solicitar pensão no mesmo mês do óbito (melhor prazo)
 - [ ] Manter documentação guardada (pode ser solicitada)
 
+Leia também sobre [aposentadoria do idoso](/artigos/aposentadoria-idoso-direitos) para entender os diferentes tipos de benefício.
+
 ## Dúvidas Frequentes
 
 **P: Se meu pai já recebia pensão, eu (filho) posso receber outra?**
 R: Sim! Sua pensão é independente da dele.
+
+Leia também sobre [direitos do idoso pelo Estatuto](/artigos/direitos-idoso-estatuto-lei) para conhecer todos os benefícios disponíveis.
 
 **P: Posso receber pensão de dois cônjuges diferentes?**
 R: Não. Você escolhe uma (a maior).

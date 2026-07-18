@@ -52,6 +52,8 @@ Seu pai toma 7-10 medicamentos.
 
 **Risco:** Medicamento não funciona / efeito colateral diferente
 
+Leia também sobre [cuidados com Parkinson](/artigos/parkinson-cuidados-praticos) para entender os desafios específicos dessa condição.
+
 ### Erro 4: Esquecer
 
 "Não tomou medicamento hoje"
@@ -192,6 +194,8 @@ Marca no seu checklist = tomou.
 - Opioides (dor)
 - Antipsicóticos (comportamento)
 
+Leia mais sobre [cuidados com Alzheimer e demências](/artigos/alzheimer-guia-pratico-cuidador) para entender melhor as condições neurológicas.
+
 **Precisa:**
 - [ ] Receita controlada (retenção)
 - [ ] Reposição cada 1-2 meses
@@ -251,6 +255,8 @@ Marca no seu checklist = tomou.
 
 **P: Esqueci de dar medicamento. Dou dois amanhã?**
 R: Não. Só dá próxima dose normal. Nunca dobro dose.
+
+Leia também sobre [diabetes e cuidados com idoso](/artigos/diabetes-idoso-cuidados) para entender como gerenciar múltiplas condições.
 
 **P: Medicamento caro. Posso pular alguns dias?**
 R: Não recomendado. Fale com médico sobre versão genérica ou SUS.

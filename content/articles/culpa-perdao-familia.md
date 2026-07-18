@@ -46,6 +46,8 @@ E você carregar:
 - Quer que morra (culpa terrível)
 - Não visita bastante (culpa)
 
+Leia também sobre [culpa, raiva e exaustão](/artigos/culpa-raiva-exaustao-normal-sentir) para entender que esses sentimentos são normais.
+
 **Reconheça:** Sentimentos são legítimos. Você é humana.
 
 ### Culpa Projetada
@@ -195,10 +197,14 @@ Não precisa de resposta dele.
 **Reframe:**
 "Fiz o melhor que consegui naquele tempo. Agora sei melhor. Amo e perdoo a mim mesma."
 
+Leia também sobre [depressão em cuidadores](/artigos/depressao-cuidador-sinais-ajuda) para entender quando o isolamento está afetando sua saúde mental.
+
 ## Dúvidas Frequentes
 
 **P: Posso perdoar se ele morre sem reconciliar?**
 R: Sim. Perdão é processo interno. Terapia ajuda.
+
+Leia também sobre [dinâmica familiar e mudança de papéis](/artigos/dinamica-familiar-mudanca-papeis) para entender como a relação se transforma.
 
 **P: Sou péssima filha se sinto raiva dele?**
 R: Não. Raiva é legítima. Pode ter raiva E amá-lo simultaneamente.

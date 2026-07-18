@@ -177,6 +177,8 @@ Se quer fazer algo pouco arriscado:
 ❌ Negligência deliberada
 ❌ Humilhação proposital
 
+Leia também sobre [culpa e perda na família](/artigos/culpa-perdao-familia) para entender melhor esses sentimentos.
+
 **Isso é abuso. Não faça.**
 
 ### Perdão (Se Possível)
@@ -184,6 +186,8 @@ Se quer fazer algo pouco arriscado:
 **Conversas difíceis:**
 
 "Pai, aquilo me machucou. Mas você fez o melhor que pôde naquele tempo. Deixo passar?"
+
+Leia também sobre [comunicação com irmãos que não ajudam](/artigos/comunicacao-irmaos-nao-ajudam) para estratégias de comunicação familiar.
 
 **Se ele pedir desculpa:** Aceita graciosamente
 
@@ -198,6 +202,8 @@ Se quer fazer algo pouco arriscado:
 - Abre comunicação
 - Resolve mágoas antigas
 - Ressignifica relação
+
+Leia também sobre [casamento e cuidado de pai/mãe](/artigos/casamento-relacionamento-cuidando-pai) para manter seu relacionamento saudável.
 
 **Altamente recomendado**
 

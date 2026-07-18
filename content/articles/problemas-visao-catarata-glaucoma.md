@@ -23,6 +23,8 @@ Visão é crítico para idoso:
 
 **Três doenças oculares são comuns em idosos:**
 
+Veja também nosso guia sobre [diabetes em idosos](/artigos/diabetes-idoso-cuidados) para entender como diabetes afeta a visão.
+
 ## 1. Catarata
 
 **O quê:** Lente olho fica nublada (como vidro embaçado)
@@ -72,6 +74,8 @@ Não espera "ficar muito ruim" (pode adiar demais)
 - Perda visão lateral (periférica) lentamente
 
 **SILENCIOSO = perigoso**
+
+Leia também sobre [hipertensão em idosos](/artigos/hipertensao-pressao-alta-idoso) para entender como pressão alta pode afetar os olhos.
 
 ### Causa
 
@@ -161,6 +165,8 @@ Escolha conforme preferência
 ## Segurança COM Visão Reduzida
 
 ### Casa
+
+Leia também sobre [adaptações da casa para segurança](/artigos/adaptacoes-casa-idoso-seguranca) para tornar a casa segura para idoso com visão reduzida.
 
 - [ ] Iluminação excelente
 - [ ] Sem obstáculos

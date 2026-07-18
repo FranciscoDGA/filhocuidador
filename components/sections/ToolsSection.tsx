@@ -59,7 +59,7 @@ export default function ToolsSection() {
             <Link
               key={tool.slug}
               href={`/ferramentas/${tool.slug}`}
-              className="group bg-bg-card border border-border-base p-8 hover:border-brand-accent/40 transition-colors"
+              className="group bg-bg-card border border-border-base p-8 rounded-[5px] hover:border-brand-accent/40 transition-colors"
             >
               <div className="w-12 h-12 bg-brand-accent/10 flex items-center justify-center text-brand-accent mb-5 group-hover:bg-brand-accent group-hover:text-white transition-colors">
                 {tool.icon}

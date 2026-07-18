@@ -22,6 +22,8 @@ Amigos desaparecem: "Você não sai mais."
 
 **Realidade:** Cuidado intenso **pressiona relacionamentos.**
 
+Veja também nosso guia sobre [casamento e cuidado de pai/mãe](/artigos/casamento-relacionamento-cuidando-pai) para estratégias específicas de relacionamento.
+
 Mas com comunicação correta, é possível **não perder quem importa.**
 
 ## Por Que Relacionamentos Sofrem
@@ -115,6 +117,8 @@ Mas manter **toque:**
 
 **Não é rival do pai/mãe. É aliado na tarefa.**
 
+Leia também sobre [dinâmica familiar e mudança de papéis](/artigos/dinamica-familiar-mudanca-papeis) para entender como a relação se transforma.
+
 ### Envolver Parceiro
 
 Em vez de: "Vou cuidar sozinho"
@@ -179,6 +183,8 @@ Amigos precisam saber que você existe.
 "Estou intenso cuidando de pai. Não é que não quero ver vocês. É falta de tempo. Posso marcar café domingo?"
 
 **Amizades fortes entendem.**
+
+Leia também sobre [autocuidado do cuidador](/artigos/autocuidado-self-care-cuidador) para estratégias de cuidar de si mesmo.
 
 ## Estratégia 6: Lidar com Rejeição/Distância
 

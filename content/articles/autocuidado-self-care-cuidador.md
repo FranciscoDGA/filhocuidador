@@ -34,6 +34,8 @@ Sem autocuidado, você:
 - Piora a saúde
 - Não consegue cuidar melhor
 
+Leia mais sobre [sinais de burnout em cuidadores](/artigos/burnout-cuidador-sinais-alerta) para identificar quando o estresse está afetando sua saúde.
+
 **Com autocuidado:**
 - Mais paciência
 - Melhor resposta emocional
@@ -162,6 +164,8 @@ Cuidadores que praticam autocuidado:
 
 **Você precisa de "tribo".**
 
+Saiba como [combater o isolamento social](/artigos/isolamento-socializar-cuidador) enquanto cuida do seu pai.
+
 ### Contar sua História
 
 **Guardar tudo dentro = explode depois**
@@ -235,6 +239,8 @@ Você vai sentir culpa de cuidar de si:
 **Resposta:** "Sim. E amanhã vou poder cuidar melhor porque descansaria."
 
 **Culpa = sinal que você **não** está cuidando de si suficientemente. Escute.**
+
+Leia também sobre [cuidar de si mesmo enquanto cuida de outro](/artigos/cuidar-de-si-mesmo-enquanto-cuida-outro) para mais estratégias de autocuidado.
 
 ## Dúvidas Frequentes
 

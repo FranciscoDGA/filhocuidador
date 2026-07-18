@@ -91,6 +91,8 @@ Reabilitação começa **dias após AVC** e dura **meses a anos**.
 - Exercícios ativos (ele faz)
 - Caminhada gradual
 
+Para mais orientações sobre mobilidade, consulte nosso artigo de [mobilidade e posicionamento](/artigos/mobilidade-posicionamento-idoso).
+
 **Frequência:** 3-5x/semana ideal
 
 **Duração:** 6-12 meses (pode ser vitalício)
@@ -132,6 +134,8 @@ Reabilitação começa **dias após AVC** e dura **meses a anos**.
 **Controle pressão:**
 - Monitorar frequentemente
 - Manter medicamentos
+
+Saiba mais sobre [hipertensão e como controlar a pressão](/artigos/hipertensao-pressao-alta-idoso).
 
 **Controle diabetes:**
 - Se tem
@@ -183,6 +187,8 @@ Se não consegue fisioterapia formal:
 - Pensamentos de morte
 
 **Tratamento:** Antidepressivo + psicólogo
+
+Leia também nosso guia sobre [cuidados com Alzheimer e demências](/artigos/alzheimer-guia-pratico-cuidador) para entender melhor as condições neurológicas.
 
 ## Dúvidas Frequentes
 

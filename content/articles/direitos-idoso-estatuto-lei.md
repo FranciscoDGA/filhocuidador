@@ -86,6 +86,8 @@ Lei federal que garante **direitos e proteção** a maiores de 60 anos:
 **Valor:** 1 salário mínimo (R$ 1.412)
 **Como solicitar:** CRAS local + INSS
 
+Leia nosso guia completo sobre [BPC e benefício de prestação continuada](/artigos/bpc-loas-guia-completo).
+
 #### Restituição do IR
 
 Idosos 65+ podem ter **restituição aumentada** no Imposto de Renda
@@ -181,10 +183,14 @@ Governo deve fornecer informações de direitos do idoso:
 - [ ] Conhecem sobre BPC (se elegível)?
 - [ ] Sabem que têm proteção legal?
 
+Saiba mais sobre [procuração de idoso](/artigos/procuracao-idoso-modelo-passo-passo) para entender como representar legalmente seu pai.
+
 ## Dúvidas Frequentes
 
 **P: Preciso de comprovante para usar direitos?**
 R: RG/CPF com foto é o mínimo. Alguns locais podem pedir registro (Cartório).
+
+Leia também sobre [interdição vs curatela](/artigos/interdicao-vs-curatela-qual-usar) para entender quando seu pai precisa de representação legal.
 
 **P: Meu pai é aposentado. Ainda tem direito ao BPC?**
 R: Não, BPC é apenas para sem aposentadoria e renda baixa.

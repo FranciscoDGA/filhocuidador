@@ -18,6 +18,8 @@ Seu pai/mãe perde xixi involuntariamente.
 
 **Causa vergonha, isolamento, infecções.**
 
+Veja também nosso guia sobre [incontinência urinária e fecal](/artigos/incontinencia-idoso-cuidados) para gerenciamento com dignidade.
+
 **Mas é tratável.**
 
 ## Tipos de Incontinência
@@ -138,6 +140,8 @@ Seu pai/mãe perde xixi involuntariamente.
 
 **Efetividade:** 50-70% casos melhoram significativamente
 
+Leia também sobre [mobilidade e posicionamento](/artigos/mobilidade-posicionamento-idoso) para ajudar o idoso a se locomover até o banheiro.
+
 **Importante:** Fisioterapeuta ensina tecnica correta
 
 ## Tratamento Cirúrgico
@@ -165,6 +169,8 @@ Incontinência causa:
 - Baixa autoestima
 
 **Tratamento:** Psicólogo + solução médica
+
+Leia também sobre [gerenciamento de medicamentos](/artigos/gerenciamento-medicamentos-idoso) para organizar medicações que podem causar incontinência.
 
 ## Dúvidas Frequentes
 

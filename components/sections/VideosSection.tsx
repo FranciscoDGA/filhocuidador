@@ -47,7 +47,7 @@ export default function VideosSection() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {videos.map((video, i) => (
-            <div key={i} className="bg-bg-card border border-border-base overflow-hidden group">
+            <div key={i} className="bg-bg-card border border-border-base overflow-hidden group rounded-[5px]">
               <div className="relative w-full aspect-video bg-gray-100">
                 <iframe
                   src={`https://www.youtube.com/embed/${video.embedId}`}

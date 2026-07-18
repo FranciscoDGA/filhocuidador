@@ -121,6 +121,8 @@ Isolamento mata. Literalmente (aumenta risco de doença).
 - [ ] Ou grupo de apoio (conhecer outros cuidadores)
 - [ ] Ou online (Discord, WhatsApp, fóruns de cuidadores)
 
+Saiba como [combater o isolamento social](/artigos/isolamento-socializar-cuidador) enquanto cuida do seu pai.
+
 **Se não tem amigos próximos:**
 - Procure grupo de apoio (muitos online agora)
 - Comunidade de cuidadores compreende sua situação
@@ -134,6 +136,8 @@ Você cuida do seu pai mas abandona a sua saúde?
 - [ ] Medicação pessoal em dia
 - [ ] Óculos/dentista conforme necessário
 - [ ] Vacinas em dia
+
+Leia mais sobre [sinais de burnout em cuidadores](/artigos/burnout-cuidador-sinais-alerta) para identificar quando o estresse está afetando sua saúde.
 
 **Porque importa:**
 - Se você fica doente, quem cuida do seu pai?
@@ -153,6 +157,8 @@ Não é luxo. Investimento.
 - [ ] Psicólogo do SUS (gratuito, fila longa)
 - [ ] Terapia online (mais acessível, R$ 40-100)
 - [ ] App de meditação guiada (Meditopia, Insight Timer - grátis)
+
+Saiba mais sobre [autocuidado para cuidadores](/artigos/autocuidado-self-care-cuidador) e como investir em si mesmo sem culpa.
 
 **Frequência mínima:**
 - 1x por semana durante crise

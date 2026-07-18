@@ -34,6 +34,8 @@ Seu pai/mãe idoso/fraco não é.
 
 **Banheiro = local #1 de queda em idoso**
 
+Leia também sobre [higiene e banho seguro do idoso](/artigos/higiene-banho-seguro-idoso) para técnicas práticas de cuidado.
+
 ### Piso Antiderrapante
 
 **Problema:** Piso molhado = escorregadio
@@ -231,6 +233,8 @@ Seu pai/mãe idoso/fraco não é.
 
 **Quando usar:** Fraco/desequilíbrio leve
 
+Saiba mais sobre [mobilidade e posicionamento do idoso](/artigos/mobilidade-posicionamento-idoso) para técnicas seguras de transferência.
+
 **Custo:** R$ 80-200
 
 **Tipos:**
@@ -267,8 +271,10 @@ Seu pai/mãe idoso/fraco não é.
 - [ ] Protetor cama (se necessário)
 - [ ] Escada segura ou evitada
 - [ ] Sapato/calçado firme dele
-- [ ] Medicação revista (tontura?)
+- [ ] Medicicação revista (tontura?)
 - [ ] Visão checada (óculos correto?)
+
+Saiba mais sobre [prevenção de quedas em casa](/artigos/prevencao-quedas-casa-guia-pratico) para um guia completo.
 
 ## Profissional de Adaptação
 

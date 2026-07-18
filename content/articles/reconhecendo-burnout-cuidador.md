@@ -34,6 +34,8 @@ Se você é a filha que trabalha o dia todo e ainda cuida de um pai com Alzheime
 - Culpa (tanto por estar cansada quanto por qualquer "falha")
 - Raiva não dirigida
 
+Leia também sobre [cuidar de si mesmo enquanto cuida de outro](/artigos/cuidar-de-si-mesmo-enquanto-cuida-outro) para estratégias práticas de autocuidado.
+
 ### Comportamental
 - Isolamento social
 - Negligência da própria higiene
@@ -63,6 +65,8 @@ Aceite que você está no limite. Isso não é fraqueza.
 - Um dia por mês "para você"
 - 30 minutos de atividade que não seja cuidado (exercício, hobby, amiga)
 - Dormir bem (essencial)
+
+Saiba mais sobre [ansiedade do cuidador e técnicas de alívio](/artigos/ansiedade-cuidador-tecnicas-alivio) para manejar melhor seus sintomas.
 
 ### 4. Comunidade
 - Procure grupos de cuidadores (presenciais ou online)

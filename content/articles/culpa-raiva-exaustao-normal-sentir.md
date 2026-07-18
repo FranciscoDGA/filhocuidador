@@ -65,6 +65,8 @@ Você acha que é punição.
 - Sente-se confortável. Diga em voz alta: "Estou me sentindo culpado."
 - Não tente eliminar o sentimento. Apenas reconheça.
 
+Leia mais sobre [sinais de burnout em cuidadores](/artigos/burnout-cuidador-sinais-alerta) para identificar quando o estresse está afetando sua saúde.
+
 **Questione a origem:**
 - "De onde vem essa culpa? Meu pai acha que sou egoísta? Ou só EU acho?"
 - Frequentemente: é só você. Seu pai (se conseguir comunicar) ama você.
@@ -94,6 +96,8 @@ Se a culpa é tão forte que impede você de viver, procure terapeuta. Culpa cr�
 Isso é real. Muitos filhos realmente não ajudam. Não é sua imaginação.
 
 **Raiva válida**: SIM. Você carrega o peso sozinho enquanto eles vivem suas vidas.
+
+Leia nosso artigo sobre [culpa e perda na família](/artigos/culpa-perdao-familia) para entender melhor esses sentimentos.
 
 #### 2. Raiva de Seu Pai/Mãe
 Espera... isso é chocante de dizer.
@@ -235,6 +239,8 @@ Escolha uma:
 3. **Permita um sentimento:**
    - Hoje: "Vou estar com raiva e está tudo bem"
    - Amanhã: escolhe outro
+
+Leia também sobre [depressão em cuidadores](/artigos/depressao-cuidador-sinais-ajuda) para entender quando esses sentimentos se tornam problemas de saúde.
 
 Você não está sozinho nisso. Milhares de filhos cuidadores sentem exatamente o que você sente.
 

@@ -18,6 +18,8 @@ Você tirou licença. Pai/mãe precisa de você. Mas **contas não pagam sozinha
 
 Voltar ao trabalho é **necessário e possível**. Não é abandono.
 
+Veja também nosso guia sobre [quando colocar em asilo](/artigos/quando-colocar-asilo-decisao) para decisões difíceis sobre cuidado institucional.
+
 ## Por Que Trabalho Importa
 
 ### Financeiro
@@ -93,6 +95,8 @@ Voltar ao trabalho é **necessário e possível**. Não é abandono.
 - Sem perda de salário (alguns casos)
 - Até 15 dias inicialmente
 
+Leia também sobre [direitos do idoso](/artigos/direitos-idoso-estatuto-lei) para garantir direitos legais.
+
 **Procure:** Departamento RH / Sindicato
 
 ### Auxílio-Doença
@@ -133,6 +137,8 @@ Se tira licença para cuidar: **isenção do PIS.**
 - Seu estresse está alto
 
 **Não é para ser perfeito.**
+
+Leia também sobre [sinais de burnout do cuidador](/artigos/burnout-cuidador-sinais-alerta) para identificar esgotamento.
 
 ### Mês 1-3: Ajustamentos
 

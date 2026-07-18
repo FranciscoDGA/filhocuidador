@@ -79,6 +79,8 @@ Você recebe **valor mensal** enquanto:
 - Relatar: Depressão/ansiedade/síndrome de pânico
 - Efeitos: "Não consigo trabalhar, concentrar, sair de casa"
 
+Leia também sobre [depressão em cuidadores](/artigos/depressao-cuidador-sinais-ajuda) para entender os sinais e quando procurar ajuda.
+
 **Médico emite:**
 - Diagnóstico claro
 - Recomendação de afastamento (atestado)
@@ -251,6 +253,8 @@ Depois:
 
 **P: Preciso sair de casa durante auxílio?**
 R: Não. Pode fazer atividades leves (médico, psicólogo, caminhada). Mas não trabalho formal.
+
+Leia também sobre [BPC e benefício de prestação continuada](/artigos/bpc-loas-guia-completo) para idosos com renda baixa.
 
 **P: Meu chefe vai descobrir?**
 R: Privado entre você e INSS. Empresa sabe você está de licença mas não detalhes.

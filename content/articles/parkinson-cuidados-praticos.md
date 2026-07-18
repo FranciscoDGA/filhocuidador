@@ -85,7 +85,7 @@ Doença onde **cérebro não produz dopamina** suficiente (químico essencial pa
 - Bromocriptina
 - Pramipexol
 
-⚠️ **Importante:** Medicamentos apenas retardam. Não curam.
+⚠️ **Importante:** Medicamentos apenas retardam. Não curam. Para mais detalhes, consulte nosso guia de [gerenciamento de medicamentos](/artigos/gerenciamento-medicamentos-idoso).
 
 ## Cuidados Práticos
 
@@ -96,6 +96,8 @@ Doença onde **cérebro não produz dopamina** suficiente (químico essencial pa
 - [ ] Iluminação boa
 - [ ] Medicamentos organizados por hora
 - [ ] Telefone perto do sofá/cama
+
+Veja nosso guia completo de [adaptações da casa para segurança](/artigos/adaptacoes-casa-idoso-seguranca) para manter seu pai seguro.
 
 ### Alimentação
 
@@ -125,6 +127,8 @@ Doença onde **cérebro não produz dopamina** suficiente (químico essencial pa
 - Compre roupas com velcro
 - Camisetas ao invés de camisas
 - Sapatos com velcro
+
+Para orientações sobre mobilidade, veja nosso artigo sobre [posicionamento e mobilidade do idoso](/artigos/mobilidade-posicionamento-idoso).
 
 **Banho:**
 - Chuveiro/banheira adaptados

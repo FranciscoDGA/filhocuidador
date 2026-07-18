@@ -120,6 +120,8 @@ Converse antecipadamente:
 
 Não pode deixar cama? Use **banho no leito**:
 
+Leia também sobre [mobilidade e posicionamento do idoso](/artigos/mobilidade-posicionamento-idoso) para técnicas seguras de transferência.
+
 **Material:**
 - 2-3 bacias com água morna
 - Toalhas absorventes
@@ -220,6 +222,8 @@ Se absolutamente se recusa:
 - [ ] Cadeira/banqueta
 - [ ] Chinelo antiderrapante
 - [ ] Vidro do box com adesivo (não escorrega)
+
+Saiba mais sobre [adaptações da casa para segurança](/artigos/adaptacoes-casa-idoso-seguranca) e [prevenção de quedas](/artigos/prevencao-quedas-casa-guia-pratico).
 
 **Se caiu:**
 - Procure fraturas óbvias (grito de dor, inchaço)

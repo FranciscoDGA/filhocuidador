@@ -153,6 +153,8 @@ Fonoaudiólogos classificam por **consistência:**
 2. Cabeça ligeiramente inclinada para frente
 3. Mantenha posição 30 minutos após comer
 
+Saiba mais sobre [gerenciamento de medicamentos](/artigos/gerenciamento-medicamentos-idoso) para organizar rotinas de medicação e alimentação.
+
 ### Velocidade de Alimentação
 - Pequenas quantidades (1/2 colher de chá)
 - Espere ele engolir
@@ -165,6 +167,8 @@ Fonoaudiólogos classificam por **consistência:**
 - Dificuldade respiratória
 
 **Se notar: Pare refeição e procure médico.**
+
+Leia também sobre [higiene e banho seguro do idoso](/artigos/higiene-banho-seguro-idoso) para técnicas práticas de cuidado.
 
 ## Líquidos Especiais (Engrossar)
 
@@ -182,6 +186,8 @@ Alguns precisam beber engrossado:
 
 **P: Posso colocar comida no liquidificador?**
 R: Sim! Purê de qualquer refeição normal funciona.
+
+Saiba mais sobre [mobilidade e posicionamento do idoso](/artigos/mobilidade-posicionamento-idoso) para técnicas seguras de transferência.
 
 **P: Quanto come um idoso com disfagia?**
 R: Menos que normal. Procure nutricionista.

@@ -26,6 +26,8 @@ Agora:
 
 **Você pensa:** "Este não é meu pai."
 
+Veja também nosso guia sobre [culpa e perdão na família](/artigos/culpa-perdao-familia) para lidar com sentimentos difíceis.
+
 **Verdade:** É o mesmo homem, corpo diferente.
 
 Aceitar essa mudança é **processo doloroso.**
@@ -79,6 +81,8 @@ Tristeza genuína. Perda real.
 
 "Ele é assim. Amo ele assim. Vamos seguir."
 
+Leia também sobre [depressão do cuidador](/artigos/depressao-cuidador-sinais-ajuda) para identificar sinais de depressão.
+
 Não é "felicidade". É paz com realidade.
 
 **Duração:** Variável
@@ -120,6 +124,8 @@ Não é "felicidade". É paz com realidade.
 - Ele conhecer neto
 - Conversa profunda ainda
 - Risadas
+
+Leia também sobre [guia prático do cuidador de Alzheimer](/artigos/alzheimer-guia-pratico-cuidador) para estratégias específicas de cuidado.
 
 **Agora:** Sabe que não vai acontecer
 

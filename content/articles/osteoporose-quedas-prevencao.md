@@ -146,13 +146,15 @@ Idoso com fratura de fêmur: 20-50% morrem no primeiro ano.
 
 ### Segurança Casa
 
-Veja artigo "Adaptações Casa Idoso" (barras, tapete antiderrapante, iluminação)
+Leia nosso guia completo de [adaptações da casa para segurança](/artigos/adaptacoes-casa-idoso-seguranca).
 
 ### Calçado
 
 - [ ] Firme (não chinelo)
 - [ ] Bom grip (não escorregadio)
 - [ ] Sapato fechado
+
+Saiba mais sobre [mobilidade e posicionamento do idoso](/artigos/mobilidade-posicionamento-idoso) para técnicas seguras de transferência.
 
 ### Visão
 
@@ -208,6 +210,8 @@ Se demência:
 
 **P: Medicação osteoporose funciona?**
 R: Sim. Reduz risco fratura 30-50%. Sem medicação, risco aumenta.
+
+Leia também sobre [diabetes e cuidados com idoso](/artigos/diabetes-idoso-cuidados) para entender como essas condições se relacionam.
 
 **P: Quanto tempo medicação?**
 R: Provavelmente vitalício. Osso não melhora permanentemente.

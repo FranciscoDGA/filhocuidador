@@ -68,6 +68,8 @@ Cuidadores com rede:
 - Comunidade apoiando
 - Profissional orientando
 
+Leia mais sobre [sinais de burnout em cuidadores](/artigos/burnout-cuidador-sinais-alerta) para identificar quando o estresse está afetando sua saúde.
+
 **Resultado:** Continuam melhor.
 
 Cuidadores isolados:
@@ -121,6 +123,8 @@ Pode ser:
 **Resiliência é construída em pequenas ações.**
 
 Não espere "ele melhorar" (pode não acontecer).
+
+Leia mais sobre [autocuidado para cuidadores](/artigos/autocuidado-self-care-cuidador) para encontrar estratégias práticas de bem-estar.
 
 Celebre:
 - [ ] Hoje dei banho bem (pai não reclamou)
@@ -184,6 +188,8 @@ Mas quando identifica algo positivo, CELEBRA:
 - [ ] Comida 3x/dia
 - [ ] Movimento (caminhada basta)
 - [ ] Sem álcool/droga
+
+Saiba mais sobre [cuidar de si mesmo enquanto cuida de outro](/artigos/cuidar-de-si-mesmo-enquanto-cuida-outro) para mais estratégias de autocuidado.
 
 **Corpo bem = mente forte = resiliente**
 

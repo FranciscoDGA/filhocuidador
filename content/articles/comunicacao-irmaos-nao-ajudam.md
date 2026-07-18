@@ -36,6 +36,8 @@ Medo de comprometer-se. Medo de ver pai/mãe mudar. Medo de perder independênci
 
 Não ajuda e ATACA você: "Você exagera!" (culpa invertida)
 
+Veja nosso artigo sobre [culpa e perda familiar](/artigos/culpa-perdao-familia) para entender melhor esse mecanismo.
+
 ### Razão 4: Distância Física
 
 Mora longe, vida própria. Não "encaixa" ajuda.
@@ -99,6 +101,8 @@ Pode haver razão válida:
 **Irmão:** "Acho que você exagera. Ela ligou pra mim semana passada e estava bem."
 
 **Você (validando medo dele):** "Entendo que você acha que está bem. Eu também gostaria que fosse assim. Mas médico confirmou Alzheimer inicial. Não é negação minha, é diagnóstico."
+
+Para mais informações sobre dinâmicas familiares, leia nosso artigo sobre [mudança de papéis na família](/artigos/dinamica-familiar-mudanca-papeis).
 
 **Irmão:** "E daí? Não é tão ruim."
 
@@ -173,6 +177,8 @@ Deixe passar. Foco é agora.
 
 **P: Tenho culpa dele não ajudar?**
 R: Não. Culpa é dele, se houver. Você não o controla.
+
+Leia também nosso artigo sobre [relacionamento durante o cuidado](/artigos/casamento-relacionamento-cuidando-pai) para manter seus vínculos saudáveis.
 
 **P: Devo forçar ajuda?**
 R: Não. Força = ressentimento. Melhor sozinha que com ajuda resentida.

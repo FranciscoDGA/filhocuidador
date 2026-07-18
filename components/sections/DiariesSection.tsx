@@ -52,7 +52,7 @@ export default function DiariesSection() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {diaries.map((diary) => (
             <Link key={diary.slug} href={`/diarios/${diary.slug}`} className="group">
-              <article className="bg-bg-card border border-border-base overflow-hidden h-full">
+              <article className="bg-bg-card border border-border-base overflow-hidden h-full rounded-[5px]">
                 <div className="relative w-full aspect-[16/10] overflow-hidden rounded-t-[50px] bg-gray-100">
                   <Image
                     src={diary.image}

@@ -44,6 +44,8 @@ A resposta importa. Uma é mais restritiva que a outra. E você quer acertar.
 - Você é curador (supervisor financeiro/legal)
 - Menos restritivo que interdição
 
+Saiba mais sobre [procuração de idoso](/artigos/procuracao-idoso-modelo-passo-passo) para entender quando basta uma procuração simples.
+
 **É como:** Seu pai ainda tem direitos, mas você o supervisiona em decisões importantes
 
 ---
@@ -185,6 +187,8 @@ Isso é proteção contra fraude. Você é responsável legalmente.
 - Agiliza processo de inventário depois
 - Menos burocracia que interdição
 
+Leia também sobre [BPC e benefício de prestação continuada](/artigos/bpc-loas-guia-completo) para entender como solicitar benefícios.
+
 ### Cenário 2: Seu Pai Tem Muito Dinheiro
 **Situação**: Propriedades, investimentos, bens
 
@@ -222,6 +226,8 @@ Para abrir o processo:
 - [ ] Laudo médico (neurologia/psiquiatria)
 - [ ] Seu RG e CPF
 - [ ] Comprovante de seu endereço
+
+Saiba mais sobre [direitos do idoso pelo Estatuto](/artigos/direitos-idoso-estatuto-lei) para conhecer todos os benefícios disponíveis.
 
 Se bem-vindo como curador/tutor:
 - [ ] Todos acima

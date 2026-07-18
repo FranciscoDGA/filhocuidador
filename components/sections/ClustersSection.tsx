@@ -71,7 +71,7 @@ export default function ClustersSection() {
             <Link
               key={cluster.slug}
               href={`/categorias/${cluster.slug}`}
-              className="group bg-bg-card border border-border-base p-6 text-center hover:border-brand-accent/40 transition-colors"
+              className="group bg-bg-card border border-border-base p-6 text-center rounded-[5px] hover:border-brand-accent/40 transition-colors"
             >
               <div className="w-14 h-14 mx-auto mb-4 bg-brand-accent/10 flex items-center justify-center text-brand-accent group-hover:bg-brand-accent group-hover:text-white transition-colors">
                 {cluster.icon}

@@ -153,6 +153,8 @@ Mesma técnica, inverso.
 - Causa: Pressão constante mesma área
 - Risco: Se acamado > 1 semana
 
+Leia mais sobre [adaptações da casa para segurança](/artigos/adaptacoes-casa-idoso-seguranca) para manter seu pai seguro.
+
 ### Mudança de Posição
 
 **Mude de posição a cada 2-3 horas:**
@@ -200,6 +202,8 @@ Mesma técnica, inverso.
 - [ ] Hidratante neutro
 - [ ] Inspeccione pele (vermelhos, feridas)
 
+Saiba mais sobre [higiene e banho seguro do idoso](/artigos/higiene-banho-seguro-idoso) para técnicas práticas de cuidado.
+
 ## Exercício de Mobilidade
 
 **Se consegue, fazer exercício previne atrofia:**
@@ -228,6 +232,8 @@ Você deve chamar **fisioterapeuta** se:
 
 **P: Machuquei minha costas ajudando ele.**
 R: Procure médico. Enquanto isso, use técnica correta. Se voltar doer, contrate ajudante.
+
+Saiba mais sobre [prevenção de quedas](/artigos/prevencao-quedas-casa-guia-pratico) para um guia completo.
 
 **P: Ele recusa se mover.**
 R: Movimento dói/assusta. Comunique benefício. Comece lentamente. Paciência.

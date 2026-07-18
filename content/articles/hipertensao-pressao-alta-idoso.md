@@ -20,6 +20,8 @@ Seu pai/mãe tem pressão alta (hipertensão).
 
 **Mas:** Danifica coração, rins, cérebro silenciosamente.
 
+Saiba mais sobre [gerenciamento de medicamentos](/artigos/gerenciamento-medicamentos-idoso) para organizar as medicações da pressão alta.
+
 **Sua tarefa:** Garantir medicação diária + monitoramento
 
 ## O Que é Pressão Alta?
@@ -122,6 +124,8 @@ Seu pai/mãe tem pressão alta (hipertensão).
 - Procure médico/emergência
 - Pode causar AVC/infarto
 
+Leia também sobre [insuficiência cardíaca](/artigos/insuficiencia-cardiaca-cuidados) para doenças que podem ser causadas por pressão alta.
+
 **Sintomas:**
 - Dor cabeça intensa
 - Dor no peito
@@ -178,6 +182,8 @@ Seu pai/mãe tem pressão alta (hipertensão).
 ## Medicação Regular = Crítica
 
 **Maior erro:** Parar medicação porque "sente-se bem"
+
+Veja também nosso guia sobre [diabetes em idosos](/artigos/diabetes-idoso-cuidados) para doenças que frequentemente coexistem.
 
 **Realidade:** Sente-se bem PORQUE toma medicação
 

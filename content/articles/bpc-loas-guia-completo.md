@@ -20,6 +20,8 @@ O **Benefício de Prestação Continuada (BPC)** é um valor mensal de **um sal�
 
 Para seu pai ou mãe idoso, isso pode fazer **toda a diferença** na qualidade de vida.
 
+Saiba mais sobre [direitos do idoso pelo Estatuto](/artigos/direitos-idoso-estatuto-lei) para conhecer todos os benefícios disponíveis.
+
 ---
 
 ## Quem Tem Direito?
@@ -62,6 +64,8 @@ Dependentes que você declara no Imposto de Renda **contam**.
 - Aposentadoria por invalidez
 - Pensão por morte
 - Auxílio-doença
+
+Leia também sobre [aposentadoria do idoso](/artigos/aposentadoria-idoso-direitos) para entender os diferentes tipos de benefício.
 
 (Mas se recebe um salário mínimo, pode receber o BPC simultaneamente)
 
@@ -164,6 +168,8 @@ Infelizmente acontece. As causas mais comuns:
 ### 1. Renda acima do limite
 - **Solução**: Espere 3-6 meses e reaplique se a renda caiu (desemprego de alguém, por ex)
 - Ou apresente recurso (explicar por que a renda era temporária)
+
+Leia também sobre [procuração de idoso](/artigos/procuracao-idoso-modelo-passo-passo) para entender como representar legalmente seu pai.
 
 ### 2. Faltou comprovante
 - **Solução**: Você tem direito a **pedir revisão**
