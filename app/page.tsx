@@ -1,5 +1,12 @@
 import FeaturedPost from "@/components/sections/FeaturedPost";
 import RecentArticlesSection from "@/components/sections/RecentArticlesSection";
+import ClustersSection from "@/components/sections/ClustersSection";
+import KitsSection from "@/components/sections/KitsSection";
+import ToolsSection from "@/components/sections/ToolsSection";
+import SpecialistSection from "@/components/sections/SpecialistSection";
+import DiariesSection from "@/components/sections/DiariesSection";
+import TestimonialsSection from "@/components/sections/TestimonialsSection";
+import VideosSection from "@/components/sections/VideosSection";
 import EmotionalSupportBlock from "@/components/sections/EmotionalSupportBlock";
 import { getAllArticles } from "@/lib/articles";
 
@@ -28,6 +35,13 @@ export default function Home() {
       />
       {featuredArticle && <FeaturedPost article={featuredArticle} />}
       <RecentArticlesSection />
+      <ClustersSection />
+      <KitsSection />
+      <ToolsSection />
+      <SpecialistSection />
+      <DiariesSection />
+      <TestimonialsSection />
+      <VideosSection />
       <EmotionalSupportBlock />
     </main>
   );
