@@ -87,6 +87,19 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="canonical" href="https://filhocuidador.com.br" />
+        {/* Google Analytics */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX" />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-XXXXXXXXXX');`,
+          }}
+        />
+        {/* Hotjar */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(h,o,t,j,a,r){ h.hj=h.hj||function(){(h._hj=h._hj||[]).push(arguments)}; h._hjSettings={hjid:XXXXXXX,hjsv:6}; a=o.getElementsByTagName('head')[0]; r=o.createElement('script');r.async=1;r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv; a.appendChild(r); })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');`,
+          }}
+        />
       </head>
       <body className="min-h-full flex flex-col bg-bg-base text-text-base font-body selection:bg-brand-primary selection:text-white">
         <Header />

@@ -81,6 +81,10 @@ export default function Footer() {
             <h4 className="text-[10px] font-medium text-white/25 mb-4 tracking-widest uppercase">Portal</h4>
             <ul className="space-y-2.5 text-xs text-white/45">
               <li><Link href="/artigos" className="hover:text-white transition-colors">Todos os Artigos</Link></li>
+              <li><Link href="/conselho" className="hover:text-white transition-colors">Conselho Consultivo</Link></li>
+              <li><Link href="/ferramentas" className="hover:text-white transition-colors">Ferramentas</Link></li>
+              <li><Link href="/comunidade" className="hover:text-white transition-colors">Comunidade</Link></li>
+              <li><Link href="/produtos" className="hover:text-white transition-colors">Produtos e Serviços</Link></li>
               <li><Link href="/sobre" className="hover:text-white transition-colors">Sobre o Projeto</Link></li>
               <li><Link href="/contato" className="hover:text-white transition-colors">Contato</Link></li>
             </ul>

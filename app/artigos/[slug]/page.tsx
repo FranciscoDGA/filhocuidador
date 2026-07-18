@@ -96,8 +96,37 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
 
   const cta = categoryCTA[article.category] || categoryCTA["Saúde Emocional"];
 
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: article.title,
+    description: article.excerpt,
+    image: article.image,
+    datePublished: article.date,
+    author: {
+      "@type": "Organization",
+      name: "Filho Cuidador",
+      url: "https://filhocuidador.com.br",
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "Filho Cuidador",
+      url: "https://filhocuidador.com.br",
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `https://filhocuidador.com.br/artigos/${article.slug}`,
+    },
+    articleSection: article.category,
+    wordCount: article.content.replace(/<[^>]*>/g, "").split(/\s+/).length,
+  };
+
   return (
     <main className="bg-bg-base min-h-screen pt-8 pb-20">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
       <div className="max-w-[1000px] mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Breadcrumb */}
