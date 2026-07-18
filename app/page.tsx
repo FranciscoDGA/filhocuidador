@@ -1,25 +1,26 @@
-import HeroSection from "@/components/sections/HeroSection";
-import CategoryGridSection from "@/components/sections/CategoryGridSection";
+import FeaturedPost from "@/components/sections/FeaturedPost";
 import RecentArticlesSection from "@/components/sections/RecentArticlesSection";
-import EmotionalSupportBlock from "@/components/sections/EmotionalSupportBlock";
-import StatisticsSection from "@/components/sections/StatisticsSection";
 import NewsletterSection from "@/components/sections/NewsletterSection";
+import { getAllArticles } from "@/lib/articles";
 
 export default function Home() {
+  const articles = getAllArticles();
+  const featuredArticle = articles.length > 0 ? articles[0] : null;
+
   return (
-    <main className="bg-bg-base min-h-screen">
-      <HeroSection />
-      
-      <CategoryGridSection />
+    <main className="bg-white min-h-screen">
+      {featuredArticle && <FeaturedPost article={featuredArticle} />}
       
       <RecentArticlesSection />
       
-      <EmotionalSupportBlock />
+      {/* 
+        Temporarily hiding other sections to strictly match the Untitled UI blog template.
+        We can bring them back styled appropriately later if needed.
+      */}
       
-      {/* We can update Statistics and Newsletter in the next steps */}
-      <StatisticsSection />
-      
-      <NewsletterSection />
+      <div className="mt-20">
+        <NewsletterSection />
+      </div>
     </main>
   );
 }
