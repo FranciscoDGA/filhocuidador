@@ -35,6 +35,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const article = await getArticleBySlug(slug);
   if (!article) return {};
 
+  const ogImage = `https://filhocuidador.com.br/api/og?title=${encodeURIComponent(article.title)}&category=${encodeURIComponent(article.category)}`;
+
   return {
     title: `${article.title} | Filho Cuidador`,
     description: article.excerpt,
@@ -44,13 +46,16 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       type: "article",
       publishedTime: article.date,
       authors: [article.author],
-      images: article.image ? [{ url: article.image, width: 1200, height: 630 }] : [],
+      images: [{ url: ogImage, width: 1200, height: 630 }],
     },
     twitter: {
       card: "summary_large_image",
       title: article.title,
       description: article.excerpt,
-      images: article.image ? [article.image] : [],
+      images: [ogImage],
+    },
+    alternates: {
+      canonical: `https://filhocuidador.com.br/artigos/${slug}`,
     },
   };
 }
@@ -187,6 +192,34 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
           <div className="prose prose-lg prose-gray max-w-none mb-12 text-brand-primary/90 leading-[1.8] font-body">
             <div dangerouslySetInnerHTML={{ __html: article.content }} />
           </div>
+
+          {/* Internal Links - Leia Também */}
+          {relatedArticles.length > 0 && (
+            <div className="bg-brand-primary/[0.03] border border-border-base p-6 mb-10">
+              <h3 className="text-xs font-medium tracking-wider uppercase text-brand-secondary/50 mb-4">
+                Leia Também
+              </h3>
+              <div className="space-y-3">
+                {relatedArticles.slice(0, 3).map((related) => (
+                  <Link
+                    key={related.id}
+                    href={`/artigos/${related.slug}`}
+                    className="flex items-start gap-3 group"
+                  >
+                    <span className="text-brand-accent mt-0.5">→</span>
+                    <div>
+                      <span className="text-sm text-brand-primary group-hover:text-brand-secondary transition-colors font-medium">
+                        {related.title}
+                      </span>
+                      <span className="text-xs text-brand-secondary/40 ml-2">
+                        {related.readTime} min
+                      </span>
+                    </div>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          )}
 
           {/* CTA Contextual */}
           <div className="bg-white border border-border-base p-6 mb-10">
