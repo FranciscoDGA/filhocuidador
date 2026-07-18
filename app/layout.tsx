@@ -17,12 +17,12 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Filho Cuidador | Orientação para Cuidadores Familiares",
+  title: "Filho Cuidador | Você não está sozinho nessa",
   description: "Portal de informação, acolhimento e orientação prática para filhos que cuidam de pais idosos com doenças neurodegenerativas e crônicas.",
   keywords: ["cuidador", "idoso", "Alzheimer", "Parkinson", "demência", "cuidados"],
   openGraph: {
     title: "Filho Cuidador",
-    description: "O único portal que fala COM você, não SOBRE seu pai",
+    description: "Você não está sozinho nessa",
     type: "website",
     url: "https://filhocuidador.com.br",
   },
@@ -38,9 +38,11 @@ export default function RootLayout({
       lang="pt-BR"
       className={`${playfair.variable} ${inter.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col bg-cream text-text-dark font-body">
+      <body className="min-h-full flex flex-col bg-bg-base text-text-base font-body selection:bg-brand-secondary selection:text-white">
         <Header />
-        {children}
+        <div className="flex-grow">
+          {children}
+        </div>
         <Footer />
       </body>
     </html>

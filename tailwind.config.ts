@@ -12,21 +12,13 @@ const config: Config = {
         body: ['var(--font-inter)'],
       },
       colors: {
-        // Brand colors - Refined to match Foks (minimalist/monochrome)
-        'brand-primary': '#111827', // very dark gray/black
-        'brand-secondary': '#4b5563', // medium gray
-        'brand-accent': '#000000', // black
-        'brand-dark': '#111827', 
-
-        // Gradients (less used in Foks, but kept neutral)
-        'gradient-start': '#374151',
-        'gradient-end': '#111827',
-
-        // Neutrals
-        'cream': '#ffffff', // pure white for Foks
-        'text-dark': '#111827', // almost black
-        'text-light': '#6b7280', // softer gray
-        'border-light': '#f3f4f6', // very soft gray
+        // Cores do Briefing
+        'brand-primary': '#4A7B9D', // azul-ardósia suave
+        'brand-secondary': '#7A9E7E', // verde-salvia
+        'brand-accent': '#C47B5A', // terracota suave
+        'bg-base': '#FAFAF7', // branco-creme
+        'text-base': '#2D3748', // cinza-chumbo
+        'border-base': '#E8E8E0', // bordas e divisores
 
         background: 'var(--background)',
         foreground: 'var(--foreground)',
@@ -42,6 +34,8 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
 }
 export default config

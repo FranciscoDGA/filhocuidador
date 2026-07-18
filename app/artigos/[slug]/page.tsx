@@ -1,8 +1,8 @@
 import Link from "next/link";
-import { getArticleBySlug, getAllArticles } from "@/lib/articles";
 import Image from "next/image";
+import { getArticleBySlug, getAllArticles } from "@/lib/articles";
+import { Facebook, MessageCircle } from "lucide-react";
 
-// Add generateStaticParams to prerender all 50 articles
 export function generateStaticParams() {
   const articles = getAllArticles();
   return articles.map((article) => ({
@@ -17,15 +17,10 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
 
   if (!article) {
     return (
-      <div className="min-h-screen flex items-center justify-center px-4 bg-white">
+      <div className="min-h-screen flex items-center justify-center px-4 bg-bg-base">
         <div className="text-center max-w-2xl">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">
-            Artigo não encontrado
-          </h1>
-          <p className="text-gray-500 mb-8">
-            Desculpe, não conseguimos encontrar esse artigo.
-          </p>
-          <Link href="/artigos" className="text-gray-900 font-semibold hover:text-gray-600 transition">
+          <h1 className="text-4xl font-display font-bold text-text-base mb-4">Artigo não encontrado</h1>
+          <Link href="/artigos" className="text-brand-primary font-semibold hover:underline">
             Voltar aos artigos →
           </Link>
         </div>
@@ -33,119 +28,127 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
     );
   }
 
+  const relatedArticles = allArticles
+    .filter((a) => a.category === article.category && a.slug !== article.slug)
+    .slice(0, 3);
+
   return (
-    <main className="bg-white min-h-screen pt-16 pb-24">
-      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Breadcrumb */}
-        <div className="mb-12 flex items-center gap-2 text-sm text-gray-500 font-medium">
-          <Link href="/" className="hover:text-gray-900 transition">Início</Link>
-          <span>/</span>
-          <Link href="/artigos" className="hover:text-gray-900 transition">Artigos</Link>
-          <span>/</span>
-          <span className="text-gray-900 line-clamp-1">{article.title}</span>
-        </div>
-
-        {/* Article Header */}
-        <div className="mb-12">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-gray-200 text-xs font-medium text-gray-600 mb-6">
-            <span className="w-1.5 h-1.5 rounded-full bg-gray-400"></span>
-            {article.category}
+    <main className="bg-bg-base min-h-screen pt-12 pb-24">
+      <div className="max-w-[1000px] mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row gap-12">
+        
+        {/* Main Content Area */}
+        <div className="flex-1 lg:max-w-[720px]">
+          {/* Breadcrumb */}
+          <div className="mb-10 flex items-center gap-2 text-sm text-text-base/60 font-medium overflow-x-auto whitespace-nowrap pb-2">
+            <Link href="/" className="hover:text-brand-primary transition">Início</Link>
+            <span>/</span>
+            <Link href="/artigos" className="hover:text-brand-primary transition">Artigos</Link>
+            <span>/</span>
+            <span className="text-text-base">{article.title}</span>
           </div>
 
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight tracking-tight">
-            {article.title}
-          </h1>
+          <article>
+            {/* Header */}
+            <header className="mb-10">
+              <span className="inline-block px-4 py-1.5 rounded-full bg-brand-secondary/15 text-brand-secondary text-xs font-bold uppercase tracking-wider mb-6">
+                {article.category}
+              </span>
+              
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-display font-bold text-text-base leading-tight tracking-tight mb-8">
+                {article.title}
+              </h1>
+              
+              <div className="flex flex-wrap items-center gap-4 text-sm text-text-base/60 font-medium">
+                <span>{article.date}</span>
+                <span>•</span>
+                <span>{article.readTime} min de leitura</span>
+                <span>•</span>
+                <span>Por {article.author}</span>
+              </div>
+            </header>
 
-          <div className="flex flex-wrap items-center gap-4 text-sm text-gray-500 border-b border-gray-100 pb-8">
-            <span className="font-medium text-gray-900">{article.author}</span>
-            <span>•</span>
-            <span>{article.readTime} min de leitura</span>
-            <span>•</span>
-            <span>{article.date}</span>
-          </div>
+            {/* Featured Image */}
+            <div className="relative w-full aspect-[16/9] rounded-2xl overflow-hidden mb-12 shadow-md">
+              {article.image ? (
+                // eslint-disable-next-line @next/next/no-img-element
+                <img src={article.image} alt={article.title} className="object-cover w-full h-full" />
+              ) : (
+                <div className="w-full h-full bg-border-base flex items-center justify-center text-text-base/40">Imagem Indisponível</div>
+              )}
+            </div>
+
+            {/* Disclaimer */}
+            <div className="bg-brand-primary/5 border border-brand-primary/20 rounded-xl p-5 mb-12">
+              <p className="text-sm text-text-base/80 leading-relaxed">
+                <strong className="text-brand-primary">⚠️ Atenção:</strong> Este site tem caráter informativo. Consulte sempre um profissional de saúde para diagnósticos e tratamentos adequados.
+              </p>
+            </div>
+
+            {/* Content */}
+            <div className="prose prose-lg prose-gray max-w-none mb-16 text-text-base/90 leading-relaxed font-body">
+              <div dangerouslySetInnerHTML={{ __html: article.content }} />
+            </div>
+
+            {/* Share */}
+            <div className="border-t border-b border-border-base py-8 flex flex-col sm:flex-row items-center gap-6 justify-between">
+              <p className="font-semibold text-text-base">Compartilhe e ajude outras famílias:</p>
+              <div className="flex gap-4">
+                <a
+                  href={`https://wa.me/?text=${encodeURIComponent(article.title + " - https://filhocuidador.com.br/artigos/" + article.slug)}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-6 py-3 bg-[#25D366] text-white rounded-full hover:bg-[#20bd5a] transition shadow-sm font-semibold"
+                >
+                  <MessageCircle size={20} />
+                  WhatsApp
+                </a>
+                <a
+                  href={`https://www.facebook.com/sharer/sharer.php?u=https://filhocuidador.com.br/artigos/${article.slug}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-6 py-3 bg-[#1877F2] text-white rounded-full hover:bg-[#166fe5] transition shadow-sm font-semibold"
+                >
+                  <Facebook size={20} />
+                  Facebook
+                </a>
+              </div>
+            </div>
+          </article>
         </div>
 
-        {/* Featured Image */}
-        {article.image ? (
-          <div className="relative w-full aspect-video rounded-3xl overflow-hidden mb-16 shadow-sm border border-gray-100">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img 
-              src={article.image} 
-              alt={article.title}
-              className="object-cover w-full h-full"
-            />
-          </div>
-        ) : (
-          <div className="aspect-video bg-gray-100 rounded-3xl mb-16 flex items-center justify-center border border-gray-50">
-            <svg className="w-16 h-16 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-            </svg>
-          </div>
-        )}
-
-        {/* Health Disclaimer */}
-        <div className="bg-gray-50 border border-gray-100 rounded-2xl p-6 mb-12">
-          <p className="text-sm text-gray-600">
-            <strong className="text-gray-900">⚠️ Aviso Importante:</strong> Este artigo é um conteúdo informativo. Consulte sempre um profissional de saúde qualificado.
-          </p>
-        </div>
-
-        {/* Article Content */}
-        {/* We use prose-lg for a better reading experience matching Foks template */}
-        <div className="prose prose-gray prose-lg max-w-none mb-16 text-gray-700 leading-relaxed">
-          <div dangerouslySetInnerHTML={{ __html: article.content }} />
-        </div>
-
-        {/* Share Buttons */}
-        <div className="border-t border-b border-gray-100 py-8 mb-16">
-          <p className="text-sm font-bold text-gray-900 mb-4 tracking-wider uppercase">Compartilhar artigo</p>
-          <div className="flex gap-4">
-            <a
-              href={`https://wa.me/?text=${encodeURIComponent(article.title + " - https://filhocuidador.com.br/artigos/" + article.slug)}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-5 py-2.5 bg-gray-50 text-gray-900 rounded-xl hover:bg-gray-100 border border-gray-200 transition font-semibold text-sm"
-            >
-              WhatsApp
-            </a>
-            <a
-              href={`https://www.facebook.com/sharer/sharer.php?u=https://filhocuidador.com.br/artigos/${article.slug}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-5 py-2.5 bg-gray-50 text-gray-900 rounded-xl hover:bg-gray-100 border border-gray-200 transition font-semibold text-sm"
-            >
-              Facebook
-            </a>
-          </div>
-        </div>
-
-        {/* Related Articles */}
-        {allArticles && (
-          <div>
-            <h2 className="text-2xl font-bold text-gray-900 mb-8 tracking-tight">
-              Recomendados para você
-            </h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-              {allArticles
-                .filter((a) => a.category === article.category && a.slug !== article.slug)
-                .slice(0, 4)
-                .map((related) => (
-                  <Link
-                    key={related.id}
-                    href={`/artigos/${related.slug}`}
-                    className="block p-6 bg-white border border-gray-100 rounded-2xl hover:shadow-md hover:border-gray-200 transition-all duration-300 group"
-                  >
-                    <h3 className="text-lg font-bold text-gray-900 group-hover:text-gray-600 transition-colors leading-snug mb-2">
-                      {related.title}
-                    </h3>
-                    <p className="text-sm text-gray-400 font-medium mt-auto">
-                      Ler artigo →
-                    </p>
-                  </Link>
-                ))}
+        {/* Sidebar */}
+        <aside className="lg:w-[280px] hidden lg:block">
+          <div className="sticky top-32">
+            <h3 className="text-xl font-display font-bold text-text-base mb-6 border-b border-border-base pb-4">
+              Recomendados
+            </h3>
+            <div className="flex flex-col gap-6">
+              {relatedArticles.map((related) => (
+                <Link key={related.id} href={`/artigos/${related.slug}`} className="group flex flex-col gap-3">
+                  <div className="relative w-full aspect-[4/3] rounded-lg overflow-hidden bg-border-base">
+                    {related.image ? (
+                      // eslint-disable-next-line @next/next/no-img-element
+                      <img src={related.image} alt="" className="object-cover w-full h-full group-hover:scale-105 transition duration-500" />
+                    ) : null}
+                  </div>
+                  <h4 className="font-bold text-text-base group-hover:text-brand-primary transition leading-snug">
+                    {related.title}
+                  </h4>
+                </Link>
+              ))}
+            </div>
+            
+            {/* Banner Placeholder (AdSense/Ebook future) */}
+            <div className="mt-12 bg-white border border-border-base rounded-xl p-6 text-center shadow-sm">
+              <h4 className="font-bold text-brand-primary mb-2">Comunidade Exclusiva</h4>
+              <p className="text-sm text-text-base/70 mb-4">Em breve, um espaço seguro para trocarmos experiências.</p>
+              <button className="w-full py-2 bg-bg-base border border-brand-primary text-brand-primary rounded-full text-sm font-semibold cursor-not-allowed opacity-50">
+                Aguarde...
+              </button>
             </div>
           </div>
-        )}
+        </aside>
+        
       </div>
     </main>
   );
