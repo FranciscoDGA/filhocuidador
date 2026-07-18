@@ -17,7 +17,7 @@ const diaries = [
     excerpt: "Há dois anos, minha mãe foi diagnosticada com Alzheimer. Hoje, ela não sabe meu nome, mas eu sei exatamente o que ela precisa. Cada dia é uma nova lição sobre o que é amor incondicional.",
     date: "15 Jul 2026",
     readTime: 8,
-    image: "https://images.unsplash.com/photo-1581579438747-1dc8d17bbce4?w=600&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1516627145497-ae6968895b74?w=600&auto=format&fit=crop",
   },
   {
     slug: "carlos-cuidar-do-pai-sozinho",
@@ -37,7 +37,7 @@ const diaries = [
     excerpt: "Meus irmãos moram longe e raro ligam. Eu cuido da minha mãe todos os dias. Às vezes sinto raiva, mas depois lembro que ela fez isso por mim a vida inteira.",
     date: "5 Jul 2026",
     readTime: 7,
-    image: "https://images.unsplash.com/photo-1581579438747-1dc8d17bbce4?w=600&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1491438590914-bc09fcaaf77a?w=600&auto=format&fit=crop",
   },
   {
     slug: "pedro-o-burnout-que-ninguem-ve",
@@ -47,7 +47,7 @@ const diaries = [
     excerpt: "Trabalho home office e cuido do meu pai durante o dia. Não saio mais, não tenho vida social. Meu médico disse que estou com burnout. Preciso de ajuda, mas não sei pedir.",
     date: "28 Jun 2026",
     readTime: 9,
-    image: "https://images.unsplash.com/photo-1581579438747-1dc8d17bbce4?w=600&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1474631245212-32dc3c8310c6?w=600&auto=format&fit=crop",
   },
   {
     slug: "juliana-o-dia-em-que-desisti-e-voltei",
@@ -57,7 +57,7 @@ const diaries = [
     excerpt: "Há seis meses quase intern minha mãe em um asilo. Chorei muito. Mas naquele noite, ela me abraçou e disse 'obrigada'. Foi o único momento de lucidez em meses. Não desisti mais.",
     date: "20 Jun 2026",
     readTime: 7,
-    image: "https://images.unsplash.com/photo-1581579438747-1dc8d17bbce4?w=600&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1499209974431-9dddcece7f88?w=600&auto=format&fit=crop",
   },
   {
     slug: "roberto-o-avc-que-mudou-tudo",
@@ -67,7 +67,7 @@ const diaries = [
     excerpt: "Meu pai sofreu um AVC aos 75 anos. Em uma manhã, ele passou de uma pessoa ativa a alguém que não consegue falar. Eu nunca tinha cuidado de ninguém. Aprendi na raça.",
     date: "15 Jun 2026",
     readTime: 8,
-    image: "https://images.unsplash.com/photo-1581579438747-1dc8d17bbce4?w=600&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1447069387593-a5de0862481e?w=600&auto=format&fit=crop",
   },
 ];
 

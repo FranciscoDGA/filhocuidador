@@ -197,10 +197,10 @@ R: Varia. Alguns mantêm anos, outros meses. Não há cura.
 R: Não. É compassão. "Mentira terapêutica" reduz sofrimento.
 
 **P: Como lidar com agressão?**
-R: Fique calmo, recue, procure causa, não reaja com agressão.
+R: Fique calmo, recue, procure causa, não reaja com agressão. Veja mais em nosso guia sobre [Alzheimer](/artigos/alzheimer-guia-pratico-cuidador).
 
 **P: Quando buscar ajuda psiquiátrica?**
-R: Se agressão injustificada frequente, medicamento pode ajudar.
+R: Se agressão injustificada frequente, medicamento pode ajudar. Consulte também nosso artigo sobre [gerenciamento de medicamentos](/artigos/gerenciamento-medicamentos-idoso).
 
 ---
 

@@ -7,6 +7,9 @@ author: "Equipe Filho Cuidador"
 excerpt: "Como fazer procuração de idoso para que você (filho) possa resolver problemas legais e financeiros. Modelo pronto e instruções simplificadas."
 readTime: 10
 image: "https://images.unsplash.com/photo-1568992687947-868a62a9f521?w=800&q=80"
+seo:
+  keywords: ["procuração idoso", "como fazer procuração", "procuração pai", "documento idoso", "cartório idoso"]
+  metaDescription: "Como fazer procuração de idoso para filho. Modelo pronto e passo a passo simplificado."
 ---
 
 ## O Que é Procuração?

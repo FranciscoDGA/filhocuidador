@@ -37,12 +37,15 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 
   const ogImage = `https://filhocuidador.com.br/api/og?title=${encodeURIComponent(article.title)}&category=${encodeURIComponent(article.category)}`;
 
+  const metaDescription = article.seo?.metaDescription || article.excerpt;
+
   return {
     title: `${article.title} | Filho Cuidador`,
-    description: article.excerpt,
+    description: metaDescription,
+    keywords: article.seo?.keywords,
     openGraph: {
       title: article.title,
-      description: article.excerpt,
+      description: metaDescription,
       type: "article",
       publishedTime: article.date,
       authors: [article.author],
@@ -51,7 +54,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     twitter: {
       card: "summary_large_image",
       title: article.title,
-      description: article.excerpt,
+      description: metaDescription,
       images: [ogImage],
     },
     alternates: {
@@ -101,11 +104,13 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
 
   const cta = categoryCTA[article.category] || categoryCTA["Saúde Emocional"];
 
+  const schemaDescription = article.seo?.metaDescription || article.excerpt;
+
   const schema = {
     "@context": "https://schema.org",
     "@type": "Article",
     headline: article.title,
-    description: article.excerpt,
+    description: schemaDescription,
     image: article.image,
     datePublished: article.date,
     author: {
@@ -123,6 +128,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
       "@id": `https://filhocuidador.com.br/artigos/${article.slug}`,
     },
     articleSection: article.category,
+    keywords: article.seo?.keywords?.join(", "),
     wordCount: article.content.replace(/<[^>]*>/g, "").split(/\s+/).length,
   };
 

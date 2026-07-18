@@ -8,7 +8,7 @@ const diaries = [
     author: "Ana Maria, 42 anos",
     city: "São Paulo, SP",
     excerpt: "Há dois anos, minha mãe foi diagnosticada com Alzheimer. Hoje, ela não sabe meu nome, mas eu sei exatamente o que ela precisa.",
-    image: "https://images.unsplash.com/photo-1581579438747-1dc8d17bbce4?w=600&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1516627145497-ae6968895b74?w=600&auto=format&fit=crop",
   },
   {
     slug: "carlos-cuidar-do-pai-sozinho",
@@ -24,7 +24,7 @@ const diaries = [
     author: "Juliana, 36 anos",
     city: "Salvador, BA",
     excerpt: "Há seis meses quase intern minha mãe em um asilo. Mas naquela noite, ela me abraçou e disse 'obrigada'. Não desisti mais.",
-    image: "https://images.unsplash.com/photo-1581579438747-1dc8d17bbce4?w=600&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1491438590914-bc09fcaaf77a?w=600&auto=format&fit=crop",
   },
 ];
 

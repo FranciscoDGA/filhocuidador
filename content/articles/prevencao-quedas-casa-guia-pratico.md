@@ -7,6 +7,9 @@ author: "Equipe Filho Cuidador"
 excerpt: "Idosos caem. Muito. Aqui está como transformar sua casa numa fortaleza de segurança. Checklist prático e custo-efetivo."
 readTime: 11
 image: "https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=800&q=80"
+seo:
+  keywords: ["prevenção quedas idoso", "casa segura idoso", "barras apoio banheiro", "segurança idoso em casa"]
+  metaDescription: "Guia prático de prevenção de quedas em casa para idosos. Checklist por cômodo e dicas de segurança."
 ---
 
 ## A Realidade das Quedas
@@ -295,11 +298,11 @@ Depois que fizer as mudanças:
 
 Procure médico para:
 - Verificar fraturas ocultas
-- Revisar medicações (podem causar tontura)
+- Revisar medicações (podem causar tontura) - veja nosso guia sobre [gerenciamento de medicamentos](/artigos/gerenciamento-medicamentos-idoso)
 - Avaliar força/equilíbrio
 - Possível encaminhamento para fisioterapia
 
-Queda é sinal de que o ambiente ou saúde dele mudou.
+Queda é sinal de que o ambiente ou saúde dele mudou. Confira também nosso artigo sobre [adaptações da casa para segurança](/artigos/adaptacoes-casa-idoso-seguranca).
 
 ---
 

@@ -3,14 +3,14 @@
 
 @theme {
   --color-brand-primary: #1a1a1a;
-  --color-brand-secondary: #5a5a5a;
-  --color-brand-accent: #9c7c5c;
+  --color-brand-secondary: #4a4a4a;
+  --color-brand-accent: #8c6a4a;
   --color-bg-base: #f5f0eb;
-  --color-bg-card: #fffdf9;
+  --color-bg-card: #ffffff;
   --color-bg-highlight: #faf6f1;
   --color-text-base: #1a1a1a;
-  --color-border-base: #e5ddd5;
-  --color-border-light: #ede8e2;
+  --color-border-base: #d4ccc4;
+  --color-border-light: #e5ddd5;
   
   --font-display: var(--font-playfair);
   --font-body: var(--font-inter);
@@ -20,10 +20,10 @@
   :root {
     --background: #f5f0eb;
     --foreground: #1a1a1a;
-    --muted: #6b6b6b;
-    --border: #e5ddd5;
-    --accent: #9c7c5c;
-    --card: #fffdf9;
+    --muted: #5a5a5a;
+    --border: #d4ccc4;
+    --accent: #8c6a4a;
+    --card: #ffffff;
     color-scheme: light !important;
   }
 
@@ -61,7 +61,21 @@
   }
 
   ::selection {
-    background: #9c7c5c;
-    color: #fffdf9;
+    background: #8c6a4a;
+    color: #ffffff;
+  }
+}
+
+@layer components {
+  .card {
+    border-radius: 5px;
+  }
+  
+  .btn {
+    border-radius: 5px;
+  }
+  
+  .input {
+    border-radius: 5px;
   }
 }

@@ -248,7 +248,7 @@ R: Sim, com moderação. Versão diet/light. Ou fruta.
 R: Não. Alguns pensam que piora com tempo (pseudociência). Realidade: corpo precisa mais com idade.
 
 **P: Quanto custa monitorar?**
-R: Glicômetro ~R$ 40. Fitas ~R$ 0,50 cada. Medicação varia (INSS fornece algumas).
+R: Glicômetro ~R$ 40. Fitas ~R$ 0,50 cada. Medicação varia (INSS fornece algumas). Veja também sobre [medicamentos gratuitos pelo SUS](/artigos/medicamentos-sus-gratuitos).
 
 **P: Hipoglicemia vai virar comun?**
 R: Se medicação bem ajustada, raro. Se tomar muito, sim. Médico monitora e ajusta.

@@ -7,6 +7,9 @@ author: "Equipe Filho Cuidador"
 excerpt: "A culpa de estar cansado. A raiva de irmãos que não ajudam. A exaustão sem fim. Você não está sozinho. Essas emoções são completamente normais."
 readTime: 8
 image: "https://images.unsplash.com/photo-1499209974431-9dddcece7f88?w=800&q=80"
+seo:
+  keywords: ["culpa cuidador", "raiva cuidador idoso", "exaustão cuidador", "emoções cuidador"]
+  metaDescription: "Culpa, raiva e exaustão são normais para cuidadores. Entenda por que sentir isso e como lidar."
 ---
 
 ## A Santidade Falsa do Cuidado

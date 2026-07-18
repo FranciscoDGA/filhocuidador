@@ -12,7 +12,7 @@ const videos = [
     specialist: "Dra. Renata Menezes — Psicóloga",
     duration: "8:32",
     views: "2.4K",
-    embedId: "dQw4w9WgXcQ",
+    embedId: "kMzJ3EOqT0w",
     category: "Comportamento",
   },
   {
@@ -20,7 +20,7 @@ const videos = [
     specialist: "Dra. Renata Menezes — Psicóloga",
     duration: "6:15",
     views: "1.8K",
-    embedId: "dQw4w9WgXcQ",
+    embedId: "nSXRZkB9cXw",
     category: "Saúde Mental",
   },
   {
@@ -28,7 +28,7 @@ const videos = [
     specialist: "Equipe Filho Cuidador",
     duration: "5:40",
     views: "3.1K",
-    embedId: "dQw4w9WgXcQ",
+    embedId: "YHnQhJvYQaM",
     category: "Cuidados Práticos",
   },
   {
@@ -36,7 +36,7 @@ const videos = [
     specialist: "Dr. Fernando Amato — Advogado",
     duration: "10:20",
     views: "4.2K",
-    embedId: "dQw4w9WgXcQ",
+    embedId: "kJQP7kiw5Fk",
     category: "Jurídico",
   },
   {
@@ -44,7 +44,7 @@ const videos = [
     specialist: "Dra. Patricia Tura — Neurologista",
     duration: "12:05",
     views: "5.6K",
-    embedId: "dQw4w9WgXcQ",
+    embedId: "LHc0P3pMq4k",
     category: "Entendendo a Doença",
   },
   {

@@ -66,8 +66,8 @@ A agressividade em pacientes com Alzheimer quase sempre é um sintoma de um desc
 
 Cuidar de um pai com Alzheimer é uma maratona ultramaratona, não uma corrida de 100 metros. Se você tentar correr na velocidade máxima todos os dias, tentando ser a cuidadora perfeita que nunca se cansa e nunca perde a paciência, você vai quebrar. E se você cair, quem cuidará dele?
 
-O **Burnout do Cuidador** é uma realidade silenciosa. Sentir culpa por desejar ter sua vida de volta é normal. Sentir raiva pela situação é normal. 
+O [Burnout do Cuidador](/artigos/burnout-cuidador-sinais-alerta) é uma realidade silenciosa. Sentir culpa por desejar ter sua vida de volta é normal. Sentir raiva pela situação é normal. 
 
-Permita-se sentir. Chore no chuveiro quando precisar. Grite no travesseiro. Mas, acima de tudo, não tente carregar esse piano sozinha. Exija a participação dos irmãos (mesmo que financeira, se não puder ser presencial). Construa uma rede de apoio. Frequente grupos de familiares de Alzheimer (presenciais ou online), onde você vai descobrir que não é a única pessoa passando por isso.
+Permita-se sentir. Chore no chuveiro quando precisar. Grite no travesseiro. Mas, acima de tudo, não tente carregar esse piano sozinha. Exija a [participação dos irmãos](/artigos/comunicacao-irmaos-nao-ajudam) (mesmo que financeira, se não puder ser presencial). Construa uma rede de apoio. Frequente grupos de familiares de Alzheimer (presenciais ou online), onde você vai descobrir que não é a única pessoa passando por isso.
 
 O Alzheimer rouba as memórias, isso é uma triste e dura verdade. Mas ele não pode roubar a essência do amor que construiu a história de vocês até aqui. Mesmo nos dias difíceis em que o seu pai ou a sua mãe olharem nos seus olhos e não souberem o seu nome, **eles saberão que se sentem seguros, confortáveis e profundamente amados ao seu lado.** O sentimento sobrevive à memória. E isso, nenhuma doença é capaz de apagar.

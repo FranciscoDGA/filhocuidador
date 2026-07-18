@@ -43,13 +43,13 @@ export default function NewsletterForm() {
         value={email}
         onChange={(e) => setEmail(e.target.value)}
         placeholder="Seu email"
-        className="w-full sm:flex-1 px-5 py-3 bg-transparent border border-white/15 text-white placeholder:text-white/25 text-sm focus:outline-none focus:border-white/40 transition-colors"
+        className="w-full sm:flex-1 px-5 py-3 bg-transparent border border-white/15 text-white placeholder:text-white/25 text-sm focus:outline-none focus:border-white/40 transition-colors rounded-[5px]"
         required
       />
       <button
         type="submit"
         disabled={loading}
-        className="w-full sm:w-auto px-8 py-3 bg-white text-brand-primary text-sm font-medium hover:bg-white/90 transition-colors disabled:opacity-50"
+        className="w-full sm:w-auto px-8 py-3 bg-white text-brand-primary text-sm font-medium hover:bg-white/90 transition-colors disabled:opacity-50 rounded-[5px]"
       >
         {loading ? "..." : "Inscrever-se"}
       </button>

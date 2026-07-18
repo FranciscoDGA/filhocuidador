@@ -7,6 +7,9 @@ author: "Equipe Filho Cuidador"
 excerpt: "Entenda como solicitar o BPC, quem tem direito, documentos necessários e como apresentar o pedido ao INSS. Guia passo a passo para 2024."
 readTime: 12
 image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&q=80"
+seo:
+  keywords: ["BPC idoso", "Benefício Prestação Continuada", "LOAS", "INSS idoso", "como solicitar BPC"]
+  metaDescription: "Guia completo sobre BPC (Benefício de Prestação Continuada) para idosos. Saiba quem tem direito, documentos e como solicitar."
 ---
 
 ## O que é o BPC?

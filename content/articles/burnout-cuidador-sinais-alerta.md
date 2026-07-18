@@ -198,7 +198,7 @@ Isso **não é fraqueza sua**. É biologia. Seu corpo e mente têm limites.
 - [ ] Peça ajuda a alguém (irmão, amigo, padre)
 
 ### Longo Prazo (Este Mês):
-- Considere cuidado compartilhado (familiar, home care, asilo se necessário)
+- Considere cuidado compartilhado (familiar, home care, [asilo se necessário](/artigos/quando-colocar-asilo-decisao))
 - Procure grupos de apoio (têm online e presencial)
 - Terapia regular (não é luxo, é medicina)
 - Atividade física (mesmo que apenas 10 min de caminhada)
@@ -210,7 +210,7 @@ Isso **não é fraqueza sua**. É biologia. Seu corpo e mente têm limites.
 **Fazer hoje:**
 1. Compartilhe seus sintomas com alguém
 2. Agende consulta médica
-3. Leia o artigo "Cuidar de Si Mesmo Enquanto Cuida de Outro"
+3. Leia o artigo "[Cuidar de Si Mesmo Enquanto Cuida de Outro](/artigos/cuidar-de-si-mesmo-enquanto-cuida-outro)"
 
 **Porque importa:**
 Você não pode cuidar de ninguém se estiver quebrado. Não é egoísmo cuidar de si. É necessidade.

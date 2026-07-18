@@ -56,7 +56,7 @@ export default function QuestionForm() {
             type="text"
             value={formData.name}
             onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-            className="w-full px-4 py-2.5 border border-border-base text-sm text-brand-primary focus:outline-none focus:border-brand-primary/30 transition-colors"
+            className="w-full px-4 py-2.5 border border-border-base text-sm text-brand-primary focus:outline-none focus:border-brand-primary/30 transition-colors rounded-[5px]"
             required
           />
         </div>
@@ -66,7 +66,7 @@ export default function QuestionForm() {
             type="email"
             value={formData.email}
             onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-            className="w-full px-4 py-2.5 border border-border-base text-sm text-brand-primary focus:outline-none focus:border-brand-primary/30 transition-colors"
+            className="w-full px-4 py-2.5 border border-border-base text-sm text-brand-primary focus:outline-none focus:border-brand-primary/30 transition-colors rounded-[5px]"
             required
           />
         </div>
@@ -76,7 +76,7 @@ export default function QuestionForm() {
         <select
           value={formData.category}
           onChange={(e) => setFormData({ ...formData, category: e.target.value })}
-          className="w-full px-4 py-2.5 border border-border-base text-sm text-brand-primary focus:outline-none focus:border-brand-primary/30 transition-colors bg-white"
+          className="w-full px-4 py-2.5 border border-border-base text-sm text-brand-primary focus:outline-none focus:border-brand-primary/30 transition-colors bg-white rounded-[5px]"
         >
           <option value="">Selecione</option>
           <option value="Medicação">Medicação</option>
@@ -94,13 +94,13 @@ export default function QuestionForm() {
           value={formData.question}
           onChange={(e) => setFormData({ ...formData, question: e.target.value })}
           rows={5}
-          className="w-full px-4 py-2.5 border border-border-base text-sm text-brand-primary focus:outline-none focus:border-brand-primary/30 transition-colors resize-none"
+          className="w-full px-4 py-2.5 border border-border-base text-sm text-brand-primary focus:outline-none focus:border-brand-primary/30 transition-colors resize-none rounded-[5px]"
           required
         />
       </div>
       <button
         type="submit"
-        className="px-8 py-3 bg-brand-primary text-white text-[13px] font-medium tracking-wide uppercase hover:bg-brand-primary/90 transition-colors"
+        className="px-8 py-3 bg-brand-primary text-white text-[13px] font-medium tracking-wide uppercase hover:bg-brand-primary/90 transition-colors rounded-[5px]"
       >
         Enviar Pergunta
       </button>
