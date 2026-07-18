@@ -143,7 +143,7 @@ export default async function CategoryPage({ params }: { params: Promise<{ slug:
                 className="group flex flex-col items-start"
               >
                 {/* Image Container */}
-                <div className="relative w-full aspect-[16/10] overflow-hidden mb-5 bg-gray-100">
+                <div className="relative w-full aspect-[16/10] overflow-hidden rounded-t-[50px] mb-5 bg-gray-100">
                   {article.image && (
                     <Image
                       src={article.image}

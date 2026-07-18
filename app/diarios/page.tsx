@@ -111,7 +111,7 @@ export default function DiariosPage() {
           {diaries.map((diary) => (
             <Link key={diary.slug} href={`/diarios/${diary.slug}`} className="group">
               <article className="bg-white border border-border-base overflow-hidden h-full">
-                <div className="relative w-full aspect-[16/10] overflow-hidden bg-gray-100">
+                <div className="relative w-full aspect-[16/10] overflow-hidden rounded-t-[50px] bg-gray-100">
                   <Image
                     src={diary.image}
                     alt={diary.title}

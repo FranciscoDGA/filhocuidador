@@ -201,7 +201,7 @@ export default async function DiarioDetailPage({ params }: { params: Promise<{ s
           </header>
 
           {diary.image && (
-            <div className="relative w-full aspect-[16/9] overflow-hidden mb-10">
+            <div className="relative w-full aspect-[16/9] overflow-hidden rounded-t-[50px] mb-10">
               <Image src={diary.image} alt={diary.title} fill className="object-cover" />
             </div>
           )}
