@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 40" fill="none">
+  <rect x="2" y="4" width="32" height="32" rx="8" fill="#1a1a1a"/>
+  <path d="M18 12 C18 12 12 18 12 22 C12 26 16 28 18 26 C20 28 24 26 24 22 C24 18 18 12 18 12Z" fill="#8b7355" opacity="0.9"/>
+  <path d="M11 27 L11 32 L18 32 L18 29 L25 32 L25 27" stroke="#fafaf8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <path d="M18 29 L18 32" stroke="#fafaf8" stroke-width="1.5" stroke-linecap="round"/>
+  <text x="42" y="22" font-family="Georgia, serif" font-size="14" font-weight="600" fill="#1a1a1a" letter-spacing="-0.5">Filho</text>
+  <text x="82" y="22" font-family="Georgia, serif" font-size="14" font-weight="400" fill="#8b7355" letter-spacing="-0.5">Cuidador</text>
+  <text x="42" y="34" font-family="Arial, sans-serif" font-size="7" fill="#999" letter-spacing="2" text-transform="uppercase">portal de acolhimento</text>
+</svg>

@@ -3,11 +3,14 @@
 
 @theme {
   --color-brand-primary: #1a1a1a;
-  --color-brand-secondary: #4a4a4a;
-  --color-brand-accent: #8b7355;
-  --color-bg-base: #fafaf8;
+  --color-brand-secondary: #5a5a5a;
+  --color-brand-accent: #9c7c5c;
+  --color-bg-base: #f5f0eb;
+  --color-bg-card: #fffdf9;
+  --color-bg-highlight: #faf6f1;
   --color-text-base: #1a1a1a;
-  --color-border-base: #e8e6e3;
+  --color-border-base: #e5ddd5;
+  --color-border-light: #ede8e2;
   
   --font-display: var(--font-playfair);
   --font-body: var(--font-inter);
@@ -15,21 +18,22 @@
 
 @layer base {
   :root {
-    --background: #fafaf8;
+    --background: #f5f0eb;
     --foreground: #1a1a1a;
     --muted: #6b6b6b;
-    --border: #e8e6e3;
-    --accent: #8b7355;
+    --border: #e5ddd5;
+    --accent: #9c7c5c;
+    --card: #fffdf9;
     color-scheme: light !important;
   }
 
   html {
     scroll-behavior: smooth;
-    background: #fafaf8 !important;
+    background: #f5f0eb !important;
   }
 
   body {
-    background: #fafaf8 !important;
+    background: #f5f0eb !important;
     color: var(--foreground);
     font-family: var(--font-inter), sans-serif;
     line-height: 1.7;
@@ -57,7 +61,7 @@
   }
 
   ::selection {
-    background: #1a1a1a;
-    color: #fafaf8;
+    background: #9c7c5c;
+    color: #fffdf9;
   }
 }
