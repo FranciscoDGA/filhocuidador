@@ -9,10 +9,10 @@ export async function submitQuestion(data: {
   question: string;
 }) {
   const { error } = await supabase.from("questions").insert({
-    name: data.name,
-    email: data.email,
-    category: data.category,
-    question: data.question,
+    nome: data.name,
+    "e-mail": data.email,
+    categoria: data.category,
+    pergunta: data.question,
     status: "pending",
   });
 
@@ -27,11 +27,11 @@ export async function submitTestimonial(data: {
   rating: number;
 }) {
   const { error } = await supabase.from("testimonials").insert({
-    name: data.name,
-    city: data.city,
-    text: data.text,
-    rating: data.rating,
-    approved: false,
+    nome: data.name,
+    cidade: data.city,
+    texto: data.text,
+    avaliação: data.rating,
+    aprovado: false,
   });
 
   if (error) throw error;
@@ -46,11 +46,11 @@ export async function submitDiary(data: {
   email: string;
 }) {
   const { error } = await supabase.from("diaries").insert({
-    name: data.name,
-    city: data.city,
-    age: data.age,
-    story: data.story,
-    email: data.email,
+    nome: data.name,
+    cidade: data.city,
+    idade: data.age,
+    história: data.story,
+    "e-mail": data.email,
     status: "pending",
   });
 
@@ -60,8 +60,8 @@ export async function submitDiary(data: {
 
 export async function subscribeNewsletter(email: string) {
   const { error } = await supabase.from("newsletter").insert({
-    email,
-    active: true,
+    "e-mail": email,
+    ativo: true,
   });
 
   if (error) {
@@ -77,8 +77,8 @@ export async function getApprovedTestimonials() {
   const { data, error } = await supabase
     .from("testimonials")
     .select("*")
-    .eq("approved", true)
-    .order("created_at", { ascending: false });
+    .eq("aprovado", true)
+    .order("criado_em", { ascending: false });
 
   if (error) throw error;
   return data;
@@ -89,7 +89,7 @@ export async function getPublishedQuestions() {
     .from("questions")
     .select("*")
     .eq("status", "published")
-    .order("created_at", { ascending: false });
+    .order("criado_em", { ascending: false });
 
   if (error) throw error;
   return data;
