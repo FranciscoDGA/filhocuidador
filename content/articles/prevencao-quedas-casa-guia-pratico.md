@@ -6,7 +6,7 @@ date: "2024-07-25"
 author: "Equipe Filho Cuidador"
 excerpt: "Idosos caem. Muito. Aqui está como transformar sua casa numa fortaleza de segurança. Checklist prático e custo-efetivo."
 readTime: 11
-image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&q=80"
+image: "https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=800&q=80"
 ---
 
 ## A Realidade das Quedas
