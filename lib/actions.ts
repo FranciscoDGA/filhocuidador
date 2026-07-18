@@ -65,9 +65,10 @@ export async function subscribeNewsletter(email: string) {
   });
 
   if (error) {
-    if (error.message.includes("duplicate")) {
+    if (error.message.includes("duplicate") || error.message.includes("unique") || error.code === "23505") {
       return { success: true, message: "Email já cadastrado." };
     }
+    console.error("Newsletter error:", error);
     throw error;
   }
   return { success: true };
