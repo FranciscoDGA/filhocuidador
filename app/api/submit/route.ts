@@ -16,7 +16,7 @@ export async function POST(request: Request) {
     switch (type) {
       case "newsletter":
         result = await supabase.from("newsletter").insert({
-          "e-mail": data.email,
+          email: data.email,
         });
         break;
 
