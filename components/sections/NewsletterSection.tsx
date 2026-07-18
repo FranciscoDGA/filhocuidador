@@ -14,41 +14,41 @@ export default function NewsletterSection() {
   };
 
   return (
-    <section id="newsletter" className="w-full py-16 px-4 sm:px-6 lg:px-8 bg-black">
-      <div className="max-w-2xl mx-auto text-center">
-        <h2 className="text-3xl font-bold text-white mb-4">
-          Receba apoio toda semana
+    <section id="newsletter" className="w-full py-20 px-4 sm:px-6 lg:px-8 bg-white border-t border-gray-200">
+      <div className="max-w-xl mx-auto">
+        <h2 className="text-2xl font-display font-bold text-gray-900 mb-2">
+          Newsletter
         </h2>
-        <p className="text-gray-300 mb-8">
-          Dicas práticas e um lembrete de que você não está sozinho.
+        <p className="text-gray-500 font-serif text-sm mb-6">
+          Receba dicas práticas e um lembrete de que você não está sozinho toda semana.
         </p>
 
-        <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 mb-4">
-          <input
-            type="email"
-            placeholder="seu@email.com"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            required
-            className="flex-1 px-4 py-3 bg-white text-gray-900 placeholder:text-gray-500 focus:outline-none"
-          />
-          <button
-            type="submit"
-            className="px-8 py-3 bg-brand-primary text-white font-bold hover:bg-blue-700 transition whitespace-nowrap"
-          >
-            Inscrever
-          </button>
+        <form onSubmit={handleSubmit} className="flex flex-col mb-4">
+          <label htmlFor="email" className="text-sm font-bold text-gray-900 mb-2">Email address</label>
+          <div className="flex flex-col sm:flex-row gap-3">
+            <input
+              id="email"
+              type="email"
+              placeholder="Your email address"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required
+              className="flex-1 px-4 py-3 bg-white border border-gray-300 text-gray-900 placeholder:text-gray-400 focus:outline-none focus:border-gray-900 focus:ring-1 focus:ring-gray-900 transition"
+            />
+            <button
+              type="submit"
+              className="px-8 py-3 bg-black text-white font-bold text-sm hover:bg-gray-800 transition uppercase tracking-widest whitespace-nowrap"
+            >
+              Sign Up
+            </button>
+          </div>
         </form>
 
         {submitted && (
-          <p className="text-brand-primary font-bold text-sm">
-            ✓ Obrigado! Verifique seu email para confirmar.
+          <p className="text-green-600 font-bold text-sm">
+            ✓ Obrigado! Verifique seu email.
           </p>
         )}
-
-        <p className="text-xs text-gray-500 mt-4">
-          Sem spam. Apenas conteúdo relevante e acolhimento.
-        </p>
       </div>
     </section>
   );

@@ -1,50 +1,77 @@
 import Link from "next/link";
 
 export default function Header() {
+  const currentDate = new Intl.DateTimeFormat('pt-BR', {
+    weekday: 'long',
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+  }).format(new Date());
+
   return (
-    <header className="sticky top-0 z-50 bg-white border-b border-gray-100">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20">
-          {/* Logo */}
-          <Link href="/" className="flex-shrink-0 flex items-center gap-2">
-            <svg className="w-5 h-5 text-gray-900" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
-            </svg>
-            <span className="text-2xl font-bold text-gray-900 tracking-tight">Filho Cuidador.</span>
-          </Link>
+    <header className="bg-white">
+      {/* Top Bar */}
+      <div className="border-b border-gray-200 hidden md:block">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-10 flex items-center justify-between text-xs text-gray-500 font-medium uppercase tracking-wider">
+          <div className="flex items-center gap-4">
+            <span className="capitalize">{currentDate}</span>
+          </div>
+          <div className="flex items-center gap-6">
+            <div className="flex gap-4">
+              <Link href="#" className="hover:text-black transition-colors">Facebook</Link>
+              <Link href="#" className="hover:text-black transition-colors">Instagram</Link>
+              <Link href="#" className="hover:text-black transition-colors">YouTube</Link>
+            </div>
+            <Link href="#newsletter" className="hover:text-black transition-colors border-l border-gray-300 pl-6">
+              Assine a Newsletter
+            </Link>
+          </div>
+        </div>
+      </div>
 
-          {/* Navigation */}
-          <nav className="hidden lg:flex items-center gap-8">
-            <Link href="/" className="text-sm text-gray-900 font-medium hover:text-gray-600 transition">
-              Início
-            </Link>
-            <Link href="/artigos" className="text-sm text-gray-900 font-medium hover:text-gray-600 transition">
-              Artigos
-            </Link>
-            <Link href="/categorias" className="text-sm text-gray-900 font-medium hover:text-gray-600 transition flex items-center gap-1">
-              Categorias
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" /></svg>
-            </Link>
-            <Link href="/sobre" className="text-sm text-gray-900 font-medium hover:text-gray-600 transition">
-              Sobre
-            </Link>
-          </nav>
+      {/* Main Logo Area */}
+      <div className="py-8 md:py-12 text-center">
+        <Link href="/" className="inline-block">
+          <h1 className="text-5xl md:text-7xl font-display font-bold text-gray-900 tracking-tight">
+            Filho Cuidador.
+          </h1>
+          <p className="mt-2 text-sm md:text-base text-gray-500 font-serif italic">
+            O único portal que fala com você, não sobre o seu pai.
+          </p>
+        </Link>
+      </div>
 
-          {/* Right Actions */}
-          <div className="flex items-center gap-5">
-            <button className="text-gray-700 hover:text-black transition">
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
-            </button>
-            <button className="hidden sm:block text-gray-700 hover:text-black transition">
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" /></svg>
-            </button>
-            <Link href="/contato" className="hidden sm:inline-flex items-center justify-center px-5 py-2 text-sm font-medium text-white bg-black rounded-full hover:bg-gray-800 transition">
-              Contato →
-            </Link>
-            
-            {/* Mobile menu button */}
-            <button className="lg:hidden p-2 text-gray-900 -mr-2">
+      {/* Navigation Bar */}
+      <div className="border-y border-gray-200 sticky top-0 z-50 bg-white shadow-sm">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center justify-center h-14 relative">
+            {/* Mobile menu button (left) */}
+            <button className="md:hidden absolute left-0 p-2 text-gray-900">
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" /></svg>
+            </button>
+
+            {/* Main Nav */}
+            <nav className="hidden md:flex items-center gap-8 lg:gap-12">
+              <Link href="/" className="text-sm text-gray-900 font-bold hover:text-gray-600 transition uppercase tracking-wide">
+                Início
+              </Link>
+              <Link href="/dicas" className="text-sm text-gray-900 font-bold hover:text-gray-600 transition uppercase tracking-wide">
+                Dicas Práticas
+              </Link>
+              <Link href="/saude-mental" className="text-sm text-gray-900 font-bold hover:text-gray-600 transition uppercase tracking-wide">
+                Saúde Mental
+              </Link>
+              <Link href="/burocracia" className="text-sm text-gray-900 font-bold hover:text-gray-600 transition uppercase tracking-wide">
+                Burocracia
+              </Link>
+              <Link href="/historias" className="text-sm text-gray-900 font-bold hover:text-gray-600 transition uppercase tracking-wide">
+                Histórias Reais
+              </Link>
+            </nav>
+
+            {/* Right Search (absolute on mobile, right on desktop) */}
+            <button className="absolute right-0 md:absolute md:right-0 text-gray-700 hover:text-black transition">
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
             </button>
           </div>
         </div>

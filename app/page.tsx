@@ -1,31 +1,43 @@
-import HeroSection from "@/components/sections/HeroSection";
-import RecentArticlesSection from "@/components/sections/RecentArticlesSection";
-import StatisticsSection from "@/components/sections/StatisticsSection";
+import FeaturedNewsSection from "@/components/sections/FeaturedNewsSection";
+import CategorySection from "@/components/sections/CategorySection";
+import ColumnistsSection from "@/components/sections/ColumnistsSection";
 import NewsletterSection from "@/components/sections/NewsletterSection";
-import Sidebar from "@/components/layout/Sidebar";
 
 export default function Home() {
   return (
     <main className="bg-white min-h-screen">
-      <HeroSection />
-      
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="flex flex-col lg:flex-row gap-16">
-          {/* Main Content Area (Left) */}
-          <div className="flex-1">
-            <div className="flex items-center gap-4 mb-8">
-              <h2 className="text-2xl font-bold text-gray-900">Últimas Atualizações</h2>
-              <div className="flex-1 h-px bg-gray-200"></div>
-            </div>
-            <RecentArticlesSection />
-          </div>
-
-          {/* Sidebar Area (Right) */}
-          <Sidebar />
-        </div>
+      {/* Top Section with Featured News and Sidebar */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+        <FeaturedNewsSection />
       </div>
 
-      <StatisticsSection />
+      <hr className="max-w-7xl mx-auto border-gray-200" />
+
+      {/* Dicas Práticas Section */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+        <CategorySection title="Dicas Práticas" categorySlug="dicas" />
+      </div>
+
+      <hr className="max-w-7xl mx-auto border-gray-200" />
+
+      {/* Saúde Mental Section */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+        <CategorySection title="Saúde Mental" categorySlug="saude-mental" layout="dark" />
+      </div>
+
+      <hr className="max-w-7xl mx-auto border-gray-200" />
+
+      {/* Burocracia Section */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+        <CategorySection title="Burocracia" categorySlug="burocracia" />
+      </div>
+      
+      {/* Columnists */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+        <ColumnistsSection />
+      </div>
+
+      {/* Newsletter */}
       <NewsletterSection />
     </main>
   );
