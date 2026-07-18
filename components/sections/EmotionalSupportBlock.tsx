@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function EmotionalSupportBlock() {
   return (
-    <section className="py-20 bg-brand-accent text-white my-12">
+    <section className="py-28 bg-brand-accent text-white my-20">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-display font-bold leading-tight mb-8">
           "Você não precisa saber tudo. Precisa de um lugar para começar."

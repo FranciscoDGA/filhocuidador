@@ -31,14 +31,14 @@ export default function CategoryGridSection() {
   ];
 
   return (
-    <section className="py-12 bg-bg-base">
+    <section className="py-20 bg-bg-base">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
           {categories.map((cat, index) => (
             <Link
               key={index}
               href={cat.href}
-              className="group flex flex-col items-center justify-center p-6 bg-white border border-border-base rounded-2xl hover:shadow-lg hover:-translate-y-1 transition-all duration-300 text-center"
+              className="group flex flex-col items-center justify-center p-6 bg-white border border-border-base rounded-2xl hover:shadow-lg hover:-translate-y-1 hover:border-[#C47B5A] transition-all duration-300 text-center"
             >
               <div className="w-12 h-12 rounded-full bg-brand-primary/10 text-brand-primary flex items-center justify-center mb-4 group-hover:bg-brand-primary group-hover:text-white transition-colors">
                 {cat.icon}

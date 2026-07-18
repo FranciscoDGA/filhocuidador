@@ -5,7 +5,7 @@ export default function HeroSection() {
   return (
     <section className="relative overflow-hidden bg-bg-base">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col-reverse lg:flex-row items-center gap-12 py-16 lg:py-24">
+        <div className="flex flex-col-reverse lg:flex-row items-center gap-12 py-24 lg:py-32">
           
           {/* Text Content */}
           <div className="w-full lg:w-1/2 flex flex-col items-center lg:items-start text-center lg:text-left">
@@ -17,7 +17,7 @@ export default function HeroSection() {
             </p>
             <Link 
               href="#acolhimento" 
-              className="inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-white bg-brand-primary hover:bg-brand-primary/90 rounded-full transition-all shadow-md hover:shadow-lg w-full sm:w-auto"
+              className="inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-white bg-[#C47B5A] hover:bg-[#A8623F] rounded-full transition-all shadow-md hover:shadow-lg w-full sm:w-auto"
             >
               Quero me sentir menos sozinho
             </Link>
@@ -28,8 +28,8 @@ export default function HeroSection() {
             <div className="relative w-full aspect-[4/3] rounded-[2rem] overflow-hidden shadow-2xl shadow-brand-primary/10">
               <div className="absolute inset-0 bg-brand-accent/10 z-10 mix-blend-multiply"></div>
               <Image
-                src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=1000&auto=format&fit=crop"
-                alt="Filha adulta abraçando mãe idosa"
+                src="https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?q=80&w=1000&auto=format&fit=crop"
+                alt="Filha adulta apoiando mãe idosa com carinho"
                 fill
                 className="object-cover"
                 priority

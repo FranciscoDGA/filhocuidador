@@ -6,7 +6,7 @@ export default function RecentArticlesSection() {
   const articles = getAllArticles().slice(0, 6);
 
   return (
-    <section className="py-16 bg-bg-base">
+    <section className="py-24 bg-bg-base">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between mb-10">
           <h2 className="text-3xl font-display font-bold text-text-base">
