@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import { getAllArticles } from "@/lib/articles";
 
 interface CategorySectionProps {
   title: string;
@@ -10,6 +11,14 @@ interface CategorySectionProps {
 export default function CategorySection({ title, categorySlug, layout = "light" }: CategorySectionProps) {
   const isDark = layout === "dark";
   
+  const allArticles = getAllArticles();
+  
+  // Apenas uma lógica simples para pegar 4 artigos. Em um cenário real, você filtraria por `categorySlug`.
+  // Para evitar que a seção fique vazia enquanto você não tem categorias configuradas, vamos pegar artigos aleatórios ou recentes.
+  const articles = allArticles.slice(4, 8); // Skip the ones used in Featured
+  
+  if (articles.length === 0) return null;
+
   return (
     <div className={isDark ? "bg-black text-white p-8 md:p-12 -mx-4 sm:-mx-6 lg:-mx-8 rounded-none md:rounded-xl" : ""}>
       <div className="mb-8 flex items-center gap-4">
@@ -23,65 +32,30 @@ export default function CategorySection({ title, categorySlug, layout = "light" 
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-        {/* Article 1 */}
-        <article className="group">
-          <Link href="#">
-            <div className="relative w-full aspect-[4/3] bg-gray-100 mb-4 overflow-hidden">
-              <Image src="https://images.unsplash.com/photo-1516302752625-fcc3c50ae61f?w=500&auto=format&fit=crop" alt="Article img" fill className="object-cover transition-transform duration-500 group-hover:scale-105" />
-            </div>
-            <h4 className={`text-lg font-display font-bold leading-tight mb-2 ${isDark ? 'text-white' : 'text-gray-900'}`}>
-              Organizando a Rotina: Dicas práticas para não enlouquecer
-            </h4>
-            <p className={`text-sm font-serif ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>
-              Um guia passo a passo para estruturar o dia a dia do cuidado sem abrir mão do seu tempo.
-            </p>
-          </Link>
-        </article>
-
-        {/* Article 2 */}
-        <article className="group">
-          <Link href="#">
-            <div className="relative w-full aspect-[4/3] bg-gray-100 mb-4 overflow-hidden">
-              <Image src="https://images.unsplash.com/photo-1527613426496-22879509df63?w=500&auto=format&fit=crop" alt="Article img" fill className="object-cover transition-transform duration-500 group-hover:scale-105" />
-            </div>
-            <h4 className={`text-lg font-display font-bold leading-tight mb-2 ${isDark ? 'text-white' : 'text-gray-900'}`}>
-              Alimentação do idoso com Alzheimer: Desafios comuns
-            </h4>
-            <p className={`text-sm font-serif ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>
-              Como lidar com a recusa alimentar e garantir que eles recebam os nutrientes necessários.
-            </p>
-          </Link>
-        </article>
-
-        {/* Article 3 */}
-        <article className="group">
-          <Link href="#">
-            <div className="relative w-full aspect-[4/3] bg-gray-100 mb-4 overflow-hidden">
-              <Image src="https://images.unsplash.com/photo-1518105779142-d975f22f1b0a?w=500&auto=format&fit=crop" alt="Article img" fill className="object-cover transition-transform duration-500 group-hover:scale-105" />
-            </div>
-            <h4 className={`text-lg font-display font-bold leading-tight mb-2 ${isDark ? 'text-white' : 'text-gray-900'}`}>
-              Delegando tarefas: Como pedir ajuda a outros familiares
-            </h4>
-            <p className={`text-sm font-serif ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>
-              Estratégias de comunicação para evitar atritos e dividir a responsabilidade.
-            </p>
-          </Link>
-        </article>
-
-        {/* Article 4 */}
-        <article className="group">
-          <Link href="#">
-            <div className="relative w-full aspect-[4/3] bg-gray-100 mb-4 overflow-hidden">
-              <Image src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=500&auto=format&fit=crop" alt="Article img" fill className="object-cover transition-transform duration-500 group-hover:scale-105" />
-            </div>
-            <h4 className={`text-lg font-display font-bold leading-tight mb-2 ${isDark ? 'text-white' : 'text-gray-900'}`}>
-              O que fazer quando eles não querem tomar banho?
-            </h4>
-            <p className={`text-sm font-serif ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>
-              Entenda os motivos por trás dessa recusa e como contornar a situação com empatia.
-            </p>
-          </Link>
-        </article>
+        {articles.map((article) => (
+          <article key={article.id} className="group">
+            <Link href={`/artigos/${article.slug}`}>
+              <div className="relative w-full aspect-[4/3] bg-gray-100 mb-4 overflow-hidden">
+                {article.image ? (
+                  <Image 
+                    src={article.image} 
+                    alt={article.title} 
+                    fill 
+                    className="object-cover transition-transform duration-500 group-hover:scale-105" 
+                  />
+                ) : (
+                  <div className="w-full h-full flex items-center justify-center bg-gray-200 text-gray-400 text-sm">Sem Imagem</div>
+                )}
+              </div>
+              <h4 className={`text-lg font-display font-bold leading-tight mb-2 ${isDark ? 'text-white' : 'text-gray-900'}`}>
+                {article.title}
+              </h4>
+              <p className={`text-sm font-serif line-clamp-2 ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>
+                {article.excerpt}
+              </p>
+            </Link>
+          </article>
+        ))}
       </div>
     </div>
   );

@@ -1,7 +1,20 @@
 import Link from "next/link";
 import Image from "next/image";
+import { getAllArticles } from "@/lib/articles";
 
 export default function FeaturedNewsSection() {
+  const allArticles = getAllArticles();
+  
+  if (allArticles.length === 0) {
+    return <div>Carregando artigos...</div>;
+  }
+
+  // O primeiro artigo vai para o destaque principal
+  const featured = allArticles[0];
+  
+  // Os 3 próximos vão para a lista "Em Alta"
+  const trending = allArticles.slice(1, 4);
+
   return (
     <div className="flex flex-col lg:flex-row gap-10">
       {/* Main Featured Article (Left 2/3) */}
@@ -12,25 +25,28 @@ export default function FeaturedNewsSection() {
         </div>
         
         <article className="group cursor-pointer">
-          <Link href="/artigo-destaque">
-            <span className="text-xs font-bold text-blue-600 uppercase tracking-wider mb-3 block">Saúde Mental</span>
+          <Link href={`/artigos/${featured.slug}`}>
+            <span className="text-xs font-bold text-blue-600 uppercase tracking-wider mb-3 block">{featured.category}</span>
             <h3 className="text-4xl md:text-5xl font-display font-bold text-gray-900 leading-tight mb-4 group-hover:text-gray-700 transition">
-              Como Lidar com a Carga Emocional de Cuidar dos Pais Idosos
+              {featured.title}
             </h3>
             <div className="flex items-center gap-4 text-xs text-gray-500 mb-6 font-medium">
-              <span>Janeiro 6, 2026</span>
-              <span>15 comentários</span>
+              <span>{featured.date}</span>
             </div>
-            <div className="relative w-full aspect-video bg-gray-100 mb-6">
-              <Image 
-                src="https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?q=80&w=2000&auto=format&fit=crop"
-                alt="Cuidador abraçando idoso"
-                fill
-                className="object-cover transition-transform duration-700 group-hover:scale-105"
-              />
+            <div className="relative w-full aspect-video bg-gray-100 mb-6 overflow-hidden">
+              {featured.image ? (
+                <Image 
+                  src={featured.image}
+                  alt={featured.title}
+                  fill
+                  className="object-cover transition-transform duration-700 group-hover:scale-105"
+                />
+              ) : (
+                <div className="w-full h-full flex items-center justify-center bg-gray-200 text-gray-400">Sem Imagem</div>
+              )}
             </div>
-            <p className="text-gray-700 font-serif text-lg leading-relaxed md:w-4/5">
-              No rápido e expansivo mundo moderno, equilibrar sua própria vida com as demandas de cuidar de um ente querido com demência pode ser um dos maiores desafios que você enfrentará. Descubra estratégias práticas para não perder a si mesmo neste processo.
+            <p className="text-gray-700 font-serif text-lg leading-relaxed md:w-4/5 line-clamp-3">
+              {featured.excerpt}
             </p>
           </Link>
         </article>
@@ -45,28 +61,24 @@ export default function FeaturedNewsSection() {
             <div className="flex-1 h-px bg-gray-200"></div>
           </div>
           <div className="grid grid-cols-2 gap-4">
-            <Link href="/topicos/burocracia" className="relative h-24 bg-gray-100 group overflow-hidden">
-              <Image src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=500&auto=format&fit=crop" alt="Burocracia" fill className="object-cover opacity-80 group-hover:scale-110 transition duration-500" />
-              <div className="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
+            <Link href="/categorias/burocracia" className="relative h-24 bg-gray-100 group overflow-hidden">
+              <div className="absolute inset-0 bg-blue-900 bg-opacity-80 flex items-center justify-center group-hover:bg-opacity-90 transition">
                 <span className="text-white font-bold text-sm uppercase tracking-wide">Burocracia</span>
               </div>
             </Link>
-            <Link href="/topicos/alzheimer" className="relative h-24 bg-gray-100 group overflow-hidden">
-              <Image src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?w=500&auto=format&fit=crop" alt="Alzheimer" fill className="object-cover opacity-80 group-hover:scale-110 transition duration-500" />
-              <div className="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
-                <span className="text-white font-bold text-sm uppercase tracking-wide">Alzheimer</span>
+            <Link href="/categorias/saude-mental" className="relative h-24 bg-gray-100 group overflow-hidden">
+              <div className="absolute inset-0 bg-indigo-900 bg-opacity-80 flex items-center justify-center group-hover:bg-opacity-90 transition">
+                <span className="text-white font-bold text-sm uppercase tracking-wide">Saúde Mental</span>
               </div>
             </Link>
-            <Link href="/topicos/adaptacoes" className="relative h-24 bg-gray-100 group overflow-hidden">
-              <Image src="https://images.unsplash.com/photo-1502759683299-cdcd6974244f?w=500&auto=format&fit=crop" alt="Adaptações" fill className="object-cover opacity-80 group-hover:scale-110 transition duration-500" />
-              <div className="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
-                <span className="text-white font-bold text-sm uppercase tracking-wide">Adaptações</span>
+            <Link href="/categorias/dicas" className="relative h-24 bg-gray-100 group overflow-hidden">
+              <div className="absolute inset-0 bg-teal-900 bg-opacity-80 flex items-center justify-center group-hover:bg-opacity-90 transition">
+                <span className="text-white font-bold text-sm uppercase tracking-wide">Dicas</span>
               </div>
             </Link>
-            <Link href="/topicos/autocuidado" className="relative h-24 bg-gray-100 group overflow-hidden">
-              <Image src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=500&auto=format&fit=crop" alt="Autocuidado" fill className="object-cover opacity-80 group-hover:scale-110 transition duration-500" />
-              <div className="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
-                <span className="text-white font-bold text-sm uppercase tracking-wide">Autocuidado</span>
+            <Link href="/categorias/historias" className="relative h-24 bg-gray-100 group overflow-hidden">
+              <div className="absolute inset-0 bg-orange-900 bg-opacity-80 flex items-center justify-center group-hover:bg-opacity-90 transition">
+                <span className="text-white font-bold text-sm uppercase tracking-wide">Histórias</span>
               </div>
             </Link>
           </div>
@@ -79,30 +91,16 @@ export default function FeaturedNewsSection() {
             <div className="flex-1 h-px bg-gray-200"></div>
           </div>
           <div className="flex flex-col gap-6">
-            <article>
-              <Link href="#" className="group">
-                <h4 className="text-lg font-display font-bold text-gray-900 leading-tight group-hover:text-gray-600 transition mb-2">
-                  Direitos do Idoso: O que você precisa saber sobre benefícios
-                </h4>
-                <p className="text-sm text-gray-500 font-serif">A burocracia não precisa ser um obstáculo intransponível...</p>
-              </Link>
-            </article>
-            <article>
-              <Link href="#" className="group">
-                <h4 className="text-lg font-display font-bold text-gray-900 leading-tight group-hover:text-gray-600 transition mb-2">
-                  5 dicas para adaptar o banheiro e prevenir quedas
-                </h4>
-                <p className="text-sm text-gray-500 font-serif">Pequenas mudanças podem garantir a segurança do seu pai...</p>
-              </Link>
-            </article>
-            <article>
-              <Link href="#" className="group">
-                <h4 className="text-lg font-display font-bold text-gray-900 leading-tight group-hover:text-gray-600 transition mb-2">
-                  Quando a culpa bate à porta: Reflexões de uma filha cuidadora
-                </h4>
-                <p className="text-sm text-gray-500 font-serif">Uma crônica sincera sobre os dias mais difíceis...</p>
-              </Link>
-            </article>
+            {trending.map((article) => (
+              <article key={article.id}>
+                <Link href={`/artigos/${article.slug}`} className="group block">
+                  <h4 className="text-lg font-display font-bold text-gray-900 leading-tight group-hover:text-gray-600 transition mb-2">
+                    {article.title}
+                  </h4>
+                  <p className="text-sm text-gray-500 font-serif line-clamp-2">{article.excerpt}</p>
+                </Link>
+              </article>
+            ))}
           </div>
         </div>
       </div>
