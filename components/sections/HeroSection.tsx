@@ -5,7 +5,7 @@ export default function HeroSection() {
   return (
     <section className="relative overflow-hidden bg-bg-base">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col-reverse lg:flex-row items-center gap-12 py-24 lg:py-32">
+        <div className="flex flex-col-reverse lg:flex-row items-center gap-12 pt-24 pb-8 lg:pt-32 lg:pb-12">
           
           {/* Text Content */}
           <div className="w-full lg:w-1/2 flex flex-col items-center lg:items-start text-center lg:text-left">
@@ -28,8 +28,8 @@ export default function HeroSection() {
             <div className="relative w-full aspect-[4/3] rounded-[2rem] overflow-hidden shadow-2xl shadow-brand-primary/10">
               <div className="absolute inset-0 bg-brand-accent/10 z-10 mix-blend-multiply"></div>
               <Image
-                src="https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?q=80&w=1000&auto=format&fit=crop"
-                alt="Filha adulta apoiando mãe idosa com carinho"
+                src="https://images.unsplash.com/photo-1511895426328-dc8714191300?q=80&w=1000&auto=format&fit=crop"
+                alt="Filha adulta apoiando mãe idosa com carinho em casa"
                 fill
                 className="object-cover"
                 priority

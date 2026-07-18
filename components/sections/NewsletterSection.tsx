@@ -14,7 +14,7 @@ export default function NewsletterSection() {
   };
 
   return (
-    <section id="newsletter" className="w-full py-28 px-4 sm:px-6 lg:px-8 bg-brand-secondary text-white">
+    <section id="newsletter" className="w-full py-28 px-4 sm:px-6 lg:px-8 bg-[#7A9E7E] text-white">
       <div className="max-w-2xl mx-auto text-center">
         <h2 className="text-3xl sm:text-4xl font-display font-bold mb-4">
           Receba apoio toda semana no seu email

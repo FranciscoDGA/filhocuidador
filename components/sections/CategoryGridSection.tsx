@@ -31,7 +31,7 @@ export default function CategoryGridSection() {
   ];
 
   return (
-    <section className="py-20 bg-bg-base">
+    <section className="pt-8 pb-20 bg-bg-base">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
           {categories.map((cat, index) => (
