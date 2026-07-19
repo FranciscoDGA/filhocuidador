@@ -12,6 +12,7 @@ const staticPages = [
   "/comunidade",
   "/produtos",
   "/produtos/guia-cuidador-iniciante",
+  "/ebooks/como-lidar-pai-alzheimer-agressivo",
   "/trabalhe-conosco",
   "/diarios",
   "/pergunte-ao-especialista",
