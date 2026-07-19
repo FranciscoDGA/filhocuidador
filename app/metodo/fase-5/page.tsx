@@ -20,7 +20,8 @@ const tools = [
   {
     type: "Template",
     name: "Modelo de Procuração",
-    href: "/artigos/procuracao-idoso-modelo-passo-passo",
+    href: "/templates/modelo-procuracao.html",
+    target: "_blank",
   },
 ];
 
@@ -76,6 +77,7 @@ export default function Fase5Page() {
               <Link
                 key={tool.name}
                 href={tool.href}
+                target={tool.target}
                 className="bg-white border border-border-base p-6 rounded-[5px] hover:border-brand-accent/40 transition-colors group"
               >
                 <span className="text-[10px] font-medium tracking-wider uppercase text-brand-accent block mb-2">

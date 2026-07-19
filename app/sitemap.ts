@@ -20,6 +20,7 @@ const staticPages = [
   "/metodo/fase-4",
   "/metodo/fase-5",
   "/metodo/certificado",
+  "/templates",
   "/trabalhe-conosco",
   "/diarios",
   "/pergunte-ao-especialista",

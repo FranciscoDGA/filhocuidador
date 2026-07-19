@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diário de Sintomas - Filho Cuidador</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: #333; line-height: 1.6; }
+    .container { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
+    .header { text-align: center; margin-bottom: 40px; border-bottom: 2px solid #8c6a4a; padding-bottom: 20px; }
+    .header h1 { font-size: 24px; color: #2d2926; margin-bottom: 8px; }
+    .header p { font-size: 12px; color: #666; }
+    .section { margin-bottom: 30px; }
+    .section-title { font-size: 14px; font-weight: 600; color: #8c6a4a; margin-bottom: 15px; text-transform: uppercase; letter-spacing: 1px; }
+    .form-row { display: flex; gap: 20px; margin-bottom: 15px; }
+    .form-group { flex: 1; }
+    .form-group label { display: block; font-size: 11px; color: #666; margin-bottom: 5px; text-transform: uppercase; }
+    .form-group input, .form-group select, .form-group textarea { width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 4px; font-size: 13px; }
+    .form-group textarea { min-height: 80px; resize: vertical; }
+    .checkbox-group { display: flex; flex-wrap: wrap; gap: 15px; margin-bottom: 15px; }
+    .checkbox-item { display: flex; align-items: center; gap: 8px; font-size: 12px; }
+    .checkbox-item input { width: 16px; height: 16px; }
+    .table { width: 100%; border-collapse: collapse; margin-bottom: 20px; }
+    .table th, .table td { border: 1px solid #ddd; padding: 10px; text-align: left; font-size: 12px; }
+    .table th { background: #f5f0eb; color: #2d2926; font-weight: 600; }
+    .table td { min-height: 40px; }
+    .notes { background: #f9f7f5; padding: 15px; border-radius: 4px; margin-top: 20px; }
+    .notes h3 { font-size: 12px; color: #8c6a4a; margin-bottom: 10px; }
+    .notes textarea { width: 100%; min-height: 100px; border: 1px solid #ddd; border-radius: 4px; padding: 10px; font-size: 12px; resize: vertical; }
+    .footer { text-align: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid #ddd; font-size: 10px; color: #999; }
+    .print-btn { background: #8c6a4a; color: white; border: none; padding: 12px 24px; font-size: 13px; cursor: pointer; border-radius: 4px; margin-top: 20px; }
+    .print-btn:hover { background: #7a5c40; }
+    @media print { .print-btn { display: none; } .container { padding: 20px; } }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Diário de Sintomas</h1>
+      <p>Registro diário para acompanhar a evolução do paciente</p>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Dados do Paciente</div>
+      <div class="form-row">
+        <div class="form-group">
+          <label>Nome Completo</label>
+          <input type="text" placeholder="Nome do paciente">
+        </div>
+        <div class="form-group">
+          <label>Data de Nascimento</label>
+          <input type="date">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label>Diagnóstico</label>
+          <input type="text" placeholder="Ex: Alzheimer, Parkinson, AVC">
+        </div>
+        <div class="form-group">
+          <label>Estágio da Doença</label>
+          <select>
+            <option>Selecione</option>
+            <option>Inicial</option>
+            <option>Moderado</option>
+            <option>Avançado</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Registro Diário</div>
+      <div class="form-row">
+        <div class="form-group">
+          <label>Data</label>
+          <input type="date">
+        </div>
+        <div class="form-group">
+          <label>Hora</label>
+          <input type="time">
+        </div>
+      </div>
+
+      <div class="section-title" style="font-size: 12px; margin-top: 20px;">Sintomas Observados</div>
+      <div class="checkbox-group">
+        <label class="checkbox-item"><input type="checkbox"> Confusão mental</label>
+        <label class="checkbox-item"><input type="checkbox"> Esquecimento</label>
+        <label class="checkbox-item"><input type="checkbox"> Agitação</label>
+        <label class="checkbox-item"><input type="checkbox"> Agressividade</label>
+        <label class="checkbox-item"><input type="checkbox"> Ansiedade</label>
+        <label class="checkbox-item"><input type="checkbox"> Depressão</label>
+        <label class="checkbox-item"><input type="checkbox"> Dificuldade para dormir</label>
+        <label class="checkbox-item"><input type="checkbox"> Perda de apetite</label>
+        <label class="checkbox-item"><input type="checkbox"> Dor</label>
+        <label class="checkbox-item"><input type="checkbox"> Quedas</label>
+        <label class="checkbox-item"><input type="checkbox"> Incontinência</label>
+        <label class="checkbox-item"><input type="checkbox"> Outro</label>
+      </div>
+
+      <div class="form-group">
+        <label>Descrição Detalhada</label>
+        <textarea placeholder="Descreva o que aconteceu, quando começou, quanto durou, o que foi feito..."></textarea>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Medicamentos Administrados</div>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Medicamento</th>
+            <th>Dose</th>
+            <th>Hora</th>
+            <th>Observações</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td></td><td></td><td></td><td></td></tr>
+          <tr><td></td><td></td><td></td><td></td></tr>
+          <tr><td></td><td></td><td></td><td></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Humor e Comportamento</div>
+      <div class="form-row">
+        <div class="form-group">
+          <label>Nível de Humor (1-10)</label>
+          <input type="number" min="1" max="10" placeholder="1-10">
+        </div>
+        <div class="form-group">
+          <label>Nível de Dor (1-10)</label>
+          <input type="number" min="1" max="10" placeholder="1-10">
+        </div>
+      </div>
+    </div>
+
+    <div class="notes">
+      <h3>Observações Adicionais</h3>
+      <textarea placeholder="Anote qualquer observação relevante sobre o dia..."></textarea>
+    </div>
+
+    <div class="footer">
+      <p>Filho Cuidador - Template para uso pessoal</p>
+      <p>www.filhocuidador.com.br</p>
+    </div>
+
+    <button class="print-btn" onclick="window.print()">📥 Imprimir / Salvar PDF</button>
+  </div>
+</body>
+</html>

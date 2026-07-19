@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plano de Autocuidado - Filho Cuidador</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: #333; line-height: 1.6; }
+    .container { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
+    .header { text-align: center; margin-bottom: 40px; border-bottom: 2px solid #8c6a4a; padding-bottom: 20px; }
+    .header h1 { font-size: 24px; color: #2d2926; margin-bottom: 8px; }
+    .header p { font-size: 12px; color: #666; }
+    .section { margin-bottom: 30px; }
+    .section-title { font-size: 14px; font-weight: 600; color: #8c6a4a; margin-bottom: 15px; text-transform: uppercase; letter-spacing: 1px; }
+    .form-row { display: flex; gap: 20px; margin-bottom: 15px; }
+    .form-group { flex: 1; }
+    .form-group label { display: block; font-size: 11px; color: #666; margin-bottom: 5px; text-transform: uppercase; }
+    .form-group input, .form-group select, .form-group textarea { width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 4px; font-size: 13px; }
+    .form-group textarea { min-height: 80px; resize: vertical; }
+    .table { width: 100%; border-collapse: collapse; margin-bottom: 20px; }
+    .table th, .table td { border: 1px solid #ddd; padding: 10px; text-align: left; font-size: 12px; }
+    .table th { background: #f5f0eb; color: #2d2926; font-weight: 600; }
+    .table td { min-height: 40px; }
+    .self-care-card { background: #f0fff4; border-left: 4px solid #38a169; padding: 15px; margin-bottom: 15px; }
+    .self-care-card h3 { font-size: 13px; color: #38a169; margin-bottom: 10px; }
+    .checklist { list-style: none; }
+    .checklist li { display: flex; align-items: center; gap: 8px; padding: 5px 0; font-size: 12px; border-bottom: 1px solid #eee; }
+    .checklist li:last-child { border-bottom: none; }
+    .checklist li::before { content: "☐"; font-size: 14px; }
+    .weekly-plan { display: grid; grid-template-columns: repeat(7, 1fr); gap: 10px; margin-bottom: 20px; }
+    .day-card { background: #f9f7f5; padding: 10px; border-radius: 4px; text-align: center; }
+    .day-card h4 { font-size: 11px; color: #8c6a4a; margin-bottom: 8px; text-transform: uppercase; }
+    .day-card ul { list-style: none; font-size: 10px; text-align: left; }
+    .day-card ul li { padding: 3px 0; }
+    .day-card ul li::before { content: "• "; color: #8c6a4a; }
+    .notes { background: #f9f7f5; padding: 15px; border-radius: 4px; margin-top: 20px; }
+    .notes h3 { font-size: 12px; color: #8c6a4a; margin-bottom: 10px; }
+    .notes textarea { width: 100%; min-height: 100px; border: 1px solid #ddd; border-radius: 4px; padding: 10px; font-size: 12px; resize: vertical; }
+    .footer { text-align: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid #ddd; font-size: 10px; color: #999; }
+    .print-btn { background: #8c6a4a; color: white; border: none; padding: 12px 24px; font-size: 13px; cursor: pointer; border-radius: 4px; margin-top: 20px; }
+    .print-btn:hover { background: #7a5c40; }
+    @media print { .print-btn { display: none; } .container { padding: 20px; } }
+    @media (max-width: 768px) { .weekly-plan { grid-template-columns: repeat(2, 1fr); } }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Plano de Autocuidado</h1>
+      <p>Cuide de você para continuar cuidando com amor</p>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Como Você Está Se Sentindo?</div>
+      <div class="form-row">
+        <div class="form-group">
+          <label>Nível de Estresse (1-10)</label>
+          <input type="number" min="1" max="10" placeholder="1-10">
+        </div>
+        <div class="form-group">
+          <label>Nível de Energia (1-10)</label>
+          <input type="number" min="1" max="10" placeholder="1-10">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label>Horas de Sono na Noite Anterior</label>
+          <input type="number" min="0" max="24" placeholder="Ex: 6">
+        </div>
+        <div class="form-group">
+          <label>Qualidade do Sono</label>
+          <select>
+            <option>Selecione</option>
+            <option>Ruim</option>
+            <option>Regular</option>
+            <option>Boa</option>
+            <option>Ótima</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Checklist Diário de Autocuidado</div>
+      
+      <div class="self-care-card">
+        <h3>🌅 Manhã</h3>
+        <ul class="checklist">
+          <li>Comece o dia com 5 minutos de silêncio ou oração</li>
+          <li>Tome café da manhã sentado, sem pressa</li>
+          <li>Tome seus medicamentos (se houver)</li>
+          <li>Alongue-se por 5 minutos</li>
+          <li>Defina 3 prioridades para o dia</li>
+        </ul>
+      </div>
+
+      <div class="self-care-card">
+        <h3>☀️ Tarde</h3>
+        <ul class="checklist">
+          <li>Faça uma pausa de 15 minutos</li>
+          <li>Caminhe por 10 minutos (mesmo dentro de casa)</li>
+          <li>Ligue para um amigo ou familiar</li>
+          <li>Coma uma fruta ou lanche saudável</li>
+          <li>Pratique uma gratidão</li>
+        </ul>
+      </div>
+
+      <div class="self-care-card">
+        <h3>🌙 Noite</h3>
+        <ul class="checklist">
+          <li>Desligue eletrônicos 30min antes de dormir</li>
+          <li>Leia ou ouça música relaxante</li>
+          <li>Escreva 3 coisas boas do dia</li>
+          <li>Durma no mesmo horário</li>
+          <li>Respire fundo 3 vezes antes de fechar os olhos</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Plano Semanal</div>
+      <div class="weekly-plan">
+        <div class="day-card">
+          <h4>Seg</h4>
+          <ul>
+            <li>Caminhada 20min</li>
+            <li>Ligar para amigo</li>
+          </ul>
+        </div>
+        <div class="day-card">
+          <h4>Ter</h4>
+          <ul>
+            <li>Yoga em casa</li>
+            <li>Ler 15min</li>
+          </ul>
+        </div>
+        <div class="day-card">
+          <h4>Qua</h4>
+          <ul>
+            <li>Caminhada 20min</li>
+            <li>Ligar para amigo</li>
+          </ul>
+        </div>
+        <div class="day-card">
+          <h4>Qui</h4>
+          <ul>
+            <li>Yoga em casa</li>
+            <li>Ler 15min</li>
+          </ul>
+        </div>
+        <div class="day-card">
+          <h4>Sex</h4>
+          <ul>
+            <li>Caminhada 20min</li>
+            <li>Saída social</li>
+          </ul>
+        </div>
+        <div class="day-card">
+          <h4>Sáb</h4>
+          <ul>
+            <li>Atividade prazerosa</li>
+            <li>Descanso</li>
+          </ul>
+        </div>
+        <div class="day-card">
+          <h4>Dom</h4>
+          <ul>
+            <li>Descanso total</li>
+            <li>Reflexão</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Sinais de Alerta (Procure Ajuda)</div>
+      <table class="table">
+        <thead>
+          <tr><th>Sinal</th><th>O que fazer</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Sono ruim por mais de 1 semana</td><td>Consulte um médico</td></tr>
+          <tr><td>Tristeza constante</td><td>Procure um psicólogo</td></tr>
+          <tr><td>Irritabilidade excessiva</td><td>Fale com alguém de confiança</td></tr>
+          <tr><td>Dores no corpo</td><td>Consulte um médico</td></tr>
+          <tr><td>Isolamento social</td><td>Force-se a sair, mesmo que pouco</td></tr>
+          <tr><td>Pensamentos negativos</td><td>Ligue 188 (CVV)</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="notes">
+      <h3>Meu Plano Personalizado</h3>
+      <textarea placeholder="Adicione atividades que você gosta e que te fazem bem..."></textarea>
+    </div>
+
+    <div class="footer">
+      <p>Filho Cuidador - Template para uso pessoal</p>
+      <p>www.filhocuidador.com.br</p>
+    </div>
+
+    <button class="print-btn" onclick="window.print()">📥 Imprimir / Salvar PDF</button>
+  </div>
+</body>
+</html>

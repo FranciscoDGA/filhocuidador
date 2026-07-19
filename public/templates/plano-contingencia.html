@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plano de Contingência - Filho Cuidador</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: #333; line-height: 1.6; }
+    .container { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
+    .header { text-align: center; margin-bottom: 40px; border-bottom: 2px solid #8c6a4a; padding-bottom: 20px; }
+    .header h1 { font-size: 24px; color: #2d2926; margin-bottom: 8px; }
+    .header p { font-size: 12px; color: #666; }
+    .section { margin-bottom: 30px; }
+    .section-title { font-size: 14px; font-weight: 600; color: #8c6a4a; margin-bottom: 15px; text-transform: uppercase; letter-spacing: 1px; }
+    .form-row { display: flex; gap: 20px; margin-bottom: 15px; }
+    .form-group { flex: 1; }
+    .form-group label { display: block; font-size: 11px; color: #666; margin-bottom: 5px; text-transform: uppercase; }
+    .form-group input, .form-group select, .form-group textarea { width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 4px; font-size: 13px; }
+    .form-group textarea { min-height: 80px; resize: vertical; }
+    .table { width: 100%; border-collapse: collapse; margin-bottom: 20px; }
+    .table th, .table td { border: 1px solid #ddd; padding: 10px; text-align: left; font-size: 12px; }
+    .table th { background: #f5f0eb; color: #2d2926; font-weight: 600; }
+    .table td { min-height: 40px; }
+    .crisis-card { background: #fff5f5; border-left: 4px solid #e53e3e; padding: 15px; margin-bottom: 15px; }
+    .crisis-card h3 { font-size: 13px; color: #e53e3e; margin-bottom: 10px; }
+    .checklist { list-style: none; }
+    .checklist li { display: flex; align-items: flex-start; gap: 8px; padding: 8px 0; font-size: 12px; border-bottom: 1px solid #eee; }
+    .checklist li:last-child { border-bottom: none; }
+    .checklist li::before { content: "→"; color: #e53e3e; font-weight: bold; }
+    .warning-card { background: #fffff0; border-left: 4px solid #d69e2e; padding: 15px; margin-bottom: 15px; }
+    .warning-card h3 { font-size: 13px; color: #d69e2e; margin-bottom: 10px; }
+    .success-card { background: #f0fff4; border-left: 4px solid #38a169; padding: 15px; margin-bottom: 15px; }
+    .success-card h3 { font-size: 13px; color: #38a169; margin-bottom: 10px; }
+    .notes { background: #f9f7f5; padding: 15px; border-radius: 4px; margin-top: 20px; }
+    .notes h3 { font-size: 12px; color: #8c6a4a; margin-bottom: 10px; }
+    .notes textarea { width: 100%; min-height: 100px; border: 1px solid #ddd; border-radius: 4px; padding: 10px; font-size: 12px; resize: vertical; }
+    .footer { text-align: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid #ddd; font-size: 10px; color: #999; }
+    .print-btn { background: #8c6a4a; color: white; border: none; padding: 12px 24px; font-size: 13px; cursor: pointer; border-radius: 4px; margin-top: 20px; }
+    .print-btn:hover { background: #7a5c40; }
+    @media print { .print-btn { display: none; } .container { padding: 20px; } }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Plano de Contingência</h1>
+      <p>Plano de ação para situações de crise e emergência</p>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Dados do Paciente</div>
+      <div class="form-row">
+        <div class="form-group">
+          <label>Nome Completo</label>
+          <input type="text" placeholder="Nome do paciente">
+        </div>
+        <div class="form-group">
+          <label>Diagnóstico</label>
+          <input type="text" placeholder="Ex: Alzheimer, Parkinson, AVC">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label>Médico Responsável</label>
+          <input type="text" placeholder="Nome do médico">
+        </div>
+        <div class="form-group">
+          <label>Telefone do Médico</label>
+          <input type="tel" placeholder="(XX) XXXXX-XXXX">
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Contatos de Emergência</div>
+      <table class="table">
+        <thead>
+          <tr><th>Nome</th><th>Parentesco</th><th>Telefone</th></tr>
+        </thead>
+        <tbody>
+          <tr><td></td><td></td><td></td></tr>
+          <tr><td></td><td></td><td></td></tr>
+          <tr><td></td><td></td><td></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Situações de Crise</div>
+
+      <div class="crisis-card">
+        <h3>🚨 Agressividade Física</h3>
+        <ul class="checklist">
+          <li>Mantenha a calma - respire fundo</li>
+          <li>Afaste-se do alcance do paciente</li>
+          <li>Não encare diretamente nos olhos</li>
+          <li>Fale baixo e devagar</li>
+          <li>Ofereça um objeto para segurar</li>
+          <li>Não tente conter fisicamente (a não ser que haja perigo)</li>
+          <li>Chame ajuda se necessário</li>
+          <li>Registre o episódio no diário</li>
+        </ul>
+      </div>
+
+      <div class="crisis-card">
+        <h3>🚨 Agressividade Verbal</h3>
+        <ul class="checklist">
+          <li>Não leve para o pessoal</li>
+          <li>Não responda com agressividade</li>
+          <li>Mude de assunto gentilmente</li>
+          <li>Ofereça água ou algo para beber</li>
+          <li>Redirecione a atenção</li>
+          <li>Registre o episódio</li>
+        </ul>
+      </div>
+
+      <div class="warning-card">
+        <h3>⚠️ Tentativa de Fuga</h3>
+        <ul class="checklist">
+          <li>Não bloqueie a saída</li>
+          <li>Fique ao lado, sem agarrar</li>
+          <li>Pergunte: "Onde você quer ir?"</li>
+          <li>Redirecione: "Vamos caminhar aqui perto"</li>
+          <li>Verifique se há motivos (banheiro, fome, dor)</li>
+          <li>Registre o episódio</li>
+        </ul>
+      </div>
+
+      <div class="warning-card">
+        <h3>⚠️ Recusa de Cuidados</h3>
+        <ul class="checklist">
+          <li>Não force - espere um momento</li>
+          <li>Tente novamente mais tarde</li>
+          <li>Use abordagens indiretas</li>
+          <li>Ofereça escolhas limitadas</li>
+          <li>Envolva em outra atividade</li>
+          <li>Registre o que funcionou</li>
+        </ul>
+      </div>
+
+      <div class="success-card">
+        <h3>✅ Sinais de Alerta (Procure Ajuda Médica)</h3>
+        <ul class="checklist">
+          <li>Febre acima de 38°C</li>
+          <li>Queda com dor ou sangramento</li>
+          <li>Dificuldade para respirar</li>
+          <li>Dor no peito</li>
+          <li>Confusão repentina piora</li>
+          <li>Mudança brusca de comportamento</li>
+          <li>Recusa de alimentos por mais de 24h</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Frases Úteis em Crises</div>
+      <table class="table">
+        <thead>
+          <tr><th>Situação</th><th>O que dizer</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Agressividade</td><td>"Eu entendo que você está com raiva. Estou aqui para ajudar."</td></tr>
+          <tr><td>Confusão</td><td>"Está tudo bem. Você está seguro aqui."</td></tr>
+          <tr><td>Recusa</td><td>"Tudo bem, vamos tentar mais tarde."</td></tr>
+          <tr><td>Medo</td><td>"Não tem nada de errado. Eu estou com você."</td></tr>
+          <tr><td>Choro</td><td>"Eu sei que está difícil. Eu te amo."</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="notes">
+      <h3>Plano Personalizado</h3>
+      <textarea placeholder="Adicione situações específicas e como lidar com cada uma..."></textarea>
+    </div>
+
+    <div class="footer">
+      <p>Filho Cuidador - Template para uso pessoal</p>
+      <p>www.filhocuidador.com.br</p>
+    </div>
+
+    <button class="print-btn" onclick="window.print()">📥 Imprimir / Salvar PDF</button>
+  </div>
+</body>
+</html>
