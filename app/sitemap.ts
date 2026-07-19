@@ -27,6 +27,8 @@ const staticPages = [
   "/kits",
   "/depoimentos",
   "/videos",
+  "/privacidade",
+  "/termos",
   "/categorias/entendendo-a-doenca",
   "/categorias/cuidados-praticos",
   "/categorias/saude-emocional",

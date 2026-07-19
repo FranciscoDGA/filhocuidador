@@ -12,7 +12,6 @@ seo:
   metaDescription: "Como organizar e gerenciar medicamentos de idoso corretamente. Evitar erros e reações."
 ---
 
-# Gerenciamento de Medicamentos: Evitar Erros e Garantir Eficácia
 
 Seu pai toma 7-10 medicamentos.
 

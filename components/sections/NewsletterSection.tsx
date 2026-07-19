@@ -7,11 +7,26 @@ export default function NewsletterSection() {
   const [email, setEmail] = useState("");
   const [submitted, setSubmitted] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const [loading, setLoading] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setSubmitted(true);
-    setEmail("");
-    setTimeout(() => setSubmitted(false), 3000);
+    setLoading(true);
+
+    try {
+      await fetch("/api/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ type: "newsletter", data: { email } }),
+      });
+      setSubmitted(true);
+      setEmail("");
+      setTimeout(() => setSubmitted(false), 3000);
+    } catch {
+      // Silently fail
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -41,9 +56,10 @@ export default function NewsletterSection() {
             />
             <button
               type="submit"
-              className="w-full sm:w-auto px-8 py-3 bg-brand-primary text-white text-sm font-medium tracking-wide hover:bg-brand-primary/90 transition-colors"
+              disabled={loading}
+              className="w-full sm:w-auto px-8 py-3 bg-brand-primary text-white text-sm font-medium tracking-wide hover:bg-brand-primary/90 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
             >
-              Inscrever-se
+              {loading ? "Enviando..." : "Inscrever-se"}
             </button>
           </form>
           {submitted && (

@@ -12,7 +12,6 @@ seo:
   metaDescription: "Guia completo para internar idoso com demência. Quando decidir, tipos de instituições, custos, documentos."
 ---
 
-# Como Internar Idoso com Demência: Guia Passo a Passo
 
 Você não aguenta mais.
 

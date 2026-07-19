@@ -12,7 +12,6 @@ seo:
   metaDescription: "Guia prático de autocuidado para cuidadores de idosos. Técnicas simples e acessíveis."
 ---
 
-# Autocuidado para Cuidador: Investir em Si Mesmo Não é Egoísmo
 
 Você está no limite. Cuidando 24/7 de pai/mãe. E pensa:
 

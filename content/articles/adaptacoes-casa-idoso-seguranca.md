@@ -12,7 +12,6 @@ seo:
   metaDescription: "Como adaptar casa para segurança de idoso. Dicas práticas e acessíveis de modificação."
 ---
 
-# Adaptações da Casa para Segurança do Idoso
 
 Casa foi feita para pessoa jovem/móvel.
 

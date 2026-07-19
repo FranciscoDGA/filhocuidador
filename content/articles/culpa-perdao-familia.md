@@ -12,7 +12,6 @@ seo:
   metaDescription: "Como lidar com culpa familiar e buscar perdão antes que pai/mãe morra."
 ---
 
-# Culpa e Perdão: Reconciliação Familiar Antes que Morra
 
 Seu pai/mãe está morrendo.
 

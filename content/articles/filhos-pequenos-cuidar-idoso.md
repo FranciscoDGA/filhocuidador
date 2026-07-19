@@ -12,7 +12,6 @@ seo:
   metaDescription: "Estratégias para cuidar de pai/mãe idoso enquanto cria filhos pequenos."
 ---
 
-# Filhos Pequenos e Cuidado de Avó/Avô: Equilibrar Tudo
 
 Você tem:
 - **2-3 filhos pequenos** (5-10 anos)

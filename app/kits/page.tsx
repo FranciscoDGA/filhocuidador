@@ -43,7 +43,7 @@ const kits = [
     slug: "alimentacao-saudavel",
     title: "Kit: Alimentação Saudável",
     description: "Cardápios, dicas de alimentação e receitas para idosos com demência.",
-    items: ["Cardápio semanal", "Receitas fáceis", "Dicas para dificuldade de deglutição", "Lista de alimentos有益"],
+    items: ["Cardápio semanal", "Receitas fáceis", "Dicas para dificuldade de deglutição", "Lista de alimentos saudáveis"],
     category: "Nutrição",
     pages: 14,
   },

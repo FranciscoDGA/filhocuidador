@@ -12,7 +12,6 @@ seo:
   metaDescription: "Como solicitar auxílio-doença no INSS se cuidar de pai/mãe causa incapacidade. Guia passo a passo."
 ---
 
-# Auxílio-Doença e INSS: Afastamento Remunerado Para Cuidador
 
 Você está cuidando de pai/mãe.
 

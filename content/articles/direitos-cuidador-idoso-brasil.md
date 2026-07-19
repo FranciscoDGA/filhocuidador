@@ -12,7 +12,6 @@ seo:
   metaDescription: "Conheça todos os direitos do cuidador familiar de idoso no Brasil. Lei do Cuidador, benefícios, auxílios do INSS."
 ---
 
-# Direitos do Cuidador de Idoso no Brasil: Guia Completo
 
 Você cuida do seu pai/mãe. Sem salário. Sem descanso. Sem direitos.
 

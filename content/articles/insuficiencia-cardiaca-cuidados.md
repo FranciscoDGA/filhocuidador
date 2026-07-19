@@ -12,7 +12,6 @@ seo:
   metaDescription: "Guia de cuidados com insuficiência cardíaca em idoso. Medicação, repouso, dieta."
 ---
 
-# Insuficiência Cardíaca: Cuidados e Sinais de Alerta
 
 Seu pai/mãe foi diagnosticado com **insuficiência cardíaca**.
 

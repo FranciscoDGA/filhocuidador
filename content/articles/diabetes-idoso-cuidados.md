@@ -12,7 +12,6 @@ seo:
   metaDescription: "Guia prático de cuidados com diabetes em idoso. Medicamentos, alimentação, complicações."
 ---
 
-# Diabetes em Idoso: Controle e Complicações Para Cuidador
 
 Seu pai/mãe tem diabetes.
 

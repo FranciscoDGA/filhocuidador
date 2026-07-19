@@ -12,7 +12,6 @@ seo:
   metaDescription: "Estratégias para combater isolamento social sendo cuidador de pai/mãe idoso."
 ---
 
-# Isolamento Social do Cuidador: Como Permanecer Conectado
 
 Você cuida de pai/mãe. Semana passa. Mês passa.
 

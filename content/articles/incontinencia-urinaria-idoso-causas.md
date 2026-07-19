@@ -12,7 +12,6 @@ seo:
   metaDescription: "Guia completo sobre incontinência urinária em idoso. Causas, tratamentos, fisioterapia."
 ---
 
-# Incontinência Urinária em Idoso: Tipos, Causas e Tratamento
 
 Seu pai/mãe perde xixi involuntariamente.
 

@@ -12,7 +12,6 @@ seo:
   metaDescription: "Guia completo sobre direitos do idoso no Brasil. Saúde, benefícios, transporte, proteção legal."
 ---
 
-# Direitos do Idoso: Tudo que Você Precisa Saber Sobre o Estatuto
 
 Seu pai ou mãe idosos têm **direitos legais específicos** que muitos desconhecem. A **Lei 10.741/2003** (Estatuto do Idoso) protege pessoas com 60+ anos.
 

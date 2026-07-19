@@ -12,7 +12,6 @@ seo:
   metaDescription: "Guia prático para dar banho seguro em idoso. Passo-a-passo, medidas de segurança e dicas."
 ---
 
-# Higiene e Banho Seguro do Idoso: Passo a Passo e Dicas Práticas
 
 Dar banho em um pai ou mãe idosos é um dos momentos mais **delicados** do cuidado.
 

@@ -194,7 +194,7 @@ export default function MetodoFilhoCuidadorPage() {
               {
                 icon: "📚",
                 title: "Guias Práticos",
-                count: "5 guiás completos",
+                count: "5 guias completos",
                 description: "Conteúdo aprofundado sobre cada fase do cuidado. Linguagem simples e humana.",
               },
               {
@@ -302,10 +302,10 @@ export default function MetodoFilhoCuidadorPage() {
                 Começar pela Fase 1
               </Link>
               <Link
-                href="/metodo/como-funciona"
+                href="/metodo/certificado"
                 className="px-8 py-3 border border-white/30 text-white text-[13px] font-medium tracking-wide uppercase hover:bg-white/10 transition-colors rounded-[5px]"
               >
-                Ver Como Funciona
+                Ver Certificado
               </Link>
             </div>
           </div>

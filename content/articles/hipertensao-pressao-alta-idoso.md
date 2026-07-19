@@ -12,7 +12,6 @@ seo:
   metaDescription: "Guia de gerenciamento de hipertensão em idoso. Medicação, dieta, monitoramento diário."
 ---
 
-# Hipertensão (Pressão Alta) em Idoso: Monitoramento e Controle
 
 Seu pai/mãe tem pressão alta (hipertensão).
 

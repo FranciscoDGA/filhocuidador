@@ -12,7 +12,6 @@ seo:
   metaDescription: "Técnicas para comunicar com idoso com demência. Como reduzir frustração e conectar."
 ---
 
-# Comunicação com Idoso com Demência: Técnicas Práticas que Funcionam
 
 Seu pai não reconhece você. Sua mãe repete a mesma pergunta 10x. A frustração é **real**.
 

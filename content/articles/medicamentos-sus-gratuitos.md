@@ -12,7 +12,6 @@ seo:
   metaDescription: "Guia completo: medicamentos gratuitos pelo SUS para idosos. Como solicitar e buscar."
 ---
 
-# Medicamentos Gratuitos pelo SUS: Como Conseguir para Seu Pai/Mãe
 
 Medicamento para idoso é **caro**. Mas muitos são **100% gratuitos pelo SUS**.
 

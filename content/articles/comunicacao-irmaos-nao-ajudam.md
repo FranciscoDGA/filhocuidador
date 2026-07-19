@@ -12,7 +12,6 @@ seo:
   metaDescription: "Como lidar quando irmão não ajuda com cuidado do pai. Estratégias de comunicação."
 ---
 
-# Quando o Irmão Não Quer Ajudar: Como Comunicar e Estabelecer Limites
 
 Você cuida de pai/mãe. Seu irmão **nunca aparece**. Nem oferece ajuda.
 

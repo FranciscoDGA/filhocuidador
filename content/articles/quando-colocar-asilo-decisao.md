@@ -12,7 +12,6 @@ seo:
   metaDescription: "Guia para decisão de colocar pai/mãe em asilo. Critérios, culpa, reflexão."
 ---
 
-# Quando Colocar Pai/Mãe em Asilo: Tomando Decisão
 
 **A decisão mais difícil de todas.**
 

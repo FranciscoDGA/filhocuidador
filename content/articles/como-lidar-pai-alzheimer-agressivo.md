@@ -12,7 +12,6 @@ seo:
   metaDescription: "Como lidar com pai agressivo por Alzheimer. Causas, estratégias de contenção, quando procurar ajuda médica."
 ---
 
-# Como Lidar com Pai com Alzheimer Agressivo: Guia Completo
 
 Seu pai está agredindo. Empurrando. Xingando. Ameaçando.
 

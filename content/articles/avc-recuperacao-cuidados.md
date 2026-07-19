@@ -12,7 +12,6 @@ seo:
   metaDescription: "Guia de cuidados após AVC. Recuperação, reabilitação e prevencão de novo acidente."
 ---
 
-# AVC: Recuperação e Cuidados Essenciais para o Filho Cuidador
 
 Seu pai sofreu AVC. Agora enfrenta **luta longa** de recuperação.
 

@@ -12,7 +12,6 @@ seo:
   metaDescription: "Como manter casamento saudável enquanto cuida de pai/mãe idoso. Estratégias práticas."
 ---
 
-# Casamento e Cuidado de Pai/Mãe: Mantendo Relação Viva
 
 Você cuida de pai/mãe idoso.
 

@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     description: "Informação, acolhimento e orientação prática para filhos que cuidam de pais com Alzheimer, Parkinson, AVC e outras doenças.",
     images: [
       {
-        url: "https://filhocuidador.com.br/og-image.jpg",
+        url: "https://filhocuidador.com.br/api/og?title=Filho+Cuidador&category=Portal",
         width: 1200,
         height: 630,
         alt: "Filho Cuidador - Portal de acolhimento para cuidadores",
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Filho Cuidador | O portal para quem cuida de pais com demência",
     description: "Informação, acolhimento e orientação prática para filhos que cuidam de pais com Alzheimer, Parkinson, AVC e outras doenças.",
-    images: ["https://filhocuidador.com.br/og-image.jpg"],
+    images: ["https://filhocuidador.com.br/api/og?title=Filho+Cuidador&category=Portal"],
   },
   robots: {
     index: true,
@@ -86,7 +86,6 @@ export default function RootLayout({
     >
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
-        <link rel="canonical" href="https://filhocuidador.com.br" />
         {/* Google Search Console Verification */}
         {process.env.NEXT_PUBLIC_GSC_VERIFICATION && (
           <meta name="google-site-verification" content={process.env.NEXT_PUBLIC_GSC_VERIFICATION} />

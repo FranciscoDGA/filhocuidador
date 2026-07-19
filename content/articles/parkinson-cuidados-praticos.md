@@ -12,7 +12,6 @@ seo:
   metaDescription: "Guia de cuidados para Parkinson. Sintomas, medicamentos e adaptações práticas."
 ---
 
-# Doença de Parkinson: Cuidados Práticos para o Cuidador
 
 Seu pai tem tremor? Dificuldade de movimento? Rigidez muscular?
 

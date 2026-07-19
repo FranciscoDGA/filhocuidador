@@ -12,7 +12,6 @@ seo:
   metaDescription: "Como lidar quando sua mãe com Alzheimer não te reconhece mais. A dor de perder em vida e estratégias para encontrar paz."
 ---
 
-# Minha Mãe Não Me Reconhece Mais: Lidando com a Perda em Vida
 
 Você chega. Ela olha para você. E pergunta:
 

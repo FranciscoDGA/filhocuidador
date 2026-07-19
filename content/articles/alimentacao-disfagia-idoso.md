@@ -12,7 +12,6 @@ seo:
   metaDescription: "Guia de alimentação segura para idosos com disfagia. Receitas, alimentos, técnicas."
 ---
 
-# Alimentação de Idoso com Disfagia: Receitas Seguras e Práticas
 
 Seu pai tem dificuldade de engolir. Aspirar comida pode causar pneumonia — séria em idosos.
 

@@ -12,7 +12,6 @@ seo:
   metaDescription: "Guia completo sobre aposentadoria do idoso em 2024. Saiba tipos, requisitos e como solicitar."
 ---
 
-# Aposentadoria do Idoso: Direitos e Como Solicitar em 2024
 
 Um pai ou mãe idosos aposentados é a base financeira para muitos cuidadores. Mas entender **como funciona a aposentadoria**, quais são os **direitos** e **quando solicitar ajustes** não é simples.
 

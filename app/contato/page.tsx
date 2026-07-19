@@ -1,16 +1,47 @@
-import Link from "next/link";
-import type { Metadata } from "next";
+"use client";
 
-export const metadata: Metadata = {
-  title: "Contato",
-  description: "Entre em contato com o Filho Cuidador. Dúvidas, sugestões ou colaborações — estamos aqui para ouvir você.",
-  openGraph: {
-    title: "Contato | Filho Cuidador",
-    description: "Entre em contato com o Filho Cuidador.",
-  },
-};
+import Link from "next/link";
+import { useState } from "react";
 
 export default function ContatoPage() {
+  const [loading, setLoading] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState("");
+
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    setLoading(true);
+    setError("");
+
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+
+    try {
+      const res = await fetch("/api/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          type: "contact",
+          data: {
+            name: formData.get("name"),
+            email: formData.get("email"),
+            subject: formData.get("subject"),
+            message: formData.get("message"),
+          },
+        }),
+      });
+
+      if (!res.ok) throw new Error("Erro ao enviar");
+
+      setSubmitted(true);
+      form.reset();
+    } catch {
+      setError("Erro ao enviar mensagem. Tente novamente.");
+    } finally {
+      setLoading(false);
+    }
+  }
+
   return (
     <main className="bg-bg-base min-h-screen py-12 lg:py-16">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -33,9 +64,23 @@ export default function ContatoPage() {
             Tem dúvidas, sugestões ou gostaria de colaborar com o Filho Cuidador? Adoraríamos ouvir você.
           </p>
 
+          {submitted && (
+            <div className="bg-green-50 border border-green-200 p-5 mb-10">
+              <p className="text-sm text-green-800">
+                Mensagem enviada com sucesso! Entraremos em contato em breve.
+              </p>
+            </div>
+          )}
+
+          {error && (
+            <div className="bg-red-50 border border-red-200 p-5 mb-10">
+              <p className="text-sm text-red-800">{error}</p>
+            </div>
+          )}
+
           {/* Contact Form */}
           <div className="bg-white border border-border-base p-6 lg:p-8 mb-10">
-            <form className="space-y-5">
+            <form onSubmit={handleSubmit} className="space-y-5">
               <div>
                 <label htmlFor="name" className="block text-[11px] font-medium text-brand-primary mb-2 tracking-wide uppercase">
                   Nome
@@ -94,9 +139,10 @@ export default function ContatoPage() {
 
               <button
                 type="submit"
-                className="w-full px-6 py-3 bg-brand-primary text-white text-sm font-medium tracking-wide hover:bg-brand-primary/90 transition-colors"
+                disabled={loading}
+                className="w-full px-6 py-3 bg-brand-primary text-white text-sm font-medium tracking-wide hover:bg-brand-primary/90 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                Enviar Mensagem
+                {loading ? "Enviando..." : "Enviar Mensagem"}
               </button>
             </form>
           </div>

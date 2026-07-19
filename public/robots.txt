@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://filhocuidador.com.br/sitemap.xml

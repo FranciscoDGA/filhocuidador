@@ -12,7 +12,6 @@ seo:
   metaDescription: "Guia sobre luto antecipado. Como lidar com mudanças no pai/mãe idosos e cuidar de si."
 ---
 
-# Luto Antecipado: Como Lidar com Mudanças no Pai/Mãe Idosos
 
 Seu pai ainda está vivo. Mas não é mais o mesmo. A pessoa que conheceu está "se indo" — aos poucos.
 

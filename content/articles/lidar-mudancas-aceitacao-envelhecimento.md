@@ -12,7 +12,6 @@ seo:
   metaDescription: "Como lidar com as mudanças do envelhecimento de pai/mãe e ressignificar a relação."
 ---
 
-# Lidar com Mudanças: Aceitação do Envelhecimento do Pai/Mãe
 
 Seu pai era **forte.**
 

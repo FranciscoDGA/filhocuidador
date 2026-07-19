@@ -12,7 +12,6 @@ seo:
   metaDescription: "Estratégias para garantir noites seguras para idosos. Prevenção de quedas e acidentes noturnos."
 ---
 
-# Noites Seguras para o Idoso: Rotina de Sono e Prevenção de Acidentes
 
 Noite é mais perigosa para idoso.
 

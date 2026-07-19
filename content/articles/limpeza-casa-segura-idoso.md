@@ -12,7 +12,6 @@ seo:
   metaDescription: "Dicas de limpeza segura para casa com idoso. Produtos não-tóxicos e rotina eficiente."
 ---
 
-# Limpeza da Casa com Idoso: Higiene e Segurança
 
 Casa com idoso = mais suja (incontinência, comida, tosse).
 

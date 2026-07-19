@@ -12,7 +12,6 @@ seo:
   metaDescription: "Como voltar ao trabalho enquanto cuida de pai idoso. Estratégias e direitos."
 ---
 
-# Retorno ao Trabalho: Como Equilibrar Carreira com Cuidado de Idoso
 
 Você tirou licença. Pai/mãe precisa de você. Mas **contas não pagam sozinhas**.
 

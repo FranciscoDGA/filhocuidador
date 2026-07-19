@@ -12,7 +12,6 @@ seo:
   metaDescription: "Guia sobre depressão em cuidadores. Reconheça sinais, procure ajuda e proteja sua saúde mental."
 ---
 
-# Depressão em Cuidadores: Reconheça os Sinais e Procure Ajuda
 
 Cuidar de um pai idoso é **mentalmente exaustivo**. A **depressão** não é fraqueza — é uma resposta real a estresse crônico.
 

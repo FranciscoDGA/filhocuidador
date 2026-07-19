@@ -12,7 +12,6 @@ seo:
   metaDescription: "Como prevenir osteoporose e quedas em idoso. Medicação, nutrição, segurança."
 ---
 
-# Osteoporose: Prevenção de Quedas e Fraturas em Idoso
 
 Seu pai/mãe caiu.
 

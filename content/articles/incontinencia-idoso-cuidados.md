@@ -12,7 +12,6 @@ seo:
   metaDescription: "Guia completo sobre incontinência em idosos. Como gerenciar com higiene e dignidade."
 ---
 
-# Incontinência Urinária e Fecal: Como Gerenciar com Dignidade
 
 Seu pai/mãe não consegue controlar xixi ou cocô.
 

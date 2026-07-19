@@ -6,12 +6,12 @@ date: "2026-07-18"
 author: "Filho Cuidador"
 category: "Cuidados Práticos"
 tags: ["estimulação cognitiva", "Alzheimer", "atividades", "memória", "demência"]
+image: "https://images.unsplash.com/photo-1516534775068-ba3e7458af70?w=800&q=80"
 seo:
   metaDescription: "Descubra atividades eficazes para estimular a cognição de idosos com Alzheimer. Jogos, exercícios e rotinas que retardam o avanço da doença."
   keywords: ["atividades Alzheimer", "estimulação cognitiva idosos", "exercícios memória Alzheimer", "jogos demência"]
 ---
 
-# Atividades para Estimulação Cognitiva de Idosos com Alzheimer
 
 A estimulação cognitiva é uma das formas mais eficazes de retardar o avanço do Alzheimer e melhorar a qualidade de vida. Neste guia, você vai encontrar atividades práticas e adequadas para cada fase da doença.
 

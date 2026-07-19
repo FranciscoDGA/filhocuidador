@@ -58,7 +58,7 @@ const affiliates = [
     category: "Fraldas Geriátricas",
     items: [
       { name: "Tena Slip", description: "Fralda descartável com alta absorção", link: "#" },
-      { name: "Prev궨", description: "Fralda econômica para uso diário", link: "#" },
+      { name: "PrevCare", description: "Fralda econômica para uso diário", link: "#" },
     ],
   },
   {

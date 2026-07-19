@@ -6,12 +6,12 @@ date: "2026-07-18"
 author: "Filho Cuidador"
 category: "Cuidados Práticos"
 tags: ["segurança", "prevenção de quedas", "adaptação do lar", "idoso", "acidentes"]
+image: "https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=800&q=80"
 seo:
   metaDescription: "Adaptação do lar para idosos: como prevenir quedas, afogamentos, queimaduras e intoxicação. Guia completo com checklist de segurança por cômodo."
   keywords: ["segurança lar idosos", "prevenção quedas idosos", "adaptação casa idoso", "acidentes domésticos idosos"]
 ---
 
-# Segurança no Lar para Idosos: Guia Completo de Prevenção
 
 Acidentes domésticos são a principal causa de hospitalização de idosos no Brasil. A maioria poderia ser evitada com adaptações simples no ambiente. Neste guia, você vai aprender como transformar a casa em um lugar seguro para quem você cuida.
 

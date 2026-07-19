@@ -12,7 +12,6 @@ seo:
   metaDescription: "Guia sobre problemas de visão em idoso. Catarata, glaucoma, AMD explicados."
 ---
 
-# Problemas de Visão em Idoso: Catarata, Glaucoma e AMD
 
 Seu pai/mãe reclamou: **"Visão fica nublada"** ou **"Não vejo bem no escuro"**
 

@@ -12,7 +12,6 @@ seo:
   metaDescription: "Como lidar com mudança de papéis quando você cuida do pai. Ressignifique relação."
 ---
 
-# Dinâmica Familiar: Quando Papéis Mudam
 
 **Antes:**
 - Pai era protetor

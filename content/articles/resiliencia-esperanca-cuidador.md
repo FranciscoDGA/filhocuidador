@@ -12,7 +12,6 @@ seo:
   metaDescription: "Como encontrar resiliência e esperança enquanto cuida de pai/mãe. Estratégias práticas."
 ---
 
-# Resiliência e Esperança: Encontrar Força Para Continuar
 
 Você está exausido.
 

@@ -12,7 +12,6 @@ seo:
   metaDescription: "Técnicas práticas para cuidadores recuperarem sono profundo. Estratégias noite segura."
 ---
 
-# Insônia do Cuidador: Como Recuperar Sono de Qualidade
 
 Você dorme 4 horas quebradas.
 

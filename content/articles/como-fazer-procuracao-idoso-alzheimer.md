@@ -12,7 +12,6 @@ seo:
   metaDescription: "Passo a passo para fazer procuração de idoso com Alzheimer. Documentos necessários, modelo, onde registrar."
 ---
 
-# Como Fazer Procuração para Idoso com Alzheimer: Passo a Passo
 
 Seu pai/mãe com Alzheimer precisa que você assine documentos por ele.
 

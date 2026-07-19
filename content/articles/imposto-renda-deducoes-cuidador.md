@@ -12,7 +12,6 @@ seo:
   metaDescription: "Guia de deduções fiscais para cuidadores de idosos. Reduza IR legitimamente."
 ---
 
-# Imposto de Renda: Deduções Para Quem Cuida de Idoso
 
 Você cuida de pai/mãe idoso.
 

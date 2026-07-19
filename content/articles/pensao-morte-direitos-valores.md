@@ -12,7 +12,6 @@ seo:
   metaDescription: "Guia sobre pensão por morte: quem recebe, valores e como solicitar em 2024."
 ---
 
-# Pensão por Morte: Quem Tem Direito e Quanto Recebe
 
 A morte de um cônjuge ou pai traz perda emocional **e financeira**. A **pensão por morte** é um benefício do INSS que ajuda dependentes.
 

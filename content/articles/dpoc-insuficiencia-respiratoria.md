@@ -12,7 +12,6 @@ seo:
   metaDescription: "Guia de cuidados com DPOC em idoso. Inaladores, crises respiratórias, prevenção."
 ---
 
-# DPOC (Doença Pulmonar Obstrutiva Crônica): Cuidados Respiratórios
 
 Seu pai/mãe tem DPOC (era fumante).
 

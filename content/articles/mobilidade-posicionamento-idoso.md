@@ -12,7 +12,6 @@ seo:
   metaDescription: "Técnicas práticas de posicionamento e mobilidade para cuidadores de idosos."
 ---
 
-# Mobilidade e Posicionamento: Como Ajudar o Idoso a Se Mover
 
 Seu pai está imobilizado na cama ou dificuldade de andar.
 

@@ -12,7 +12,6 @@ seo:
   metaDescription: "Estratégias para manter relacionamentos saudáveis enquanto cuida de pai/mãe."
 ---
 
-# Relacionamentos Enquanto Cuida: Casamento, Namorado e Relacionamentos
 
 Você está cuidando de pai/mãe. Seu relacionamento sofre.
 

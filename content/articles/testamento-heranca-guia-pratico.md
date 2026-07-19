@@ -12,7 +12,6 @@ seo:
   metaDescription: "Guia completo sobre testamento e herança. Saiba como fazer, direitos e evitar conflitos."
 ---
 
-# Testamento e Herança: Guia Prático para Filhos Cuidadores
 
 A morte é **certa**, mas muitos não deixam testamento. Resultado: conflitos familiares, tribunais, demoras.
 

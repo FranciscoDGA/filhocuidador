@@ -1,10 +1,7 @@
-import Link from "next/link";
-import type { Metadata } from "next";
+"use client";
 
-export const metadata: Metadata = {
-  title: "Trabalhe Conosco",
-  description: "Seja um parceiro do Filho Cuidador. Parcerias B2B para clínicas, advogados, planos de saúde e profissionais que atendem cuidadores de idosos.",
-};
+import Link from "next/link";
+import { useState } from "react";
 
 const partnerTypes = [
   {
@@ -90,6 +87,44 @@ const testimonials = [
 ];
 
 export default function TrabalheConoscoPage() {
+  const [loading, setLoading] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState("");
+
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    setLoading(true);
+    setError("");
+
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+
+    try {
+      const res = await fetch("/api/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          type: "contact",
+          data: {
+            name: formData.get("name"),
+            email: formData.get("email"),
+            subject: `Parceria: ${formData.get("partnerType")} - ${formData.get("company")}`,
+            message: formData.get("message"),
+          },
+        }),
+      });
+
+      if (!res.ok) throw new Error("Erro ao enviar");
+
+      setSubmitted(true);
+      form.reset();
+    } catch {
+      setError("Erro ao enviar mensagem. Tente novamente.");
+    } finally {
+      setLoading(false);
+    }
+  }
+
   return (
     <main className="bg-bg-base min-h-screen py-12 lg:py-16">
       <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
@@ -315,7 +350,21 @@ export default function TrabalheConoscoPage() {
                 Preencha o formulário abaixo e entraremos em contato em até 24 horas.
               </p>
 
-              <form className="space-y-6">
+              {submitted && (
+                <div className="bg-green-50 border border-green-200 p-5 mb-6">
+                  <p className="text-sm text-green-800">
+                    Mensagem enviada com sucesso! Entraremos em contato em breve.
+                  </p>
+                </div>
+              )}
+
+              {error && (
+                <div className="bg-red-50 border border-red-200 p-5 mb-6">
+                  <p className="text-sm text-red-800">{error}</p>
+                </div>
+              )}
+
+              <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
                     <label className="block text-[11px] font-medium text-brand-secondary/60 mb-2 uppercase tracking-wider">
@@ -323,6 +372,8 @@ export default function TrabalheConoscoPage() {
                     </label>
                     <input
                       type="text"
+                      name="name"
+                      required
                       className="w-full px-4 py-3 bg-bg-base border border-border-base text-sm text-brand-primary focus:outline-none focus:border-brand-accent transition-colors rounded-[5px]"
                       placeholder="Seu nome completo"
                     />
@@ -333,6 +384,7 @@ export default function TrabalheConoscoPage() {
                     </label>
                     <input
                       type="text"
+                      name="company"
                       className="w-full px-4 py-3 bg-bg-base border border-border-base text-sm text-brand-primary focus:outline-none focus:border-brand-accent transition-colors rounded-[5px]"
                       placeholder="Nome da empresa"
                     />
@@ -346,6 +398,8 @@ export default function TrabalheConoscoPage() {
                     </label>
                     <input
                       type="email"
+                      name="email"
+                      required
                       className="w-full px-4 py-3 bg-bg-base border border-border-base text-sm text-brand-primary focus:outline-none focus:border-brand-accent transition-colors rounded-[5px]"
                       placeholder="seu@email.com"
                     />
@@ -354,7 +408,10 @@ export default function TrabalheConoscoPage() {
                     <label className="block text-[11px] font-medium text-brand-secondary/60 mb-2 uppercase tracking-wider">
                       Tipo de Parceria
                     </label>
-                    <select className="w-full px-4 py-3 bg-bg-base border border-border-base text-sm text-brand-primary focus:outline-none focus:border-brand-accent transition-colors rounded-[5px]">
+                    <select
+                      name="partnerType"
+                      className="w-full px-4 py-3 bg-bg-base border border-border-base text-sm text-brand-primary focus:outline-none focus:border-brand-accent transition-colors rounded-[5px]"
+                    >
                       <option>Clínica de Home Care</option>
                       <option>Advogado</option>
                       <option>Plano de Saúde</option>
@@ -371,6 +428,7 @@ export default function TrabalheConoscoPage() {
                     Mensagem
                   </label>
                   <textarea
+                    name="message"
                     rows={4}
                     className="w-full px-4 py-3 bg-bg-base border border-border-base text-sm text-brand-primary focus:outline-none focus:border-brand-accent transition-colors resize-none rounded-[5px]"
                     placeholder="Conte mais sobre seu interesse em ser parceiro..."
@@ -379,9 +437,10 @@ export default function TrabalheConoscoPage() {
 
                 <button
                   type="submit"
-                  className="w-full px-6 py-3 bg-brand-primary text-white text-[13px] font-medium tracking-wide uppercase hover:bg-brand-primary/90 transition-colors rounded-[5px]"
+                  disabled={loading}
+                  className="w-full px-6 py-3 bg-brand-primary text-white text-[13px] font-medium tracking-wide uppercase hover:bg-brand-primary/90 transition-colors rounded-[5px] disabled:opacity-50 disabled:cursor-not-allowed"
                 >
-                  Enviar Mensagem
+                  {loading ? "Enviando..." : "Enviar Mensagem"}
                 </button>
               </form>
             </div>

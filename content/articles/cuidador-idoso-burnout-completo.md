@@ -12,7 +12,6 @@ seo:
   metaDescription: "Sinais de burnout em cuidadores de idosos. Como reconhecer, prevenir e se recuperar do esgotamento."
 ---
 
-# Cuidador de Idoso Burnout: O Esgotamento Silencioso
 
 Você não dorme. Não come direito. Não sai de casa. Não sorri.
 

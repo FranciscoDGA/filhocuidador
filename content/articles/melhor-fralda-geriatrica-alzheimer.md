@@ -12,7 +12,6 @@ seo:
   metaDescription: "Guia completo das melhores fraldas geriátricas para Alzheimer. Comparativo de marcas, tamanhos e preços."
 ---
 
-# Melhor Fralda Geriátrica para Alzheimer: Guia de Compra
 
 Seu pai/mãe com Alzheimer precisa de fralda.
 

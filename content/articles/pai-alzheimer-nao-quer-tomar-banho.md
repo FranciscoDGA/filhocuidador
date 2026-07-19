@@ -12,7 +12,6 @@ seo:
   metaDescription: "Como lidar quando pai com Alzheimer recusa tomar banho. Estratégias práticas e dicas de como convencer."
 ---
 
-# Pai com Alzheimer Não Quer Tomar Banho: Como Resolver
 
 Você prepara o banho. Chama seu pai. Ele se recusa.
 
