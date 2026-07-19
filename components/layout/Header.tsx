@@ -6,6 +6,7 @@ import { Menu, X, ChevronDown } from "lucide-react";
 import { useState, useRef } from "react";
 
 const navItems = [
+  { label: "Método", href: "/metodo" },
   { label: "Diagnóstico", href: "/categorias/entendendo-a-doenca" },
   { label: "Cuidados Diários", href: "/categorias/cuidados-praticos" },
   { label: "Desafios", href: "/categorias/familia" },
