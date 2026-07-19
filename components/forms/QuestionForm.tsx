@@ -5,9 +5,11 @@ import { useState } from "react";
 export default function QuestionForm() {
   const [formData, setFormData] = useState({ name: "", email: "", question: "", category: "" });
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setLoading(true);
     try {
       const res = await fetch("/api/submit", {
         method: "POST",
@@ -20,6 +22,8 @@ export default function QuestionForm() {
       setFormData({ name: "", email: "", question: "", category: "" });
     } catch {
       alert("Erro ao enviar. Tente novamente.");
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -100,9 +104,10 @@ export default function QuestionForm() {
       </div>
       <button
         type="submit"
-        className="px-8 py-3 bg-brand-primary text-white text-[13px] font-medium tracking-wide uppercase hover:bg-brand-primary/90 transition-colors rounded-[5px]"
+        disabled={loading}
+        className="px-8 py-3 bg-brand-primary text-white text-[13px] font-medium tracking-wide uppercase hover:bg-brand-primary/90 transition-colors rounded-[5px] disabled:opacity-50 disabled:cursor-not-allowed"
       >
-        Enviar Pergunta
+        {loading ? "Enviando..." : "Enviar Pergunta"}
       </button>
     </form>
   );

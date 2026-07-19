@@ -45,9 +45,11 @@ const testimonials = [
 export default function DepoimentosPage() {
   const [formData, setFormData] = useState({ name: "", city: "", text: "", rating: 5 });
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setLoading(true);
     try {
       const res = await fetch("/api/submit", {
         method: "POST",
@@ -60,6 +62,8 @@ export default function DepoimentosPage() {
       setFormData({ name: "", city: "", text: "", rating: 5 });
     } catch {
       alert("Erro ao enviar. Tente novamente.");
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -209,9 +213,10 @@ export default function DepoimentosPage() {
               </div>
               <button
                 type="submit"
-                className="px-8 py-3 bg-brand-primary text-white text-[13px] font-medium tracking-wide uppercase hover:bg-brand-primary/90 transition-colors"
+                disabled={loading}
+                className="px-8 py-3 bg-brand-primary text-white text-[13px] font-medium tracking-wide uppercase hover:bg-brand-primary/90 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                Enviar Depoimento
+                {loading ? "Enviando..." : "Enviar Depoimento"}
               </button>
             </form>
           )}

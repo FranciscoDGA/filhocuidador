@@ -184,6 +184,39 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
 
   const schemas = [articleSchema, faqSchema, howToSchema].filter(Boolean);
 
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Início",
+        item: "https://filhocuidador.com.br",
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Artigos",
+        item: "https://filhocuidador.com.br/artigos",
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: article.category,
+        item: `https://filhocuidador.com.br/categorias/${categorySlug}`,
+      },
+      {
+        "@type": "ListItem",
+        position: 4,
+        name: article.title,
+        item: `https://filhocuidador.com.br/artigos/${article.slug}`,
+      },
+    ],
+  };
+
+  schemas.push(breadcrumbSchema);
+
   return (
     <main className="bg-bg-base min-h-screen pt-8 pb-20">
       {schemas.map((s, i) => (

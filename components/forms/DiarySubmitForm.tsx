@@ -5,9 +5,11 @@ import { useState } from "react";
 export default function DiarySubmitForm() {
   const [formData, setFormData] = useState({ name: "", city: "", age: 0, story: "", email: "" });
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setLoading(true);
     try {
       const res = await fetch("/api/submit", {
         method: "POST",
@@ -20,6 +22,8 @@ export default function DiarySubmitForm() {
       setFormData({ name: "", city: "", age: 0, story: "", email: "" });
     } catch {
       alert("Erro ao enviar. Tente novamente.");
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -103,9 +107,10 @@ export default function DiarySubmitForm() {
       </div>
       <button
         type="submit"
-        className="px-8 py-3 bg-brand-primary text-white text-[13px] font-medium tracking-wide uppercase hover:bg-brand-primary/90 transition-colors"
+        disabled={loading}
+        className="px-8 py-3 bg-brand-primary text-white text-[13px] font-medium tracking-wide uppercase hover:bg-brand-primary/90 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
       >
-        Enviar Minha História
+        {loading ? "Enviando..." : "Enviar Minha História"}
       </button>
     </form>
   );
