@@ -71,6 +71,7 @@ export default function Footer() {
             <ul className="space-y-2.5 text-xs text-white/45">
               <li><Link href="/sobre" className="hover:text-white transition-colors">Sobre o Projeto</Link></li>
               <li><Link href="/contato" className="hover:text-white transition-colors">Contato</Link></li>
+              <li><Link href="/trabalhe-conosco" className="hover:text-white transition-colors">Trabalhe Conosco</Link></li>
               <li><Link href="/termos" className="hover:text-white transition-colors">Termos de Uso</Link></li>
               <li><Link href="/privacidade" className="hover:text-white transition-colors">Política de Privacidade</Link></li>
             </ul>

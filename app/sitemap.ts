@@ -11,6 +11,8 @@ const staticPages = [
   "/ferramentas",
   "/comunidade",
   "/produtos",
+  "/produtos/guia-cuidador-iniciante",
+  "/trabalhe-conosco",
   "/diarios",
   "/pergunte-ao-especialista",
   "/kits",
