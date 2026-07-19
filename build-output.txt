@@ -1,0 +1,84 @@
+﻿
+> filhocuidador@0.1.0 build
+> next build
+
+node.exe : ÔÜá Warning: Next.js inferred your workspace root, but it may not be correct.
+No linha:1 caractere:1
++ & "C:\Program Files\nodejs/node.exe" "C:\Program Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (ÔÜá Warning: Ne...not be correct.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+ We detected multiple lockfiles and selected the directory of C:\Users\User\package-lock.json as the root directory.
+ To silence this warning, set `turbopack.root` in your Next.js config, or consider removing one of the lockfiles if 
+it's not needed.
+   See https://nextjs.org/docs/app/api-reference/config/next-config-js/turbopack#root-directory for more information.
+ Detected additional lockfiles: 
+   * C:\Users\User\OneDrive\Desktop\filhocuidador\app\package-lock.json
+
+Ôû▓ Next.js 16.2.10 (Turbopack)
+
+  Creating an optimized production build ...
+Ô£ô Compiled successfully in 9.9s
+  Running TypeScript ...
+  Finished TypeScript in 7.8s ...
+  Collecting page data using 3 workers ...
+ÔÜá Using edge runtime on a page currently disables static generation for that page
+  Generating static pages using 3 workers (0/99) ...
+  Generating static pages using 3 workers (24/99) 
+  Generating static pages using 3 workers (49/99) 
+  Generating static pages using 3 workers (74/99) 
+Ô£ô Generating static pages using 3 workers (99/99) in 5.4s
+  Finalizing page optimization ...
+
+Route (app)
+Ôöî Ôùï /
+Ôö£ Ôùï /_not-found
+Ôö£ ãÆ /[category]
+Ôö£ ãÆ /api/og
+Ôö£ ãÆ /api/submit
+Ôö£ Ôùï /artigos
+Ôö£ ÔùÅ /artigos/[slug]
+Ôöé Ôö£ /artigos/ansiedade-cuidador-tecnicas-alivio
+Ôöé Ôö£ /artigos/alzheimer-guia-pratico-cuidador
+Ôöé Ôö£ /artigos/como-lidar-pai-alzheimer-agressivo
+Ôöé Ôöö [+55 more paths]
+Ôö£ ÔùÅ /categorias/[slug]
+Ôöé Ôö£ /categorias/entendendo-a-doenca
+Ôöé Ôö£ /categorias/cuidados-praticos
+Ôöé Ôö£ /categorias/saude-emocional
+Ôöé Ôöö [+2 more paths]
+Ôö£ Ôùï /comunidade
+Ôö£ Ôùï /conselho
+Ôö£ Ôùï /contato
+Ôö£ Ôùï /depoimentos
+Ôö£ Ôùï /diarios
+Ôö£ ÔùÅ /diarios/[slug]
+Ôöé Ôö£ /diarios/ana-maria-o-dia-a-dia-com-mae-alzheimer
+Ôöé Ôö£ /diarios/carlos-cuidar-do-pai-sozinho
+Ôöé Ôö£ /diarios/mariana-quando-a-familia-nao-ajuda
+Ôöé Ôöö [+3 more paths]
+Ôö£ Ôùï /ferramentas
+Ôö£ Ôùï /ferramentas/calculadora-custos
+Ôö£ Ôùï /ferramentas/checklist-diagnostico
+Ôö£ Ôùï /ferramentas/quiz-burnout
+Ôö£ Ôùï /kits
+Ôö£ ÔùÅ /kits/[slug]
+Ôöé Ôö£ /kits/primeiras-24h-alzheimer
+Ôöé Ôö£ /kits/agressividade-confusao
+Ôöé Ôö£ /kits/casa-segura
+Ôöé Ôöö [+3 more paths]
+Ôö£ Ôùï /pergunte-ao-especialista
+Ôö£ Ôùï /privacidade
+Ôö£ Ôùï /produtos
+Ôö£ Ôùï /robots.txt
+Ôö£ Ôùï /sitemap.xml
+Ôö£ Ôùï /sobre
+Ôö£ Ôùï /termos
+Ôöö Ôùï /videos
+
+
+Ôùï  (Static)   prerendered as static content
+ÔùÅ  (SSG)      prerendered as static HTML (uses generateStaticParams)
+ãÆ  (Dynamic)  server-rendered on demand
+

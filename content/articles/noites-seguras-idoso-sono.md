@@ -1,5 +1,5 @@
 ---
-title: "Noites Seguras para o Idoso: Rotina de Sono e Prevenção de Acidentes"
+title: "Noites Seguras: Rotina de Sono para Idoso"
 slug: "noites-seguras-idoso-sono"
 category: "Cuidados Práticos"
 date: "6 de agosto, 2024"

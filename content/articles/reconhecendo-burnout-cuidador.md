@@ -1,5 +1,5 @@
 ---
-title: "Reconhecendo o Burnout do Cuidador: Quando Você Precisa de Ajuda"
+title: "Burnout do Cuidador: Quando Precisa de Ajuda"
 slug: "reconhecendo-burnout-cuidador"
 category: "Saúde Emocional"
 date: "2024-07-17"

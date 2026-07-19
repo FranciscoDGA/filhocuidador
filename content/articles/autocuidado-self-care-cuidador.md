@@ -1,5 +1,5 @@
 ---
-title: "Autocuidado para Cuidador: Investir em Si Mesmo Não é Egoísmo"
+title: "Autocuidado para Cuidador: Não é Egoísmo"
 slug: "autocuidado-self-care-cuidador"
 category: "Saúde Emocional"
 date: "14 de agosto, 2024"

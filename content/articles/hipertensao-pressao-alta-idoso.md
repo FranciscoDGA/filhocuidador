@@ -1,5 +1,5 @@
 ---
-title: "Hipertensão (Pressão Alta) em Idoso: Monitoramento e Controle"
+title: "Hipertensão em Idoso: Monitoramento e Controle"
 slug: "hipertensao-pressao-alta-idoso"
 category: "Doenças"
 date: "29 de julho, 2024"

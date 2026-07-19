@@ -1,5 +1,5 @@
 ---
-title: "Relacionamentos Enquanto Cuida: Casamento, Namorado e Relacionamentos"
+title: "Relacionamentos Enquanto Cuida: Casamento e Família"
 slug: "relacionamentos-enquanto-cuida"
 category: "Saúde Emocional"
 date: "13 de agosto, 2024"

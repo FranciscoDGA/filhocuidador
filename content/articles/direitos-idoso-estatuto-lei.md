@@ -1,5 +1,5 @@
 ---
-title: "Direitos do Idoso: Tudo que Você Precisa Saber Sobre o Estatuto"
+title: "Direitos do Idoso: Estatuto e Leis que Protegem"
 slug: "direitos-idoso-estatuto-lei"
 category: "Jurídico & Financeiro"
 date: "31 de julho, 2024"

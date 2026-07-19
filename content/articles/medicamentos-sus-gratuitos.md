@@ -1,5 +1,5 @@
 ---
-title: "Medicamentos Gratuitos pelo SUS: Como Conseguir para Seu Pai/Mãe"
+title: "Medicamentos Gratuitos pelo SUS: Como Conseguir"
 slug: "medicamentos-sus-gratuitos"
 category: "Jurídico & Financeiro"
 date: "4 de agosto, 2024"

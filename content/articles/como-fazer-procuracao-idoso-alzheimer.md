@@ -1,5 +1,5 @@
 ---
-title: "Como Fazer Procuração para Idoso com Alzheimer: Passo a Passo"
+title: "Procuração para Idoso com Alzheimer: Passo a Passo"
 slug: "como-fazer-procuracao-idoso-alzheimer"
 category: "Jurídico"
 date: "2024-08-12"

@@ -1,5 +1,5 @@
 ---
-title: "Comunicação com Idoso com Demência: Técnicas Práticas que Funcionam"
+title: "Comunicação com Idoso com Demência: Técnicas Práticas"
 slug: "comunicacao-idoso-demencia"
 category: "Saúde Emocional"
 date: "5 de agosto, 2024"

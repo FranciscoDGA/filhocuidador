@@ -1,5 +1,5 @@
 ---
-title: "Quando o Irmão Não Quer Ajudar: Como Comunicar e Estabelecer Limites"
+title: "Quando o Irmão Não Quer Ajudar: Como Comunicar"
 slug: "comunicacao-irmaos-nao-ajudam"
 category: "Família"
 date: "10 de agosto, 2024"

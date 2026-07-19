@@ -1,5 +1,5 @@
 ---
-title: "Minha Mãe Não Me Reconhece Mais: Lidando com a Perda em Vida"
+title: "Minha Mãe Não Me Reconhece Mais: Lidando com a Perda"
 slug: "minha-mae-nao-me-reconhece-mais-alzheimer"
 category: "Dor Emocional"
 date: "2024-08-14"

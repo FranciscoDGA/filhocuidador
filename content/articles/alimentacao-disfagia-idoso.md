@@ -1,5 +1,5 @@
 ---
-title: "Alimentação de Idoso com Disfagia: Receitas Seguras e Práticas"
+title: "Alimentação de Idoso com Disfagia: Receitas Seguras"
 slug: "alimentacao-disfagia-idoso"
 category: "Cuidados Práticos"
 date: "6 de agosto, 2024"

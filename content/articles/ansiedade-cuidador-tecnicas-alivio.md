@@ -1,5 +1,5 @@
 ---
-title: "Ansiedade do Cuidador: Como Encontrar Alívio Quando Tudo Parece Urgente"
+title: "Ansiedade do Cuidador: Como Encontrar Alívio"
 excerpt: "Aquele aperto no peito às três da manhã e o medo constante do que pode dar errado. A ansiedade é a sombra da filha cuidadora. Aprenda a reconhecer os sinais e descubra técnicas reais para encontrar alívio em meio ao caos."
 category: "Saúde Emocional"
 author: "Equipe Filho Cuidador"

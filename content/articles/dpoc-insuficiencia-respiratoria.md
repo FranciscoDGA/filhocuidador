@@ -1,5 +1,5 @@
 ---
-title: "DPOC (Doença Pulmonar Obstrutiva Crônica): Cuidados Respiratórios"
+title: "DPOC: Cuidados Respiratórios para o Cuidador"
 slug: "dpoc-insuficiencia-respiratoria"
 category: "Doenças"
 date: "30 de julho, 2024"

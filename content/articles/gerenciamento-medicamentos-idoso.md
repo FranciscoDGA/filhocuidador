@@ -1,5 +1,5 @@
 ---
-title: "Gerenciamento de Medicamentos: Evitar Erros e Garantir Eficácia"
+title: "Gerenciamento de Medicamentos: Evitar Erros"
 slug: "gerenciamento-medicamentos-idoso"
 category: "Cuidados Práticos"
 date: "5 de agosto, 2024"

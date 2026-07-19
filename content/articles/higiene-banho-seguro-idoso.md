@@ -1,5 +1,5 @@
 ---
-title: "Higiene e Banho Seguro do Idoso: Passo a Passo e Dicas Práticas"
+title: "Banho Seguro do Idoso: Passo a Passo e Dicas"
 slug: "higiene-banho-seguro-idoso"
 category: "Cuidados Práticos"
 date: "3 de agosto, 2024"

@@ -1,5 +1,5 @@
 ---
-title: "Retorno ao Trabalho: Como Equilibrar Carreira com Cuidado de Idoso"
+title: "Retorno ao Trabalho: Equilibrar Carreira e Cuidado"
 slug: "retorno-trabalho-cuidador"
 category: "Saúde Emocional"
 date: "11 de agosto, 2024"

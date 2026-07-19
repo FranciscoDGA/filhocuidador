@@ -106,7 +106,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
 
   const schemaDescription = article.seo?.metaDescription || article.excerpt;
 
-  const schema = {
+  const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
     headline: article.title,
@@ -132,12 +132,67 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
     wordCount: article.content.replace(/<[^>]*>/g, "").split(/\s+/).length,
   };
 
+  // Extract FAQ from HTML content
+  const faqMatches = article.content.match(/<h[23][^>]*>([^<]+)<\/h[23]>\s*<p>([^<]+)<\/p>/g);
+  let faqSchema = null;
+  if (faqMatches && article.content.includes("Perguntas Frequentes")) {
+    const faqPairs: { question: string; answer: string }[] = [];
+    const h3Pattern = /<h3[^>]*>([^<]+)<\/h3>\s*<p>([^<]+)<\/p>/g;
+    let match;
+    while ((match = h3Pattern.exec(article.content)) !== null) {
+      faqPairs.push({ question: match[1], answer: match[2] });
+    }
+    if (faqPairs.length > 0) {
+      faqSchema = {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        mainEntity: faqPairs.map((faq) => ({
+          "@type": "Question",
+          name: faq.question,
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: faq.answer,
+          },
+        })),
+      };
+    }
+  }
+
+  // Extract HowTo steps from HTML content
+  let howToSchema = null;
+  if (article.content.includes("Passo a Passo")) {
+    const stepPattern = /<h3[^>]*>Passo \d+[^<]*<\/h3>\s*<p>([^<]+)<\/p>/g;
+    const steps: { text: string }[] = [];
+    let stepMatch;
+    while ((stepMatch = stepPattern.exec(article.content)) !== null) {
+      steps.push({ text: stepMatch[1] });
+    }
+    if (steps.length > 0) {
+      howToSchema = {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        name: article.title,
+        description: schemaDescription,
+        step: steps.map((step, i) => ({
+          "@type": "HowToStep",
+          position: i + 1,
+          text: step.text,
+        })),
+      };
+    }
+  }
+
+  const schemas = [articleSchema, faqSchema, howToSchema].filter(Boolean);
+
   return (
     <main className="bg-bg-base min-h-screen pt-8 pb-20">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
-      />
+      {schemas.map((s, i) => (
+        <script
+          key={i}
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(s) }}
+        />
+      ))}
       <div className="max-w-[1000px] mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Breadcrumb */}
