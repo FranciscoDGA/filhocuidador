@@ -6,7 +6,7 @@ date: "8 de agosto, 2024"
 author: "Equipe Filhos Cuidadores"
 excerpt: "Técnicas seguras de posicionamento e mobilidade para idosos com dificuldade de movimento."
 readTime: 12
-image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&q=80"
+image: "https://source.unsplash.com/800x600/?exercise"
 seo:
   keywords: ["mobilidade idoso", "posicionamento cama", "transferência segura", "movimento idoso", "quedas prevencão"]
   metaDescription: "Técnicas práticas de posicionamento e mobilidade para cuidadores de idosos."

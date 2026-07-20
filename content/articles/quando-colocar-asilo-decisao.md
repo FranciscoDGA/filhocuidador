@@ -6,7 +6,7 @@ date: "21 de julho, 2024"
 author: "Equipe Filhos Cuidadores"
 excerpt: "Como decidir se pai/mãe vai para asilo. Critérios, culpa, alternativas."
 readTime: 12
-image: "https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=800&q=80"
+image: "https://source.unsplash.com/800x600/?vision"
 seo:
   keywords: ["asilo idoso", "casa repouso", "instituição idoso", "culpa asilo", "quando internar"]
   metaDescription: "Guia para decisão de colocar pai/mãe em asilo. Critérios, culpa, reflexão."

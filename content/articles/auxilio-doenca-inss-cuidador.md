@@ -6,7 +6,7 @@ date: "2 de agosto, 2024"
 author: "Equipe Filhos Cuidadores"
 excerpt: "Se cuidar causa depressão/esgotamento. Solicite auxílio-doença no INSS. Direito seu."
 readTime: 11
-image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&q=80"
+image: "https://source.unsplash.com/800x600/?healthcare"
 seo:
   keywords: ["auxílio-doença", "INSS cuidador", "afastamento remunerado", "incapacidade cuidador", "direitos trabalhistas"]
   metaDescription: "Como solicitar auxílio-doença no INSS se cuidar de pai/mãe causa incapacidade. Guia passo a passo."

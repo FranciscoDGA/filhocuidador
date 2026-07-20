@@ -6,7 +6,7 @@ date: "2024-07-17"
 author: "Equipe Filhos Cuidadores"
 excerpt: "Cuidar de um pai idoso é um privilégio, mas também é exaustivo. Entenda os sinais de burnout e quando procurar ajuda."
 readTime: 8
-image: "https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?w=800&q=80"
+image: "https://source.unsplash.com/800x600/?bones"
 seo:
   keywords: ["burnout cuidador", "esgotamento cuidador", "cuidador sobrecarregado", "ajuda cuidador idoso"]
   metaDescription: "Sinais de burnout em cuidadores de idosos. Quando procurar ajuda e como se recuperar."

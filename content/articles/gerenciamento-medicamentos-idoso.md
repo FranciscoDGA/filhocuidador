@@ -6,7 +6,7 @@ date: "5 de agosto, 2024"
 author: "Equipe Filhos Cuidadores"
 excerpt: "Sistema para organizar medicamentos. Como evitar erros de dose e timing."
 readTime: 10
-image: "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=800&q=80"
+image: "https://source.unsplash.com/800x600/?security"
 seo:
   keywords: ["medicamentos idoso", "organizar medicamentos", "erro medicação", "dose correta", "farmácia"]
   metaDescription: "Como organizar e gerenciar medicamentos de idoso corretamente. Evitar erros e reações."

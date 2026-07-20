@@ -6,7 +6,7 @@ date: "5 de agosto, 2024"
 author: "Equipe Filhos Cuidadores"
 excerpt: "Como falar com pai/mãe com Alzheimer ou demência sem frustração. Técnicas de paciência."
 readTime: 10
-image: "https://images.unsplash.com/photo-1516728778615-2d590ea1855e?w=800&q=80"
+image: "https://source.unsplash.com/800x600/?stress"
 seo:
   keywords: ["comunicação demência", "falar com Alzheimer", "Parkinson comunicação", "paciência idoso confuso"]
   metaDescription: "Técnicas para comunicar com idoso com demência. Como reduzir frustração e conectar."

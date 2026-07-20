@@ -5,7 +5,7 @@ category: "Entendendo a Doença"
 author: "Equipe Filhos Cuidadores"
 date: "10 de outubro, 2024"
 readTime: 12
-image: "https://images.unsplash.com/photo-1559757175-5700dde675bc?w=800&q=80"
+image: "https://source.unsplash.com/800x600/?brain-health"
 seo:
   keywords: ["alzheimer", "cuidado idosos", "demência", "guia alzheimer", "filho cuidador", "estágios alzheimer", "como cuidar de familiar com alzheimer"]
   metaDescription: "Guia completo sobre a doença de Alzheimer para filhos cuidadores. Aprenda a lidar com as fases, comportamentos e como manter o vínculo afetivo em cada etapa."

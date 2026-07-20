@@ -6,7 +6,7 @@ date: "2024-07-25"
 author: "Equipe Filhos Cuidadores"
 excerpt: "Idosos caem. Muito. Aqui está como transformar sua casa numa fortaleza de segurança. Checklist prático e custo-efetivo."
 readTime: 11
-image: "https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?w=800&q=80"
+image: "https://source.unsplash.com/800x600/?diabetes"
 seo:
   keywords: ["prevenção quedas idoso", "casa segura idoso", "barras apoio banheiro", "segurança idoso em casa"]
   metaDescription: "Guia prático de prevenção de quedas em casa para idosos. Checklist por cômodo e dicas de segurança."

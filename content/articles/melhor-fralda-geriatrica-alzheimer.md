@@ -6,7 +6,7 @@ date: "2024-08-13"
 author: "Equipe Filhos Cuidadores"
 excerpt: "Comparativo das melhores fraldas geriátricas para idosos com Alzheimer. Marcas, tamanhos, custo-benefício."
 readTime: 10
-image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&q=80"
+image: "https://source.unsplash.com/800x600/?kitchen"
 seo:
   keywords: ["melhor fralda geriátrica", "fralda para Alzheimer", "fralda adulto", "fralda geriátrica marca", "fralda para idoso"]
   metaDescription: "Guia completo das melhores fraldas geriátricas para Alzheimer. Comparativo de marcas, tamanhos e preços."

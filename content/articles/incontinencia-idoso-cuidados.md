@@ -6,7 +6,7 @@ date: "7 de agosto, 2024"
 author: "Equipe Filhos Cuidadores"
 excerpt: "Lidar com incontinência do idoso: fraldas, higiene, prevenção de infecções."
 readTime: 11
-image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&q=80"
+image: "https://source.unsplash.com/800x600/?dementia"
 seo:
   keywords: ["incontinência idoso", "fralda adulto", "incontinência urinária", "higiene incontinência", "constipação idoso"]
   metaDescription: "Guia completo sobre incontinência em idosos. Como gerenciar com higiene e dignidade."

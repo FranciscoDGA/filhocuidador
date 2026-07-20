@@ -6,7 +6,7 @@ date: "2024-08-15"
 author: "Equipe Filhos Cuidadores"
 excerpt: "Estratégias práticas para lidar com agressividade em idosos com Alzheimer. Por que acontece e como reagir."
 readTime: 12
-image: "https://images.unsplash.com/photo-1516534775068-ba3e7458af70?w=800&q=80"
+image: "https://source.unsplash.com/800x600/?mindfulness"
 seo:
   keywords: ["pai alzheimer agressivo", "idoso agressivo", "alzheimer agressividade", "como lidar com idoso agressivo", "pai com demência agressivo"]
   metaDescription: "Como lidar com pai agressivo por Alzheimer. Causas, estratégias de contenção, quando procurar ajuda médica."

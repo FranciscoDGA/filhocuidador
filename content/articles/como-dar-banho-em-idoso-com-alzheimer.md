@@ -6,7 +6,7 @@ date: "2026-07-18"
 author: "Filhos Cuidadores"
 category: "Cuidados Práticos"
 tags: ["banho idoso", "Alzheimer", "cuidados diários", "higiene", "demência"]
-image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&q=80"
+image: "https://source.unsplash.com/800x600/?empathy"
 seo:
   metaDescription: "Aprenda como dar banho em idoso com Alzheimer de forma segura e respeitosa. Guia completo com passo a passo, preparação do ambiente e dicas para lidar com a resistência."
   keywords: ["como dar banho em idoso com Alzheimer", "banho em demência", "higiene idoso Alzheimer", "cuidados com idoso Alzheimer"]

@@ -6,7 +6,7 @@ date: "22 de julho, 2024"
 author: "Equipe Filhos Cuidadores"
 excerpt: "Como lidar com inversão de papéis. Você vira cuidador do pai. Relação se ressignifica."
 readTime: 10
-image: "https://images.unsplash.com/photo-1609220136736-443140cffec6?w=800&q=80"
+image: "https://source.unsplash.com/800x600/?documents"
 seo:
   keywords: ["mudança papéis família", "inversão papéis", "dinâmica familiar", "relação pai filho", "ressignificação"]
   metaDescription: "Como lidar com mudança de papéis quando você cuida do pai. Ressignifique relação."

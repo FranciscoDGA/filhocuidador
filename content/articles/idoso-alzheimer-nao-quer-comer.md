@@ -6,7 +6,7 @@ date: "2026-07-18"
 author: "Filhos Cuidadores"
 category: "Cuidados Práticos"
 tags: ["alimentação idoso", "Alzheimer", "desnutrição", "recusa alimentar", "demência"]
-image: "https://images.unsplash.com/photo-1544027993-37dbfe43562a?w=800&q=80"
+image: "https://source.unsplash.com/800x600/?hygiene"
 seo:
   metaDescription: "Idoso com Alzheimer não quer comer? Saiba as causas, soluções práticas e quando procurar ajuda profissional. Guia completo para cuidadores."
   keywords: ["idoso não quer comer", "Alzheimer alimentação", "recusa alimentar demência", "desnutrição idoso"]

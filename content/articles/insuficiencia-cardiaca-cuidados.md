@@ -6,7 +6,7 @@ date: "28 de julho, 2024"
 author: "Equipe Filhos Cuidadores"
 excerpt: "Insuficiência cardíaca em idoso: medicação, repouso, restrição líquido, emergências."
 readTime: 11
-image: "https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=800&q=80"
+image: "https://source.unsplash.com/800x600/?mobility"
 seo:
   keywords: ["insuficiência cardíaca", "coração fraco", "edema pulmão", "falta de ar coração", "diuréticos cardíacos"]
   metaDescription: "Guia de cuidados com insuficiência cardíaca em idoso. Medicação, repouso, dieta."
