@@ -182,7 +182,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
     }
   }
 
-  const schemas = [articleSchema, faqSchema, howToSchema].filter(Boolean);
+  const schemas: Record<string, any>[] = [articleSchema, faqSchema, howToSchema].filter(Boolean) as Record<string, any>[];
 
   const breadcrumbSchema = {
     "@context": "https://schema.org",
