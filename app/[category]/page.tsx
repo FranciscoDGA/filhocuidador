@@ -1,4 +1,6 @@
 import Link from "next/link";
+import Image from "next/image";
+import { getAllArticles } from "@/lib/articles";
 
 const categoryInfo: { [key: string]: any } = {
   "saude-emocional": {
@@ -11,12 +13,12 @@ const categoryInfo: { [key: string]: any } = {
     description: "Mobilidade, higiene, medicamentos, segurança e rotina diária",
     emoji: "🏥",
   },
-  "orientacao-juridica": {
+  "juridico": {
     name: "Orientação Jurídica",
     description: "Direitos, benefícios sociais, documentação e legislação",
     emoji: "⚖️",
   },
-  "doencas": {
+  "entendendo-a-doenca": {
     name: "Entendendo a Doença",
     description: "Alzheimer, Parkinson, AVC e outras condições neurodegenerativas",
     emoji: "🧠",
@@ -28,44 +30,21 @@ const categoryInfo: { [key: string]: any } = {
   },
 };
 
-const mockArticles: { [key: string]: any[] } = {
-  "saude-emocional": [
-    {
-      id: 1,
-      slug: "reconhecendo-burnout-cuidador",
-      title: "Reconhecendo o Burnout do Cuidador",
-      excerpt: "Sinais de alerta para quando você está no limite. E sim, sua exaustão é legítima.",
-      readTime: 8,
-      date: "17 de julho, 2024",
-    },
-  ],
-  "orientacao-juridica": [
-    {
-      id: 2,
-      slug: "bpc-loas-guia-completo",
-      title: "BPC (Benefício de Prestação Continuada): Guia Completo 2024",
-      excerpt: "Como solicitar o BPC, quem tem direito, documentos necessários e passo a passo.",
-      readTime: 12,
-      date: "20 de julho, 2024",
-    },
-  ],
-  "familia": [
-    {
-      id: 3,
-      slug: "comunicacao-irmaos-nao-ajudam",
-      title: "Quando o Irmão Não Quer Ajudar: Como Comunicar",
-      excerpt: "Estratégias práticas para conversar com irmãos que não colaboram no cuidado.",
-      readTime: 10,
-      date: "10 de agosto, 2024",
-    },
-  ],
-  "cuidados-praticos": [],
-  "doencas": [],
-};
-
 export default function CategoryPage({ params }: { params: { category: string } }) {
   const category = categoryInfo[params.category];
-  const articles = mockArticles[params.category] || [];
+  const allArticles = getAllArticles();
+
+  const categorySlugToName: Record<string, string> = {
+    "saude-emocional": "Saúde Emocional",
+    "cuidados-praticos": "Cuidados Práticos",
+    "juridico": "Jurídico",
+    "entendendo-a-doenca": "Entendendo a Doença",
+    "familia": "Família",
+  };
+
+  const articles = allArticles.filter(
+    (a) => a.category === categorySlugToName[params.category]
+  );
 
   if (!category) {
     return (
@@ -111,10 +90,22 @@ export default function CategoryPage({ params }: { params: { category: string } 
             {articles.map((article) => (
               <Link key={article.id} href={`/artigos/${article.slug}`}>
                 <article className="h-full flex flex-col bg-white border border-border-base overflow-hidden hover:border-brand-primary/20 hover:shadow-md transition-all duration-300 cursor-pointer group">
-                  <div className="aspect-video bg-gradient-to-br from-brand-primary/5 to-brand-primary/10 flex items-center justify-center group-hover:from-brand-primary/10 group-hover:to-brand-primary/15 transition-colors">
-                    <svg className="w-12 h-12 text-brand-primary/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                    </svg>
+                  <div className="aspect-video bg-gradient-to-br from-brand-primary/5 to-brand-primary/10 overflow-hidden relative">
+                    {article.image ? (
+                      <Image
+                        src={article.image}
+                        alt={article.title}
+                        fill
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                        className="object-cover group-hover:scale-[1.02] transition-transform duration-700"
+                      />
+                    ) : (
+                      <div className="absolute inset-0 flex items-center justify-center">
+                        <svg className="w-12 h-12 text-brand-primary/20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                        </svg>
+                      </div>
+                    )}
                   </div>
                   <div className="p-6 flex flex-col flex-grow">
                     <h3 className="font-display text-lg font-medium text-brand-primary mb-3 leading-snug line-clamp-2 group-hover:text-brand-primary/80 transition-colors">

@@ -5,10 +5,10 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Todos os Artigos",
-  description: "Navegue por todos os artigos do Filho Cuidador. Informação, acolhimento e orientação prática para filhos que cuidam de pais com demência.",
+  description: "Navegue por todos os artigos do Filhos Cuidadores. Informação, acolhimento e orientação prática para filhos que cuidam de pais com demência.",
   openGraph: {
-    title: "Todos os Artigos | Filho Cuidador",
-    description: "Navegue por todos os artigos do Filho Cuidador.",
+    title: "Todos os Artigos | Filhos Cuidadores",
+    description: "Navegue por todos os artigos do Filhos Cuidadores.",
   },
 };
 
@@ -37,15 +37,22 @@ export default function ArticlesPage() {
             <Link key={article.id} href={`/artigos/${article.slug}`}>
               <article className="h-full flex flex-col group cursor-pointer">
                 {/* Image */}
-                <div className="aspect-[16/10] bg-gray-100 overflow-hidden rounded-t-[50px] mb-5 relative">
+                <div className="aspect-[16/10] bg-gradient-to-br from-brand-primary/5 to-brand-primary/10 overflow-hidden rounded-t-[50px] mb-5 relative">
                   {article.image ? (
                     <Image
                       src={article.image}
                       alt={article.title}
                       fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                       className="object-cover group-hover:scale-[1.02] transition-transform duration-700"
                     />
-                  ) : null}
+                  ) : (
+                    <div className="absolute inset-0 flex items-center justify-center">
+                      <svg className="w-16 h-16 text-brand-primary/20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                      </svg>
+                    </div>
+                  )}
                 </div>
 
                 <div className="flex flex-col flex-grow">
