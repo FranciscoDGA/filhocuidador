@@ -60,22 +60,22 @@ const affiliates = [
   {
     category: "Fraldas Geriátricas",
     items: [
-      { name: "Tena Slip", description: "Fralda descartável com alta absorção", link: "#" },
-      { name: "PrevCare", description: "Fralda econômica para uso diário", link: "#" },
+      { name: "Tena Slip", description: "Fralda descartável com alta absorção", link: "https://meli.la/2rBa7S5" },
+      { name: "Bigfral", description: "Fralda econômica para uso diário", link: "https://meli.la/1rfC7h6" },
     ],
   },
   {
     category: "Mobilidade",
     items: [
-      { name: "Cadeira de Rodas Leve", description: "Dobrável e fácil de transportar", link: "#" },
-      { name: "Andador com Rodas", description: "Estável e ajustável", link: "#" },
+      { name: "Cadeira de Rodas Dobrável", description: "Manual, leve e fácil de transportar", link: "https://meli.la/2CXpzqG" },
+      { name: "Andador com Rodas", description: "Mercur, dobrável e estável", link: "https://meli.la/2HpLJTt" },
     ],
   },
   {
     category: "Segurança",
     items: [
-      { name: "Monitor de Movimento", description: "Alerta quando o idoso se levanta", link: "#" },
-      { name: "Botão de Emergência", description: "SOS portátil 24h", link: "#" },
+      { name: "Botão de Pânico SOS", description: "Emergência portátil 24h para idosos", link: "https://meli.la/2TwQhQq" },
+      { name: "Câmera de Monitoramento", description: "Acompanhamento à distância do idoso", link: "https://meli.la/1JJ7fTo" },
     ],
   },
 ];
