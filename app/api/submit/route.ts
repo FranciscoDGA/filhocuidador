@@ -48,6 +48,17 @@ export async function POST(request: Request) {
         });
         break;
 
+      case "especialista":
+        result = await supabase.from("specialists").insert({
+          name: data.name,
+          email: data.email,
+          specialty: data.specialty,
+          registration: data.registration,
+          linkedin: data.linkedin,
+          message: data.message,
+        });
+        break;
+
       default:
         return NextResponse.json({ error: "Invalid type" }, { status: 400 });
     }

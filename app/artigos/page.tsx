@@ -36,7 +36,7 @@ export default function ArticlesPage() {
             <Link key={article.id} href={`/artigos/${article.slug}`}>
               <article className="h-full flex flex-col group cursor-pointer">
                 {/* Image */}
-                <div className="aspect-[16/10] bg-gray-100 overflow-hidden rounded-t-[50px] mb-5 relative">
+                <div className="aspect-[16/10] bg-gray-100 overflow-hidden rounded-t-[5px] mb-5 relative">
                   {article.image ? (
                     <img
                       src={article.image}

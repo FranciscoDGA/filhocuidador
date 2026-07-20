@@ -278,7 +278,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
 
           {/* Featured Image */}
           {article.image && (
-            <div className="relative w-full aspect-[16/9] overflow-hidden rounded-t-[50px] mb-10">
+            <div className="relative w-full aspect-[16/9] overflow-hidden rounded-t-[5px] mb-10">
               <Image 
                 src={article.image} 
                 alt={article.title} 
@@ -384,7 +384,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 {relatedArticles.map((related) => (
                   <Link key={related.id} href={`/artigos/${related.slug}`} className="group">
-                    <div className="relative w-full aspect-[16/10] overflow-hidden rounded-t-[50px] bg-gray-100 mb-3">
+                    <div className="relative w-full aspect-[16/10] overflow-hidden rounded-t-[5px] bg-gray-100 mb-3">
                       {related.image && (
                         <Image 
                           src={related.image} 

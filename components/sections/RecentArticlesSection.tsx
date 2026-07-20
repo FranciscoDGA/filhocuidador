@@ -24,7 +24,7 @@ export default function RecentArticlesSection() {
               className="group flex flex-col items-start"
             >
               {/* Image Container */}
-              <div className="relative w-full aspect-[16/10] overflow-hidden rounded-t-[50px] mb-6 bg-gray-100">
+              <div className="relative w-full aspect-[16/10] overflow-hidden rounded-t-[5px] mb-6 bg-gray-100">
                 {article.image ? (
                   <img
                     src={article.image}

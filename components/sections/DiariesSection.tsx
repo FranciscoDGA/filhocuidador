@@ -53,7 +53,7 @@ export default function DiariesSection() {
           {diaries.map((diary) => (
             <Link key={diary.slug} href={`/diarios/${diary.slug}`} className="group">
               <article className="bg-bg-card border border-border-base overflow-hidden h-full rounded-[5px]">
-                <div className="relative w-full aspect-[16/10] overflow-hidden rounded-t-[50px] bg-gray-100">
+                <div className="relative w-full aspect-[16/10] overflow-hidden rounded-t-[5px] bg-gray-100">
                   <Image
                     src={diary.image}
                     alt={diary.title}
