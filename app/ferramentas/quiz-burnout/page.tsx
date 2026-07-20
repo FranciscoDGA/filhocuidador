@@ -82,7 +82,7 @@ export default function QuizBurnout() {
                 <button
                   key={answer}
                   onClick={() => handleAnswer(i)}
-                  className="w-full text-left px-5 py-3 border border-border-base hover:border-brand-primary/30 text-sm text-brand-secondary hover:text-brand-primary transition-colors"
+                  className="w-full text-left px-5 py-3 border border-border-base hover:border-brand-primary/30 text-sm text-brand-secondary hover:text-brand-primary transition-colors rounded-[5px]"
                 >
                   {answer}
                 </button>
@@ -110,7 +110,7 @@ export default function QuizBurnout() {
               </Link>
               <button
                 onClick={() => { setCurrent(0); setAnswers([]); setFinished(false); }}
-                className="block w-full px-6 py-3 border border-border-base text-brand-secondary text-[13px] font-medium tracking-wide uppercase hover:border-brand-primary/30 transition-colors"
+                className="block w-full px-6 py-3 border border-border-base text-brand-secondary text-[13px] font-medium tracking-wide uppercase hover:border-brand-primary/30 transition-colors rounded-[5px]"
               >
                 Refazer Quiz
               </button>

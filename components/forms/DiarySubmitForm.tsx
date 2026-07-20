@@ -60,7 +60,7 @@ export default function DiarySubmitForm() {
             type="text"
             value={formData.name}
             onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-            className="w-full px-4 py-2.5 border border-border-base text-sm text-brand-primary focus:outline-none focus:border-brand-primary/30 transition-colors"
+            className="w-full px-4 py-2.5 border border-border-base text-sm text-brand-primary focus:outline-none focus:border-brand-primary/30 transition-colors rounded-[5px]"
             required
           />
         </div>
@@ -70,7 +70,7 @@ export default function DiarySubmitForm() {
             type="text"
             value={formData.city}
             onChange={(e) => setFormData({ ...formData, city: e.target.value })}
-            className="w-full px-4 py-2.5 border border-border-base text-sm text-brand-primary focus:outline-none focus:border-brand-primary/30 transition-colors"
+            className="w-full px-4 py-2.5 border border-border-base text-sm text-brand-primary focus:outline-none focus:border-brand-primary/30 transition-colors rounded-[5px]"
             required
           />
         </div>
@@ -80,7 +80,7 @@ export default function DiarySubmitForm() {
             type="number"
             value={formData.age || ""}
             onChange={(e) => setFormData({ ...formData, age: parseInt(e.target.value) || 0 })}
-            className="w-full px-4 py-2.5 border border-border-base text-sm text-brand-primary focus:outline-none focus:border-brand-primary/30 transition-colors"
+            className="w-full px-4 py-2.5 border border-border-base text-sm text-brand-primary focus:outline-none focus:border-brand-primary/30 transition-colors rounded-[5px]"
             required
           />
         </div>
@@ -91,7 +91,7 @@ export default function DiarySubmitForm() {
           type="email"
           value={formData.email}
           onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-          className="w-full px-4 py-2.5 border border-border-base text-sm text-brand-primary focus:outline-none focus:border-brand-primary/30 transition-colors"
+          className="w-full px-4 py-2.5 border border-border-base text-sm text-brand-primary focus:outline-none focus:border-brand-primary/30 transition-colors rounded-[5px]"
           required
         />
       </div>
@@ -101,7 +101,7 @@ export default function DiarySubmitForm() {
           value={formData.story}
           onChange={(e) => setFormData({ ...formData, story: e.target.value })}
           rows={6}
-          className="w-full px-4 py-2.5 border border-border-base text-sm text-brand-primary focus:outline-none focus:border-brand-primary/30 transition-colors resize-none"
+          className="w-full px-4 py-2.5 border border-border-base text-sm text-brand-primary focus:outline-none focus:border-brand-primary/30 transition-colors resize-none rounded-[5px]"
           required
         />
       </div>

@@ -92,7 +92,7 @@ export default function CalculadoraCustos() {
                       <div className="flex items-center gap-2">
                         <button
                           onClick={() => setQty(i, (s?.qty || 1) - 1)}
-                          className="w-7 h-7 border border-border-base flex items-center justify-center text-brand-secondary hover:border-brand-primary/30 transition-colors text-sm"
+                          className="w-7 h-7 border border-border-base flex items-center justify-center text-brand-secondary hover:border-brand-primary/30 transition-colors text-sm rounded-[5px]"
                         >
                           -
                         </button>
@@ -101,7 +101,7 @@ export default function CalculadoraCustos() {
                         </span>
                         <button
                           onClick={() => setQty(i, (s?.qty || 1) + 1)}
-                          className="w-7 h-7 border border-border-base flex items-center justify-center text-brand-secondary hover:border-brand-primary/30 transition-colors text-sm"
+                          className="w-7 h-7 border border-border-base flex items-center justify-center text-brand-secondary hover:border-brand-primary/30 transition-colors text-sm rounded-[5px]"
                         >
                           +
                         </button>

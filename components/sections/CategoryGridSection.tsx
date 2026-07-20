@@ -38,7 +38,7 @@ export default function CategoryGridSection() {
             <Link
               key={index}
               href={cat.href}
-              className="group flex flex-col items-center justify-center p-5 border border-border-base hover:border-brand-primary/20 transition-all duration-300 text-center"
+              className="group flex flex-col items-center justify-center p-5 border border-border-base hover:border-brand-primary/20 transition-all duration-300 text-center rounded-[5px]"
             >
               <div className="w-10 h-10 border border-border-base group-hover:border-brand-primary/30 flex items-center justify-center mb-4 text-brand-secondary group-hover:text-brand-primary transition-colors">
                 {cat.icon}

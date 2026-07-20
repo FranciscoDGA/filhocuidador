@@ -21,7 +21,7 @@ export default function TrendingTopics({ topics }: TrendingTopicsProps) {
           <Link
             key={topic.slug}
             href={`/artigos?category=${topic.slug}`}
-            className="inline-flex items-center gap-2 px-4 py-2 border border-border-base hover:border-brand-primary/20 transition-colors text-xs font-medium text-brand-secondary"
+            className="inline-flex items-center gap-2 px-4 py-2 border border-border-base hover:border-brand-primary/20 transition-colors text-xs font-medium text-brand-secondary rounded-[5px]"
           >
             <span>{topic.name}</span>
             <span className="text-brand-secondary/40">

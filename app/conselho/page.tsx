@@ -133,7 +133,7 @@ export default function ConselhoPage() {
                 {advisor.specialties.map((spec) => (
                   <span
                     key={spec}
-                    className="text-[10px] text-brand-secondary/50 border border-border-base px-2 py-1"
+                    className="text-[10px] text-brand-secondary/50 border border-border-base px-2 py-1 rounded-[5px]"
                   >
                     {spec}
                   </span>

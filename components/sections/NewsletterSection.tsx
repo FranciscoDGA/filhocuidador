@@ -51,7 +51,7 @@ export default function NewsletterSection() {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               placeholder="Seu email"
-              className="w-full sm:flex-1 px-5 py-3 bg-transparent border border-border-base text-brand-primary placeholder:text-brand-secondary/40 text-sm focus:outline-none focus:border-brand-primary/40 transition-colors"
+              className="w-full sm:flex-1 px-5 py-3 bg-transparent border border-border-base text-brand-primary placeholder:text-brand-secondary/40 text-sm focus:outline-none focus:border-brand-primary/40 transition-colors rounded-[5px]"
               required
             />
             <button

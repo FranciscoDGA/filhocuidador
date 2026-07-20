@@ -89,7 +89,7 @@ export default function ContatoPage() {
                   type="text"
                   id="name"
                   name="name"
-                  className="w-full px-4 py-3 bg-bg-base border border-border-base text-brand-primary placeholder:text-brand-secondary/30 text-sm focus:outline-none focus:border-brand-primary/40 transition-colors"
+                  className="w-full px-4 py-3 bg-bg-base border border-border-base text-brand-primary placeholder:text-brand-secondary/30 text-sm focus:outline-none focus:border-brand-primary/40 transition-colors rounded-[5px]"
                   placeholder="Seu nome completo"
                   required
                 />
@@ -103,7 +103,7 @@ export default function ContatoPage() {
                   type="email"
                   id="email"
                   name="email"
-                  className="w-full px-4 py-3 bg-bg-base border border-border-base text-brand-primary placeholder:text-brand-secondary/30 text-sm focus:outline-none focus:border-brand-primary/40 transition-colors"
+                  className="w-full px-4 py-3 bg-bg-base border border-border-base text-brand-primary placeholder:text-brand-secondary/30 text-sm focus:outline-none focus:border-brand-primary/40 transition-colors rounded-[5px]"
                   placeholder="seu@email.com"
                   required
                 />
@@ -117,7 +117,7 @@ export default function ContatoPage() {
                   type="text"
                   id="subject"
                   name="subject"
-                  className="w-full px-4 py-3 bg-bg-base border border-border-base text-brand-primary placeholder:text-brand-secondary/30 text-sm focus:outline-none focus:border-brand-primary/40 transition-colors"
+                  className="w-full px-4 py-3 bg-bg-base border border-border-base text-brand-primary placeholder:text-brand-secondary/30 text-sm focus:outline-none focus:border-brand-primary/40 transition-colors rounded-[5px]"
                   placeholder="Como podemos ajudar?"
                   required
                 />
@@ -131,7 +131,7 @@ export default function ContatoPage() {
                   id="message"
                   name="message"
                   rows={5}
-                  className="w-full px-4 py-3 bg-bg-base border border-border-base text-brand-primary placeholder:text-brand-secondary/30 text-sm focus:outline-none focus:border-brand-primary/40 transition-colors resize-none"
+                  className="w-full px-4 py-3 bg-bg-base border border-border-base text-brand-primary placeholder:text-brand-secondary/30 text-sm focus:outline-none focus:border-brand-primary/40 transition-colors resize-none rounded-[5px]"
                   placeholder="Sua mensagem aqui..."
                   required
                 />
