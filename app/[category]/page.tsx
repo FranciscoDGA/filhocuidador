@@ -59,8 +59,9 @@ const categoryInfo: { [key: string]: any } = {
   },
 };
 
-export default function CategoryPage({ params }: { params: { category: string } }) {
-  const category = categoryInfo[params.category];
+export default async function CategoryPage({ params }: { params: Promise<{ category: string }> }) {
+  const { category: categorySlug } = await params;
+  const category = categoryInfo[categorySlug];
   const allArticles = getAllArticles();
 
   const slugToArticleCategories: Record<string, string[]> = {
@@ -77,7 +78,7 @@ export default function CategoryPage({ params }: { params: { category: string } 
     "solucoes-praticas": ["Soluções Práticas"],
   };
 
-  const matchingCategories = slugToArticleCategories[params.category] || [];
+  const matchingCategories = slugToArticleCategories[categorySlug] || [];
   const articles = allArticles.filter(
     (a) => matchingCategories.includes(a.category)
   );
