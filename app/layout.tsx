@@ -18,13 +18,14 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "Filho Cuidador | O portal para quem cuida de pais com demência",
-    template: "%s | Filho Cuidador",
+    default: "Filhos Cuidadores | O portal para quem cuida de pais com demência",
+    template: "%s | Filhos Cuidadores",
   },
   description: "O único portal brasileiro que fala com filhos que cuidam de pais com Alzheimer, Parkinson, AVC e outras demências. Informação, acolhimento e orientação prática.",
   keywords: [
     "cuidador de idoso",
     "filho cuidador",
+    "filhos cuidadores",
     "Alzheimer",
     "Parkinson",
     "demência",
@@ -34,29 +35,29 @@ export const metadata: Metadata = {
     "BPC idoso",
     "como cuidar de pai com Alzheimer",
   ],
-  authors: [{ name: "Filho Cuidador" }],
-  creator: "Filho Cuidador",
+  authors: [{ name: "Filhos Cuidadores" }],
+  creator: "Filhos Cuidadores",
   openGraph: {
     type: "website",
     locale: "pt_BR",
     url: "https://filhocuidador.com.br",
-    siteName: "Filho Cuidador",
-    title: "Filho Cuidador | O portal para quem cuida de pais com demência",
+    siteName: "Filhos Cuidadores",
+    title: "Filhos Cuidadores | O portal para quem cuida de pais com demência",
     description: "Informação, acolhimento e orientação prática para filhos que cuidam de pais com Alzheimer, Parkinson, AVC e outras doenças.",
     images: [
       {
-        url: "https://filhocuidador.com.br/api/og?title=Filho+Cuidador&category=Portal",
+        url: "https://filhocuidador.com.br/images/logo.png",
         width: 1200,
         height: 630,
-        alt: "Filho Cuidador - Portal de acolhimento para cuidadores",
+        alt: "Filhos Cuidadores - Portal de acolhimento para cuidadores",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Filho Cuidador | O portal para quem cuida de pais com demência",
+    title: "Filhos Cuidadores | O portal para quem cuida de pais com demência",
     description: "Informação, acolhimento e orientação prática para filhos que cuidam de pais com Alzheimer, Parkinson, AVC e outras doenças.",
-    images: ["https://filhocuidador.com.br/api/og?title=Filho+Cuidador&category=Portal"],
+    images: ["https://filhocuidador.com.br/images/logo.png"],
   },
   robots: {
     index: true,

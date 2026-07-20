@@ -25,15 +25,12 @@ export default function Footer() {
         {/* Links Grid */}
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-10 mb-16 border-t border-white/10 pt-16">
           <div className="col-span-2 lg:col-span-2">
-            <div className="mb-5 flex items-center gap-3">
-              <div className="w-8 h-8 bg-white/10 rounded-lg flex items-center justify-center">
-                <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none">
-                  <path d="M12 6C12 6 6 12 6 15.5C6 19 9 21 12 19C15 21 18 19 18 15.5C18 12 12 6 12 6Z" fill="#d4ccc4"/>
-                </svg>
-              </div>
-              <span className="font-display font-bold text-base text-white">
-                Filhos <span className="text-brand-accent">Cuidadores</span>
-              </span>
+            <div className="mb-5">
+              <img 
+                src="/images/logo.png" 
+                alt="Filhos Cuidadores - Portal de Acolhimento"
+                className="h-12 w-auto brightness-0 invert"
+              />
             </div>
             <p className="text-xs text-white/35 max-w-xs leading-relaxed">
               O único portal brasileiro que fala com quem cuida. Informação, acolhimento e orientação prática para filhos que cuidam de pais com demência.

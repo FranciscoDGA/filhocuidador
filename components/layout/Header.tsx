@@ -46,19 +46,12 @@ export default function Header() {
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link href="/" className="flex items-center gap-3 group">
-              <div className="relative w-10 h-10 bg-gradient-to-br from-brand-primary to-brand-accent rounded-xl flex items-center justify-center shadow-md group-hover:shadow-lg group-hover:scale-105 transition-all duration-300">
-                <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M12 6C12 6 6 12 6 15.5C6 19 9 21 12 19C15 21 18 19 18 15.5C18 12 12 6 12 6Z" fill="#fafaf8"/>
-                  <path d="M5 20L5 24L12 24L12 21L19 24L19 20" stroke="#fafaf8" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" opacity="0.6"/>
-                </svg>
-              </div>
-              <div className="hidden sm:block">
-                <span className="font-display font-bold text-[15px] tracking-tight text-brand-primary block leading-tight">
-                  Filhos <span className="text-brand-accent">Cuidadores</span>
-                </span>
-                <span className="text-[9px] text-brand-secondary/40 tracking-[0.2em] uppercase font-medium">
-                  Portal de Acolhimento
-                </span>
+              <div className="relative h-10 w-auto group-hover:scale-105 transition-transform duration-300">
+                <img 
+                  src="/images/logo.png" 
+                  alt="Filhos Cuidadores - Portal de Acolhimento"
+                  className="h-10 w-auto"
+                />
               </div>
             </Link>
           </div>
