@@ -3,7 +3,7 @@ title: "Retorno ao Trabalho: Equilibrar Carreira e Cuidado"
 slug: "retorno-trabalho-cuidador"
 category: "Saúde Emocional"
 date: "11 de agosto, 2024"
-author: "Equipe Filho Cuidador"
+author: "Equipe Filhos Cuidadores"
 excerpt: "Estratégias para voltar ao trabalho enquanto cuida de pai/mãe. Equilibrio possível."
 readTime: 10
 image: "https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=800&q=80"

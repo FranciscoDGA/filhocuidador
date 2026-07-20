@@ -3,7 +3,7 @@ title: "Quando Colocar Pai/Mãe em Asilo: Tomando Decisão"
 slug: "quando-colocar-asilo-decisao"
 category: "Família"
 date: "21 de julho, 2024"
-author: "Equipe Filho Cuidador"
+author: "Equipe Filhos Cuidadores"
 excerpt: "Como decidir se pai/mãe vai para asilo. Critérios, culpa, alternativas."
 readTime: 12
 image: "https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=800&q=80"

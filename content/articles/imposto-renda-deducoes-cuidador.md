@@ -3,7 +3,7 @@ title: "Imposto de Renda: Deduções Para Quem Cuida de Idoso"
 slug: "imposto-renda-deducoes-cuidador"
 category: "Jurídico & Financeiro"
 date: "1º de agosto, 2024"
-author: "Equipe Filho Cuidador"
+author: "Equipe Filhos Cuidadores"
 excerpt: "Deduções fiscais se você cuida de pai/mãe idoso. Reduza imposto legitimamente."
 readTime: 10
 image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&q=80"

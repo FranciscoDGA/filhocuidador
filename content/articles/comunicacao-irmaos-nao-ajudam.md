@@ -3,7 +3,7 @@ title: "Quando o Irmão Não Quer Ajudar: Como Comunicar"
 slug: "comunicacao-irmaos-nao-ajudam"
 category: "Família"
 date: "10 de agosto, 2024"
-author: "Equipe Filho Cuidador"
+author: "Equipe Filhos Cuidadores"
 excerpt: "Estratégias práticas para conversar com irmãos que não colaboram no cuidado."
 readTime: 10
 image: "https://images.unsplash.com/photo-1475137979732-b349acb6b7e3?w=800&q=80"

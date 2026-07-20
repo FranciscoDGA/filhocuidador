@@ -25,7 +25,7 @@ const videos = [
   },
   {
     title: "Como Organizar a Medicação do Idoso",
-    specialist: "Equipe Filho Cuidador",
+    specialist: "Equipe Filhos Cuidadores",
     duration: "5:40",
     views: "3.1K",
     embedId: "YHnQhJvYQaM",

@@ -3,7 +3,7 @@ title: "Noites Seguras: Rotina de Sono para Idoso"
 slug: "noites-seguras-idoso-sono"
 category: "Cuidados Práticos"
 date: "6 de agosto, 2024"
-author: "Equipe Filho Cuidador"
+author: "Equipe Filhos Cuidadores"
 excerpt: "Como garantir noite segura para idoso. Prevenção de quedas, equipamentos, monitoramento."
 readTime: 11
 image: "https://images.unsplash.com/photo-1495197359483-d092478c170a?w=800&q=80"

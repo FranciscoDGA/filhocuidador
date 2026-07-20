@@ -51,7 +51,7 @@ const kits: Record<string, {
 - [ ] Conversar com a família
 
 ---
-*Filho Cuidador — filhocuidador.com.br*
+*Filhos Cuidadores — filhocuidador.com.br*
     `,
   },
   "agressividade-confusao": {
@@ -99,7 +99,7 @@ Se não consegue lidar sozinho, ligue para um familiar ou profissional de saúde
 - CVV (crise emocional): 188
 
 ---
-*Filho Cuidador — filhocuidador.com.br*
+*Filhos Cuidadores — filhocuidador.com.br*
     `,
   },
   "casa-segura": {
@@ -144,7 +144,7 @@ Se não consegue lidar sozinho, ligue para um familiar ou profissional de saúde
 - [ ] Número de emergência em local visível
 
 ---
-*Filho Cuidador — filhocuidador.com.br*
+*Filhos Cuidadores — filhocuidador.com.br*
     `,
   },
   "direitos-cuidador": {
@@ -190,7 +190,7 @@ Se não consegue lidar sozinho, ligue para um familiar ou profissional de saúde
 - **Prazo:** Até 30 dias por ano
 
 ---
-*Filho Cuidador — filhocuidador.com.br*
+*Filhos Cuidadores — filhocuidador.com.br*
     `,
   },
   "alimentacao-saudavel": {
@@ -265,7 +265,7 @@ Se não consegue lidar sozinho, ligue para um familiar ou profissional de saúde
 - Álcool
 
 ---
-*Filho Cuidador — filhocuidador.com.br*
+*Filhos Cuidadores — filhocuidador.com.br*
     `,
   },
   "cuidador-sobrevivente": {
@@ -320,7 +320,7 @@ Responda para cada item: Nunca (0) / Às vezes (1) / Frequentemente (2) / Sempre
 - Dormir 7-8 horas
 
 ---
-*Filho Cuidador — filhocuidador.com.br*
+*Filhos Cuidadores — filhocuidador.com.br*
     `,
   },
 };

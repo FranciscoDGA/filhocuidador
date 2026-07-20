@@ -3,7 +3,7 @@ title: "Limpeza da Casa com Idoso: Higiene e Segurança"
 slug: "limpeza-casa-segura-idoso"
 category: "Cuidados Práticos"
 date: "4 de agosto, 2024"
-author: "Equipe Filho Cuidador"
+author: "Equipe Filhos Cuidadores"
 excerpt: "Como manter casa limpa e segura. Limpeza estratégica sem toxinas."
 readTime: 10
 image: "https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?w=800&q=80"

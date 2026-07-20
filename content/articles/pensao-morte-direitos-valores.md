@@ -3,7 +3,7 @@ title: "Pensão por Morte: Quem Tem Direito e Quanto Recebe"
 slug: "pensao-morte-direitos-valores"
 category: "Jurídico & Financeiro"
 date: "29 de julho, 2024"
-author: "Equipe Filho Cuidador"
+author: "Equipe Filhos Cuidadores"
 excerpt: "Entenda quem recebe pensão, quanto é o valor, e como solicitar após morte de cônjuge ou pai."
 readTime: 11
 image: "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=800&q=80"

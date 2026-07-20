@@ -3,7 +3,7 @@ title: "Como Internar Idoso com Demência: Guia Passo a Passo"
 slug: "como-internar-idoso-demencia"
 category: "Soluções Práticas"
 date: "2024-08-08"
-author: "Equipe Filho Cuidador"
+author: "Equipe Filhos Cuidadores"
 excerpt: "Quando e como internar idoso com demência. Tipos de instituições, custos, documentos, como decidir."
 readTime: 13
 image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&q=80"

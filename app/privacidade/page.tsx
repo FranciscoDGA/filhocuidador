@@ -2,16 +2,16 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Política de Privacidade e LGPD | Filho Cuidador",
+  title: "Política de Privacidade e LGPD | Filhos Cuidadores",
   description: "Conheça nossa política de privacidade e como tratamos seus dados pessoais de acordo com a LGPD (Lei Geral de Proteção de Dados).",
   alternates: {
     canonical: "https://filhocuidador.com.br/privacidade",
   },
   openGraph: {
-    title: "Política de Privacidade e LGPD | Filho Cuidador",
+    title: "Política de Privacidade e LGPD | Filhos Cuidadores",
     description: "Conheça nossa política de privacidade e como tratamos seus dados pessoais.",
     url: "https://filhocuidador.com.br/privacidade",
-    siteName: "Filho Cuidador",
+    siteName: "Filhos Cuidadores",
     locale: "pt_BR",
     type: "website",
   },
@@ -37,7 +37,7 @@ export default function PrivacidadePage() {
           </h2>
 
           <p className="text-sm text-brand-secondary leading-relaxed mb-6">
-            O Filho Cuidador coleta informações apenas quando você voluntariamente nos fornece, como ao se inscrever em nossa newsletter ou preencher um formulário de contato.
+            O Filhos Cuidadores coleta informações apenas quando você voluntariamente nos fornece, como ao se inscrever em nossa newsletter ou preencher um formulário de contato.
           </p>
 
           <p className="text-sm text-brand-secondary leading-relaxed mb-6">

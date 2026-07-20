@@ -74,7 +74,7 @@ export default function NewsletterSection() {
           <div className="col-span-2 lg:col-span-2">
             <div className="mb-6">
               <span className="font-display font-semibold text-lg text-brand-primary">
-                Filho Cuidador
+                Filhos Cuidadores
               </span>
             </div>
             <p className="text-sm text-brand-secondary max-w-xs leading-relaxed">
@@ -115,7 +115,7 @@ export default function NewsletterSection() {
         {/* Copyright */}
         <div className="border-t border-border-base pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-xs text-brand-secondary/40">
-            © 2026 Filho Cuidador. Todos os direitos reservados.
+            © 2026 Filhos Cuidadores. Todos os direitos reservados.
           </p>
           <div className="flex space-x-8">
             <a href="#" className="text-brand-secondary/40 hover:text-brand-primary transition-colors text-xs">

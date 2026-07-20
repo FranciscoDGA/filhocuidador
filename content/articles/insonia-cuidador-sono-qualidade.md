@@ -3,7 +3,7 @@ title: "Insônia do Cuidador: Como Recuperar Sono de Qualidade"
 slug: "insonia-cuidador-sono-qualidade"
 category: "Saúde Emocional"
 date: "11 de agosto, 2024"
-author: "Equipe Filho Cuidador"
+author: "Equipe Filhos Cuidadores"
 excerpt: "Por que cuidador não dorme. Técnicas para recuperar sono profundo e contínuo."
 readTime: 10
 image: "https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?w=800&q=80"

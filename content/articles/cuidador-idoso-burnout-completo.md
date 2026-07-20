@@ -3,7 +3,7 @@ title: "Cuidador de Idoso Burnout: O Esgotamento Silencioso"
 slug: "cuidador-idoso-burnout-completo"
 category: "Dor Emocional"
 date: "2024-08-09"
-author: "Equipe Filho Cuidador"
+author: "Equipe Filhos Cuidadores"
 excerpt: "Sinais de burnout em cuidadores de idosos. Como reconhecer, prevenir e se recuperar do esgotamento."
 readTime: 12
 image: "https://images.unsplash.com/photo-1516534775068-ba3e7458af70?w=800&q=80"

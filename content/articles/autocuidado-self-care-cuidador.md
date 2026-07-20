@@ -3,7 +3,7 @@ title: "Autocuidado para Cuidador: Não é Egoísmo"
 slug: "autocuidado-self-care-cuidador"
 category: "Saúde Emocional"
 date: "14 de agosto, 2024"
-author: "Equipe Filho Cuidador"
+author: "Equipe Filhos Cuidadores"
 excerpt: "Por que autocuidado é essencial. Práticas simples e acessíveis para cuidadores."
 readTime: 10
 image: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=800&q=80"

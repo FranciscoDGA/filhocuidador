@@ -3,7 +3,7 @@ title: "Adaptações da Casa para Segurança do Idoso"
 slug: "adaptacoes-casa-idoso-seguranca"
 category: "Cuidados Práticos"
 date: "3 de agosto, 2024"
-author: "Equipe Filho Cuidador"
+author: "Equipe Filhos Cuidadores"
 excerpt: "Modificações práticas e baratas para tornar casa segura para idoso com mobilidade reduzida."
 readTime: 10
 image: "https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?w=800&q=80"

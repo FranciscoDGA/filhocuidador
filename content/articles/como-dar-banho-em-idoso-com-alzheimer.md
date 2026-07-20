@@ -3,7 +3,7 @@ title: "Como Dar Banho em Idoso com Alzheimer: Guia Completo e Seguro"
 slug: "como-dar-banho-em-idoso-com-alzheimer"
 description: "Guia passo a passo para dar banho em idoso com Alzheimer de forma segura e respeitosa. Dicas práticas, preparação do ambiente e como lidar com a resistência."
 date: "2026-07-18"
-author: "Filho Cuidador"
+author: "Filhos Cuidadores"
 category: "Cuidados Práticos"
 tags: ["banho idoso", "Alzheimer", "cuidados diários", "higiene", "demência"]
 image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&q=80"

@@ -1,4 +1,4 @@
-# Filho Cuidador 🏥❤️
+# Filhos Cuidadores 🏥❤️
 
 Portal de conteúdo brasileiro voltado para filhos adultos que cuidam de pais idosos com doenças neurodegenerativas e crônicas.
 

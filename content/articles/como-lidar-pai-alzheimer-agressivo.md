@@ -3,7 +3,7 @@ title: "Como Lidar com Pai com Alzheimer Agressivo: Guia Completo"
 slug: "como-lidar-pai-alzheimer-agressivo"
 category: "Soluções Práticas"
 date: "2024-08-15"
-author: "Equipe Filho Cuidador"
+author: "Equipe Filhos Cuidadores"
 excerpt: "Estratégias práticas para lidar com agressividade em idosos com Alzheimer. Por que acontece e como reagir."
 readTime: 12
 image: "https://images.unsplash.com/photo-1516534775068-ba3e7458af70?w=800&q=80"

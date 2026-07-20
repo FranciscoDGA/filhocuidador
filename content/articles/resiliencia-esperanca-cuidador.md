@@ -3,7 +3,7 @@ title: "Resiliência e Esperança: Encontrar Força Para Continuar"
 slug: "resiliencia-esperanca-cuidador"
 category: "Saúde Emocional"
 date: "9 de agosto, 2024"
-author: "Equipe Filho Cuidador"
+author: "Equipe Filhos Cuidadores"
 excerpt: "Como construir resiliência. Onde encontrar esperança quando tudo parece escuro."
 readTime: 10
 image: "https://images.unsplash.com/photo-1506157786151-b8491531f063?w=800&q=80"

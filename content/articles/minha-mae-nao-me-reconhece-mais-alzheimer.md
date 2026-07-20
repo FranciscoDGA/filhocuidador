@@ -3,7 +3,7 @@ title: "Minha Mãe Não Me Reconhece Mais: Lidando com a Perda"
 slug: "minha-mae-nao-me-reconhece-mais-alzheimer"
 category: "Dor Emocional"
 date: "2024-08-14"
-author: "Equipe Filho Cuidador"
+author: "Equipe Filhos Cuidadores"
 excerpt: "Como lidar quando sua mãe com Alzheimer não te reconhece mais. A dor de perder em vida e como encontrar paz."
 readTime: 11
 image: "https://images.unsplash.com/photo-1447069387593-a5de0862481e?w=800&q=80"

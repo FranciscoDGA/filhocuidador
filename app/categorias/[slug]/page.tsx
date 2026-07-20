@@ -69,10 +69,10 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   if (!category) return {};
   
   return {
-    title: `${category.name} | Filho Cuidador`,
+    title: `${category.name} | Filhos Cuidadores`,
     description: category.description,
     openGraph: {
-      title: `${category.name} | Filho Cuidador`,
+      title: `${category.name} | Filhos Cuidadores`,
       description: category.description,
       type: "website",
     },

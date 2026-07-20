@@ -2,7 +2,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Comunidade Filho Cuidador",
+  title: "Comunidade Filhos Cuidadores",
   description: "Junte-se a milhares de filhos cuidadores. Grupo no Facebook, newsletter semanal e encontros virtuais.",
 };
 
@@ -64,7 +64,7 @@ export default function ComunidadePage() {
             Conecte-se
           </span>
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-display font-medium text-brand-primary mb-6 leading-tight">
-            Comunidade Filho Cuidador
+            Comunidade Filhos Cuidadores
           </h1>
           <p className="text-base text-brand-secondary leading-relaxed">
             Você não precisa carregar isso sozinho. Junte-se a milhares de filhos que cuidam e estão passando pela mesma coisa.

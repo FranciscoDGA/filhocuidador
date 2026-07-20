@@ -2,7 +2,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "O Método Filho Cuidador",
+  title: "O Método Filhos Cuidadores",
   description: "O primeiro método completo do Brasil para filhos que cuidam de pais com Alzheimer, Parkinson, AVC e demências. 5 fases, ferramentas práticas e certificação.",
 };
 
@@ -92,7 +92,7 @@ export default function MetodoFilhoCuidadorPage() {
               Método Proprietário
             </span>
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-display font-medium mb-6 leading-tight">
-              O Método Filho Cuidador
+              O Método Filhos Cuidadores
             </h1>
             <p className="text-lg text-white/80 leading-relaxed mb-8 max-w-2xl mx-auto">
               O primeiro método completo do Brasil para filhos que cuidam de pais com Alzheimer, Parkinson, AVC e demências. Uma jornada guiada em 5 fases.
@@ -274,7 +274,7 @@ export default function MetodoFilhoCuidadorPage() {
                       Concedido a: Nome do Cuidador
                     </div>
                     <div className="text-[10px] text-brand-secondary/40 mt-2">
-                      Filho Cuidador • 2026
+                      Filhos Cuidadores • 2026
                     </div>
                   </div>
                 </div>
@@ -315,7 +315,7 @@ export default function MetodoFilhoCuidadorPage() {
       {/* Back */}
       <div className="pb-12 text-center pt-8">
         <Link href="/" className="text-sm text-brand-secondary hover:text-brand-primary transition-colors">
-          ← Voltar para o Filho Cuidador
+          ← Voltar para o Filhos Cuidadores
         </Link>
       </div>
     </main>

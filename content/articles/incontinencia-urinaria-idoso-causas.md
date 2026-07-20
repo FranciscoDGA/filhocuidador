@@ -3,7 +3,7 @@ title: "Incontinência Urinária em Idoso: Tipos, Causas e Tratamento"
 slug: "incontinencia-urinaria-idoso-causas"
 category: "Doenças"
 date: "25 de julho, 2024"
-author: "Equipe Filho Cuidador"
+author: "Equipe Filhos Cuidadores"
 excerpt: "Tipos de incontinência urinária em idoso: urgência, esforço, transbordamento."
 readTime: 10
 image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&q=80"

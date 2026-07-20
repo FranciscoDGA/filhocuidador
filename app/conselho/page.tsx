@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Nosso Conselho Consultivo",
-  description: "Conheça os especialistas que revisam e aprovam todo o conteúdo do Filho Cuidador. Geriatras, neurologistas, advogados e cuidadores reais.",
+  description: "Conheça os especialistas que revisam e aprovam todo o conteúdo do Filhos Cuidadores. Geriatras, neurologistas, advogados e cuidadores reais.",
 };
 
 const advisors = [
@@ -50,7 +50,7 @@ const advisors = [
   },
   {
     name: "Marcos Oliveira",
-    role: "Filho Cuidador — Depoimento",
+    role: "Filhos Cuidadores — Depoimento",
     bio: "Cuidou do pai com Parkinson por 5 anos enquanto trabalhava e criava filhos. Sabe na prática o que é conciliar tudo.",
     image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&auto=format&fit=crop",
     credentials: "Cuidador Real",
@@ -78,7 +78,7 @@ export default function ConselhoPage() {
             Conselho Consultivo
           </h1>
           <p className="text-base text-brand-secondary leading-relaxed">
-            Todo conteúdo do Filho Cuidador é revisado por especialistas. Nosso conselho garante informações precisas, seguras e atualizadas para quem cuida.
+            Todo conteúdo do Filhos Cuidadores é revisado por especialistas. Nosso conselho garante informações precisas, seguras e atualizadas para quem cuida.
           </p>
         </div>
 

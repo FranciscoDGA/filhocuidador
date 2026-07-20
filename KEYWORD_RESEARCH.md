@@ -1,4 +1,4 @@
-# Pesquisa de Palavras-Chave - Filho Cuidador
+# Pesquisa de Palavras-Chave - Filhos Cuidadores
 
 ## 🎯 Palavras-Chave Principais (Alto Volume)
 

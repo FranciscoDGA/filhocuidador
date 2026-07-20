@@ -3,7 +3,7 @@ title: "Casamento e Cuidado de Pai/Mãe: Mantendo Relação Viva"
 slug: "casamento-relacionamento-cuidando-pai"
 category: "Família"
 date: "24 de julho, 2024"
-author: "Equipe Filho Cuidador"
+author: "Equipe Filhos Cuidadores"
 excerpt: "Cuidar de pai/mãe enquanto mantém casamento. Estratégias para não separar."
 readTime: 11
 image: "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=800&q=80"

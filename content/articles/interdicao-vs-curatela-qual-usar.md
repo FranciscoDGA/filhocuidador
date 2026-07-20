@@ -3,7 +3,7 @@ title: "Interdição vs Curatela: Qual Usar?"
 slug: "interdicao-vs-curatela-qual-usar"
 category: "Jurídico & Financeiro"
 date: "2024-07-26"
-author: "Equipe Filho Cuidador"
+author: "Equipe Filhos Cuidadores"
 excerpt: "Quando seu pai não consegue mais assinar documentos. Interdição ou curatela? Qual é a diferença e qual você precisa."
 readTime: 11
 image: "https://images.unsplash.com/photo-1479142506502-19b3a3b7ff33?w=800&q=80"

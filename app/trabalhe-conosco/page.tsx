@@ -77,7 +77,7 @@ const testimonials = [
   {
     name: "Dra. Mariana Costa",
     role: "Diretora - Clínica Vida Plena",
-    text: "Em 3 meses recebemos 45 leads qualificados. O público do Filho Cuidador é exatamente o nosso perfil de paciente. Retorno sobre investimento de 8x.",
+    text: "Em 3 meses recebemos 45 leads qualificados. O público do Filhos Cuidadores é exatamente o nosso perfil de paciente. Retorno sobre investimento de 8x.",
   },
   {
     name: "Dr. Ricardo Mendes",
@@ -144,7 +144,7 @@ export default function TrabalheConoscoPage() {
             Trabalhe Conosco
           </h1>
           <p className="text-base text-brand-secondary leading-relaxed mb-8">
-            Seja um parceiro do <strong className="text-brand-primary">Filho Cuidador</strong> e alcance milhares de filhos cuidadores que buscam profissionais e serviços de qualidade para seus pais.
+            Seja um parceiro do <strong className="text-brand-primary">Filhos Cuidadores</strong> e alcance milhares de filhos cuidadores que buscam profissionais e serviços de qualidade para seus pais.
           </p>
 
           {/* Stats */}
@@ -455,7 +455,7 @@ export default function TrabalheConoscoPage() {
           <div className="space-y-4">
             {[
               {
-                q: "Qual o perfil do público do Filho Cuidador?",
+                q: "Qual o perfil do público do Filhos Cuidadores?",
                 a: "Nossos leitores são predominantemente filhos (35-55 anos) que cuidam de pais com Alzheimer, Parkinson, AVC ou outras demências. Classe média/alta, com poder aquisitivo para contratar serviços e produtos.",
               },
               {

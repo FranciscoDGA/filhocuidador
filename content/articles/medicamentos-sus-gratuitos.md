@@ -3,7 +3,7 @@ title: "Medicamentos Gratuitos pelo SUS: Como Conseguir"
 slug: "medicamentos-sus-gratuitos"
 category: "Jurídico & Financeiro"
 date: "4 de agosto, 2024"
-author: "Equipe Filho Cuidador"
+author: "Equipe Filhos Cuidadores"
 excerpt: "Lista completa de medicamentos gratuitos no SUS, como solicitar e onde buscar."
 readTime: 9
 image: "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=800&q=80"

@@ -3,7 +3,7 @@ title: "Procuração para Idoso com Alzheimer: Passo a Passo"
 slug: "como-fazer-procuracao-idoso-alzheimer"
 category: "Jurídico"
 date: "2024-08-12"
-author: "Equipe Filho Cuidador"
+author: "Equipe Filhos Cuidadores"
 excerpt: "Guia completo para fazer procuração de idoso com Alzheimer. Documentos, modelos, onde ir, custo."
 readTime: 12
 image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&q=80"

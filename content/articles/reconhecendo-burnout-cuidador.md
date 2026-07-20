@@ -3,7 +3,7 @@ title: "Burnout do Cuidador: Quando Precisa de Ajuda"
 slug: "reconhecendo-burnout-cuidador"
 category: "Saúde Emocional"
 date: "2024-07-17"
-author: "Equipe Filho Cuidador"
+author: "Equipe Filhos Cuidadores"
 excerpt: "Cuidar de um pai idoso é um privilégio, mas também é exaustivo. Entenda os sinais de burnout e quando procurar ajuda."
 readTime: 8
 image: "https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?w=800&q=80"

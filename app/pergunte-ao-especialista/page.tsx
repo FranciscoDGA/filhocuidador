@@ -35,7 +35,7 @@ const faqData = [
   {
     q: "Meu idoso se perde em casa. Como tornar o ambiente seguro?",
     a: "Instale fechaduras que ele não consiga abrir, retire tapetes soltos, coloque barras de apoio no banheiro, use travas em armárias com produtos perigosos, e considere um monitor de movimento. Também é importante manter itens pessoais sempre no mesmo lugar.",
-    specialist: "Equipe Filho Cuidador",
+    specialist: "Equipe Filhos Cuidadores",
     category: "Segurança",
   },
 ];

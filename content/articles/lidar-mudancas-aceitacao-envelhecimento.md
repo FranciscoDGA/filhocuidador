@@ -3,7 +3,7 @@ title: "Lidar com Mudanças: Aceitação do Envelhecimento do Pai/Mãe"
 slug: "lidar-mudancas-aceitacao-envelhecimento"
 category: "Saúde Emocional"
 date: "10 de agosto, 2024"
-author: "Equipe Filho Cuidador"
+author: "Equipe Filhos Cuidadores"
 excerpt: "Como aceitar que pai/mãe está mudando. Luto pelas perdas e redescoberta da relação."
 readTime: 10
 image: "https://images.unsplash.com/photo-1447069387593-a5de0862481e?w=800&q=80"

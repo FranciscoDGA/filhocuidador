@@ -3,7 +3,7 @@ title: "Incontinência Urinária e Fecal: Como Gerenciar com Dignidade"
 slug: "incontinencia-idoso-cuidados"
 category: "Cuidados Práticos"
 date: "7 de agosto, 2024"
-author: "Equipe Filho Cuidador"
+author: "Equipe Filhos Cuidadores"
 excerpt: "Lidar com incontinência do idoso: fraldas, higiene, prevenção de infecções."
 readTime: 11
 image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&q=80"

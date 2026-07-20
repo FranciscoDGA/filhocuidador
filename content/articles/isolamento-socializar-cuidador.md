@@ -3,7 +3,7 @@ title: "Isolamento Social do Cuidador: Como Permanecer Conectado"
 slug: "isolamento-socializar-cuidador"
 category: "Saúde Emocional"
 date: "12 de agosto, 2024"
-author: "Equipe Filho Cuidador"
+author: "Equipe Filhos Cuidadores"
 excerpt: "Combater isolamento social enquanto cuida. Técnicas para manter conexões e comunidade."
 readTime: 9
 image: "https://images.unsplash.com/photo-1499209974431-9dddcece7f88?w=800&q=80"

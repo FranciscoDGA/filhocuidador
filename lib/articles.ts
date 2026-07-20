@@ -47,6 +47,22 @@ function parsePortugueseDate(dateString: string): number {
   return new Date(dateString).getTime() || 0;
 }
 
+const monthNames = ['janeiro', 'fevereiro', 'março', 'abril', 'maio', 'junho', 'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro'];
+
+function formatDatePT(dateString: string): string {
+  if (!dateString || dateString === 'Data Desconhecida') return dateString;
+  // Already in Portuguese format like "7 de agosto, 2024"
+  if (dateString.includes(' de ')) return dateString;
+  // ISO format: 2024-07-25
+  try {
+    const d = new Date(dateString + 'T00:00:00');
+    if (isNaN(d.getTime())) return dateString;
+    return `${d.getDate()} de ${monthNames[d.getMonth()]}, ${d.getFullYear()}`;
+  } catch {
+    return dateString;
+  }
+}
+
 export function getAllArticles(): Article[] {
   // Check if directory exists
   if (!fs.existsSync(contentDirectory)) {
@@ -74,8 +90,8 @@ export function getAllArticles(): Article[] {
       excerpt: matterResult.data.excerpt || '',
       content: matterResult.content, // Raw markdown for now, parsed in getArticleBySlug
       category: matterResult.data.category || 'Geral',
-      author: matterResult.data.author || 'Equipe Filho Cuidador',
-      date: matterResult.data.date || 'Data Desconhecida',
+      author: matterResult.data.author || 'Equipe Filhos Cuidadores',
+      date: formatDatePT(matterResult.data.date || 'Data Desconhecida'),
       readTime: matterResult.data.readTime || 5,
       image: matterResult.data.image || '',
       seo: matterResult.data.seo || {},

@@ -3,7 +3,7 @@ title: "Doença de Parkinson: Cuidados Práticos para o Cuidador"
 slug: "parkinson-cuidados-praticos"
 category: "Doenças"
 date: "8 de agosto, 2024"
-author: "Equipe Filho Cuidador"
+author: "Equipe Filhos Cuidadores"
 excerpt: "Sintomas do Parkinson, medicamentos, e como adaptar vida para mobilidade reduzida."
 readTime: 12
 image: "https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=800&q=80"

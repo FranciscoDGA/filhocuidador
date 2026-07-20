@@ -3,7 +3,7 @@ title: "Luto Anteipado: Como Lidar com Mudanças no Pai/Mãe Idosos"
 slug: "luto-perdas-pai-idoso"
 category: "Saúde Emocional"
 date: "2 de agosto, 2024"
-author: "Equipe Filho Cuidador"
+author: "Equipe Filhos Cuidadores"
 excerpt: "Seu pai está aqui mas não é mais o mesmo. É luto. É normal. Saiba como processar."
 readTime: 10
 image: "https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?w=800&q=80"

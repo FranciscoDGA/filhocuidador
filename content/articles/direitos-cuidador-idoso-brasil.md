@@ -3,7 +3,7 @@ title: "Direitos do Cuidador de Idoso no Brasil: Guia Completo"
 slug: "direitos-cuidador-idoso-brasil"
 category: "Jurídico"
 date: "2024-08-10"
-author: "Equipe Filho Cuidador"
+author: "Equipe Filhos Cuidadores"
 excerpt: "Todos os direitos do cuidador familiar de idoso no Brasil. Lei do Cuidador, benefícios, auxílios."
 readTime: 14
 image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&q=80"

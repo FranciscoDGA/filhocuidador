@@ -381,7 +381,7 @@ export default function EbookAgressividadePage() {
       {/* Back to Home */}
       <div className="pb-12 text-center">
         <Link href="/" className="text-sm text-brand-secondary hover:text-brand-primary transition-colors">
-          ← Voltar para o Filho Cuidador
+          ← Voltar para o Filhos Cuidadores
         </Link>
       </div>
     </main>

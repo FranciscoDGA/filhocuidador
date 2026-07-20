@@ -3,7 +3,7 @@ title: "DPOC: Cuidados Respiratórios para o Cuidador"
 slug: "dpoc-insuficiencia-respiratoria"
 category: "Doenças"
 date: "30 de julho, 2024"
-author: "Equipe Filho Cuidador"
+author: "Equipe Filhos Cuidadores"
 excerpt: "DPOC em idoso: respiração, inaladores, sinais de alerta, prevenção de crises."
 readTime: 11
 image: "https://images.unsplash.com/photo-1584982751601-97dcc096659c?w=800&q=80"

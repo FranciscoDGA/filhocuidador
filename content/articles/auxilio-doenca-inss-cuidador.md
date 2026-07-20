@@ -3,7 +3,7 @@ title: "Auxílio-Doença e INSS: Afastamento Remunerado Para Cuidador"
 slug: "auxilio-doenca-inss-cuidador"
 category: "Jurídico & Financeiro"
 date: "2 de agosto, 2024"
-author: "Equipe Filho Cuidador"
+author: "Equipe Filhos Cuidadores"
 excerpt: "Se cuidar causa depressão/esgotamento. Solicite auxílio-doença no INSS. Direito seu."
 readTime: 11
 image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&q=80"

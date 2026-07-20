@@ -3,7 +3,7 @@ title: "Testamento e Herança: Guia Prático para Filhos Cuidadores"
 slug: "testamento-heranca-guia-pratico"
 category: "Jurídico & Financeiro"
 date: "30 de julho, 2024"
-author: "Equipe Filho Cuidador"
+author: "Equipe Filhos Cuidadores"
 excerpt: "Como fazer testamento, direitos hereditários, como distribuir bens e evitar conflitos familiares."
 readTime: 13
 image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=800&q=80"

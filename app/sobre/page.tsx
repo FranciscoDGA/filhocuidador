@@ -2,10 +2,10 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Sobre o Filho Cuidador",
-  description: "Conheça a missão do Filho Cuidador: o único portal brasileiro dedicado a filhos que cuidam de pais com demência, Alzheimer e outras doenças.",
+  title: "Sobre o Filhos Cuidadores",
+  description: "Conheça a missão do Filhos Cuidadores: o único portal brasileiro dedicado a filhos que cuidam de pais com demência, Alzheimer e outras doenças.",
   openGraph: {
-    title: "Sobre o Filho Cuidador",
+    title: "Sobre o Filhos Cuidadores",
     description: "O único portal brasileiro que fala com quem cuida, não sobre o idoso.",
   },
 };
@@ -26,12 +26,12 @@ export default function SobrePage() {
         {/* Content */}
         <article>
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-display font-medium text-brand-primary mb-8 leading-tight">
-            Sobre o Filho Cuidador
+            Sobre o Filhos Cuidadores
           </h1>
 
           <div className="space-y-6 text-base text-brand-secondary/80 leading-[1.8]">
             <p>
-              O <strong className="text-brand-primary">Filho Cuidador</strong> é um portal dedicado a filhos adultos que cuidam de pais idosos com doenças neurodegenerativas e crônicas. Somos um espaço de informação, acolhimento e orientação prática para quem vive essa realidade.
+              O <strong className="text-brand-primary">Filhos Cuidadores</strong> é um portal dedicado a filhos adultos que cuidam de pais idosos com doenças neurodegenerativas e crônicas. Somos um espaço de informação, acolhimento e orientação prática para quem vive essa realidade.
             </p>
 
             <h2 className="text-xl font-display font-medium text-brand-primary pt-4">
@@ -47,7 +47,7 @@ export default function SobrePage() {
             </p>
 
             <p>
-              O Filho Cuidador nasceu para preencher esse vazio. Todo conteúdo é escrito do ponto de vista de quem cuida, com linguagem acessível, empatia real e informação confiável.
+              O Filhos Cuidadores nasceu para preencher esse vazio. Todo conteúdo é escrito do ponto de vista de quem cuida, com linguagem acessível, empatia real e informação confiável.
             </p>
 
             <h2 className="text-xl font-display font-medium text-brand-primary pt-4">

@@ -3,7 +3,7 @@ title: "Problemas de Visão em Idoso: Catarata, Glaucoma e AMD"
 slug: "problemas-visao-catarata-glaucoma"
 category: "Doenças"
 date: "26 de julho, 2024"
-author: "Equipe Filho Cuidador"
+author: "Equipe Filhos Cuidadores"
 excerpt: "Catarata, glaucoma, degeneração macular: diagnóstico, tratamento, impacto vida."
 readTime: 11
 image: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=800&q=80"

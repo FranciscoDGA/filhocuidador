@@ -3,7 +3,7 @@ title: "Filhos Pequenos e Cuidado de Avó/Avô: Equilibrar Tudo"
 slug: "filhos-pequenos-cuidar-idoso"
 category: "Família"
 date: "23 de julho, 2024"
-author: "Equipe Filho Cuidador"
+author: "Equipe Filhos Cuidadores"
 excerpt: "Como cuidar de pai/mãe idoso enquanto cria filhos pequenos. Dicas práticas."
 readTime: 11
 image: "https://images.unsplash.com/photo-1476703993599-0035a21b17a9?w=800&q=80"

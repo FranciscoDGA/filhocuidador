@@ -52,7 +52,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const metaDescription = article.seo?.metaDescription || article.excerpt;
 
   return {
-    title: `${article.title} | Filho Cuidador`,
+    title: `${article.title} | Filhos Cuidadores`,
     description: metaDescription,
     keywords: article.seo?.keywords,
     openGraph: {
@@ -129,12 +129,12 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
     datePublished: article.date,
     author: {
       "@type": "Organization",
-      name: "Filho Cuidador",
+      name: "Filhos Cuidadores",
       url: "https://filhocuidador.com.br",
     },
     publisher: {
       "@type": "Organization",
-      name: "Filho Cuidador",
+      name: "Filhos Cuidadores",
       url: "https://filhocuidador.com.br",
     },
     mainEntityOfPage: {

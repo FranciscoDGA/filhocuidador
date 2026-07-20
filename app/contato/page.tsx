@@ -61,7 +61,7 @@ export default function ContatoPage() {
           </h1>
 
           <p className="text-base text-brand-secondary leading-relaxed mb-10">
-            Tem dúvidas, sugestões ou gostaria de colaborar com o Filho Cuidador? Adoraríamos ouvir você.
+            Tem dúvidas, sugestões ou gostaria de colaborar com o Filhos Cuidadores? Adoraríamos ouvir você.
           </p>
 
           {submitted && (

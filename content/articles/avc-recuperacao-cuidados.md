@@ -1,9 +1,9 @@
 ---
-title: "AVC: Recuperação e Cuidados Essenciais para o Filho Cuidador"
+title: "AVC: Recuperação e Cuidados Essenciais para o Filhos Cuidadores"
 slug: "avc-recuperacao-cuidados"
 category: "Doenças"
 date: "9 de agosto, 2024"
-author: "Equipe Filho Cuidador"
+author: "Equipe Filhos Cuidadores"
 excerpt: "O que fazer após AVC, recuperação, reabilitação e sinais de alerta."
 readTime: 11
 image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800&q=80"

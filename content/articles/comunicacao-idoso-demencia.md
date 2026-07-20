@@ -3,7 +3,7 @@ title: "Comunicação com Idoso com Demência: Técnicas Práticas"
 slug: "comunicacao-idoso-demencia"
 category: "Saúde Emocional"
 date: "5 de agosto, 2024"
-author: "Equipe Filho Cuidador"
+author: "Equipe Filhos Cuidadores"
 excerpt: "Como falar com pai/mãe com Alzheimer ou demência sem frustração. Técnicas de paciência."
 readTime: 10
 image: "https://images.unsplash.com/photo-1516728778615-2d590ea1855e?w=800&q=80"

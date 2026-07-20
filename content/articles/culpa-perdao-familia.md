@@ -3,7 +3,7 @@ title: "Culpa e Perdão: Reconciliação Familiar Antes que Morra"
 slug: "culpa-perdao-familia"
 category: "Família"
 date: "20 de julho, 2024"
-author: "Equipe Filho Cuidador"
+author: "Equipe Filhos Cuidadores"
 excerpt: "Lidar com culpa não processada. Possibilidade de perdão antes da morte."
 readTime: 11
 image: "https://images.unsplash.com/photo-1475137979732-b349acb6b7e3?w=800&q=80"

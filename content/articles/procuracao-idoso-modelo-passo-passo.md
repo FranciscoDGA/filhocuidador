@@ -3,7 +3,7 @@ title: "Procuração de Idoso: Modelo e Passo a Passo"
 slug: "procuracao-idoso-modelo-passo-passo"
 category: "Jurídico & Financeiro"
 date: "2024-07-21"
-author: "Equipe Filho Cuidador"
+author: "Equipe Filhos Cuidadores"
 excerpt: "Como fazer procuração de idoso para que você (filho) possa resolver problemas legais e financeiros. Modelo pronto e instruções simplificadas."
 readTime: 10
 image: "https://images.unsplash.com/photo-1568992687947-868a62a9f521?w=800&q=80"

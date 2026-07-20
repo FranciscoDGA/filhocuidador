@@ -3,7 +3,7 @@ title: "Atividades para Estimulação Cognitiva de Idosos com Alzheimer"
 slug: "atividades-estimulacao-cognitiva-idosos-alzheimer"
 description: "Lista completa de atividades para estimular a memória, atenção e raciocínio de idosos com Alzheimer. Jogos, exercícios e dicas práticas para o dia a dia."
 date: "2026-07-18"
-author: "Filho Cuidador"
+author: "Filhos Cuidadores"
 category: "Cuidados Práticos"
 tags: ["estimulação cognitiva", "Alzheimer", "atividades", "memória", "demência"]
 image: "https://images.unsplash.com/photo-1516534775068-ba3e7458af70?w=800&q=80"

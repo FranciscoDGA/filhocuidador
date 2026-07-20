@@ -3,7 +3,7 @@ title: "Osteoporose: Prevenção de Quedas e Fraturas em Idoso"
 slug: "osteoporose-quedas-prevencao"
 category: "Doenças"
 date: "27 de julho, 2024"
-author: "Equipe Filho Cuidador"
+author: "Equipe Filhos Cuidadores"
 excerpt: "Osteoporose em idoso: fratura, prevenção, tratamento, segurança da casa."
 readTime: 10
 image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&q=80"

@@ -3,7 +3,7 @@ title: "Burnout do Cuidador: Reconhecendo os Sinais"
 slug: "burnout-cuidador-sinais-alerta"
 category: "Saúde Emocional"
 date: "2024-07-22"
-author: "Equipe Filho Cuidador"
+author: "Equipe Filhos Cuidadores"
 excerpt: "Os sinais de que você está no limite. Cansaço físico, emocional e mental que vira doença. Reconheça antes de cair."
 readTime: 9
 image: "https://images.unsplash.com/photo-1516534775068-ba3e7458af70?w=800&q=80"

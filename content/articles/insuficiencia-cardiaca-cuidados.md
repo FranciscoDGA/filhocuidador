@@ -3,7 +3,7 @@ title: "Insuficiência Cardíaca: Cuidados e Sinais de Alerta"
 slug: "insuficiencia-cardiaca-cuidados"
 category: "Doenças"
 date: "28 de julho, 2024"
-author: "Equipe Filho Cuidador"
+author: "Equipe Filhos Cuidadores"
 excerpt: "Insuficiência cardíaca em idoso: medicação, repouso, restrição líquido, emergências."
 readTime: 11
 image: "https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=800&q=80"

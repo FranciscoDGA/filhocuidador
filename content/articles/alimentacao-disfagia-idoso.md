@@ -3,7 +3,7 @@ title: "Alimentação de Idoso com Disfagia: Receitas Seguras"
 slug: "alimentacao-disfagia-idoso"
 category: "Cuidados Práticos"
 date: "6 de agosto, 2024"
-author: "Equipe Filho Cuidador"
+author: "Equipe Filhos Cuidadores"
 excerpt: "Como alimentar idoso com dificuldade de engolir. Alimentos seguros, receitas práticas."
 readTime: 12
 image: "https://images.unsplash.com/photo-1498837167922-ddd27525d352?w=800&q=80"

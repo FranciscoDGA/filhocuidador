@@ -3,7 +3,7 @@ title: "BPC (Benefício de Prestação Continuada): Guia Completo 2024"
 slug: "bpc-loas-guia-completo"
 category: "Jurídico & Financeiro"
 date: "2024-07-20"
-author: "Equipe Filho Cuidador"
+author: "Equipe Filhos Cuidadores"
 excerpt: "Entenda como solicitar o BPC, quem tem direito, documentos necessários e como apresentar o pedido ao INSS. Guia passo a passo para 2024."
 readTime: 12
 image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&q=80"

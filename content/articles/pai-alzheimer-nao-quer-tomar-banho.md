@@ -3,7 +3,7 @@ title: "Pai com Alzheimer Não Quer Tomar Banho: Como Resolver"
 slug: "pai-alzheimer-nao-quer-tomar-banho"
 category: "Soluções Práticas"
 date: "2024-08-11"
-author: "Equipe Filho Cuidador"
+author: "Equipe Filhos Cuidadores"
 excerpt: "Estratégias para convencer idoso com Alzheimer a tomar banho. Por que recusa e como resolver."
 readTime: 10
 image: "https://images.unsplash.com/photo-1584515933487-779824d29309?w=800&q=80"

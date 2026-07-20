@@ -3,7 +3,7 @@ title: "Dinâmica Familiar: Quando Papéis Mudam"
 slug: "dinamica-familiar-mudanca-papeis"
 category: "Família"
 date: "22 de julho, 2024"
-author: "Equipe Filho Cuidador"
+author: "Equipe Filhos Cuidadores"
 excerpt: "Como lidar com inversão de papéis. Você vira cuidador do pai. Relação se ressignifica."
 readTime: 10
 image: "https://images.unsplash.com/photo-1609220136736-443140cffec6?w=800&q=80"

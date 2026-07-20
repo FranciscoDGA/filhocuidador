@@ -2,7 +2,7 @@
 title: "Alzheimer: Um Guia Prático e Afetuoso para Filhos Cuidadores"
 excerpt: "Receber o diagnóstico de Alzheimer de um pai ou mãe muda o mundo da família. Entenda as fases da doença e como lidar com os desafios diários sem perder a conexão e, acima de tudo, sem se perder no processo."
 category: "Entendendo a Doença"
-author: "Equipe Filho Cuidador"
+author: "Equipe Filhos Cuidadores"
 date: "10 de outubro, 2024"
 readTime: 12
 image: "https://images.unsplash.com/photo-1559757175-5700dde675bc?w=800&q=80"

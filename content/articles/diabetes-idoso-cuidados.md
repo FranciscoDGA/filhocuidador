@@ -3,7 +3,7 @@ title: "Diabetes em Idoso: Controle e Complicações Para Cuidador"
 slug: "diabetes-idoso-cuidados"
 category: "Doenças"
 date: "31 de julho, 2024"
-author: "Equipe Filho Cuidador"
+author: "Equipe Filhos Cuidadores"
 excerpt: "Como gerenciar diabetes de idoso. Prevenção de hipoglicemia, controle e complicações."
 readTime: 12
 image: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=800&q=80"

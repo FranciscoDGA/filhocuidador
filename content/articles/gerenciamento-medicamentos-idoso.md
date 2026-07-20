@@ -3,7 +3,7 @@ title: "Gerenciamento de Medicamentos: Evitar Erros"
 slug: "gerenciamento-medicamentos-idoso"
 category: "Cuidados Práticos"
 date: "5 de agosto, 2024"
-author: "Equipe Filho Cuidador"
+author: "Equipe Filhos Cuidadores"
 excerpt: "Sistema para organizar medicamentos. Como evitar erros de dose e timing."
 readTime: 10
 image: "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=800&q=80"

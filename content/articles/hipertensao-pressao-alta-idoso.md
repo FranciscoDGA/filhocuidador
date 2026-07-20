@@ -3,7 +3,7 @@ title: "Hipertensão em Idoso: Monitoramento e Controle"
 slug: "hipertensao-pressao-alta-idoso"
 category: "Doenças"
 date: "29 de julho, 2024"
-author: "Equipe Filho Cuidador"
+author: "Equipe Filhos Cuidadores"
 excerpt: "Como gerenciar hipertensão de idoso. Medicamentos, monitoramento, sinais de alerta."
 readTime: 10
 image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&q=80"

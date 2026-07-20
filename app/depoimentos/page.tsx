@@ -84,7 +84,7 @@ export default function DepoimentosPage() {
             Depoimentos
           </h1>
           <p className="text-base text-brand-secondary leading-relaxed">
-            O que outros cuidadores dizem sobre o Filho Cuidador. Histórias reais de quem encontrou ajuda aqui.
+            O que outros cuidadores dizem sobre o Filhos Cuidadores. Histórias reais de quem encontrou ajuda aqui.
           </p>
         </div>
 

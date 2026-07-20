@@ -2,16 +2,16 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Termos de Uso | Filho Cuidador",
-  description: "Leia os termos de uso do Filho Cuidador. Condições gerais, isenção de responsabilidade médica e direitos autorais.",
+  title: "Termos de Uso | Filhos Cuidadores",
+  description: "Leia os termos de uso do Filhos Cuidadores. Condições gerais, isenção de responsabilidade médica e direitos autorais.",
   alternates: {
     canonical: "https://filhocuidador.com.br/termos",
   },
   openGraph: {
-    title: "Termos de Uso | Filho Cuidador",
-    description: "Leia os termos de uso do Filho Cuidador.",
+    title: "Termos de Uso | Filhos Cuidadores",
+    description: "Leia os termos de uso do Filhos Cuidadores.",
     url: "https://filhocuidador.com.br/termos",
-    siteName: "Filho Cuidador",
+    siteName: "Filhos Cuidadores",
     locale: "pt_BR",
     type: "website",
   },
@@ -37,7 +37,7 @@ export default function TermosPage() {
           </h2>
 
           <p className="text-sm text-brand-secondary leading-relaxed mb-6">
-            Ao acessar e usar o Filho Cuidador, você concorda em cumprir estes termos de uso. Se não concorda com qualquer parte desses termos, você não pode usar este site.
+            Ao acessar e usar o Filhos Cuidadores, você concorda em cumprir estes termos de uso. Se não concorda com qualquer parte desses termos, você não pode usar este site.
           </p>
 
           <h2 className="font-display text-xl font-medium text-brand-primary mt-8 mb-4">
@@ -61,7 +61,7 @@ export default function TermosPage() {
           </h2>
 
           <p className="text-sm text-brand-secondary leading-relaxed mb-6">
-            O Filho Cuidador não será responsável por:
+            O Filhos Cuidadores não será responsável por:
           </p>
 
           <ul className="list-disc list-inside text-sm text-brand-secondary space-y-2 mb-6">
@@ -76,7 +76,7 @@ export default function TermosPage() {
           </h2>
 
           <p className="text-sm text-brand-secondary leading-relaxed mb-6">
-            Todo o conteúdo do Filho Cuidador é protegido por direitos autorais. Você pode visualizar e imprimir artigos para uso pessoal, mas não pode reproduzir, distribuir ou modificar o conteúdo sem permissão explícita.
+            Todo o conteúdo do Filhos Cuidadores é protegido por direitos autorais. Você pode visualizar e imprimir artigos para uso pessoal, mas não pode reproduzir, distribuir ou modificar o conteúdo sem permissão explícita.
           </p>
 
           <h2 className="font-display text-xl font-medium text-brand-primary mt-8 mb-4">
@@ -84,7 +84,7 @@ export default function TermosPage() {
           </h2>
 
           <p className="text-sm text-brand-secondary leading-relaxed mb-6">
-            O Filho Cuidador pode conter links para sites de terceiros. Não somos responsáveis pelo conteúdo desses sites e não endossamos necessariamente suas políticas ou práticas.
+            O Filhos Cuidadores pode conter links para sites de terceiros. Não somos responsáveis pelo conteúdo desses sites e não endossamos necessariamente suas políticas ou práticas.
           </p>
 
           <h2 className="font-display text-xl font-medium text-brand-primary mt-8 mb-4">

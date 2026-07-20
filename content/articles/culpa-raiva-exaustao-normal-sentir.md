@@ -3,7 +3,7 @@ title: "Culpa, Raiva e Exaustão: É Normal Sentir Isso?"
 slug: "culpa-raiva-exaustao-normal-sentir"
 category: "Saúde Emocional"
 date: "2024-07-23"
-author: "Equipe Filho Cuidador"
+author: "Equipe Filhos Cuidadores"
 excerpt: "A culpa de estar cansado. A raiva de irmãos que não ajudam. A exaustão sem fim. Você não está sozinho. Essas emoções são completamente normais."
 readTime: 8
 image: "https://images.unsplash.com/photo-1499209974431-9dddcece7f88?w=800&q=80"

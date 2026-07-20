@@ -17,7 +17,7 @@ export default function Home() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    name: "Filho Cuidador",
+    name: "Filhos Cuidadores",
     url: "https://filhocuidador.com.br",
     description: "O único portal brasileiro que fala com filhos que cuidam de pais com Alzheimer, Parkinson, AVC e outras demências.",
     sameAs: [

@@ -3,7 +3,7 @@ title: "Cuidar de Si Mesmo Enquanto Cuida de Outro"
 slug: "cuidar-de-si-mesmo-enquanto-cuida-outro"
 category: "Saúde Emocional"
 date: "2024-07-24"
-author: "Equipe Filho Cuidador"
+author: "Equipe Filhos Cuidadores"
 excerpt: "Autocuidado não é luxo. É o combustível que mantém você funcionando. Pequenas ações que fazem diferença real."
 readTime: 10
 image: "https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=800&q=80"

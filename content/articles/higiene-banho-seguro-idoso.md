@@ -3,7 +3,7 @@ title: "Banho Seguro do Idoso: Passo a Passo e Dicas"
 slug: "higiene-banho-seguro-idoso"
 category: "Cuidados Práticos"
 date: "3 de agosto, 2024"
-author: "Equipe Filho Cuidador"
+author: "Equipe Filhos Cuidadores"
 excerpt: "Como dar banho seguro em idoso imóvel ou com mobilidade reduzida. Dicas de higiene diária."
 readTime: 11
 image: "https://images.unsplash.com/photo-1585421514284-efb74c2b69ba?w=800&q=80"

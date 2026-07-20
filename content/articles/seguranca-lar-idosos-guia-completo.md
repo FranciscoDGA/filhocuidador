@@ -3,7 +3,7 @@ title: "Segurança no Lar para Idosos: Guia Completo de Prevenção"
 slug: "seguranca-lar-idosos-guia-completo"
 description: "Guia completo para adaptar o lar e prevenir acidentes com idosos. Dicas de segurança na cozinha, banheiro, quarto e áreas comuns."
 date: "2026-07-18"
-author: "Filho Cuidador"
+author: "Filhos Cuidadores"
 category: "Cuidados Práticos"
 tags: ["segurança", "prevenção de quedas", "adaptação do lar", "idoso", "acidentes"]
 image: "https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?w=800&q=80"

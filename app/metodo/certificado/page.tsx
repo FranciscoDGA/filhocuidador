@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Certificado de Cuidador Especializado",
-  description: "Complete as 5 fases do Método Filho Cuidador e receba seu certificado digital de Cuidador Especializado.",
+  description: "Complete as 5 fases do Método Filhos Cuidadores e receba seu certificado digital de Cuidador Especializado.",
 };
 
 const requirements = [
@@ -77,7 +77,7 @@ export default function CertificadoPage() {
             Certificado de Cuidador Especializado
           </h1>
           <p className="text-base text-brand-secondary leading-relaxed">
-            Complete as 5 fases do Método Filho Cuidador e receba seu certificado digital que comprova sua dedicação e conhecimento.
+            Complete as 5 fases do Método Filhos Cuidadores e receba seu certificado digital que comprova sua dedicação e conhecimento.
           </p>
         </div>
 
@@ -86,7 +86,7 @@ export default function CertificadoPage() {
           <div className="bg-white border border-border-base p-8 lg:p-12 rounded-[5px]">
             <div className="border-2 border-dashed border-brand-accent/30 p-8 lg:p-12 text-center rounded-[5px]">
               <div className="text-[10px] tracking-[0.3em] uppercase text-brand-secondary/40 mb-4">
-                Filho Cuidador
+                Filhos Cuidadores
               </div>
               <div className="text-3xl lg:text-4xl font-display font-medium text-brand-primary mb-4">
                 Certificado de Cuidador Especializado
@@ -99,7 +99,7 @@ export default function CertificadoPage() {
                 Nome do Cuidador
               </div>
               <div className="text-xs text-brand-secondary/60 leading-relaxed max-w-lg mx-auto mb-6">
-                Por ter completado com sucesso as 5 fases do Método Filho Cuidador, demonstrando conhecimento e dedicação no cuidado de idosos com Alzheimer, Parkinson, AVC e demências.
+                Por ter completado com sucesso as 5 fases do Método Filhos Cuidadores, demonstrando conhecimento e dedicação no cuidado de idosos com Alzheimer, Parkinson, AVC e demências.
               </div>
               <div className="flex items-center justify-center gap-8 text-xs text-brand-secondary/40">
                 <div>
@@ -107,7 +107,7 @@ export default function CertificadoPage() {
                   <div>Diretor Editorial</div>
                 </div>
                 <div>
-                  <div className="font-display text-brand-primary">Filho Cuidador</div>
+                  <div className="font-display text-brand-primary">Filhos Cuidadores</div>
                   <div>2026</div>
                 </div>
               </div>

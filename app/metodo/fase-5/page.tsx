@@ -2,7 +2,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Fase 5: Aspectos Jurídicos e Financeiros - Método Filho Cuidador",
+  title: "Fase 5: Aspectos Jurídicos e Financeiros - Método Filhos Cuidadores",
   description: "Proteja sua família. Entenda seus direitos, benefícios, procuração, curatela e como organizar as finanças do cuidado.",
 };
 
@@ -42,7 +42,7 @@ export default function Fase5Page() {
               href="/metodo"
               className="text-[11px] font-medium tracking-[0.2em] uppercase text-white/50 hover:text-white/80 transition-colors mb-8 block"
             >
-              ← Método Filho Cuidador
+              ← Método Filhos Cuidadores
             </Link>
             <div className="inline-flex w-20 h-20 bg-purple-500 items-center justify-center text-white text-3xl font-display font-medium rounded-[5px] mb-8">
               05
@@ -141,7 +141,7 @@ export default function Fase5Page() {
       {/* Back */}
       <div className="pb-12 text-center">
         <Link href="/" className="text-sm text-brand-secondary hover:text-brand-primary transition-colors">
-          ← Voltar para o Filho Cuidador
+          ← Voltar para o Filhos Cuidadores
         </Link>
       </div>
     </main>

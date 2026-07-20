@@ -17,7 +17,7 @@ Cuidado familiar de idosos dependentes — Alzheimer, Parkinson, AVC, demência 
 - **Comportamento digital:** busca no Google à noite, usa muito celular, está em grupos de WhatsApp
 - **Dor principal:** exaustão, culpa, solidão, despreparo
 
-### Secundário — O Filho Cuidador
+### Secundário — O Filhos Cuidadores
 - **Sexo:** masculino
 - **Idade:** 40 a 60 anos
 - **Perfil:** geralmente o provedor financeiro, menos presente no cuidado direto, busca informações práticas e jurídicas

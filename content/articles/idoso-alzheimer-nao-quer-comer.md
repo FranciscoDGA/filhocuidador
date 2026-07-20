@@ -3,7 +3,7 @@ title: "O que Fazer quando Idoso com Alzheimer Não Quer Comer: Soluções Prát
 slug: "idoso-alzheimer-nao-quer-comer"
 description: "Descubra as causas e soluções práticas quando idoso com Alzheimer se recusa a comer. Dicas de alimentação, texturas seguras e como evitar a desnutrição."
 date: "2026-07-18"
-author: "Filho Cuidador"
+author: "Filhos Cuidadores"
 category: "Cuidados Práticos"
 tags: ["alimentação idoso", "Alzheimer", "desnutrição", "recusa alimentar", "demência"]
 image: "https://images.unsplash.com/photo-1544027993-37dbfe43562a?w=800&q=80"

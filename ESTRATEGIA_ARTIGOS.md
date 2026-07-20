@@ -1,4 +1,4 @@
-# Estratégia de Artigos - Filho Cuidador
+# Estratégia de Artigos - Filhos Cuidadores
 
 ## 1. Conformidade Google E-E-A-T & YMYL
 
@@ -29,7 +29,7 @@ title: "Título + benefício (ex: Guia Completo para...)"
 slug: "url-amigavel-do-artigo"
 category: "Saúde Emocional | Cuidados Práticos | Jurídico & Financeiro | Doenças | Família"
 date: "DD de mês, YYYY"
-author: "Equipe Filho Cuidador"
+author: "Equipe Filhos Cuidadores"
 excerpt: "Resumo de 140-160 caracteres para Google"
 readTime: 8-12 (minutos)
 image: "url-da-imagem-ou-path"

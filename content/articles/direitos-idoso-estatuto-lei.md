@@ -3,7 +3,7 @@ title: "Direitos do Idoso: Estatuto e Leis que Protegem"
 slug: "direitos-idoso-estatuto-lei"
 category: "Jurídico & Financeiro"
 date: "31 de julho, 2024"
-author: "Equipe Filho Cuidador"
+author: "Equipe Filhos Cuidadores"
 excerpt: "Conheça todos os direitos legais do idoso no Brasil: saúde, transporte, benefícios, proteção."
 readTime: 14
 image: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800&q=80"
