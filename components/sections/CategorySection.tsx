@@ -39,6 +39,7 @@ export default function CategorySection({ title, categorySlug, layout = "light" 
                     src={article.image} 
                     alt={article.title} 
                     fill 
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
                     className="object-cover transition-transform duration-700 group-hover:scale-[1.02]" 
                   />
                 ) : (
