@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     description: "Informação, acolhimento e orientação prática para filhos que cuidam de pais com Alzheimer, Parkinson, AVC e outras doenças.",
     images: [
       {
-        url: "https://filhocuidador.com.br/images/logo.png",
+        url: "https://filhocuidador.com.br/api/og?title=Filhos+Cuidadores&category=Portal",
         width: 1200,
         height: 630,
         alt: "Filhos Cuidadores - Portal de acolhimento para cuidadores",
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Filhos Cuidadores | O portal para quem cuida de pais com demência",
     description: "Informação, acolhimento e orientação prática para filhos que cuidam de pais com Alzheimer, Parkinson, AVC e outras doenças.",
-    images: ["https://filhocuidador.com.br/images/logo.png"],
+    images: ["https://filhocuidador.com.br/api/og?title=Filhos+Cuidadores&category=Portal"],
   },
   robots: {
     index: true,

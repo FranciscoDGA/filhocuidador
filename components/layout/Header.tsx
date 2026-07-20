@@ -46,12 +46,38 @@ export default function Header() {
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link href="/" className="flex items-center gap-3 group">
-              <div className="relative h-10 w-auto group-hover:scale-105 transition-transform duration-300">
-                <img 
-                  src="/images/logo.png" 
-                  alt="Filhos Cuidadores - Portal de Acolhimento"
-                  className="h-10 w-auto"
-                />
+              <div className="relative w-10 h-10 group-hover:scale-105 transition-transform duration-300">
+                <svg viewBox="0 0 100 100" className="w-full h-full">
+                  <defs>
+                    <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" style={{stopColor:'#8c6a4a'}} />
+                      <stop offset="100%" style={{stopColor:'#c9a96e'}} />
+                    </linearGradient>
+                  </defs>
+                  {/* Hand shape */}
+                  <path d="M50 15 C25 15 15 35 15 55 C15 75 30 90 50 90 C70 90 85 75 85 55 C85 35 75 15 50 15 Z" fill="url(#logoGrad)" opacity="0.9"/>
+                  {/* House roof */}
+                  <path d="M30 55 L50 30 L70 55 Z" fill="#fafaf8" opacity="0.95"/>
+                  {/* House body */}
+                  <rect x="35" y="50" width="30" height="25" fill="#fafaf8" opacity="0.95"/>
+                  {/* Window */}
+                  <rect x="44" y="55" width="12" height="10" fill="url(#logoGrad)" opacity="0.8"/>
+                  {/* Family silhouette */}
+                  <circle cx="42" cy="48" r="4" fill="#3d3225"/>
+                  <circle cx="50" cy="45" r="5" fill="#3d3225"/>
+                  <circle cx="58" cy="48" r="4" fill="#3d3225"/>
+                  {/* Leaves */}
+                  <ellipse cx="75" cy="35" rx="8" ry="4" transform="rotate(-30 75 35)" fill="url(#logoGrad)" opacity="0.7"/>
+                  <ellipse cx="80" cy="28" rx="6" ry="3" transform="rotate(-45 80 28)" fill="url(#logoGrad)" opacity="0.5"/>
+                </svg>
+              </div>
+              <div className="hidden sm:block">
+                <span className="font-display font-bold text-[15px] tracking-tight text-brand-primary block leading-tight">
+                  Filhos <span className="text-brand-accent">Cuidadores</span>
+                </span>
+                <span className="text-[9px] text-brand-secondary/40 tracking-[0.2em] uppercase font-medium">
+                  Portal de Acolhimento
+                </span>
               </div>
             </Link>
           </div>
