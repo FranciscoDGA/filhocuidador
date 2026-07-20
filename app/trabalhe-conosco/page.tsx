@@ -67,22 +67,17 @@ const partnerTypes = [
 ];
 
 const stats = [
-  { number: "50.000+", label: "Visitantes/mês" },
-  { number: "20.000+", label: "Leitores ativos" },
-  { number: "58", label: "Artigos indexados" },
-  { number: "95%", label: "Tráfego orgânico" },
+  { number: "62", label: "Artigos publicados" },
+  { number: "7", label: "Especialidades cobertas" },
+  { number: "5", label: "Clusters temáticos" },
+  { number: "100%", label: "Foco em cuidadores" },
 ];
 
 const testimonials = [
   {
-    name: "Dra. Mariana Costa",
-    role: "Diretora - Clínica Vida Plena",
-    text: "Em 3 meses recebemos 45 leads qualificados. O público do Filhos Cuidadores é exatamente o nosso perfil de paciente. Retorno sobre investimento de 8x.",
-  },
-  {
-    name: "Dr. Ricardo Mendes",
-    role: "Advogado - Direito do Idoso",
-    text: "Os leitores chegam com demandas reais. Diferente de outras plataformas, aqui o lead já sabe o que precisa. Taxa de conversão de 40%.",
+    name: "Em breve",
+    role: "Depoimentos de parceiros",
+    text: "Assim que firmarmos nossas primeiras parcerias, os depoimentos aparecerão aqui. Seja o primeiro a transformar a experiência em resultado.",
   },
 ];
 
@@ -174,14 +169,14 @@ export default function TrabalheConoscoPage() {
                   <span className="text-brand-accent mt-0.5">✓</span>
                   <div>
                     <h3 className="text-sm font-medium text-brand-primary mb-1">Público Qualificado</h3>
-                    <p className="text-xs text-brand-secondary/60">Nossos leitores são filhos cuidadores com poder aquisitivo (classe média/alta) que buscam soluções reais.</p>
+                    <p className="text-xs text-brand-secondary/60">Nossos leitores são filhos cuidadores que buscam soluções reais para seus pais.</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <span className="text-brand-accent mt-0.5">✓</span>
                   <div>
                     <h3 className="text-sm font-medium text-brand-primary mb-1">Tráfego Orgânico</h3>
-                    <p className="text-xs text-brand-secondary/60">100% de tráfego grátis do Google. Leitores que chegam pelo SEO têm intenção real de busca.</p>
+                    <p className="text-xs text-brand-secondary/60">Conteúdo otimizado para Google. Leitores que chegam pelo SEO têm intenção real de busca.</p>
                   </div>
                 </div>
               </div>
@@ -190,14 +185,14 @@ export default function TrabalheConoscoPage() {
                   <span className="text-brand-accent mt-0.5">✓</span>
                   <div>
                     <h3 className="text-sm font-medium text-brand-primary mb-1">Autoridade</h3>
-                    <p className="text-xs text-brand-secondary/60">Somos referência no nicho de cuidados com idosos no Brasil. Conteúdo verificado por especialistas.</p>
+                    <p className="text-xs text-brand-secondary/60">Portal em crescimento com conteúdo revisado por especialistas e SEO otimizado para o nicho.</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <span className="text-brand-accent mt-0.5">✓</span>
                   <div>
-                    <h3 className="text-sm font-medium text-brand-primary mb-1">Conversão Alta</h3>
-                    <p className="text-xs text-brand-secondary/60">Nossos leitores confiam nas indicações. Taxa de conversão 3x maior que o mercado.</p>
+                    <h3 className="text-sm font-medium text-brand-primary mb-1">Público Engajado</h3>
+                    <p className="text-xs text-brand-secondary/60">Leitores que chegam buscando soluções reais — filhos cuidadores com necessidade imediata de ajuda.</p>
                   </div>
                 </div>
               </div>
@@ -456,7 +451,7 @@ export default function TrabalheConoscoPage() {
             {[
               {
                 q: "Qual o perfil do público do Filhos Cuidadores?",
-                a: "Nossos leitores são predominantemente filhos (35-55 anos) que cuidam de pais com Alzheimer, Parkinson, AVC ou outras demências. Classe média/alta, com poder aquisitivo para contratar serviços e produtos.",
+                a: "Nossos leitores são filhos (35-55 anos) que cuidam de pais com Alzheimer, Parkinson, AVC ou outras demências. Buscam soluções práticas e profissionais de confiança.",
               },
               {
                 q: "Como funciona a medição de leads?",
@@ -464,7 +459,7 @@ export default function TrabalheConoscoPage() {
               },
               {
                 q: "Qual o prazo para começar a receber leads?",
-                a: "Após a aprovação da parceria, começamos a divulgação imediatamente. Os primeiros leads costumam chegar em até 7 dias.",
+                a: "Após a aprovação da parceria, começamos a divulgação imediatamente. O volume de leads cresce conforme o site cresce no Google.",
               },
               {
                 q: "Posso cancelar a qualquer momento?",
@@ -490,7 +485,7 @@ export default function TrabalheConoscoPage() {
               Pronto para ser nosso parceiro?
             </h2>
             <p className="text-sm text-brand-secondary mb-6 max-w-lg mx-auto">
-              Junte-se a dezenas de profissionais que já estão alcançando milhares de cuidadores no Brasil.
+              Seja um dos primeiros parceiros do Filhos Cuidadores e cresça conosco.
             </p>
             <Link
               href="#contato"

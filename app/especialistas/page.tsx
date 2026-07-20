@@ -108,8 +108,8 @@ export default function EspecialistasPage() {
       {/* Em seleção */}
       <section className="pb-20 lg:pb-28">
         <div className="max-w-[1000px] mx-auto px-4 sm:px-6">
-          <div className="bg-amber-50 border border-amber-200 p-8 mb-12 text-center">
-            <div className="w-12 h-12 bg-amber-100 flex items-center justify-center mx-auto mb-4">
+          <div className="bg-amber-50 border border-amber-200 p-8 mb-12 text-center rounded-2xl">
+            <div className="w-12 h-12 bg-amber-100 flex items-center justify-center mx-auto mb-4 rounded-xl">
               <svg className="w-6 h-6 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
@@ -135,10 +135,10 @@ export default function EspecialistasPage() {
               {specialists.map((spec, i) => (
                 <div
                   key={i}
-                  className="bg-white border border-border-base p-6 hover:border-brand-primary/20 transition-colors"
+                  className="bg-white border border-border-base p-6 hover:border-brand-primary/20 transition-colors rounded-2xl"
                 >
                   <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 bg-brand-accent/10 flex items-center justify-center text-brand-accent flex-shrink-0">
+                    <div className="w-12 h-12 bg-brand-accent/10 flex items-center justify-center text-brand-accent flex-shrink-0 rounded-xl">
                       {spec.icon}
                     </div>
                     <div className="flex-1 min-w-0">
@@ -168,7 +168,7 @@ export default function EspecialistasPage() {
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {benefits.map((benefit, i) => (
-                <div key={i} className="bg-white border border-border-base p-6">
+                <div key={i} className="bg-white border border-border-base p-6 rounded-2xl">
                   <h3 className="font-display text-sm font-medium text-brand-primary mb-2">
                     {benefit.title}
                   </h3>
@@ -181,7 +181,7 @@ export default function EspecialistasPage() {
           </div>
 
           {/* Formulário para profissionais */}
-          <div id="candidatar" className="bg-white border border-border-base p-8 sm:p-10">
+          <div id="candidatar" className="bg-white border border-border-base p-8 sm:p-10 rounded-2xl">
             <h2 className="font-display text-2xl font-medium text-brand-primary mb-2">
               Quer fazer parte da equipe?
             </h2>
@@ -208,7 +208,7 @@ function EspecialistaForm() {
             type="text"
             name="name"
             required
-            className="w-full px-4 py-3 border border-border-base text-sm text-brand-primary bg-bg-base focus:outline-none focus:border-brand-accent transition-colors"
+            className="w-full px-4 py-3 border border-border-base text-sm text-brand-primary bg-bg-base focus:outline-none focus:border-brand-accent transition-colors rounded-xl"
             placeholder="Dr(a). Maria Silva"
           />
         </div>
@@ -218,7 +218,7 @@ function EspecialistaForm() {
             type="email"
             name="email"
             required
-            className="w-full px-4 py-3 border border-border-base text-sm text-brand-primary bg-bg-base focus:outline-none focus:border-brand-accent transition-colors"
+            className="w-full px-4 py-3 border border-border-base text-sm text-brand-primary bg-bg-base focus:outline-none focus:border-brand-accent transition-colors rounded-xl"
             placeholder="maria@exemplo.com"
           />
         </div>
@@ -230,7 +230,7 @@ function EspecialistaForm() {
           <select
             name="specialty"
             required
-            className="w-full px-4 py-3 border border-border-base text-sm text-brand-primary bg-bg-base focus:outline-none focus:border-brand-accent transition-colors"
+            className="w-full px-4 py-3 border border-border-base text-sm text-brand-primary bg-bg-base focus:outline-none focus:border-brand-accent transition-colors rounded-xl"
           >
             <option value="">Selecione...</option>
             <option value="geriatra">Geriatra / Neurologista</option>
@@ -247,7 +247,7 @@ function EspecialistaForm() {
           <input
             type="text"
             name="registration"
-            className="w-full px-4 py-3 border border-border-base text-sm text-brand-primary bg-bg-base focus:outline-none focus:border-brand-accent transition-colors"
+            className="w-full px-4 py-3 border border-border-base text-sm text-brand-primary bg-bg-base focus:outline-none focus:border-brand-accent transition-colors rounded-xl"
             placeholder="CRM 12345 / SP"
           />
         </div>
@@ -258,7 +258,7 @@ function EspecialistaForm() {
         <input
           type="url"
           name="linkedin"
-          className="w-full px-4 py-3 border border-border-base text-sm text-brand-primary bg-bg-base focus:outline-none focus:border-brand-accent transition-colors"
+          className="w-full px-4 py-3 border border-border-base text-sm text-brand-primary bg-bg-base focus:outline-none focus:border-brand-accent transition-colors rounded-xl"
           placeholder="https://linkedin.com/in/mariasilva"
         />
       </div>
@@ -268,14 +268,14 @@ function EspecialistaForm() {
         <textarea
           name="message"
           rows={3}
-          className="w-full px-4 py-3 border border-border-base text-sm text-brand-primary bg-bg-base focus:outline-none focus:border-brand-accent transition-colors resize-none"
+          className="w-full px-4 py-3 border border-border-base text-sm text-brand-primary bg-bg-base focus:outline-none focus:border-brand-accent transition-colors resize-none rounded-xl"
           placeholder="Conte um pouco sobre sua experiência com idosos..."
         />
       </div>
 
       <button
         type="submit"
-        className="w-full sm:w-auto px-8 py-3 bg-brand-primary text-white text-sm font-medium hover:bg-brand-primary/90 transition-colors"
+        className="w-full sm:w-auto px-8 py-3 bg-brand-primary text-white text-sm font-medium hover:bg-brand-primary/90 transition-colors rounded-xl"
       >
         Enviar candidatura
       </button>
