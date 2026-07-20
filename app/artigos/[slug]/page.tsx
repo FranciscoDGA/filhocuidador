@@ -22,11 +22,23 @@ const categoryCTA: Record<string, { title: string; description: string; href: st
     href: "/categorias/juridico",
     icon: <Scale className="w-5 h-5" />,
   },
+  "Jurídico & Financeiro": {
+    title: "Questões jurídicas e financeiras",
+    description: "Procuração, interdição, BPC, LOAS — entenda seus direitos.",
+    href: "/categorias/juridico",
+    icon: <Scale className="w-5 h-5" />,
+  },
   "Família": {
     title: "Conflitos familiares",
     description: "Quando a família não ajuda, o cuidador fica ainda mais sobrecarregado.",
-    href: "/categorias/familia",
+    href: "/categorias/familia-e-conflitos",
     icon: <Users className="w-5 h-5" />,
+  },
+  "Doenças": {
+    title: "Entenda a doença",
+    description: "Alzheimer, Parkinson, AVC — saiba como a doença evolui e como lidar.",
+    href: "/categorias/entendendo-a-doenca",
+    icon: <Brain className="w-5 h-5" />,
   },
 };
 
@@ -92,14 +104,16 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
     .filter((a) => a.category === article.category && a.slug !== article.slug)
     .slice(0, 3);
 
-  const categorySlug = article.category.toLowerCase().includes("emocional") || article.category.toLowerCase().includes("saúde")
+  const categorySlug = article.category.toLowerCase().includes("emocional") || article.category.toLowerCase().includes("saúde") || article.category.toLowerCase().includes("dor")
     ? "saude-emocional"
-    : article.category.toLowerCase().includes("jurídico") || article.category.toLowerCase().includes("bpc") || article.category.toLowerCase().includes("loas")
+    : article.category.toLowerCase().includes("jurídico") || article.category.toLowerCase().includes("financeiro") || article.category.toLowerCase().includes("bpc") || article.category.toLowerCase().includes("loas")
     ? "juridico"
     : article.category.toLowerCase().includes("família") || article.category.toLowerCase().includes("conflito")
-    ? "familia"
-    : article.category.toLowerCase().includes("cuidado") || article.category.toLowerCase().includes("alimentação") || article.category.toLowerCase().includes("higiene")
+    ? "familia-e-conflitos"
+    : article.category.toLowerCase().includes("cuidado") || article.category.toLowerCase().includes("alimentação") || article.category.toLowerCase().includes("higiene") || article.category.toLowerCase().includes("soluções")
     ? "cuidados-praticos"
+    : article.category.toLowerCase().includes("doença") || article.category.toLowerCase().includes("doenças")
+    ? "entendendo-a-doenca"
     : "entendendo-a-doenca";
 
   const cta = categoryCTA[article.category] || categoryCTA["Saúde Emocional"];

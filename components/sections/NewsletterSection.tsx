@@ -87,7 +87,7 @@ export default function NewsletterSection() {
             <ul className="space-y-3 text-sm text-brand-secondary/60">
               <li><Link href="/categorias/saude-emocional" className="hover:text-brand-primary transition-colors">Saúde Emocional</Link></li>
               <li><Link href="/categorias/cuidados-praticos" className="hover:text-brand-primary transition-colors">Cuidados Práticos</Link></li>
-              <li><Link href="/categorias/entendendo-doenca" className="hover:text-brand-primary transition-colors">A Doença</Link></li>
+              <li><Link href="/categorias/entendendo-a-doenca" className="hover:text-brand-primary transition-colors">A Doença</Link></li>
               <li><Link href="/categorias/juridico" className="hover:text-brand-primary transition-colors">Jurídico</Link></li>
             </ul>
           </div>

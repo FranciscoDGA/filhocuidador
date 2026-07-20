@@ -12,8 +12,23 @@ const categoryInfo: { [key: string]: any } = {
     description: "Mobilidade, higiene, medicamentos, segurança e rotina diária",
     emoji: "🏥",
   },
+  "orientacao-juridica": {
+    name: "Questões Jurídicas",
+    description: "Procuração, curatela, BPC, aposentadoria, direitos e benefícios",
+    emoji: "⚖️",
+  },
+  "questoes-juridicas": {
+    name: "Questões Jurídicas",
+    description: "Procuração, curatela, BPC, aposentadoria, direitos e benefícios",
+    emoji: "⚖️",
+  },
   "juridico": {
-    name: "Orientação Jurídica",
+    name: "Questões Jurídicas",
+    description: "Direitos, benefícios sociais, documentação e legislação",
+    emoji: "⚖️",
+  },
+  "juridico-financeiro": {
+    name: "Questões Jurídicas",
     description: "Direitos, benefícios sociais, documentação e legislação",
     emoji: "⚖️",
   },
@@ -27,22 +42,44 @@ const categoryInfo: { [key: string]: any } = {
     description: "Dinâmica familiar, irmãos, relacionamentos e comunicação",
     emoji: "👨‍👩‍👧",
   },
+  "familia-e-conflitos": {
+    name: "Família e Conflitos",
+    description: "Irmãos que não ajudam, dinâmica familiar, casamento e relacionamentos",
+    emoji: "👨‍👩‍👧",
+  },
+  "doencas": {
+    name: "Doenças",
+    description: "Alzheimer, Parkinson, AVC e outras condições que afetam idosos",
+    emoji: "🏥",
+  },
+  "solucoes-praticas": {
+    name: "Soluções Práticas",
+    description: "Guias práticos para situações difíceis do dia a dia",
+    emoji: "💡",
+  },
 };
 
 export default function CategoryPage({ params }: { params: { category: string } }) {
   const category = categoryInfo[params.category];
   const allArticles = getAllArticles();
 
-  const categorySlugToName: Record<string, string> = {
-    "saude-emocional": "Saúde Emocional",
-    "cuidados-praticos": "Cuidados Práticos",
-    "juridico": "Jurídico",
-    "entendendo-a-doenca": "Entendendo a Doença",
-    "familia": "Família",
+  const slugToArticleCategories: Record<string, string[]> = {
+    "saude-emocional": ["Saúde Emocional", "Saúde Emocional", "Dor Emocional"],
+    "cuidados-praticos": ["Cuidados Práticos"],
+    "orientacao-juridica": ["Jurídico", "Jurídico & Financeiro"],
+    "questoes-juridicas": ["Jurídico", "Jurídico & Financeiro"],
+    "juridico": ["Jurídico", "Jurídico & Financeiro"],
+    "juridico-financeiro": ["Jurídico", "Jurídico & Financeiro"],
+    "entendendo-a-doenca": ["Entendendo a Doença", "Doenças"],
+    "familia": ["Família"],
+    "familia-e-conflitos": ["Família"],
+    "doencas": ["Doenças"],
+    "solucoes-praticas": ["Soluções Práticas"],
   };
 
+  const matchingCategories = slugToArticleCategories[params.category] || [];
   const articles = allArticles.filter(
-    (a) => a.category === categorySlugToName[params.category]
+    (a) => matchingCategories.includes(a.category)
   );
 
   if (!category) {

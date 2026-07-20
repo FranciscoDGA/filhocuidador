@@ -6,7 +6,7 @@ date: "26 de julho, 2024"
 author: "Equipe Filho Cuidador"
 excerpt: "Catarata, glaucoma, degeneração macular: diagnóstico, tratamento, impacto vida."
 readTime: 11
-image: "https://images.unsplash.com/photo-1577401239170-897c650e3e24?w=800&q=80"
+image: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=800&q=80"
 seo:
   keywords: ["catarata", "glaucoma", "degeneração macular", "visão idoso", "cirurgia catarata", "oftalmologista"]
   metaDescription: "Guia sobre problemas de visão em idoso. Catarata, glaucoma, AMD explicados."
