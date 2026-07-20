@@ -14,6 +14,7 @@ const products = [
     cta: "Baixar Agora",
     href: "#",
     badge: "Mais Vendido",
+    image: "/images/products/Guia Juridico do Cuidador.png",
     features: ["Modelo de procuração", "Guia de interdição", "Direitos previdenciários", "Atualizações gratuitas"],
   },
   {
@@ -23,6 +24,7 @@ const products = [
     cta: "Matricular-se",
     href: "#",
     badge: "Novo",
+    image: "/images/products/Curso Online Agressividade em Alzheimer.png",
     features: ["10 módulos em vídeo", "Suporte por email", "Certificado", "Garantia de 7 dias"],
   },
   {
@@ -32,6 +34,7 @@ const products = [
     cta: "Adquirir Kit",
     href: "#",
     badge: "Completo",
+    image: "/images/products/Kit Cuidador Completo.png",
     features: ["Guia do cuidador", "Templates editáveis", "Checklists práticos", "Grupo exclusivo"],
   },
 ];
@@ -111,37 +114,49 @@ export default function ProdutosPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {products.map((product) => (
-              <div key={product.title} className="bg-white border border-border-base p-6 flex flex-col rounded-[5px]">
-                <div className="flex items-center justify-between mb-4">
-                  <span className="text-[10px] font-medium tracking-wider uppercase text-brand-secondary/40">
+              <div key={product.title} className="bg-white border border-border-base flex flex-col rounded-[5px] overflow-hidden">
+                <div className="relative aspect-[4/3] bg-gray-100">
+                  <img
+                    src={product.image}
+                    alt={product.title}
+                    className="w-full h-full object-cover"
+                  />
+                  <span className="absolute top-3 left-3 text-[10px] font-medium tracking-wider uppercase bg-brand-primary text-white px-3 py-1">
                     {product.badge}
                   </span>
-                  <span className="text-lg font-display font-medium text-brand-primary">
-                    {product.price}
-                  </span>
                 </div>
-                <h3 className="text-base font-display font-medium text-brand-primary mb-2">
-                  {product.title}
-                </h3>
-                <p className="text-xs text-brand-secondary/60 leading-relaxed mb-6 flex-grow">
-                  {product.description}
-                </p>
-                <ul className="space-y-2 mb-6">
-                  {product.features.map((feature) => (
-                    <li key={feature} className="flex items-center gap-2 text-xs text-brand-secondary/60">
-                      <svg className="w-3 h-3 text-brand-accent shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                      </svg>
-                      {feature}
-                    </li>
-                  ))}
-                </ul>
-                <Link
-                  href={product.href}
-                  className="block text-center px-6 py-3 bg-brand-primary text-white text-[13px] font-medium tracking-wide uppercase hover:bg-brand-primary/90 transition-colors"
-                >
-                  {product.cta}
-                </Link>
+                <div className="p-6 flex flex-col flex-grow">
+                  <div className="flex items-center justify-between mb-4">
+                    <span className="text-[10px] font-medium tracking-wider uppercase text-brand-secondary/40">
+                      {product.badge}
+                    </span>
+                    <span className="text-lg font-display font-medium text-brand-primary">
+                      {product.price}
+                    </span>
+                  </div>
+                  <h3 className="text-base font-display font-medium text-brand-primary mb-2">
+                    {product.title}
+                  </h3>
+                  <p className="text-xs text-brand-secondary/60 leading-relaxed mb-6 flex-grow">
+                    {product.description}
+                  </p>
+                  <ul className="space-y-2 mb-6">
+                    {product.features.map((feature) => (
+                      <li key={feature} className="flex items-center gap-2 text-xs text-brand-secondary/60">
+                        <svg className="w-3 h-3 text-brand-accent shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                        </svg>
+                        {feature}
+                      </li>
+                    ))}
+                  </ul>
+                  <Link
+                    href={product.href}
+                    className="block text-center px-6 py-3 bg-brand-primary text-white text-[13px] font-medium tracking-wide uppercase hover:bg-brand-primary/90 transition-colors"
+                  >
+                    {product.cta}
+                  </Link>
+                </div>
               </div>
             ))}
           </div>
