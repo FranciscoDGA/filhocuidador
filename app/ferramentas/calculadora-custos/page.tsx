@@ -4,16 +4,16 @@ import { useState } from "react";
 import Link from "next/link";
 
 const items = [
-  { label: "Fraldas geriátricas", price: 350, unit: "mês" },
-  { label: "Remédios (complemento)", price: 500, unit: "mês" },
-  { label: "Cuidador diurno (8h)", price: 2500, unit: "mês" },
-  { label: "Cuidador noturno", price: 2000, unit: "mês" },
-  { label: "Enfermeiro (plantão)", price: 150, unit: "plantão" },
-  { label: "Fisioterapia", price: 200, unit: "sessão" },
-  { label: "Transporte adaptado", price: 400, unit: "mês" },
-  { label: "Alimentação especial", price: 300, unit: "mês" },
-  { label: "Cama hospitalar (aluguel)", price: 500, unit: "mês" },
-  { label: "Adequação do lar", price: 2000, unit: "único" },
+  { label: "Fraldas geriátricas", price: 280, unit: "mês", note: "Pack c/ 14 unidades, ~2/mês" },
+  { label: "Remédios (complemento)", price: 500, unit: "mês", note: "Varia conforme medicação" },
+  { label: "Cuidador diurno (12h)", price: 3200, unit: "mês", note: "CLT, inclusive encargos" },
+  { label: "Cuidador noturno (12h)", price: 3500, unit: "mês", note: "CLT + adicional noturno" },
+  { label: "Enfermeiro (plantão)", price: 250, unit: "plantão", note: "Técnico de enfermagem" },
+  { label: "Fisioterapia", price: 200, unit: "sessão", note: "Duração ~50min" },
+  { label: "Transporte adaptado", price: 500, unit: "mês", note: "Van adaptada ou Uber Health" },
+  { label: "Alimentação especial", price: 400, unit: "mês", note: "Dieta hipercalórica, disfagia" },
+  { label: "Cama hospitalar (aluguel)", price: 450, unit: "mês", note: "Elétrica com colchão antiescaras" },
+  { label: "Adequação do lar", price: 2500, unit: "único", note: "Barras, rampas, banheiro adaptado" },
 ];
 
 export default function CalculadoraCustos() {
@@ -139,12 +139,17 @@ export default function CalculadoraCustos() {
             Existem benefícios governamentais que podem ajudar: BPC/LOAS, auxílio-doença, isenção de imposto de renda para idosos.
           </p>
           <Link
-            href="/categorias/juridico"
+            href="/categorias/questoes-juridicas"
             className="inline-flex items-center text-[11px] font-medium tracking-wide uppercase text-brand-primary border-b border-brand-primary/20 hover:border-brand-primary/60 pb-0.5 transition-colors"
           >
             Ver artigos jurídicos
           </Link>
         </div>
+
+        <p className="text-[10px] text-brand-secondary/40 mt-6 leading-relaxed">
+          * Valores de referência para 2026, com base em tabelas de mercado (CuidadosConecta, RepousoCuidador, Cronoshare).
+          Custos reais variam por região, grau de dependência e regime de contratação.
+        </p>
       </div>
     </main>
   );

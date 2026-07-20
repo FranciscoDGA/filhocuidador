@@ -33,7 +33,25 @@ const categoryData: Record<string, {
     icon: <Scale className="w-6 h-6" />,
     longDescription: "Burocracia é a última coisa que você precisa no meio do caos. Mas direitos são importantes. Aqui explicamos procuração, interdição, benefícios do INSS, cobertura de plano de saúde — tudo em linguagem acessível.",
   },
+  "questoes-juridicas": {
+    name: "Questões Jurídicas e Financeiras",
+    description: "Procuração, interdição, BPC, LOAS, plano de saúde, home care",
+    icon: <Scale className="w-6 h-6" />,
+    longDescription: "Burocracia é a última coisa que você precisa no meio do caos. Mas direitos são importantes. Aqui explicamos procuração, interdição, benefícios do INSS, cobertura de plano de saúde — tudo em linguagem acessível.",
+  },
+  "orientacao-juridica": {
+    name: "Questões Jurídicas e Financeiras",
+    description: "Procuração, interdição, BPC, LOAS, plano de saúde, home care",
+    icon: <Scale className="w-6 h-6" />,
+    longDescription: "Burocracia é a última coisa que você precisa no meio do caos. Mas direitos são importantes. Aqui explicamos procuração, interdição, benefícios do INSS, cobertura de plano de saúde — tudo em linguagem acessível.",
+  },
   "familia": {
+    name: "Família e Conflitos",
+    description: "Irmãos que não ajudam, cuidador solo, distância geográfica",
+    icon: <Users className="w-6 h-6" />,
+    longDescription: "Quando um filho cuida e os outros não ajudam, a família inteira sofre. Conflitos entre irmãos, solidão do cuidador, distância geográfica — temas difíceis que ninguém fala, mas que precisam ser conversados.",
+  },
+  "familia-e-conflitos": {
     name: "Família e Conflitos",
     description: "Irmãos que não ajudam, cuidador solo, distância geográfica",
     icon: <Users className="w-6 h-6" />,
@@ -44,11 +62,14 @@ const categoryData: Record<string, {
 function getArticlesByCategory(slug: string) {
   const allArticles = getAllArticles();
   const categoryMap: Record<string, string[]> = {
-    "entendendo-a-doenca": ["Alzheimer", "Parkinson", "AVC", "Demência", "Doença"],
-    "cuidados-praticos": ["Cuidados", "Alimentação", "Higiene", "Segurança", "Medicação", "Sono", "Banho", "Casa"],
-    "saude-emocional": ["Saúde Emocional", "Burnout", "Culpa", "Depressão", "Ansiedade", "Autocuidado", "Luto"],
-    "juridico": ["Jurídico", "BPC", "LOAS", "Procuração", "Interdição", "INSS", "Plano de Saúde"],
+    "entendendo-a-doenca": ["Alzheimer", "Parkinson", "AVC", "Demência", "Doença", "Doenças"],
+    "cuidados-praticos": ["Cuidados", "Alimentação", "Higiene", "Segurança", "Medicação", "Sono", "Banho", "Casa", "Soluções Práticas"],
+    "saude-emocional": ["Saúde Emocional", "Burnout", "Culpa", "Depressão", "Ansiedade", "Autocuidado", "Luto", "Dor Emocional"],
+    "juridico": ["Jurídico", "BPC", "LOAS", "Procuração", "Interdição", "INSS", "Plano de Saúde", "Financeiro"],
+    "questoes-juridicas": ["Jurídico", "BPC", "LOAS", "Procuração", "Interdição", "INSS", "Plano de Saúde", "Financeiro"],
+    "orientacao-juridica": ["Jurídico", "BPC", "LOAS", "Procuração", "Interdição", "INSS", "Plano de Saúde", "Financeiro"],
     "familia": ["Família", "Irmãos", "Conflito", "Relacionamento"],
+    "familia-e-conflitos": ["Família", "Irmãos", "Conflito", "Relacionamento"],
   };
 
   const keywords = categoryMap[slug] || [];
