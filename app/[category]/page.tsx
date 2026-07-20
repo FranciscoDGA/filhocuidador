@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import { getAllArticles } from "@/lib/articles";
 
 const categoryInfo: { [key: string]: any } = {
@@ -90,14 +89,12 @@ export default function CategoryPage({ params }: { params: { category: string } 
             {articles.map((article) => (
               <Link key={article.id} href={`/artigos/${article.slug}`}>
                 <article className="h-full flex flex-col bg-white border border-border-base overflow-hidden hover:border-brand-primary/20 hover:shadow-md transition-all duration-300 cursor-pointer group">
-                  <div className="aspect-video bg-gradient-to-br from-brand-primary/5 to-brand-primary/10 overflow-hidden relative">
+                  <div className="aspect-video bg-gray-100 overflow-hidden relative">
                     {article.image ? (
-                      <Image
+                      <img
                         src={article.image}
                         alt={article.title}
-                        fill
-                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                        className="object-cover group-hover:scale-[1.02] transition-transform duration-700"
+                        className="absolute inset-0 w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-700"
                       />
                     ) : (
                       <div className="absolute inset-0 flex items-center justify-center">

@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import { getAllArticles } from "@/lib/articles";
 
 export default function FeaturedNewsSection() {
@@ -32,12 +31,10 @@ export default function FeaturedNewsSection() {
             </div>
             <div className="relative w-full aspect-video bg-gray-100 mb-6 overflow-hidden">
               {featured.image ? (
-                <Image 
+                <img 
                   src={featured.image}
                   alt={featured.title}
-                  fill
-                  sizes="(max-width: 768px) 100vw, 66vw"
-                  className="object-cover transition-transform duration-700 group-hover:scale-[1.02]"
+                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.02]"
                 />
               ) : (
                 <div className="w-full h-full flex items-center justify-center bg-gray-100 text-brand-secondary/30 text-sm">Sem Imagem</div>
@@ -59,17 +56,17 @@ export default function FeaturedNewsSection() {
             <div className="flex-1 h-px bg-border-base"></div>
           </div>
           <div className="grid grid-cols-2 gap-3">
-            <Link href="/categorias/burocracia" className="relative h-20 bg-brand-primary group overflow-hidden flex items-center justify-center">
-              <span className="text-white font-medium text-[11px] tracking-wider uppercase">Burocracia</span>
+            <Link href="/categorias/entendendo-a-doenca" className="relative h-20 bg-brand-primary group overflow-hidden flex items-center justify-center">
+              <span className="text-white font-medium text-[11px] tracking-wider uppercase">Diagnóstico</span>
             </Link>
-            <Link href="/categorias/saude-mental" className="relative h-20 bg-brand-primary group overflow-hidden flex items-center justify-center">
+            <Link href="/categorias/saude-emocional" className="relative h-20 bg-brand-primary group overflow-hidden flex items-center justify-center">
               <span className="text-white font-medium text-[11px] tracking-wider uppercase">Saúde Mental</span>
             </Link>
-            <Link href="/categorias/dicas" className="relative h-20 bg-brand-primary group overflow-hidden flex items-center justify-center">
-              <span className="text-white font-medium text-[11px] tracking-wider uppercase">Dicas</span>
+            <Link href="/categorias/cuidados-praticos" className="relative h-20 bg-brand-primary group overflow-hidden flex items-center justify-center">
+              <span className="text-white font-medium text-[11px] tracking-wider uppercase">Cuidados</span>
             </Link>
-            <Link href="/categorias/historias" className="relative h-20 bg-brand-primary group overflow-hidden flex items-center justify-center">
-              <span className="text-white font-medium text-[11px] tracking-wider uppercase">Histórias</span>
+            <Link href="/categorias/familia" className="relative h-20 bg-brand-primary group overflow-hidden flex items-center justify-center">
+              <span className="text-white font-medium text-[11px] tracking-wider uppercase">Família</span>
             </Link>
           </div>
         </div>

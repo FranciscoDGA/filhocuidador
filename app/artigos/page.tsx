@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import { getAllArticles } from "@/lib/articles";
 import type { Metadata } from "next";
 
@@ -37,14 +36,12 @@ export default function ArticlesPage() {
             <Link key={article.id} href={`/artigos/${article.slug}`}>
               <article className="h-full flex flex-col group cursor-pointer">
                 {/* Image */}
-                <div className="aspect-[16/10] bg-gradient-to-br from-brand-primary/5 to-brand-primary/10 overflow-hidden rounded-t-[50px] mb-5 relative">
+                <div className="aspect-[16/10] bg-gray-100 overflow-hidden rounded-t-[50px] mb-5 relative">
                   {article.image ? (
-                    <Image
+                    <img
                       src={article.image}
                       alt={article.title}
-                      fill
-                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                      className="object-cover group-hover:scale-[1.02] transition-transform duration-700"
+                      className="absolute inset-0 w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-700"
                     />
                   ) : (
                     <div className="absolute inset-0 flex items-center justify-center">
