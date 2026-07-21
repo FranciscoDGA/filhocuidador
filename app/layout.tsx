@@ -41,13 +41,13 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "pt_BR",
-    url: "https://filhocuidador.com.br",
+    url: "https://filhoscuidadores.com.br",
     siteName: "Filhos Cuidadores",
     title: "Filhos Cuidadores | O portal para quem cuida de pais com demência",
     description: "Informação, acolhimento e orientação prática para filhos que cuidam de pais com Alzheimer, Parkinson, AVC e outras doenças.",
     images: [
       {
-        url: "https://filhocuidador.com.br/api/og?title=Filhos+Cuidadores&category=Portal",
+        url: "https://filhoscuidadores.com.br/api/og?title=Filhos+Cuidadores&category=Portal",
         width: 1200,
         height: 630,
         alt: "Filhos Cuidadores - Portal de acolhimento para cuidadores",
@@ -58,7 +58,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Filhos Cuidadores | O portal para quem cuida de pais com demência",
     description: "Informação, acolhimento e orientação prática para filhos que cuidam de pais com Alzheimer, Parkinson, AVC e outras doenças.",
-    images: ["https://filhocuidador.com.br/api/og?title=Filhos+Cuidadores&category=Portal"],
+    images: ["https://filhoscuidadores.com.br/api/og?title=Filhos+Cuidadores&category=Portal"],
   },
   robots: {
     index: true,
@@ -72,7 +72,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: "https://filhocuidador.com.br",
+    canonical: "https://filhoscuidadores.com.br",
   },
 };
 

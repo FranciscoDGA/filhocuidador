@@ -47,7 +47,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const article = await getArticleBySlug(slug);
   if (!article) return {};
 
-  const ogImage = `https://filhocuidador.com.br/api/og?title=${encodeURIComponent(article.title)}&category=${encodeURIComponent(article.category)}`;
+  const ogImage = `https://filhoscuidadores.com.br/api/og?title=${encodeURIComponent(article.title)}&category=${encodeURIComponent(article.category)}`;
 
   const metaDescription = article.seo?.metaDescription || article.excerpt;
 
@@ -70,7 +70,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       images: [ogImage],
     },
     alternates: {
-      canonical: `https://filhocuidador.com.br/artigos/${slug}`,
+      canonical: `https://filhoscuidadores.com.br/artigos/${slug}`,
     },
   };
 }
@@ -130,16 +130,16 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
     author: {
       "@type": "Organization",
       name: "Filhos Cuidadores",
-      url: "https://filhocuidador.com.br",
+      url: "https://filhoscuidadores.com.br",
     },
     publisher: {
       "@type": "Organization",
       name: "Filhos Cuidadores",
-      url: "https://filhocuidador.com.br",
+      url: "https://filhoscuidadores.com.br",
     },
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": `https://filhocuidador.com.br/artigos/${article.slug}`,
+      "@id": `https://filhoscuidadores.com.br/artigos/${article.slug}`,
     },
     articleSection: article.category,
     keywords: article.seo?.keywords?.join(", "),
@@ -206,25 +206,25 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
         "@type": "ListItem",
         position: 1,
         name: "Início",
-        item: "https://filhocuidador.com.br",
+        item: "https://filhoscuidadores.com.br",
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Artigos",
-        item: "https://filhocuidador.com.br/artigos",
+        item: "https://filhoscuidadores.com.br/artigos",
       },
       {
         "@type": "ListItem",
         position: 3,
         name: article.category,
-        item: `https://filhocuidador.com.br/categorias/${categorySlug}`,
+        item: `https://filhoscuidadores.com.br/categorias/${categorySlug}`,
       },
       {
         "@type": "ListItem",
         position: 4,
         name: article.title,
-        item: `https://filhocuidador.com.br/artigos/${article.slug}`,
+        item: `https://filhoscuidadores.com.br/artigos/${article.slug}`,
       },
     ],
   };
@@ -357,7 +357,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
             <p className="text-xs font-medium text-brand-secondary">Compartilhe e ajude outras famílias:</p>
             <div className="flex gap-3">
               <a
-                href={`https://wa.me/?text=${encodeURIComponent(article.title + " - https://filhocuidador.com.br/artigos/" + article.slug)}`}
+                href={`https://wa.me/?text=${encodeURIComponent(article.title + " - https://filhoscuidadores.com.br/artigos/" + article.slug)}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-5 py-2 bg-[#25D366] text-white text-xs font-medium hover:bg-[#20bd5a] transition"
@@ -365,7 +365,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
                 WhatsApp
               </a>
               <a
-                href={`https://www.facebook.com/sharer/sharer.php?u=https://filhocuidador.com.br/artigos/${article.slug}`}
+                href={`https://www.facebook.com/sharer/sharer.php?u=https://filhoscuidadores.com.br/artigos/${article.slug}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-5 py-2 bg-[#1877F2] text-white text-xs font-medium hover:bg-[#166fe5] transition"

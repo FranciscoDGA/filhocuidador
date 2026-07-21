@@ -64,7 +64,7 @@ export async function POST(request: Request) {
         // Send notification email to site owner
         if (!result?.error) {
           try {
-            await fetch(`${process.env.NEXT_PUBLIC_SITE_URL || "https://filhocuidador.com.br"}/api/notify-specialist`, {
+            await fetch(`${process.env.NEXT_PUBLIC_SITE_URL || "https://filhoscuidadores.com.br"}/api/notify-specialist`, {
               method: "POST",
               headers: { "Content-Type": "application/json" },
               body: JSON.stringify(data),

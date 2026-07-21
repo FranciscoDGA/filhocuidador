@@ -156,8 +156,8 @@ export default function ContatoPage() {
               Prefere enviar um email direto?
             </p>
             <p className="text-sm">
-              <a href="mailto:contato@filhocuidador.com.br" className="text-brand-primary hover:text-brand-accent transition underline underline-offset-2">
-                contato@filhocuidador.com.br
+              <a href="mailto:contato@filhoscuidadores.com.br" className="text-brand-primary hover:text-brand-accent transition underline underline-offset-2">
+                contato@filhoscuidadores.com.br
               </a>
             </p>
           </div>

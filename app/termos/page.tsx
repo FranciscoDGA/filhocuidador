@@ -5,12 +5,12 @@ export const metadata: Metadata = {
   title: "Termos de Uso | Filhos Cuidadores",
   description: "Leia os termos de uso do Filhos Cuidadores. Condições gerais, isenção de responsabilidade médica e direitos autorais.",
   alternates: {
-    canonical: "https://filhocuidador.com.br/termos",
+    canonical: "https://filhoscuidadores.com.br/termos",
   },
   openGraph: {
     title: "Termos de Uso | Filhos Cuidadores",
     description: "Leia os termos de uso do Filhos Cuidadores.",
-    url: "https://filhocuidador.com.br/termos",
+    url: "https://filhoscuidadores.com.br/termos",
     siteName: "Filhos Cuidadores",
     locale: "pt_BR",
     type: "website",

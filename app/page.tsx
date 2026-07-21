@@ -18,7 +18,7 @@ export default function Home() {
     "@context": "https://schema.org",
     "@type": "Organization",
     name: "Filhos Cuidadores",
-    url: "https://filhocuidador.com.br",
+    url: "https://filhoscuidadores.com.br",
     description: "O único portal brasileiro que fala com filhos que cuidam de pais com Alzheimer, Parkinson, AVC e outras demências.",
     sameAs: [
       "https://facebook.com/filhocuidador",

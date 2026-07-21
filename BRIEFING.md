@@ -1,4 +1,4 @@
-# Briefing — filhocuidador.com.br
+# Briefing — filhoscuidadores.com.br
 
 ## O Projeto
 Portal de conteúdo brasileiro voltado para filhos adultos que cuidam de pais idosos com doenças neurodegenerativas e crônicas. Referência nacional em informação, acolhimento e orientação prática para cuidadores familiares.

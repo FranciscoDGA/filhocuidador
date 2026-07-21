@@ -20,7 +20,7 @@ export async function GET(request: Request) {
       ${category ? `<span style="font-size:16px;color:#8b7355;text-transform:uppercase;letter-spacing:0.15em;margin-bottom:16px">${category}</span>` : ""}
       <span style="font-size:${titleSize}px;color:#1a1a1a;font-weight:500;line-height:1.2;max-width:900px">${title}</span>
       <div style="position:absolute;bottom:60px;right:60px;display:flex;align-items:center;gap:8px">
-        <span style="font-size:14px;color:#999">filhocuidador.com.br</span>
+        <span style="font-size:14px;color:#999">filhoscuidadores.com.br</span>
       </div>
     </div>
   `;

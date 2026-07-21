@@ -214,14 +214,14 @@ export default async function DiarioDetailPage({ params }: { params: Promise<{ s
             <p className="text-xs font-medium text-brand-secondary">Essa história te ajudou? Compartilhe:</p>
             <div className="flex gap-3">
               <a
-                href={`https://wa.me/?text=${encodeURIComponent(diary.title + " - https://filhocuidador.com.br/diarios/" + diary.slug)}`}
+                href={`https://wa.me/?text=${encodeURIComponent(diary.title + " - https://filhoscuidadores.com.br/diarios/" + diary.slug)}`}
                 target="_blank" rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-5 py-2 bg-[#25D366] text-white text-xs font-medium hover:bg-[#20bd5a] transition"
               >
                 WhatsApp
               </a>
               <a
-                href={`https://www.facebook.com/sharer/sharer.php?u=https://filhocuidador.com.br/diarios/${diary.slug}`}
+                href={`https://www.facebook.com/sharer/sharer.php?u=https://filhoscuidadores.com.br/diarios/${diary.slug}`}
                 target="_blank" rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-5 py-2 bg-[#1877F2] text-white text-xs font-medium hover:bg-[#166fe5] transition"
               >

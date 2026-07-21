@@ -6,7 +6,7 @@
 ```
 Olá Dr(a). [NOME], tudo bem?
 
-Meu nome é [SEU NOME], sou fundador do Filhos Cuidadores (filhocuidador.com.br), o maior portal brasileiro dedicado a filhos que cuidam de pais com Alzheimer, Parkinson e outras demências.
+Meu nome é [SEU NOME], sou fundador do Filhos Cuidadores (filhoscuidadores.com.br), o maior portal brasileiro dedicado a filhos que cuidam de pais com Alzheimer, Parkinson e outras demências.
 
 Estamos formando uma equipe de especialistas para atender nossos leitores, e identifiquei seu perfil como ideal para essa parceria.
 
@@ -32,7 +32,7 @@ Filhos Cuidadores
 ```
 Olá Dr(a). [NOME], tudo bem?
 
-Meu nome é [SEU NOME], sou fundador do Filhos Cuidadores (filhocuidador.com.br), portal especializado em cuidados com idosos com demência.
+Meu nome é [SEU NOME], sou fundador do Filhos Cuidadores (filhoscuidadores.com.br), portal especializado em cuidados com idosos com demência.
 
 Estamos recrutando especialistas para orientar famílias em momento de vulnerabilidade, e seu perfil chamou nossa atenção.
 
@@ -57,7 +57,7 @@ Atenciosamente,
 ```
 Olá [NOME DO PROFISSIONAL], tudo bem?
 
-Sou [SEU NOME], do Filhos Cuidadores (filhocuidador.com.br). Criamos um portal para apoiar filhos que cuidam de pais com demência - uma população com altíssima taxa de burnout, ansiedade e depressão.
+Sou [SEU NOME], do Filhos Cuidadores (filhoscuidadores.com.br). Criamos um portal para apoiar filhos que cuidam de pais com demência - uma população com altíssima taxa de burnout, ansiedade e depressão.
 
 Precisamos de profissionais como você para oferecer suporte emocional e orientação social.
 
@@ -87,7 +87,7 @@ Abraço,
 ```
 Prezado(a) Dr(a). [NOME],
 
-Meu nome é [SEU NOME], fundador do Filhos Cuidadores (filhocuidador.com.br), portal informativo dedicado a filhos que cuidam de pais com Alzheimer, Parkinson, AVC e outras demências.
+Meu nome é [SEU NOME], fundador do Filhos Cuidadores (filhoscuidadores.com.br), portal informativo dedicado a filhos que cuidam de pais com Alzheimer, Parkinson, AVC e outras demências.
 
 ESTATÍSTICAS DO PORTAL:
 • 62 artigos técnicos publicados
@@ -131,7 +131,7 @@ Atenciosamente,
 
 [SEU NOME]
 Fundador - Filhos Cuidadores
-filhocuidador.com.br
+filhoscuidadores.com.br
 ```
 
 ---
@@ -142,7 +142,7 @@ filhocuidador.com.br
 ```
 Olá Dr(a). [NOME]! 👋
 
-Sou do Filhos Cuidadores (filhocuidador.com.br) - portal para filhos que cuidam de pais com demência.
+Sou do Filhos Cuidadores (filhoscuidadores.com.br) - portal para filhos que cuidam de pais com demência.
 
 Adorei seu conteúdo sobre [TEMA DO POST]. Estamos formando uma equipe de especialistas para atender nossos leitores e seu perfil seria perfeito!
 
