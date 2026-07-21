@@ -27,6 +27,7 @@ const staticPages = [
   "/kits",
   "/depoimentos",
   "/especialistas",
+  "/seja-especialista",
   "/videos",
   "/privacidade",
   "/termos",
