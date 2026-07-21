@@ -65,8 +65,8 @@ const affiliates = [
   {
     category: "Fraldas Geriátricas",
     items: [
-      { name: "Tena Slip", description: "Fralda descartável com alta absorção", link: "#" },
-      { name: "Bigfral", description: "Fralda econômica para uso diário", link: "#" },
+      { name: "Tena Slip", description: "Fralda descartável com alta absorção", link: "https://meli.la/2rBa7S5" },
+      { name: "Bigfral", description: "Fralda econômica para uso diário", link: "https://meli.la/1rfC7h6" },
       { name: "Fralda Noturna Extra", description: "Proteção prolongada para a noite", link: "#" },
       { name: "Fralda Descartável Adulto", description: "Prática e confortável para uso diurno", link: "#" },
     ],
@@ -74,8 +74,8 @@ const affiliates = [
   {
     category: "Mobilidade",
     items: [
-      { name: "Cadeira de Rodas Dobrável", description: "Manual, leve e fácil de transportar", link: "#" },
-      { name: "Andador com Rodas", description: "Dobrável e estável para segurança", link: "#" },
+      { name: "Cadeira de Rodas Dobrável", description: "Manual, leve e fácil de transportar", link: "https://meli.la/2CXpzqG" },
+      { name: "Andador com Rodas", description: "Dobrável e estável para segurança", link: "https://meli.la/2HpLJTt" },
       { name: "Barras de Apoio", description: "Fixação na parede para banheiro e escadas", link: "#" },
       { name: "Cadeira de Banho", description: "Banho seguro para idosos com mobilidade reduzida", link: "#" },
     ],
@@ -83,8 +83,8 @@ const affiliates = [
   {
     category: "Segurança",
     items: [
-      { name: "Botão de Pânico SOS", description: "Emergência portátil 24h para idosos", link: "#" },
-      { name: "Câmera de Monitoramento", description: "Acompanhamento à distância do idoso", link: "#" },
+      { name: "Botão de Pânico SOS", description: "Emergência portátil 24h para idosos", link: "https://meli.la/2TwQhQq" },
+      { name: "Câmera de Monitoramento", description: "Acompanhamento à distância do idoso", link: "https://meli.la/1JJ7fTo" },
       { name: "Sensor de Porta", description: "Alerta quando portas são abertas", link: "#" },
       { name: "Tapete Antiderrapante", description: "Prevenção de quedas no banheiro", link: "#" },
     ],
