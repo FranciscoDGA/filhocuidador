@@ -6,7 +6,7 @@ date: "2024-07-26"
 author: "Equipe Filhos Cuidadores"
 excerpt: "Quando seu pai não consegue mais assinar documentos. Interdição ou curatela? Qual é a diferença e qual você precisa."
 readTime: 11
-image: "https://source.unsplash.com/800x600/?wheelchair"
+image: "https://images.unsplash.com/photo-1584982751601-97dcc096659c?w=800&q=80"
 seo:
   keywords: ["interdição idoso", "curatela pai", "curador idoso", "procuração demência", "direitos idoso"]
   metaDescription: "Diferença entre interdição e curatela para idoso com demência. Quando usar cada uma e como solicitar."

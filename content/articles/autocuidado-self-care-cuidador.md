@@ -6,7 +6,7 @@ date: "14 de agosto, 2024"
 author: "Equipe Filhos Cuidadores"
 excerpt: "Por que autocuidado é essencial. Práticas simples e acessíveis para cuidadores."
 readTime: 10
-image: "https://source.unsplash.com/800x600/?yoga"
+image: "https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?w=800&q=80"
 seo:
   keywords: ["autocuidado cuidador", "self-care", "bem-estar cuidador", "rotina cuidador saúde mental"]
   metaDescription: "Guia prático de autocuidado para cuidadores de idosos. Técnicas simples e acessíveis."

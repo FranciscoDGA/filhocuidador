@@ -6,7 +6,7 @@ date: "2024-08-09"
 author: "Equipe Filhos Cuidadores"
 excerpt: "Sinais de burnout em cuidadores de idosos. Como reconhecer, prevenir e se recuperar do esgotamento."
 readTime: 12
-image: "https://source.unsplash.com/800x600/?communication"
+image: "https://images.unsplash.com/photo-1516534775068-ba3e7458af70?w=800&q=80"
 seo:
   keywords: ["cuidador burnout", "esgotamento cuidador", "burnout cuidador idoso", "cuidador sobrecarregado", "saúde mental cuidador"]
   metaDescription: "Sinais de burnout em cuidadores de idosos. Como reconhecer, prevenir e se recuperar do esgotamento."

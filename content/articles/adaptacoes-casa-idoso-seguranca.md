@@ -6,7 +6,7 @@ date: "3 de agosto, 2024"
 author: "Equipe Filhos Cuidadores"
 excerpt: "Modificações práticas e baratas para tornar casa segura para idoso com mobilidade reduzida."
 readTime: 10
-image: "https://source.unsplash.com/800x600/?home-safety"
+image: "https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=800&q=80"
 seo:
   keywords: ["adaptação casa idoso", "segurança idoso", "casa acessível", "barras segurança", "rampa idoso"]
   metaDescription: "Como adaptar casa para segurança de idoso. Dicas práticas e acessíveis de modificação."

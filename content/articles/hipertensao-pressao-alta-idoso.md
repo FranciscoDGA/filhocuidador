@@ -6,7 +6,7 @@ date: "29 de julho, 2024"
 author: "Equipe Filhos Cuidadores"
 excerpt: "Como gerenciar hipertensão de idoso. Medicamentos, monitoramento, sinais de alerta."
 readTime: 10
-image: "https://source.unsplash.com/800x600/?pharmacy"
+image: "https://images.unsplash.com/photo-1544027993-37dbfe43562a?w=800&q=80"
 seo:
   keywords: ["hipertensão idoso", "pressão alta", "medicamento pressão", "AVC prevenção", "monitoramento pressão"]
   metaDescription: "Guia de gerenciamento de hipertensão em idoso. Medicação, dieta, monitoramento diário."

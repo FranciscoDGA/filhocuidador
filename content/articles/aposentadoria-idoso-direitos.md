@@ -6,7 +6,7 @@ date: "28 de julho, 2024"
 author: "Equipe Filhos Cuidadores"
 excerpt: "Guia completo sobre aposentadoria: tipos, requisitos, quanto demora e como solicitar sem erros."
 readTime: 12
-image: "https://source.unsplash.com/800x600/?finance"
+image: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=800&q=80"
 seo:
   keywords: ["aposentadoria idoso", "como solicitar aposentadoria", "direitos aposentado", "INSS 2024"]
   metaDescription: "Guia completo sobre aposentadoria do idoso em 2024. Saiba tipos, requisitos e como solicitar."

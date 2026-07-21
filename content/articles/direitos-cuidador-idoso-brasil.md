@@ -6,7 +6,7 @@ date: "2024-08-10"
 author: "Equipe Filhos Cuidadores"
 excerpt: "Todos os direitos do cuidador familiar de idoso no Brasil. Lei do Cuidador, benefícios, auxílios."
 readTime: 14
-image: "https://source.unsplash.com/800x600/?retirement"
+image: "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=800&q=80"
 seo:
   keywords: ["direitos cuidador idoso", "lei do cuidador", "auxílio cuidador", "benefício cuidador", "direitos cuidador familiar"]
   metaDescription: "Conheça todos os direitos do cuidador familiar de idoso no Brasil. Lei do Cuidador, benefícios, auxílios do INSS."

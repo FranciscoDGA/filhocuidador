@@ -6,7 +6,7 @@ date: "2024-07-22"
 author: "Equipe Filhos Cuidadores"
 excerpt: "Os sinais de que você está no limite. Cansaço físico, emocional e mental que vira doença. Reconheça antes de cair."
 readTime: 9
-image: "https://source.unsplash.com/800x600/?caregiver"
+image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&q=80"
 seo:
   keywords: ["burnout cuidador", "esgotamento cuidador", "cuidador sobrecarregado", "sinais burnout", "saúde mental cuidador"]
   metaDescription: "Sinais de burnout em cuidadores de idosos. Como reconhecer, prevenir e tratar o esgotamento do cuidador."

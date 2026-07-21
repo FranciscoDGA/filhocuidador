@@ -6,7 +6,7 @@ date: "2024-08-11"
 author: "Equipe Filhos Cuidadores"
 excerpt: "Estratégias para convencer idoso com Alzheimer a tomar banho. Por que recusa e como resolver."
 readTime: 10
-image: "https://source.unsplash.com/800x600/?stroke"
+image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&q=80"
 seo:
   keywords: ["alzheimer não quer tomar banho", "idoso recusa banho", "como dar banho em idoso", "demência não quer banho", "cuidar de idoso higiene"]
   metaDescription: "Como lidar quando pai com Alzheimer recusa tomar banho. Estratégias práticas e dicas de como convencer."

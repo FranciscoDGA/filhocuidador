@@ -6,7 +6,7 @@ date: "2024-08-08"
 author: "Equipe Filhos Cuidadores"
 excerpt: "Quando e como internar idoso com demência. Tipos de instituições, custos, documentos, como decidir."
 readTime: 13
-image: "https://source.unsplash.com/800x600/?sleep"
+image: "https://images.unsplash.com/photo-1495197359483-d092478c170a?w=800&q=80"
 seo:
   keywords: ["internar idoso demência", "asilo idoso Alzheimer", "casa de repouso", "internar idoso", "instituição idoso"]
   metaDescription: "Guia completo para internar idoso com demência. Quando decidir, tipos de instituições, custos, documentos."

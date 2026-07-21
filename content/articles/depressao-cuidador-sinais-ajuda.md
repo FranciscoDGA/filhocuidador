@@ -6,7 +6,7 @@ date: "1 de agosto, 2024"
 author: "Equipe Filhos Cuidadores"
 excerpt: "Depressão é comum em cuidadores. Saiba reconhecer sinais, quando procurar ajuda e como se cuidar."
 readTime: 10
-image: "https://source.unsplash.com/800x600/?money"
+image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=800&q=80"
 seo:
   keywords: ["depressão cuidador", "sinais depressão", "ajuda cuidador deprimido", "psicólogo cuidador"]
   metaDescription: "Guia sobre depressão em cuidadores. Reconheça sinais, procure ajuda e proteja sua saúde mental."

@@ -6,7 +6,7 @@ date: "6 de agosto, 2024"
 author: "Equipe Filhos Cuidadores"
 excerpt: "Como alimentar idoso com dificuldade de engolir. Alimentos seguros, receitas práticas."
 readTime: 12
-image: "https://source.unsplash.com/800x600/?food-nutrition"
+image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800&q=80"
 seo:
   keywords: ["disfagia idoso", "comida para disfagia", "alimentação segura idoso", "receitas disfagia"]
   metaDescription: "Guia de alimentação segura para idosos com disfagia. Receitas, alimentos, técnicas."

@@ -6,7 +6,7 @@ date: "2024-07-24"
 author: "Equipe Filhos Cuidadores"
 excerpt: "Autocuidado não é luxo. É o combustível que mantém você funcionando. Pequenas ações que fazem diferença real."
 readTime: 10
-image: "https://source.unsplash.com/800x600/?nature"
+image: "https://images.unsplash.com/photo-1516728778615-2d590ea1855e?w=800&q=80"
 seo:
   keywords: ["autocuidado cuidador", "cuidar de si mesmo", "saúde mental cuidador", "bem-estar cuidador idoso"]
   metaDescription: "Autocuidado para cuidadores de idosos. Por que é importante e como praticar no dia a dia sem culpa."

@@ -5,7 +5,7 @@ category: "Saúde Emocional"
 author: "Equipe Filhos Cuidadores"
 date: "12 de outubro, 2024"
 readTime: 12
-image: "https://source.unsplash.com/800x600/?meditation"
+image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&q=80"
 seo:
   keywords: ["ansiedade cuidador", "estresse familiar", "saude mental cuidadora", "burnout cuidador", "alivio ansiedade idoso"]
   metaDescription: "Guia profundo sobre a ansiedade de quem cuida de pais idosos. Entenda os gatilhos e aprenda técnicas reais de alívio e controle emocional."

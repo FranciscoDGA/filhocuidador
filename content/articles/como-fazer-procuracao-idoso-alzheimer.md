@@ -6,7 +6,7 @@ date: "2024-08-12"
 author: "Equipe Filhos Cuidadores"
 excerpt: "Guia completo para fazer procuração de idoso com Alzheimer. Documentos, modelos, onde ir, custo."
 readTime: 12
-image: "https://source.unsplash.com/800x600/?self-care"
+image: "https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=800&q=80"
 seo:
   keywords: ["procuração idoso Alzheimer", "como fazer procuração", "procuração cuidador", "procuração idoso", "documento idoso demência"]
   metaDescription: "Passo a passo para fazer procuração de idoso com Alzheimer. Documentos necessários, modelo, onde registrar."

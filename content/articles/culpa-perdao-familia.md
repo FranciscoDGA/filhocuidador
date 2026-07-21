@@ -6,7 +6,7 @@ date: "20 de julho, 2024"
 author: "Equipe Filhos Cuidadores"
 excerpt: "Lidar com culpa não processada. Possibilidade de perdão antes da morte."
 readTime: 11
-image: "https://source.unsplash.com/800x600/?community"
+image: "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=800&q=80"
 seo:
   keywords: ["culpa familiar", "perdão pai", "mágoas antigas", "reconciliação", "luto antecipatório"]
   metaDescription: "Como lidar com culpa familiar e buscar perdão antes que pai/mãe morra."

@@ -6,7 +6,7 @@ date: "11 de agosto, 2024"
 author: "Equipe Filhos Cuidadores"
 excerpt: "Estratégias para voltar ao trabalho enquanto cuida de pai/mãe. Equilibrio possível."
 readTime: 10
-image: "https://source.unsplash.com/800x600/?anxiety"
+image: "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=800&q=80"
 seo:
   keywords: ["voltar trabalho cuidador", "equilíbrio trabalho cuidado", "licença cuidador", "trabalho home office"]
   metaDescription: "Como voltar ao trabalho enquanto cuida de pai idoso. Estratégias e direitos."
