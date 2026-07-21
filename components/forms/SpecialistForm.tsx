@@ -21,22 +21,22 @@ export default function SpecialistForm() {
     });
 
     const data = {
-      nome: formData.get("nome") as string,
+      name: formData.get("nome") as string,
       email: formData.get("email") as string,
-      especialidade: formData.get("especialidade") as string,
-      registro: formData.get("registro") as string,
+      specialty: formData.get("especialidade") as string,
+      registration: formData.get("registro") as string,
       whatsapp: formData.get("whatsapp") as string,
-      cidade: formData.get("cidade") as string,
+      city: formData.get("cidade") as string,
       linkedin: (formData.get("linkedin") as string) || "",
       atendimento: atendimentos.join(", "),
-      mensagem: (formData.get("mensagem") as string) || "",
+      message: (formData.get("mensagem") as string) || "",
     };
 
     try {
       const res = await fetch("/api/submit", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ type: "specialists", data }),
+        body: JSON.stringify({ type: "especialista", data }),
       });
 
       const json = await res.json();

@@ -54,9 +54,25 @@ export async function POST(request: Request) {
           email: data.email,
           specialty: data.specialty,
           registration: data.registration,
+          whatsapp: data.whatsapp,
+          city: data.city,
           linkedin: data.linkedin,
+          atendimento: data.atendimento,
           message: data.message,
         });
+
+        // Send notification email to site owner
+        if (!result?.error) {
+          try {
+            await fetch(`${process.env.NEXT_PUBLIC_SITE_URL || "https://filhocuidador.com.br"}/api/notify-specialist`, {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify(data),
+            });
+          } catch (emailErr) {
+            console.error("Failed to send notification:", emailErr);
+          }
+        }
         break;
 
       default:
