@@ -89,9 +89,7 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
         {/* Google Search Console Verification */}
-        {process.env.NEXT_PUBLIC_GSC_VERIFICATION && (
-          <meta name="google-site-verification" content={process.env.NEXT_PUBLIC_GSC_VERIFICATION} />
-        )}
+        <meta name="google-site-verification" content="qH9gltE4Lk1p5ONSBCSMwkXGR9eqixIDruwOJLPqlZQ" />
         {/* Google Analytics */}
         {process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID && (
           <>
