@@ -6,7 +6,7 @@ date: "25 de julho, 2024"
 author: "Equipe Filhos Cuidadores"
 excerpt: "Tipos de incontinência urinária em idoso: urgência, esforço, transbordamento."
 readTime: 10
-image: "https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=800&q=80"
+image: "https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?w=800&q=80"
 seo:
   keywords: ["incontinência urinária", "tipos incontinência", "tratamento incontinência", "UTI", "fisioterapia pélvica"]
   metaDescription: "Guia completo sobre incontinência urinária em idoso. Causas, tratamentos, fisioterapia."

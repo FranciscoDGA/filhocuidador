@@ -6,7 +6,7 @@ date: "1º de agosto, 2024"
 author: "Equipe Filhos Cuidadores"
 excerpt: "Deduções fiscais se você cuida de pai/mãe idoso. Reduza imposto legitimamente."
 readTime: 10
-image: "https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?w=800&q=80"
+image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&q=80"
 seo:
   keywords: ["dedução imposto renda", "cuidador idoso imposto", "deduções legítimas", "Décimo", "despesas médicas"]
   metaDescription: "Guia de deduções fiscais para cuidadores de idosos. Reduza IR legitimamente."

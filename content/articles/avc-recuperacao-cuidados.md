@@ -6,7 +6,7 @@ date: "9 de agosto, 2024"
 author: "Equipe Filhos Cuidadores"
 excerpt: "O que fazer após AVC, recuperação, reabilitação e sinais de alerta."
 readTime: 11
-image: "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=800&q=80"
+image: "https://images.unsplash.com/photo-1559757175-5700dde675bc?w=800&q=80"
 seo:
   keywords: ["AVC recuperação", "cuidados após AVC", "reabilitação AVC", "sequelas AVC"]
   metaDescription: "Guia de cuidados após AVC. Recuperação, reabilitação e prevencão de novo acidente."

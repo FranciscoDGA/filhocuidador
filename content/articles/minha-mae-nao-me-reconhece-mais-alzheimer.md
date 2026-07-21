@@ -6,7 +6,7 @@ date: "2024-08-14"
 author: "Equipe Filhos Cuidadores"
 excerpt: "Como lidar quando sua mãe com Alzheimer não te reconhece mais. A dor de perder em vida e como encontrar paz."
 readTime: 11
-image: "https://images.unsplash.com/photo-1585421514284-efb74c2b69ba?w=800&q=80"
+image: "https://images.unsplash.com/photo-1516728778615-2d590ea1855e?w=800&q=80"
 seo:
   keywords: ["mãe não me reconhece", "alzheimer não reconhece filho", "perda em vida", "mãe com demência", "dor emocional alzheimer"]
   metaDescription: "Como lidar quando sua mãe com Alzheimer não te reconhece mais. A dor de perder em vida e estratégias para encontrar paz."

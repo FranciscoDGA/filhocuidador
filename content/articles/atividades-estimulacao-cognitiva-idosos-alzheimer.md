@@ -6,7 +6,7 @@ date: "2026-07-18"
 author: "Filhos Cuidadores"
 category: "Cuidados Práticos"
 tags: ["estimulação cognitiva", "Alzheimer", "atividades", "memória", "demência"]
-image: "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=800&q=80"
+image: "https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=800&q=80"
 seo:
   metaDescription: "Descubra atividades eficazes para estimular a cognição de idosos com Alzheimer. Jogos, exercícios e rotinas que retardam o avanço da doença."
   keywords: ["atividades Alzheimer", "estimulação cognitiva idosos", "exercícios memória Alzheimer", "jogos demência"]

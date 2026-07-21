@@ -6,7 +6,7 @@ date: "24 de julho, 2024"
 author: "Equipe Filhos Cuidadores"
 excerpt: "Cuidar de pai/mãe enquanto mantém casamento. Estratégias para não separar."
 readTime: 11
-image: "https://images.unsplash.com/photo-1475137979732-b349acb6b7e3?w=800&q=80"
+image: "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=800&q=80"
 seo:
   keywords: ["casamento cuidador", "marido esposa cuidado idoso", "relacionamento amoroso", "casal tensão"]
   metaDescription: "Como manter casamento saudável enquanto cuida de pai/mãe idoso. Estratégias práticas."

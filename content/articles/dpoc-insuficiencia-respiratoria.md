@@ -6,7 +6,7 @@ date: "30 de julho, 2024"
 author: "Equipe Filhos Cuidadores"
 excerpt: "DPOC em idoso: respiração, inaladores, sinais de alerta, prevenção de crises."
 readTime: 11
-image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&q=80"
+image: "https://images.unsplash.com/photo-1584982751601-97dcc096659c?w=800&q=80"
 seo:
   keywords: ["DPOC", "insuficiência respiratória", "falta de ar", "enfisema", "bronquite crônica", "inalador"]
   metaDescription: "Guia de cuidados com DPOC em idoso. Inaladores, crises respiratórias, prevenção."

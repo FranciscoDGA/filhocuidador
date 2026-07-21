@@ -6,7 +6,7 @@ date: "2026-07-18"
 author: "Filhos Cuidadores"
 category: "Cuidados Práticos"
 tags: ["segurança", "prevenção de quedas", "adaptação do lar", "idoso", "acidentes"]
-image: "https://images.unsplash.com/photo-1516728778615-2d590ea1855e?w=800&q=80"
+image: "https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?w=800&q=80"
 seo:
   metaDescription: "Adaptação do lar para idosos: como prevenir quedas, afogamentos, queimaduras e intoxicação. Guia completo com checklist de segurança por cômodo."
   keywords: ["segurança lar idosos", "prevenção quedas idosos", "adaptação casa idoso", "acidentes domésticos idosos"]
