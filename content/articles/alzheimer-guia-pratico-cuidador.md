@@ -71,3 +71,5 @@ O [Burnout do Cuidador](/artigos/burnout-cuidador-sinais-alerta) é uma realidad
 Permita-se sentir. Chore no chuveiro quando precisar. Grite no travesseiro. Mas, acima de tudo, não tente carregar esse piano sozinha. Exija a [participação dos irmãos](/artigos/comunicacao-irmaos-nao-ajudam) (mesmo que financeira, se não puder ser presencial). Construa uma rede de apoio. Frequente grupos de familiares de Alzheimer (presenciais ou online), onde você vai descobrir que não é a única pessoa passando por isso.
 
 O Alzheimer rouba as memórias, isso é uma triste e dura verdade. Mas ele não pode roubar a essência do amor que construiu a história de vocês até aqui. Mesmo nos dias difíceis em que o seu pai ou a sua mãe olharem nos seus olhos e não souberem o seu nome, **eles saberão que se sentem seguros, confortáveis e profundamente amados ao seu lado.** O sentimento sobrevive à memória. E isso, nenhuma doença é capaz de apagar.
+
+**Veja tamb�m:** [Checklist Diagn�stico](/ferramentas/checklist-diagnostico), [Kit Primeiras 24h](/kits/primeiras-24h-alzheimer), [Kit Agressividade](/kits/agressividade-confusao)

@@ -313,3 +313,5 @@ R: Explique é prevenção de dor (queda = fratura). Maioria aceita depois que e
 ---
 
 **Lembre-se:** Adaptação previne queda. Queda = fratura/morte. Investimento pequeno = segurança grande.
+
+**Veja tamb�m:** [Kit Casa Segura](/kits/casa-segura)

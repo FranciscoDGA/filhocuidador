@@ -208,3 +208,5 @@ R: Sim. Pode ser medo, confusão, ou dor. Verifique se não está com dor.
 ---
 
 **Lembre-se:** Banho não é batalha. É cuidado. Com paciência e estratégia, você encontra um jeito que funciona para os dois.
+
+**Veja tamb�m:** [Kit Primeiras 24h](/kits/primeiras-24h-alzheimer)

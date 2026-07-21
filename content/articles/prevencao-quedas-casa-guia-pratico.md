@@ -319,3 +319,5 @@ Uma queda evitada = vida preservada.
 ---
 
 *Este artigo é informativo. Consulte profissional se seu pai tem quedas frequentes ou problemas de equilíbrio.*
+
+**Veja tamb�m:** [Kit Casa Segura](/kits/casa-segura)

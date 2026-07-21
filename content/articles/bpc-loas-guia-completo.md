@@ -231,3 +231,5 @@ Se negado: Busque ajuda. A Defensoria Pública oferece **consulta jurídica grat
 ---
 
 *Este artigo é informativo. Consulte sempre um profissional jurídico para caso específico.*
+
+**Veja tamb�m:** [Calculadora de Custos](/ferramentas/calculadora-custos)

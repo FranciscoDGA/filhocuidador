@@ -272,3 +272,5 @@ R: Procure CAPD (SUS), casa de saúde pública, ou BPC/LOAS para ajudar.
 ---
 
 **Lembre-se:** Internar não é abandono. É amor em outra forma. É garantir que seu pai/mãe tenha o cuidado que precisa, mesmo que você não possa dar sozinho.
+
+**Veja tamb�m:** [Calculadora de Custos](/ferramentas/calculadora-custos)

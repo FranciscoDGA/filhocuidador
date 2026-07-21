@@ -269,3 +269,5 @@ Você merece ajuda. Procure.
 ---
 
 **⚠️ Aviso Crítico**: Se pensamentos suicidas: **CVV 188** (24h). Não hesite. Você importa.
+
+**Veja tamb�m:** [Quiz Burnout do Cuidador](/ferramentas/quiz-burnout)

@@ -280,3 +280,5 @@ R: Precisa contribuir INSS como contribuinte individual (~8% renda). Depois mesm
 ---
 
 **Lembre-se:** Saúde mental é doença real. Você merece afastamento remunerado. É direito seu.
+
+**Veja tamb�m:** [Calculadora de Custos](/ferramentas/calculadora-custos)

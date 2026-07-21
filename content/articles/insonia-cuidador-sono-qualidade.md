@@ -322,3 +322,5 @@ R: Ideal 7-8h. Mínimo 6h. Menos que 6h = deficiência real.
 ---
 
 **Lembre-se:** Sono é medicina. Você merece descansar.
+
+**Veja tamb�m:** [Quiz Burnout do Cuidador](/ferramentas/quiz-burnout)

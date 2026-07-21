@@ -84,3 +84,5 @@ Saiba mais sobre [ansiedade do cuidador e técnicas de alívio](/artigos/ansieda
 **Disclaimer:** Este conteúdo é informativo. Consulte sempre um profissional de saúde. Se você tem pensamentos de auto-agressão, procure ajuda imediata:
 - **CVV**: 188 (ligação gratuita)
 - **SAMU**: 192
+
+**Veja tamb�m:** [Quiz Burnout do Cuidador](/ferramentas/quiz-burnout)

@@ -172,3 +172,5 @@ R: Sim. Sua presença importa, mesmo sem reconhecimento. Ela sente seu amor.
 ---
 
 **Lembre-se:** Sua mãe não te reconhece, mas seu amor por ela continua. E o amor que você dá não precisa de reconhecimento para existir.
+
+**Veja tamb�m:** [Kit Primeiras 24h](/kits/primeiras-24h-alzheimer)

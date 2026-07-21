@@ -184,3 +184,5 @@ R: Existem benefícios adicionais (BPC, pensão especial). Consulte o INSS.
 ---
 
 **⚠️ Aviso Legal**: Este conteúdo é informativo. Para questões específicas sobre aposentadoria, consulte sempre um **advogado previdenciário** ou ligue para o INSS no **135**.
+
+**Veja tamb�m:** [Calculadora de Custos](/ferramentas/calculadora-custos)

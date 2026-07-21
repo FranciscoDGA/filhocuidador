@@ -237,3 +237,5 @@ R: Não. Leve ajuda. Intenso pode precipitar crise. Equilíbrio.
 ---
 
 **Lembre-se:** DPOC piora, mas controle torna vida viável. Medicação diária = chave.
+
+**Veja tamb�m:** [Checklist Diagn�stico](/ferramentas/checklist-diagnostico)

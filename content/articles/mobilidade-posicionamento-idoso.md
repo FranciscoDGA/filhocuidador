@@ -255,3 +255,5 @@ R: Semanas a meses. Grave = cicatriz permanente. Prevenção > tratamento.
 ---
 
 **Lembre-se:** Técnica correta protege AMBOS vocês.
+
+**Veja tamb�m:** [Kit Casa Segura](/kits/casa-segura)

@@ -289,3 +289,5 @@ E cuidador saudável = seu pai recebendo cuidado melhor.
 ---
 
 *Este artigo é informativo. Se está negligenciando saúde pessoal de forma severa, procure médico ou psicólogo. Você merece cuidado também.*
+
+**Veja tamb�m:** [Quiz Burnout do Cuidador](/ferramentas/quiz-burnout)

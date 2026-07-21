@@ -265,3 +265,5 @@ R: Se medicação bem ajustada, raro. Se tomar muito, sim. Médico monitora e aj
 ---
 
 **Lembre-se:** Diabetes controlada = vida normal. Descontrolada = complicações graves. Vigilância constante = chave.
+
+**Veja tamb�m:** [Checklist Diagn�stico](/ferramentas/checklist-diagnostico)

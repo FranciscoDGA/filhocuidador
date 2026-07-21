@@ -198,3 +198,5 @@ Sim, pode acontecer. Mas se a recusa persistir por mais de 2-3 dias, procure ori
 - [Diário de Sintomas](/templates) - Acompanhe alimentação e comportamento
 - [Plano de Alimentação](/templates) - Organize refeições seguras
 - [Plano de Autocuidado](/templates) - Cuide de você também
+
+**Veja tamb�m:** [Kit Primeiras 24h](/kits/primeiras-24h-alzheimer)

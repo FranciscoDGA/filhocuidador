@@ -267,3 +267,5 @@ R: Egoísmo é não cuidar de quem depende de você (porque desabou). Você est�
 ---
 
 **Lembre-se:** Você não pode despejar de um copo vazio. Encha o seu primeiro.
+
+**Veja tamb�m:** [Quiz Burnout do Cuidador](/ferramentas/quiz-burnout)

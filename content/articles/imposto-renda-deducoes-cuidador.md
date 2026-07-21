@@ -271,3 +271,5 @@ R: Sim. Desde que tenha nota fiscal e receita médica.
 ---
 
 **Lembre-se:** Deduções legítimas reduzem IR. Você merece todos os benefícios que lei oferece.
+
+**Veja tamb�m:** [Calculadora de Custos](/ferramentas/calculadora-custos)

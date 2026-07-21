@@ -196,3 +196,5 @@ R: Raramente (5%). Maioria esporÃ¡dica.
 ---
 
 **âš ï¸ Aviso:** Parkinson progressiva. Cuidador precisa apoio profissional.
+
+**Veja também:** [Checklist Diagnóstico](/ferramentas/checklist-diagnostico)

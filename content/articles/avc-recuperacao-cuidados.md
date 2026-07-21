@@ -213,3 +213,5 @@ R: Sim, mas precisa apoio (fisioterapeuta, fonoaudiólogo).
 ---
 
 **⚠️ Aviso:** Novo AVC pode ser letal. Prevenção e reabilitação são essenciais.
+
+**Veja tamb�m:** [Checklist Diagn�stico](/ferramentas/checklist-diagnostico)

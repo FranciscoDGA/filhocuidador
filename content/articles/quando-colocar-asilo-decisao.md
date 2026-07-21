@@ -246,3 +246,5 @@ R: Com honestidade e empatia. "Amor seu, preciso de ajuda. Você vai para lugar 
 ---
 
 **Lembre-se:** Asilo NÃO é abandono. Às vezes, é a melhor opção para ambos.
+
+**Veja tamb�m:** [Calculadora de Custos](/ferramentas/calculadora-custos)

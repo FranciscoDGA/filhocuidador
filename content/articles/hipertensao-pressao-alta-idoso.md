@@ -222,3 +222,5 @@ R: Não. Próxima dose normal. Nunca dobra.
 ---
 
 **Lembre-se:** Hipertensão silenciosa mata. Medicação diária = proteção silenciosa.
+
+**Veja tamb�m:** [Checklist Diagn�stico](/ferramentas/checklist-diagnostico)

@@ -279,3 +279,5 @@ R: Alguns sim, outros não. Leia bula ou pergunte farmacêutico. Alguns precisam
 ---
 
 **Lembre-se:** Medicamento errado = inútil. Medicamento certo no horário certo = vida melhor.
+
+**Veja tamb�m:** [Kit Primeiras 24h](/kits/primeiras-24h-alzheimer)

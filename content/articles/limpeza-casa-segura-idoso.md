@@ -273,3 +273,5 @@ R: Sim! Divida tarefas. Torna mais fácil.
 ---
 
 **Lembre-se:** Limpeza estratégica = menos tempo + mais segurança. Perfeição não é meta.
+
+**Veja tamb�m:** [Kit Casa Segura](/kits/casa-segura)

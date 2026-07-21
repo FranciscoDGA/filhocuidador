@@ -196,3 +196,5 @@ R: Culpa é sintoma do burnout. Descansar não é egoísmo, é sobrevivência.
 ---
 
 **Lembre-se:** Você não pode cuidar de ninguém se estiver doente. Cuidar de si mesmo não é egoísmo. É condição para cuidar do outro.
+
+**Veja tamb�m:** [Quiz Burnout do Cuidador](/ferramentas/quiz-burnout), [Kit Primeiras 24h](/kits/primeiras-24h-alzheimer)

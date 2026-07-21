@@ -209,3 +209,5 @@ R: Não. Gás ativa reflexo de tosse.
 ---
 
 **⚠️ Risco:** Aspiração causa pneumonia. Procure médico se tosse frequente.
+
+**Veja tamb�m:** [Kit Primeiras 24h](/kits/primeiras-24h-alzheimer)

@@ -200,3 +200,5 @@ R: Controla sintomas, não cura. Menos falta de ar, menos inchaço. Qualidade vi
 ---
 
 **Lembre-se:** Insuficiência cardíaca é crônica, mas controle torna vida viável.
+
+**Veja tamb�m:** [Checklist Diagn�stico](/ferramentas/checklist-diagnostico)

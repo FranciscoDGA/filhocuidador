@@ -263,3 +263,5 @@ R: ⚠️ Não. DEVE ser em cartório (público) ou manuscrito (ológrafo).
 ---
 
 **⚠️ Aviso Legal**: Este conteúdo é informativo. Para situações complexas (heranças grandes, conflitos familiares, proteção de companheiro), consulte um **advogado especialista em sucessões**.
+
+**Veja tamb�m:** [Calculadora de Custos](/ferramentas/calculadora-custos)

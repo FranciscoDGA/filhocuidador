@@ -192,3 +192,5 @@ R: Depende da causa. Se for infecção/remédio, pode melhorar. Se for progress�
 ---
 
 **Lembre-se:** Agressividade no Alzheimer não é agressão pessoal. É a doença falando. Você não é o alvo. É o cuidador que precisa de estratégia.
+
+**Veja tamb�m:** [Kit Agressividade](/kits/agressividade-confusao)

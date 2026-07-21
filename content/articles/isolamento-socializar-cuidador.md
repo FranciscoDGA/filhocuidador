@@ -271,3 +271,5 @@ R: Você pode ser amiga deles E ser cuidadora. Papéis podem conviver.
 ---
 
 **Lembre-se:** Você não é só cuidadora. Você é pessoa. Pessoas precisam de conexão. Invista nisso.
+
+**Veja tamb�m:** [Quiz Burnout do Cuidador](/ferramentas/quiz-burnout)

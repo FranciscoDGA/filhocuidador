@@ -73,3 +73,5 @@ Não é crueldade aceitar a falibilidade da vida; é sobrevivência.
 Não tente ser a Mulher-Maravilha. Se a ansiedade estiver impedindo você de dormir por várias noites seguidas, se a dor no peito for constante, ou se você estiver tendo pensamentos de fuga extrema (ou vontade de machucar a si mesma), **busque ajuda psiquiátrica imediatamente**. Tomar um ansiolítico ou um antidepressivo receitado não é fraqueza. É dar ao seu cérebro a muleta que ele precisa para caminhar quando a perna está quebrada.
 
 Seu pai ou sua mãe precisam de você. Mas, acima de tudo, você precisa de você. Uma cuidadora mentalmente doente não consegue prestar cuidados seguros. Coloque a máscara de oxigênio em si mesma primeiro, só então ajude o passageiro ao lado. Estamos juntos nessa jornada.
+
+**Veja tamb�m:** [Quiz Burnout do Cuidador](/ferramentas/quiz-burnout)

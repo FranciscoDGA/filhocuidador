@@ -260,3 +260,5 @@ R: Seque bem. Se aparecer: fungicida (farmácia) ou consulte dermatologista.
 ---
 
 **⚠️ Aviso**: Se feridas, úlceras ou infecções: **Consulte médico/dermatologista.**
+
+**Veja tamb�m:** [Kit Primeiras 24h](/kits/primeiras-24h-alzheimer)

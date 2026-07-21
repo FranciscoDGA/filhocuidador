@@ -225,3 +225,5 @@ Você merece descanso. Você merece vida.
 ---
 
 *Este artigo é informativo. Se está tendo pensamentos de morte ou suicídio, ligue para 188 (CVV - prevenção do suicídio) ou procure emergência.*
+
+**Veja tamb�m:** [Quiz Burnout do Cuidador](/ferramentas/quiz-burnout), [Kit Primeiras 24h](/kits/primeiras-24h-alzheimer)

@@ -251,3 +251,5 @@ Observe: o idoso sorri? Fica mais calmo? Participa? Mesmo pequenos sinais são p
 - [Diário de Sintomas](/templates) - Registre atividades e comportamentos
 - [Plano de Autocuidado](/templates) - Cuide de você também
 - [Plano de Contingência](/templates) - Prepare-se para emergências
+
+**Veja tamb�m:** [Checklist Diagn�stico](/ferramentas/checklist-diagnostico)

@@ -249,3 +249,5 @@ E tudo bem.
 ---
 
 *Este artigo é informativo. Se culpa, raiva ou pensamentos estão dominando sua vida, procure terapeuta. É tratável.*
+
+**Veja tamb�m:** [Quiz Burnout do Cuidador](/ferramentas/quiz-burnout)

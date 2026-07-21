@@ -228,3 +228,5 @@ R: Sim. Mas depois difícil voltar. Tente flexibilidade primeiro.
 ---
 
 **Lembre-se:** Trabalhar e cuidar é possível. Mas exige ajuda profissional e limites saudáveis.
+
+**Veja tamb�m:** [Quiz Burnout do Cuidador](/ferramentas/quiz-burnout)

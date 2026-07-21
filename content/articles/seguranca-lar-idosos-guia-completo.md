@@ -282,3 +282,5 @@ Sim, é obrigatório e salva vidas. Instale no corredor, cozinha e quartos. Test
 - [Plano de Contingência](/templates) - Prepare-se para emergências
 - [Diário de Sintomas](/templates) - Registre comportamentos e acidentes
 - [Plano de Autocuidado](/templates) - Cuide de você também
+
+**Veja tamb�m:** [Calculadora de Custos](/ferramentas/calculadora-custos), [Kit Casa Segura](/kits/casa-segura)

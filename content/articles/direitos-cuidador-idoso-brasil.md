@@ -206,3 +206,5 @@ R: Atestado médico, declaração de residência, contas de luz/água no seu nom
 ---
 
 **Lembre-se:** Você não é voluntário. É cuidador. E cuidador tem direitos. Conheça-os e exija-os.
+
+**Veja tamb�m:** [Calculadora de Custos](/ferramentas/calculadora-custos)

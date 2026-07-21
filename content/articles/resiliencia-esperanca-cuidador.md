@@ -249,3 +249,5 @@ R: Não. Reclame! Desabafe! Depois levante.
 ---
 
 **Lembre-se:** Resiliência não é não sofrer. É sofrer e continuar. Você já está fazendo. Continue.
+
+**Veja tamb�m:** [Quiz Burnout do Cuidador](/ferramentas/quiz-burnout)

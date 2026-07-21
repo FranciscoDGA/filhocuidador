@@ -187,3 +187,5 @@ Use tapetes antiderrapantes dentro e fora da banheira. Instale barras de apoio. 
 - [Diário de Sintomas](/templates) - Acompanhe comportamentos e rotinas
 - [Plano de Contingência](/templates) - Prepare-se para emergências
 - [Plano de Autocuidado](/templates) - Cuide de você também
+
+**Veja tamb�m:** [Kit Primeiras 24h](/kits/primeiras-24h-alzheimer)
