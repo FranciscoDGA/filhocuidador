@@ -4,7 +4,6 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import FloatingSpecialistButton from "@/components/FloatingSpecialistButton";
 import CookieConsent from "@/components/CookieConsent";
-import Analytics from "@/components/Analytics";
 import "./globals.css";
 
 const playfair = Playfair_Display({
@@ -101,7 +100,6 @@ export default function RootLayout({
         <Footer />
         <FloatingSpecialistButton />
         <CookieConsent />
-        <Analytics />
       </body>
     </html>
   );
