@@ -5,12 +5,12 @@ export const metadata: Metadata = {
   title: "Política de Privacidade e LGPD | Filhos Cuidadores",
   description: "Conheça nossa política de privacidade e como tratamos seus dados pessoais de acordo com a LGPD (Lei Geral de Proteção de Dados).",
   alternates: {
-    canonical: "https://filhoscuidadores.com.br/privacidade",
+    canonical: "https://filhocuidador.vercel.app/privacidade",
   },
   openGraph: {
     title: "Política de Privacidade e LGPD | Filhos Cuidadores",
     description: "Conheça nossa política de privacidade e como tratamos seus dados pessoais.",
-    url: "https://filhoscuidadores.com.br/privacidade",
+    url: "https://filhocuidador.vercel.app/privacidade",
     siteName: "Filhos Cuidadores",
     locale: "pt_BR",
     type: "website",

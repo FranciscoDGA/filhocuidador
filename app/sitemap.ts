@@ -1,6 +1,6 @@
 import { MetadataRoute } from "next";
 
-const BASE_URL = "https://filhoscuidadores.com.br";
+const BASE_URL = "https://filhocuidador.vercel.app";
 
 const staticPages = [
   "",

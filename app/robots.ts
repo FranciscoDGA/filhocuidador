@@ -9,6 +9,6 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ["/api/", "/admin/", "/_next/"],
       },
     ],
-    sitemap: "https://filhoscuidadores.com.br/sitemap.xml",
+    sitemap: "https://filhocuidador.vercel.app/sitemap.xml",
   };
 }

@@ -23,7 +23,7 @@ export async function POST(request: Request) {
     // import { Resend } from "resend";
     // const resend = new Resend(process.env.RESEND_API_KEY);
     // await resend.emails.send({
-    //   from: "Filhos Cuidadores <noreply@filhoscuidadores.com.br>",
+    //   from: "Filhos Cuidadores <noreply@filhocuidador.vercel.app>",
     //   to: "seu-email@gmail.com",
     //   subject: `Novo especialista: ${data.name}`,
     //   html: `<h1>Novo especialista cadastrado!</h1>
