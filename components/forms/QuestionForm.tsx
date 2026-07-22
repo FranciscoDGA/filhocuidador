@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-const WHATSAPP_NUMBER = "5511999999999"; // Substitua pelo seu número
+const WHATSAPP_NUMBER = "5594984478168"; // Francisco Gomes
 
 export default function QuestionForm() {
   const [formData, setFormData] = useState({ name: "", email: "", question: "", category: "" });
