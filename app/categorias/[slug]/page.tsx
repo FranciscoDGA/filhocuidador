@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import { getAllArticles } from "@/lib/articles";
 import { Brain, Home, HeartPulse, Scale, Users } from "lucide-react";
 
@@ -166,11 +165,13 @@ export default async function CategoryPage({ params }: { params: Promise<{ slug:
                 {/* Image Container */}
                 <div className="relative w-full aspect-[16/10] overflow-hidden rounded-t-[5px] mb-5 bg-gray-100">
                   {article.image && (
-                    <Image
+                    <img
                       src={article.image}
                       alt={article.title}
-                      fill
-                      className="object-cover group-hover:scale-[1.02] transition-transform duration-700"
+                      width={600}
+                      height={400}
+                      loading="lazy"
+                      className="absolute inset-0 w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-700"
                     />
                   )}
                 </div>

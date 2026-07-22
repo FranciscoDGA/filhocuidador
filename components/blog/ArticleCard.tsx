@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 
 interface ArticleCardProps {
   slug: string;
@@ -25,11 +24,13 @@ export default function ArticleCard({
       <article className="group cursor-pointer">
         {image && (
           <div className="relative h-56 w-full mb-5 overflow-hidden bg-gray-100">
-            <Image
+            <img
               src={image}
               alt={title}
-              fill
-              className="object-cover group-hover:scale-[1.02] transition-transform duration-700"
+              width={600}
+              height={400}
+              loading="lazy"
+              className="absolute inset-0 w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-700"
             />
           </div>
         )}

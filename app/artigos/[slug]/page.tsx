@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import { getArticleBySlug, getAllArticles } from "@/lib/articles";
 import { Brain, Home, HeartPulse, Scale, Users } from "lucide-react";
 import ReadingProgress from "@/components/ReadingProgress";
@@ -283,12 +282,12 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
           {/* Featured Image */}
           {article.image && (
             <div className="relative w-full aspect-[16/9] overflow-hidden rounded-t-[5px] mb-10">
-              <Image 
+              <img 
                 src={article.image} 
                 alt={article.title} 
-                fill 
-                className="object-cover"
-                priority
+                width={1000}
+                height={562}
+                className="w-full h-full object-cover"
               />
             </div>
           )}
@@ -376,11 +375,13 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
                   <Link key={related.id} href={`/artigos/${related.slug}`} className="group">
                     <div className="relative w-full aspect-[16/10] overflow-hidden rounded-t-[5px] bg-gray-100 mb-3">
                       {related.image && (
-                        <Image 
+                        <img 
                           src={related.image} 
                           alt={related.title} 
-                          fill 
-                          className="object-cover group-hover:scale-[1.02] transition-transform duration-700"
+                          width={600}
+                          height={375}
+                          loading="lazy"
+                          className="absolute inset-0 w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-700"
                         />
                       )}
                     </div>

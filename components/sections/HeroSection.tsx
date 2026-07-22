@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
 import { motion } from "framer-motion";
 import { HeartPulse, Home, Scale, Brain, Users } from "lucide-react";
 
@@ -104,12 +103,12 @@ export default function HeroSection() {
             className="w-full lg:w-[45%] relative z-10"
           >
             <div className="relative w-full aspect-[4/5] overflow-hidden">
-              <Image
+              <img
                 src="https://images.unsplash.com/photo-1511895426328-dc8714191300?q=80&w=1000&auto=format&fit=crop"
                 alt="Filha adulta apoiando mãe idosa com carinho em casa"
-                fill
-                className="object-cover"
-                priority
+                width={600}
+                height={750}
+                className="absolute inset-0 w-full h-full object-cover"
               />
             </div>
           </motion.div>

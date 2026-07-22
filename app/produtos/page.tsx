@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -158,12 +157,13 @@ export default function ProdutosPage() {
             {products.map((product) => (
               <div key={product.title} className="bg-white border border-border-base flex flex-col rounded-[5px] overflow-hidden opacity-80">
                 <div className="relative aspect-[4/3] bg-gray-100">
-                  <Image
+                  <img
                     src={product.image}
                     alt={product.title}
-                    fill
-                    sizes="(max-width: 768px) 100vw, 33vw"
-                    className="object-cover grayscale-[30%]"
+                    width={400}
+                    height={300}
+                    loading="lazy"
+                    className="w-full h-full object-cover grayscale-[30%]"
                   />
                   <span className="absolute top-3 left-3 text-[10px] font-medium tracking-wider uppercase bg-gray-500 text-white px-3 py-1">
                     {product.badge}

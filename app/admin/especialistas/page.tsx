@@ -22,11 +22,22 @@ export default function AdminEspecialistasPage() {
   const [specialists, setSpecialists] = useState<Specialist[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
+  const [authenticated, setAuthenticated] = useState(false);
   const router = useRouter();
 
   useEffect(() => {
+    // Check auth cookie
+    const cookies = document.cookie.split(";").map(c => c.trim());
+    const authCookie = cookies.find(c => c.startsWith("admin-auth="));
+    
+    if (!authCookie || authCookie.split("=")[1] !== "authenticated") {
+      router.push("/admin/login");
+      return;
+    }
+    
+    setAuthenticated(true);
     fetchSpecialists();
-  }, []);
+  }, [router]);
 
   async function handleLogout() {
     await fetch("/api/admin/logout", { method: "POST" });
@@ -71,7 +82,7 @@ export default function AdminEspecialistasPage() {
     }
   }
 
-  if (loading) {
+  if (!authenticated || loading) {
     return (
       <main className="bg-bg-base min-h-screen py-12">
         <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">

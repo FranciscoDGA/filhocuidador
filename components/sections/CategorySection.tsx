@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import { getAllArticles } from "@/lib/articles";
 
 interface CategorySectionProps {
@@ -35,12 +34,13 @@ export default function CategorySection({ title, categorySlug, layout = "light" 
             <Link href={`/artigos/${article.slug}`}>
               <div className="relative w-full aspect-[4/3] bg-gray-100 mb-4 overflow-hidden">
                 {article.image ? (
-                  <Image 
+                  <img 
                     src={article.image} 
                     alt={article.title} 
-                    fill
-                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
-                    className="object-cover transition-transform duration-700 group-hover:scale-[1.02]"
+                    width={400}
+                    height={300}
+                    loading="lazy"
+                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.02]"
                   />
                 ) : (
                   <div className="w-full h-full flex items-center justify-center bg-gray-100 text-brand-secondary/30 text-xs">Sem Imagem</div>

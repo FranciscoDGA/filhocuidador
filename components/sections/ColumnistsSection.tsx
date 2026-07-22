@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 
 export default function ColumnistsSection() {
@@ -40,11 +39,13 @@ export default function ColumnistsSection() {
         {columnists.map((col) => (
           <Link href={`/colunistas/${col.id}`} key={col.id} className="group block">
             <div className="relative w-20 h-20 md:w-24 md:h-24 mx-auto mb-4 rounded-full overflow-hidden border border-border-base group-hover:border-brand-primary/30 transition-colors">
-              <Image 
+              <img 
                 src={col.image} 
                 alt={col.name} 
-                fill 
-                className="object-cover" 
+                width={96}
+                height={96}
+                loading="lazy"
+                className="absolute inset-0 w-full h-full object-cover" 
               />
             </div>
             <h3 className="font-display font-medium text-sm text-brand-primary group-hover:text-brand-secondary transition">{col.name}</h3>

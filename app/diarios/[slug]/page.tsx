@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 
@@ -202,7 +201,7 @@ export default async function DiarioDetailPage({ params }: { params: Promise<{ s
 
           {diary.image && (
             <div className="relative w-full aspect-[16/9] overflow-hidden rounded-t-[5px] mb-10">
-              <Image src={diary.image} alt={diary.title} fill className="object-cover" />
+              <img src={diary.image} alt={diary.title} width={800} height={450} loading="lazy" className="absolute inset-0 w-full h-full object-cover" />
             </div>
           )}
 

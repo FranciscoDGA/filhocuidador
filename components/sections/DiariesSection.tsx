@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 
 const diaries = [
   {
@@ -54,11 +53,13 @@ export default function DiariesSection() {
             <Link key={diary.slug} href={`/diarios/${diary.slug}`} className="group">
               <article className="bg-bg-card border border-border-base overflow-hidden h-full rounded-[5px]">
                 <div className="relative w-full aspect-[16/10] overflow-hidden rounded-t-[5px] bg-gray-100">
-                  <Image
+                  <img
                     src={diary.image}
                     alt={diary.title}
-                    fill
-                    className="object-cover group-hover:scale-[1.02] transition-transform duration-700"
+                    width={600}
+                    height={400}
+                    loading="lazy"
+                    className="absolute inset-0 w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-700"
                   />
                 </div>
                 <div className="p-5">

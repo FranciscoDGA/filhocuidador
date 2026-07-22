@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 import { Article } from "@/lib/articles";
 
@@ -9,12 +8,12 @@ export default function FeaturedPost({ article }: { article: Article }) {
   return (
     <section className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 pt-6 pb-8">
       <Link href={`/artigos/${article.slug}`} className="group relative block w-full aspect-[16/9] lg:aspect-[2/1] min-h-[400px] lg:min-h-[500px] overflow-hidden rounded-t-[5px] bg-gray-100">
-        <Image
+        <img
           src={article.image || "https://images.unsplash.com/photo-1576765608535-5f04d1e3f289"}
           alt={article.title}
-          fill
-          className="object-cover group-hover:scale-[1.02] transition-transform duration-1000"
-          priority
+          width={1200}
+          height={600}
+          className="absolute inset-0 w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-1000"
         />
         {/* Gradient overlay */}
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>

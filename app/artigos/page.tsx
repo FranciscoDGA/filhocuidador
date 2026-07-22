@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import { getAllArticles } from "@/lib/articles";
 import type { Metadata } from "next";
 
@@ -39,12 +38,13 @@ export default function ArticlesPage() {
                 {/* Image */}
                 <div className="aspect-[16/10] bg-gray-100 overflow-hidden rounded-t-[5px] mb-5 relative">
                   {article.image ? (
-                    <Image
+                    <img
                       src={article.image}
                       alt={article.title}
-                      fill
-                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                      className="object-cover group-hover:scale-[1.02] transition-transform duration-700"
+                      width={600}
+                      height={375}
+                      loading="lazy"
+                      className="absolute inset-0 w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-700"
                     />
                   ) : (
                     <div className="absolute inset-0 flex items-center justify-center">

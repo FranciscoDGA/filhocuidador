@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -107,11 +106,13 @@ export default function ConselhoPage() {
             <div key={advisor.name} className="bg-white border border-border-base p-6">
               <div className="flex items-start gap-4 mb-4">
                 <div className="relative w-16 h-16 rounded-full overflow-hidden shrink-0">
-                  <Image
+                  <img
                     src={advisor.image}
                     alt={advisor.name}
-                    fill
-                    className="object-cover"
+                    width={64}
+                    height={64}
+                    loading="lazy"
+                    className="absolute inset-0 w-full h-full object-cover"
                   />
                 </div>
                 <div>
