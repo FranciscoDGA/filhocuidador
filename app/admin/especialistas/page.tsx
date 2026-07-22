@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { useRouter } from "next/navigation";
 
 interface Specialist {
   id: string;
@@ -21,10 +22,17 @@ export default function AdminEspecialistasPage() {
   const [specialists, setSpecialists] = useState<Specialist[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
+  const router = useRouter();
 
   useEffect(() => {
     fetchSpecialists();
   }, []);
+
+  async function handleLogout() {
+    await fetch("/api/admin/logout", { method: "POST" });
+    router.push("/admin/login");
+    router.refresh();
+  }
 
   async function fetchSpecialists() {
     try {
@@ -90,9 +98,17 @@ export default function AdminEspecialistasPage() {
   return (
     <main className="bg-bg-base min-h-screen py-12">
       <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
-        <h1 className="text-2xl font-display font-medium text-brand-primary mb-8">
-          Painel de Especialistas
-        </h1>
+        <div className="flex items-center justify-between mb-8">
+          <h1 className="text-2xl font-display font-medium text-brand-primary">
+            Painel de Especialistas
+          </h1>
+          <button
+            onClick={handleLogout}
+            className="px-4 py-2 text-[11px] font-medium tracking-wide uppercase text-brand-secondary/60 border border-border-base hover:bg-red-50 hover:text-red-600 hover:border-red-200 transition-colors rounded-[5px]"
+          >
+            Sair
+          </button>
+        </div>
 
         {/* Stats */}
         <div className="grid grid-cols-3 gap-4 mb-8">

@@ -93,12 +93,12 @@ export default function NewsletterSection() {
           </div>
 
           <div>
-            <h4 className="text-[11px] font-medium text-brand-secondary/40 mb-5 tracking-widest uppercase">Empresa</h4>
+            <h4 className="text-[11px] font-medium text-brand-secondary/40 mb-5 tracking-widest uppercase">Portal</h4>
             <ul className="space-y-3 text-sm text-brand-secondary/60">
               <li><Link href="/sobre" className="hover:text-brand-primary transition-colors">Sobre nós</Link></li>
               <li><Link href="/contato" className="hover:text-brand-primary transition-colors">Contato</Link></li>
-              <li><Link href="/imprensa" className="hover:text-brand-primary transition-colors">Imprensa</Link></li>
-              <li><Link href="/apoio" className="hover:text-brand-primary transition-colors">Apoie o projeto</Link></li>
+              <li><Link href="/especialistas" className="hover:text-brand-primary transition-colors">Especialistas</Link></li>
+              <li><Link href="/produtos" className="hover:text-brand-primary transition-colors">Produtos</Link></li>
             </ul>
           </div>
 
@@ -107,7 +107,6 @@ export default function NewsletterSection() {
             <ul className="space-y-3 text-sm text-brand-secondary/60">
               <li><Link href="/termos" className="hover:text-brand-primary transition-colors">Termos</Link></li>
               <li><Link href="/privacidade" className="hover:text-brand-primary transition-colors">Privacidade</Link></li>
-              <li><Link href="/cookies" className="hover:text-brand-primary transition-colors">Cookies</Link></li>
             </ul>
           </div>
         </div>
@@ -117,14 +116,6 @@ export default function NewsletterSection() {
           <p className="text-xs text-brand-secondary/40">
             © 2026 Filhos Cuidadores. Todos os direitos reservados.
           </p>
-          <div className="flex space-x-8">
-            <a href="#" className="text-brand-secondary/40 hover:text-brand-primary transition-colors text-xs">
-              Twitter
-            </a>
-            <a href="#" className="text-brand-secondary/40 hover:text-brand-primary transition-colors text-xs">
-              Instagram
-            </a>
-          </div>
         </div>
 
       </div>

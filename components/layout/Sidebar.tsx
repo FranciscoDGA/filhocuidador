@@ -1,96 +1,61 @@
 import Link from "next/link";
-import Image from "next/image";
 
 export default function Sidebar() {
   return (
     <aside className="w-full lg:w-80 space-y-12">
-      {/* Flash News */}
+      {/* Últimos Artigos */}
       <div>
         <div className="flex items-center gap-2 mb-6">
-          <span className="text-xs font-bold uppercase tracking-widest text-gray-400">FLASH NEWS</span>
+          <span className="text-xs font-bold uppercase tracking-widest text-gray-400">ARTIGOS POPULARES</span>
           <div className="flex-1 h-px bg-gray-200"></div>
         </div>
         <div className="space-y-6">
-          {[1, 2, 3, 4, 5].map((item, idx) => {
-            const sidebarImages = [
-              "https://images.unsplash.com/photo-1516728778615-2d590ea1855e?w=200&q=80",
-              "https://images.unsplash.com/photo-1476610182048-b716b8518aae?w=200&q=80",
-              "https://images.unsplash.com/photo-1499209974431-9dddcece7f88?w=200&q=80",
-              "https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?w=200&q=80",
-              "https://images.unsplash.com/photo-1426604966848-d7adac402bff?w=200&q=80"
-            ];
-            
-            return (
-              <Link key={item} href="#" className="group flex gap-4 items-center">
-                <div className="flex-1">
-                  <h4 className="text-sm font-bold text-gray-900 group-hover:text-gray-600 leading-snug mb-1">
-                    Pequenas atitudes que mudam o dia
-                  </h4>
-                  <p className="text-xs text-gray-400">• 13 Jun, 2026</p>
-                </div>
-                <div className="relative w-16 h-16 rounded-lg overflow-hidden bg-gray-100 flex-shrink-0">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src={sidebarImages[idx]} alt="Thumbnail" className="object-cover w-full h-full" />
-                </div>
-              </Link>
-            )
-          })}
-        </div>
-      </div>
-
-      {/* Top Authors */}
-      <div>
-        <div className="flex items-center gap-2 mb-6">
-          <span className="text-xs font-bold uppercase tracking-widest text-gray-400">ESPECIALISTAS</span>
-          <div className="flex-1 h-px bg-gray-200"></div>
-        </div>
-        <div className="space-y-4">
           {[
-            { name: "Dr. Roberto Silva", role: "Geriatra", followers: "25k" },
-            { name: "Ana Beatriz", role: "Psicóloga", followers: "12k" },
-            { name: "Daniela Costa", role: "Advogada", followers: "15k" },
-            { name: "Thiago Lima", role: "Fisioterapeuta", followers: "18k" },
-          ].map((author, idx) => (
-            <div key={idx} className="flex items-center justify-between">
-              <div className="flex items-center gap-3">
-                <div className="w-6 h-6 rounded bg-black text-white flex items-center justify-center text-xs font-bold">
-                  {idx + 1}
-                </div>
-                <div>
-                  <h4 className="text-sm font-bold text-gray-900">{author.name}</h4>
-                  <p className="text-xs text-gray-400">#{author.role} • {author.followers} leitores</p>
-                </div>
-              </div>
-              <div className="w-8 h-8 rounded-full bg-gray-200 flex-shrink-0"></div>
-            </div>
+            { slug: "como-lidar-com-agressividade-no-alzheimer", title: "Como Lidar com Agressividade no Alzheimer" },
+            { slug: "cuidados-basicos-com-idosos", title: "Cuidados Básicos com Idosos: Guia Completo" },
+            { slug: "saude-emocional-do-cuidador", title: "Saúde Emocional do Cuidador" },
+            { slug: "rotina-de-cuidados-alzheimer", title: "Rotina de Cuidados para Alzheimer" },
+            { slug: "como-explicar-alzheimer-para-a-familia", title: "Como Explicar Alzheimer para a Família" },
+          ].map((article) => (
+            <Link key={article.slug} href={`/artigos/${article.slug}`} className="group block">
+              <h4 className="text-sm font-bold text-gray-900 group-hover:text-brand-primary leading-snug mb-1">
+                {article.title}
+              </h4>
+              <p className="text-xs text-gray-400">Filhos Cuidadores</p>
+            </Link>
           ))}
         </div>
       </div>
 
-      {/* Follow Us */}
+      {/* Ferramentas Úteis */}
       <div>
         <div className="flex items-center gap-2 mb-6">
-          <span className="text-xs font-bold uppercase tracking-widest text-gray-400">SIGA-NOS</span>
+          <span className="text-xs font-bold uppercase tracking-widest text-gray-400">FERRAMENTAS</span>
           <div className="flex-1 h-px bg-gray-200"></div>
         </div>
-        <div className="grid grid-cols-2 gap-3">
-          <a href="#" className="flex items-center justify-between p-3 rounded-xl border border-gray-100 hover:border-gray-300 transition">
-            <span className="text-sm font-medium">Facebook</span>
-            <span className="text-xs text-gray-400">12k</span>
-          </a>
-          <a href="#" className="flex items-center justify-between p-3 rounded-xl border border-gray-100 hover:border-gray-300 transition">
-            <span className="text-sm font-medium">Twitter</span>
-            <span className="text-xs text-gray-400">12k</span>
-          </a>
-          <a href="#" className="flex items-center justify-between p-3 rounded-xl border border-gray-100 hover:border-gray-300 transition">
-            <span className="text-sm font-medium">Instagram</span>
-            <span className="text-xs text-gray-400">13k</span>
-          </a>
-          <a href="#" className="flex items-center justify-between p-3 rounded-xl border border-gray-100 hover:border-gray-300 transition">
-            <span className="text-sm font-medium">Youtube</span>
-            <span className="text-xs text-gray-400">12k</span>
-          </a>
+        <div className="space-y-3">
+          <Link href="/ferramentas/calculadora-custos" className="block p-4 rounded-[5px] border border-gray-100 hover:border-brand-primary/30 hover:bg-brand-primary/5 transition-all">
+            <h4 className="text-sm font-bold text-gray-900 mb-1">Calculadora de Custos</h4>
+            <p className="text-xs text-gray-400">Estime os gastos mensais com cuidados</p>
+          </Link>
+          <Link href="/ferramentas" className="block p-4 rounded-[5px] border border-gray-100 hover:border-brand-primary/30 hover:bg-brand-primary/5 transition-all">
+            <h4 className="text-sm font-bold text-gray-900 mb-1">Ver Todas as Ferramentas</h4>
+            <p className="text-xs text-gray-400">Checklists, planilhas e mais</p>
+          </Link>
         </div>
+      </div>
+
+      {/* Newsletter CTA */}
+      <div className="bg-brand-primary/5 border border-brand-primary/10 p-6 rounded-[5px]">
+        <h4 className="text-sm font-display font-medium text-brand-primary mb-2">
+          Newsletter Semanal
+        </h4>
+        <p className="text-xs text-brand-secondary/60 mb-4 leading-relaxed">
+          Dicas práticas e acolhimento direto no seu email.
+        </p>
+        <Link href="/comunidade" className="block w-full text-center px-4 py-2 bg-brand-primary text-white text-xs font-medium tracking-wide uppercase hover:bg-brand-primary/90 transition-colors rounded-[5px]">
+          Inscrever-se
+        </Link>
       </div>
     </aside>
   );

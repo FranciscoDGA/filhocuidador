@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { useState, useRef } from "react";
+import SearchBar from "@/components/SearchBar";
 
 const navItems = [
   { label: "Método", href: "/metodo" },
@@ -135,6 +136,9 @@ export default function Header() {
 
           {/* Desktop CTA */}
           <div className="hidden lg:flex items-center gap-3">
+            <div className="w-48">
+              <SearchBar />
+            </div>
             <Link 
               href="/contato" 
               className="text-[11px] font-medium tracking-wide uppercase text-brand-secondary/60 hover:text-brand-primary transition-colors"
@@ -165,6 +169,11 @@ export default function Header() {
         {mobileOpen && (
           <div className="lg:hidden border-t border-border-base py-4">
             <nav className="flex flex-col space-y-1">
+              {/* Mobile Search */}
+              <div className="px-3 mb-4">
+                <SearchBar />
+              </div>
+              
               <p className="text-[10px] font-medium tracking-wider uppercase text-brand-secondary/40 mb-2 mt-2 px-3">Navegação</p>
               {navItems.map((item) => (
                 <Link 

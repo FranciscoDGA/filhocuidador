@@ -2,6 +2,9 @@ import Link from "next/link";
 import Image from "next/image";
 import { getArticleBySlug, getAllArticles } from "@/lib/articles";
 import { Brain, Home, HeartPulse, Scale, Users } from "lucide-react";
+import ReadingProgress from "@/components/ReadingProgress";
+import AudioPlayer from "@/components/AudioPlayer";
+import ShareButtons from "@/components/ShareButtons";
 
 const categoryCTA: Record<string, { title: string; description: string; href: string; icon: React.ReactNode }> = {
   "Saúde Emocional": {
@@ -233,6 +236,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
 
   return (
     <main className="bg-bg-base min-h-screen pt-8 pb-20">
+      <ReadingProgress />
       {schemas.map((s, i) => (
         <script
           key={i}
@@ -296,6 +300,9 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
             </p>
           </div>
 
+          {/* Audio Player */}
+          <AudioPlayer text={article.content} />
+
           {/* Content */}
           <div className="prose prose-lg prose-gray max-w-none mb-12 text-brand-primary/90 leading-[1.8] font-body">
             <div dangerouslySetInnerHTML={{ __html: article.content }} />
@@ -355,24 +362,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
           {/* Share */}
           <div className="border-y border-border-base py-6 flex flex-col sm:flex-row items-center gap-4 justify-between mb-10">
             <p className="text-xs font-medium text-brand-secondary">Compartilhe e ajude outras famílias:</p>
-            <div className="flex gap-3">
-              <a
-                href={`https://wa.me/?text=${encodeURIComponent(article.title + " - https://filhocuidador.vercel.app/artigos/" + article.slug)}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-5 py-2 bg-[#25D366] text-white text-xs font-medium hover:bg-[#20bd5a] transition"
-              >
-                WhatsApp
-              </a>
-              <a
-                href={`https://www.facebook.com/sharer/sharer.php?u=https://filhocuidador.vercel.app/artigos/${article.slug}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-5 py-2 bg-[#1877F2] text-white text-xs font-medium hover:bg-[#166fe5] transition"
-              >
-                Facebook
-              </a>
-            </div>
+            <ShareButtons title={article.title} url={`/artigos/${article.slug}`} />
           </div>
 
           {/* Related Articles */}

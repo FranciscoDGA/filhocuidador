@@ -105,14 +105,6 @@ export default function Footer() {
           <p className="text-[10px] text-white/25">
             © 2026 Filhos Cuidadores. Todos os direitos reservados.
           </p>
-          <div className="flex space-x-6">
-            <a href="#" className="text-white/25 hover:text-white transition-colors text-[10px]">
-              Twitter
-            </a>
-            <a href="#" className="text-white/25 hover:text-white transition-colors text-[10px]">
-              Instagram
-            </a>
-          </div>
         </div>
 
       </div>

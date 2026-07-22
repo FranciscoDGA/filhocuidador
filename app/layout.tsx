@@ -3,6 +3,8 @@ import { Playfair_Display, Inter } from "next/font/google";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import FloatingSpecialistButton from "@/components/FloatingSpecialistButton";
+import CookieConsent from "@/components/CookieConsent";
+import Analytics from "@/components/Analytics";
 import "./globals.css";
 
 const playfair = Playfair_Display({
@@ -90,25 +92,6 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.ico" sizes="any" />
         {/* Google Search Console Verification */}
         <meta name="google-site-verification" content="qH9gltE4Lk1p5ONSBCSMwkXGR9eqixIDruwOJLPqlZQ" />
-        {/* Google Analytics */}
-        {process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID && (
-          <>
-            <script async src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}`} />
-            <script
-              dangerouslySetInnerHTML={{
-                __html: `window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', '${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}');`,
-              }}
-            />
-          </>
-        )}
-        {/* Hotjar */}
-        {process.env.NEXT_PUBLIC_HOTJAR_ID && (
-          <script
-            dangerouslySetInnerHTML={{
-              __html: `(function(h,o,t,j,a,r){ h.hj=h.hj||function(){(h._hj=h._hj||[]).push(arguments)}; h._hjSettings={hjid:${process.env.NEXT_PUBLIC_HOTJAR_ID},hjsv:6}; a=o.getElementsByTagName('head')[0]; r=o.createElement('script');r.async=1;r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv; a.appendChild(r); })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');`,
-            }}
-          />
-        )}
       </head>
       <body className="min-h-full flex flex-col bg-bg-base text-text-base font-body selection:bg-brand-primary selection:text-white">
         <Header />
@@ -117,6 +100,8 @@ export default function RootLayout({
         </div>
         <Footer />
         <FloatingSpecialistButton />
+        <CookieConsent />
+        <Analytics />
       </body>
     </html>
   );
