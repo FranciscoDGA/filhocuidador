@@ -23,6 +23,18 @@ export interface Article {
 
 const contentDirectory = path.join(process.cwd(), 'content/articles');
 
+// Optimize Unsplash URLs - reduces image size significantly
+function optimizeImageUrl(url: string): string {
+  if (!url) return url;
+  // Only optimize Unsplash URLs
+  if (url.includes('images.unsplash.com')) {
+    // Remove existing query params and add optimization
+    const baseUrl = url.split('?')[0];
+    return `${baseUrl}?w=400&h=300&fit=crop&q=60&auto=format`;
+  }
+  return url;
+}
+
 // Utility to parse dates in format "7 de agosto, 2024" or standard JS dates to sort them.
 function parsePortugueseDate(dateString: string): number {
   const months: { [key: string]: number } = {
@@ -93,7 +105,7 @@ export function getAllArticles(): Article[] {
       author: matterResult.data.author || 'Equipe Filhos Cuidadores',
       date: formatDatePT(matterResult.data.date || 'Data Desconhecida'),
       readTime: matterResult.data.readTime || 5,
-      image: matterResult.data.image || '',
+      image: optimizeImageUrl(matterResult.data.image || ''),
       seo: matterResult.data.seo || {},
     };
   });

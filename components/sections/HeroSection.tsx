@@ -104,7 +104,7 @@ export default function HeroSection() {
           >
             <div className="relative w-full aspect-[4/5] overflow-hidden">
               <img
-                src="https://images.unsplash.com/photo-1511895426328-dc8714191300?q=80&w=1000&auto=format&fit=crop"
+                src="https://images.unsplash.com/photo-1511895426328-dc8714191300?w=600&q=60&auto=format&fit=crop"
                 alt="Filha adulta apoiando mãe idosa com carinho em casa"
                 width={600}
                 height={750}
