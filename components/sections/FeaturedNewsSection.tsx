@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { getAllArticles } from "@/lib/articles";
 
 export default function FeaturedNewsSection() {
@@ -31,10 +32,12 @@ export default function FeaturedNewsSection() {
             </div>
             <div className="relative w-full aspect-video bg-gray-100 mb-6 overflow-hidden">
               {featured.image ? (
-                <img 
+                <Image 
                   src={featured.image}
                   alt={featured.title}
-                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.02]"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 66vw"
+                  className="object-cover transition-transform duration-700 group-hover:scale-[1.02]"
                 />
               ) : (
                 <div className="w-full h-full flex items-center justify-center bg-gray-100 text-brand-secondary/30 text-sm">Sem Imagem</div>

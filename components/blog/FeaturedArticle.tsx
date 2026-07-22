@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 interface FeaturedArticleProps {
   slug: string;
@@ -24,10 +25,12 @@ export default function FeaturedArticle({
       <article className="group cursor-pointer mb-12">
         {image && (
           <div className="relative h-80 w-full mb-6 overflow-hidden bg-gray-100">
-            <img
+            <Image
               src={image}
               alt={title}
-              className="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-700"
+              fill
+              sizes="(max-width: 768px) 100vw, 800px"
+              className="object-cover group-hover:scale-[1.02] transition-transform duration-700"
             />
           </div>
         )}

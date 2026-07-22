@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { getAllArticles } from "@/lib/articles";
 
 export default function RecentArticlesSection() {
@@ -26,10 +27,12 @@ export default function RecentArticlesSection() {
               {/* Image Container */}
               <div className="relative w-full aspect-[16/10] overflow-hidden rounded-t-[5px] mb-6 bg-gray-100">
                 {article.image ? (
-                  <img
+                  <Image
                     src={article.image}
                     alt={article.title}
-                    className="absolute inset-0 w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-700"
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    className="object-cover group-hover:scale-[1.02] transition-transform duration-700"
                   />
                 ) : (
                   <div className="absolute inset-0 flex items-center justify-center">
@@ -54,9 +57,11 @@ export default function RecentArticlesSection() {
               {/* Author & Date */}
               <div className="mt-auto flex items-center gap-3">
                 <div className="w-8 h-8 rounded-full bg-gray-200 overflow-hidden">
-                  <img 
+                  <Image 
                     src={`https://ui-avatars.com/api/?name=${encodeURIComponent(article.author)}&background=random`} 
                     alt={article.author}
+                    width={32}
+                    height={32}
                     className="w-full h-full object-cover"
                   />
                 </div>
