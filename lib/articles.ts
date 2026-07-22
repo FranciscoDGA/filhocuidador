@@ -30,7 +30,7 @@ function optimizeImageUrl(url: string): string {
   if (url.includes('images.unsplash.com')) {
     // Remove existing query params and add optimization
     const baseUrl = url.split('?')[0];
-    return `${baseUrl}?w=400&h=300&fit=crop&q=60&auto=format`;
+    return `${baseUrl}?w=300&h=200&fit=crop&q=50&auto=format`;
   }
   return url;
 }

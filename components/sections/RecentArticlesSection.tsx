@@ -2,7 +2,7 @@ import Link from "next/link";
 import { getAllArticles } from "@/lib/articles";
 
 export default function RecentArticlesSection() {
-  const articles = getAllArticles().slice(1, 7);
+  const articles = getAllArticles().slice(1, 4);
 
   return (
     <section className="py-20 lg:py-28 bg-bg-base">
