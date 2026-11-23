@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://filhocuidador.com.br/sitemap.xml
+Sitemap: https://filhocuidador.vercel.app/sitemap.xml

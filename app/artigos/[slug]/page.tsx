@@ -41,32 +41,28 @@ const mockArticles: { [key: string]: any } = {
     ],
   },
   "bpc-loas-guia-completo": {
-    title: "BPC (Benefício de Prestação Continuada): Guia Completo 2024",
-    excerpt: "Como solicitar o BPC, quem tem direito, documentos e passo a passo.",
-    category: "Jurídico & Financeiro",
+    title: "BPC (Benefício de Prestação Continuada) para Idosos: Guia Oficial",
+    excerpt: "Como solicitar o BPC, requisitos legais da LOAS, inscrição no CadÚnico e passo a passo no Meu INSS.",
+    category: "Jurídico & Direitos",
     readTime: 12,
-    date: "20 de julho, 2024",
+    date: "Atualizado oficialmente",
     content: `
-      <p>Se seu pai idoso tem dificuldade financeira e uma deficiência, o BPC pode ser uma ajuda fundamental.</p>
+      <p>O <strong>Benefício de Prestação Continuada (BPC/LOAS)</strong> garante um salário mínimo mensal para idosos com 65 anos ou mais em situação de vulnerabilidade, conforme a Lei nº 8.742/1993.</p>
 
-      <h2>O que é BPC?</h2>
-
-      <p>O Benefício de Prestação Continuada é um benefício assistencial de um salário mínimo mensal para pessoa idosa com 65 anos ou mais.</p>
-
-      <h2>Quem tem direito?</h2>
-
+      <h2>Principais Requisitos Oficiais</h2>
       <ul>
-        <li>Pessoa idosa: 65 anos ou mais</li>
-        <li>Pessoa com deficiência: de qualquer idade</li>
-        <li>Renda per capita familiar não ultrapasse 1/4 do salário mínimo</li>
+        <li><strong>Idade:</strong> 65 anos ou mais.</li>
+        <li><strong>Inscrição no CadÚnico:</strong> Obrigatório estar com dados atualizados no CRAS há menos de 2 anos.</li>
+        <li><strong>Renda per capita familiar:</strong> Inferior a 1/4 do salário mínimo vigente (gastos comprovados com saúde e medicamentos de uso contínuo podem ser considerados).</li>
+        <li><strong>Não acumulável:</strong> Não pode ser acumulado com aposentadorias ou pensões previdenciárias.</li>
       </ul>
 
-      <h2>Como Solicitar</h2>
-
-      <p><strong>Passo 1:</strong> Marque atendimento no INSS (telefone 135)</p>
-      <p><strong>Passo 2:</strong> Reúna todos os documentos</p>
-      <p><strong>Passo 3:</strong> Compareça ao atendimento</p>
-      <p><strong>Passo 4:</strong> Acompanhe a análise pelo portal</p>
+      <h2>Passo a Passo para Solicitação Gratuita</h2>
+      <p><strong>1. Atualize o CadÚnico:</strong> Vá ao CRAS do seu município com os documentos de todos os membros da família.</p>
+      <p><strong>2. Acesse o portal Meu INSS:</strong> Pelo site gov.br/inss ou aplicativo para celular, selecione "Novo Pedido" e busque por "Benefício Assistencial ao Idoso".</p>
+      <p><strong>3. Envie a documentação oficial:</strong> Documentos de identidade, comprovantes de endereço e renda.</p>
+      <p><strong>4. Acompanhe a decisão:</strong> O processo pode ser monitorado pelo portal Meu INSS ou pelo telefone 135.</p>
+      <p><em>Em caso de negativa indevida, a Defensoria Pública da União (DPU) presta assistência jurídica integral e gratuita.</em></p>
     `,
     relatedArticles: [
       { id: 1, slug: "reconhecendo-burnout-cuidador", title: "Reconhecendo o Burnout" },

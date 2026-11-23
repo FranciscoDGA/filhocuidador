@@ -27,31 +27,23 @@ export default function Sidebar() {
         </div>
       </div>
 
-      {/* Top Authors */}
+      {/* Pilares Temáticos */}
       <div>
         <div className="flex items-center gap-2 mb-6">
-          <span className="text-xs font-bold uppercase tracking-widest text-gray-400">ESPECIALISTAS</span>
+          <span className="text-xs font-bold uppercase tracking-widest text-gray-400">PILARE DE APOIO</span>
           <div className="flex-1 h-px bg-gray-200"></div>
         </div>
-        <div className="space-y-4">
+        <div className="space-y-3">
           {[
-            { name: "Dr. Roberto Silva", role: "Geriatra", followers: "25k" },
-            { name: "Ana Beatriz", role: "Psicóloga", followers: "12k" },
-            { name: "Daniela Costa", role: "Advogada", followers: "15k" },
-            { name: "Thiago Lima", role: "Fisioterapeuta", followers: "18k" },
-          ].map((author, idx) => (
-            <div key={idx} className="flex items-center justify-between">
-              <div className="flex items-center gap-3">
-                <div className="w-6 h-6 rounded bg-black text-white flex items-center justify-center text-xs font-bold">
-                  {idx + 1}
-                </div>
-                <div>
-                  <h4 className="text-sm font-bold text-gray-900">{author.name}</h4>
-                  <p className="text-xs text-gray-400">#{author.role} • {author.followers} leitores</p>
-                </div>
-              </div>
-              <div className="w-8 h-8 rounded-full bg-gray-200 flex-shrink-0"></div>
-            </div>
+            { title: "Saúde Emocional do Cuidador", desc: "Burnout, culpa e acolhimento", href: "/saude-emocional" },
+            { title: "Cuidados Práticos Diários", desc: "Higiene, banho seguro e sono", href: "/cuidados-praticos" },
+            { title: "Direitos & Finanças", desc: "BPC, medicamentos SUS e curatela", href: "/direitos-financas" },
+            { title: "Rotina & Organização Familiar", desc: "Divisão de tarefas e rotinas", href: "/rotina-organizacao" },
+          ].map((pillar, idx) => (
+            <Link key={idx} href={pillar.href} className="block p-3 rounded-xl border border-gray-100 hover:border-gray-300 hover:bg-gray-50 transition">
+              <h4 className="text-sm font-bold text-gray-900">{pillar.title}</h4>
+              <p className="text-xs text-gray-500 mt-0.5">{pillar.desc}</p>
+            </Link>
           ))}
         </div>
       </div>
