@@ -1,54 +1,37 @@
-"use client";
-
-import { useState } from "react";
+import Link from "next/link";
 
 export default function NewsletterSection() {
-  const [email, setEmail] = useState("");
-  const [submitted, setSubmitted] = useState(false);
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    setSubmitted(true);
-    setEmail("");
-    setTimeout(() => setSubmitted(false), 3000);
-  };
-
   return (
-    <section id="newsletter" className="w-full py-16 px-4 sm:px-6 lg:px-8 bg-black">
-      <div className="max-w-2xl mx-auto text-center">
-        <h2 className="text-3xl font-bold text-white mb-4">
-          Receba apoio toda semana
+    <section
+      aria-labelledby="fale-portal-heading"
+      className="py-14 sm:py-16 border-t border-border-subtle bg-surface-page"
+    >
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2
+          id="fale-portal-heading"
+          className="font-serif text-3xl sm:text-4xl font-bold text-ink-strong mb-4"
+        >
+          Sugira um tema ou aponte uma correção
         </h2>
-        <p className="text-gray-300 mb-8">
-          Dicas práticas e um lembrete de que você não está sozinho.
+        <p className="text-base text-ink-muted leading-relaxed max-w-2xl mx-auto mb-7">
+          Não coletamos e-mails para newsletter no momento enquanto estruturamos um
+          canal com confirmação e descadastro verificados. Caso queira enviar uma
+          sugestão de guia ou revisão, fale com a redação pela página de contato.
         </p>
-
-        <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 mb-4">
-          <input
-            type="email"
-            placeholder="seu@email.com"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            required
-            className="flex-1 px-4 py-3 bg-white text-gray-900 placeholder:text-gray-500 focus:outline-none"
-          />
-          <button
-            type="submit"
-            className="px-8 py-3 bg-brand-primary text-white font-bold hover:bg-blue-700 transition whitespace-nowrap"
+        <div className="flex flex-wrap items-center justify-center gap-3">
+          <Link
+            href="/contato"
+            className="inline-flex items-center justify-center min-h-[44px] px-6 py-2.5 rounded-lg bg-brand-primary text-surface-card text-sm font-semibold hover:opacity-90 transition-opacity"
           >
-            Inscrever
-          </button>
-        </form>
-
-        {submitted && (
-          <p className="text-brand-primary font-bold text-sm">
-            ✓ Obrigado! Verifique seu email para confirmar.
-          </p>
-        )}
-
-        <p className="text-xs text-gray-500 mt-4">
-          Sem spam. Apenas conteúdo relevante e acolhimento.
-        </p>
+            Ir para Contato
+          </Link>
+          <Link
+            href="/sobre"
+            className="inline-flex items-center justify-center min-h-[44px] px-6 py-2.5 rounded-lg border border-border-strong bg-surface-card text-ink-strong text-sm font-semibold hover:bg-surface-subtle transition-colors"
+          >
+            Sobre o Filho Cuidador
+          </Link>
+        </div>
       </div>
     </section>
   );

@@ -1,5 +1,5 @@
 ---
-title: "Luto Anteipado: Como Lidar com Mudanças no Pai/Mãe Idosos"
+title: "Luto Antecipado: Como Lidar com Mudanças no Pai/Mãe Idosos"
 slug: "luto-perdas-pai-idoso"
 category: "Saúde Emocional"
 date: "2 de agosto, 2024"

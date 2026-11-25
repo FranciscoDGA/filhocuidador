@@ -1,6 +1,7 @@
 ---
 title: "Imposto de Renda: Deduções Para Quem Cuida de Idoso"
 slug: "imposto-renda-deducoes-cuidador"
+status: "draft"
 category: "Jurídico & Financeiro"
 date: "1º de agosto, 2024"
 author: "Equipe Filho Cuidador"

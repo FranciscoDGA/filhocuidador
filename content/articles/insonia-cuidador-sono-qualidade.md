@@ -188,22 +188,11 @@ Tente técnicas acima por **2-4 semanas**.
 
 **Procure médico.**
 
-### Opções (Médico prescreve)
+### Avaliação Médica e Tratamento
 
-**Leve:**
-- Melatonina (1-3mg)
-- Valeriana
-- Passaflora
+Em alguns casos, após avaliação clínica, o médico pode considerar abordagens complementares ou medicamentosas temporárias (como melatonina, fitoterápicos ou fármacos específicos para distúrbios do sono), sempre pesando riscos de sedação diurna, quedas e interações medicamentosas.
 
-**Médio:**
-- Trazodona (50mg)
-- Doxilamina
-
-**Forte (cuidado com dependência):**
-- Benzodiazepínicos (último recurso)
-- Devem ser temporários (2-4 semanas)
-
-**Boa notícia:** Dormir bem 2 semanas = ritmo volta. Pode parar medicação gradualmente.
+⚠️ **Importante:** Não utilize medicamentos ou suplementos para dormir por conta própria ou por indicação de terceiros. Benzodiazepínicos e sedativos exigem prescrição e acompanhamento médico rigoroso devido ao risco de dependência e piora da memória.
 
 ## Estratégia 5: Lidar com Despertares Noturnos
 

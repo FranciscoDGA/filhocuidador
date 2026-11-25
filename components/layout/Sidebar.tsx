@@ -1,78 +1,101 @@
 import Link from "next/link";
-import Image from "next/image";
+import type { ArticleSummary } from "@/lib/articles";
+import type { CategoryDefinition } from "@/lib/categories";
+import { EMERGENCY_CONTACTS } from "@/lib/site";
 
-export default function Sidebar() {
+interface SidebarProps {
+  categories: Array<CategoryDefinition & { count: number }>;
+  essentialArticles: ArticleSummary[];
+}
+
+export default function Sidebar({
+  categories,
+  essentialArticles,
+}: SidebarProps) {
   return (
-    <aside className="w-full lg:w-80 space-y-12">
-      {/* Flash News */}
-      <div>
-        <div className="flex items-center gap-2 mb-6">
-          <span className="text-xs font-bold uppercase tracking-widest text-gray-400">FLASH NEWS</span>
-          <div className="flex-1 h-px bg-gray-200"></div>
-        </div>
-        <div className="space-y-6">
-          {[1, 2, 3, 4, 5].map((item) => (
-            <Link key={item} href="#" className="group flex gap-4 items-center">
-              <div className="flex-1">
-                <h4 className="text-sm font-bold text-gray-900 group-hover:text-gray-600 leading-snug mb-1">
-                  Pequenas atitudes que mudam o dia
-                </h4>
-                <p className="text-xs text-gray-400">• 13 Jun, 2026</p>
-              </div>
-              <div className="relative w-16 h-16 rounded-lg overflow-hidden bg-gray-100 flex-shrink-0">
-                <svg className="absolute inset-0 w-full h-full text-gray-300 p-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg>
-              </div>
-            </Link>
+    <aside aria-label="Barra lateral de navegação rápida" className="space-y-8">
+      <section className="rounded-xl border border-border-subtle bg-surface-card p-6">
+        <h2 className="font-serif text-xl font-bold text-ink-strong pb-3 border-b border-border-subtle mb-4">
+          Pilares de Apoio
+        </h2>
+        <ul className="space-y-2">
+          {categories.map((cat) => (
+            <li key={cat.slug}>
+              <Link
+                href={`/${cat.slug}`}
+                className="flex items-center justify-between gap-3 min-h-[44px] px-3 py-2 rounded-lg hover:bg-surface-subtle transition-colors text-sm"
+              >
+                <span className="font-medium text-ink-strong">{cat.title}</span>
+                <span className="text-xs font-semibold px-2 py-0.5 rounded-full bg-surface-subtle text-ink-muted">
+                  {cat.count}
+                </span>
+              </Link>
+            </li>
           ))}
+        </ul>
+        <div className="mt-4 pt-3 border-t border-border-subtle">
+          <Link
+            href="/categorias"
+            className="text-xs font-semibold text-ink-strong hover:underline underline-offset-4"
+          >
+            Explorar todas as categorias →
+          </Link>
         </div>
-      </div>
+      </section>
 
-      {/* Pilares Temáticos */}
-      <div>
-        <div className="flex items-center gap-2 mb-6">
-          <span className="text-xs font-bold uppercase tracking-widest text-gray-400">PILARE DE APOIO</span>
-          <div className="flex-1 h-px bg-gray-200"></div>
-        </div>
-        <div className="space-y-3">
-          {[
-            { title: "Saúde Emocional do Cuidador", desc: "Burnout, culpa e acolhimento", href: "/saude-emocional" },
-            { title: "Cuidados Práticos Diários", desc: "Higiene, banho seguro e sono", href: "/cuidados-praticos" },
-            { title: "Direitos & Finanças", desc: "BPC, medicamentos SUS e curatela", href: "/direitos-financas" },
-            { title: "Rotina & Organização Familiar", desc: "Divisão de tarefas e rotinas", href: "/rotina-organizacao" },
-          ].map((pillar, idx) => (
-            <Link key={idx} href={pillar.href} className="block p-3 rounded-xl border border-gray-100 hover:border-gray-300 hover:bg-gray-50 transition">
-              <h4 className="text-sm font-bold text-gray-900">{pillar.title}</h4>
-              <p className="text-xs text-gray-500 mt-0.5">{pillar.desc}</p>
-            </Link>
+      {essentialArticles.length > 0 && (
+        <section className="rounded-xl border border-border-subtle bg-surface-card p-6">
+          <h2 className="font-serif text-xl font-bold text-ink-strong pb-3 border-b border-border-subtle mb-4">
+            Leituras Essenciais
+          </h2>
+          <ol className="space-y-4">
+            {essentialArticles.map((article, idx) => (
+              <li key={article.slug} className="flex gap-3 items-start">
+                <span
+                  aria-hidden="true"
+                  className="text-xs font-bold text-ink-muted bg-surface-subtle w-6 h-6 rounded-full inline-flex items-center justify-center shrink-0 mt-0.5"
+                >
+                  {idx + 1}
+                </span>
+                <div>
+                  <span className="text-[11px] font-bold uppercase tracking-wider text-ink-muted block">
+                    {article.categoryTitle}
+                  </span>
+                  <Link
+                    href={`/artigos/${article.slug}`}
+                    className="text-sm font-semibold text-ink-strong hover:underline underline-offset-2 leading-snug"
+                  >
+                    {article.title}
+                  </Link>
+                </div>
+              </li>
+            ))}
+          </ol>
+        </section>
+      )}
+
+      <section className="rounded-xl border border-border-subtle bg-surface-subtle p-6">
+        <h2 className="font-serif text-xl font-bold text-ink-strong mb-2">
+          Precisa de ajuda agora?
+        </h2>
+        <p className="text-xs text-ink-muted leading-relaxed mb-4">
+          Em situações de urgência médica ou sobrecarga emocional aguda, acione os
+          canais públicos gratuitos do Brasil:
+        </p>
+        <ul className="space-y-2.5 text-sm">
+          {EMERGENCY_CONTACTS.map((contact) => (
+            <li key={contact.id}>
+              <a
+                href={contact.href}
+                className="flex items-center justify-between min-h-[44px] px-3.5 py-2 rounded-lg bg-surface-card border border-border-subtle hover:border-border-strong font-semibold text-ink-strong"
+              >
+                <span>{contact.label}</span>
+                <span className="font-bold">{contact.phone}</span>
+              </a>
+            </li>
           ))}
-        </div>
-      </div>
-
-      {/* Follow Us */}
-      <div>
-        <div className="flex items-center gap-2 mb-6">
-          <span className="text-xs font-bold uppercase tracking-widest text-gray-400">SIGA-NOS</span>
-          <div className="flex-1 h-px bg-gray-200"></div>
-        </div>
-        <div className="grid grid-cols-2 gap-3">
-          <a href="#" className="flex items-center justify-between p-3 rounded-xl border border-gray-100 hover:border-gray-300 transition">
-            <span className="text-sm font-medium">Facebook</span>
-            <span className="text-xs text-gray-400">12k</span>
-          </a>
-          <a href="#" className="flex items-center justify-between p-3 rounded-xl border border-gray-100 hover:border-gray-300 transition">
-            <span className="text-sm font-medium">Twitter</span>
-            <span className="text-xs text-gray-400">12k</span>
-          </a>
-          <a href="#" className="flex items-center justify-between p-3 rounded-xl border border-gray-100 hover:border-gray-300 transition">
-            <span className="text-sm font-medium">Instagram</span>
-            <span className="text-xs text-gray-400">13k</span>
-          </a>
-          <a href="#" className="flex items-center justify-between p-3 rounded-xl border border-gray-100 hover:border-gray-300 transition">
-            <span className="text-sm font-medium">Youtube</span>
-            <span className="text-xs text-gray-400">12k</span>
-          </a>
-        </div>
-      </div>
+        </ul>
+      </section>
     </aside>
   );
 }

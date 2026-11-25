@@ -4,7 +4,7 @@ slug: "medicamentos-sus-gratuitos"
 category: "Jurídico & Financeiro"
 date: "4 de agosto, 2024"
 author: "Equipe Filho Cuidador"
-excerpt: "Lista completa de medicamentos gratuitos no SUS, como solicitar e onde buscar."
+excerpt: "Como verificar medicamentos gratuitos ou com desconto no SUS e no programa Farmácia Popular, com receita médica e fontes oficiais."
 readTime: 9
 image: "https://images.unsplash.com/photo-1587854692152-cbe660dbde0b?w=800"
 seo:
@@ -130,12 +130,12 @@ R: Não. Mesma qualidade, preço só não existe.
 **P: Demora quanto para conseguir?**
 R: Imediato na farmácia. Às vezes produto "falta" e espera alguns dias.
 
-**P: Posso usar receita SUS em farmácia particular?**
-R: Sim, se credenciada. Procure "farmácia conveniada SUS".
+**P: Posso usar receita em farmácia particular?**
+R: Para medicamentos incluídos no programa **Farmácia Popular do Brasil**, farmácias privadas credenciadas ("Aqui Tem Farmácia Popular") dispensam itens previstos no elenco mediante receita médica válida, documento oficial com foto e CPF.
 
 **P: E se o medicamento prescrito não está no SUS?**
-R: Peça "similar" ou genérico ao médico. Ou pague particular.
+R: Nunca substitua ou interrompa o tratamento por conta própria. Converse com o médico que acompanha o idoso sobre alternativas terapêuticas incluídas na RENAME/SUS ou pergunte na UBS ou pelo **Disque Saúde 136** sobre componentes especializados e fluxos estaduais.
 
 ---
 
-**💡 Dica:** Pergunte ao médico: "Este medicamento tem no SUS?" Economize muito.
+**💡 Fontes oficiais:** Consulte a Relação Nacional de Medicamentos Essenciais (RENAME) e o programa Farmácia Popular em [gov.br/saude](https://www.gov.br/saude) ou ligue gratuitamente para o **Disque Saúde 136**.

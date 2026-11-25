@@ -1,6 +1,7 @@
 ---
 title: "Procuração de Idoso: Modelo e Passo a Passo"
 slug: "procuracao-idoso-modelo-passo-passo"
+status: "draft"
 category: "Jurídico & Financeiro"
 date: "2024-07-21"
 author: "Equipe Filho Cuidador"

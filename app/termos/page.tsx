@@ -1,121 +1,120 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+import { EMERGENCY_CONTACTS, getSiteUrl, SITE_INFO } from "@/lib/site";
+
+export const metadata: Metadata = {
+  title: `Termos de Uso | ${SITE_INFO.name}`,
+  description:
+    "Condições de uso, caráter estritamente informativo dos guias e limitações de responsabilidade do Filho Cuidador.",
+  alternates: {
+    canonical: "/termos",
+  },
+  openGraph: {
+    title: `Termos de Uso | ${SITE_INFO.name}`,
+    description:
+      "Regras transparentes de uso e aviso de responsabilidade sobre conteúdos de saúde e direitos no Filho Cuidador.",
+    url: "/termos",
+    type: "website",
+  },
+};
 
 export default function TermosPage() {
-  return (
-    <main className="bg-cream min-h-screen py-16 sm:py-20 lg:py-24">
-      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Breadcrumb */}
-        <div className="mb-8 flex items-center gap-2 text-sm text-text-dark/70">
-          <Link href="/" className="hover:text-brand-primary transition">
-            Início
-          </Link>
-          <span>/</span>
-          <span className="text-text-dark font-medium">Termos de Uso</span>
-        </div>
+  const siteUrl = getSiteUrl();
 
-        {/* Content */}
-        <div className="prose prose-sm max-w-none">
-          <h1 className="font-display text-4xl sm:text-5xl font-bold text-text-dark mb-8 leading-tight">
+  return (
+    <main id="conteudo-principal" className="min-h-screen bg-surface-page py-12 sm:py-16">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <header className="mb-10 pb-8 border-b border-border-subtle">
+          <p className="text-xs font-bold uppercase tracking-widest text-ink-muted mb-2">
+            Regras de utilização
+          </p>
+          <h1 className="font-serif text-4xl sm:text-5xl font-bold text-ink-strong mb-3">
             Termos de Uso
           </h1>
-
-          <h2 className="font-display text-2xl font-bold text-text-dark mt-8 mb-4">
-            1. Aceitação dos Termos
-          </h2>
-
-          <p className="text-text-dark/80 leading-relaxed mb-6">
-            Ao acessar e usar o Filho Cuidador, você concorda em cumprir estes termos de uso. Se não concorda com qualquer parte desses termos, você não pode usar este site.
+          <p className="text-sm text-ink-muted">
+            Última revisão: 24 de novembro de 2026
           </p>
+        </header>
 
-          <h2 className="font-display text-2xl font-bold text-text-dark mt-8 mb-4">
-            2. Isenção de Responsabilidade Médica
-          </h2>
+        <div className="space-y-8 text-base text-ink-body leading-relaxed">
+          <section>
+            <h2 className="font-serif text-2xl font-bold text-ink-strong mb-3">
+              1. Finalidade do portal
+            </h2>
+            <p>
+              Ao acessar o portal <strong>{SITE_INFO.name}</strong> ({siteUrl}), você
+              concorda com estes Termos de Uso. O portal publica conteúdos introdutórios e
+              guias práticos voltados a filhos e familiares que acompanham pessoas idosas.
+            </p>
+          </section>
 
-          <p className="text-text-dark/80 leading-relaxed mb-6">
-            <strong>IMPORTANTE:</strong> O conteúdo deste site é fornecido apenas para fins informativos. Nenhum conteúdo deste site constitui aconselhamento médico profissional.
-          </p>
+          <section>
+            <h2 className="font-serif text-2xl font-bold text-ink-strong mb-3">
+              2. Conteúdo informativo não substitui atendimento profissional
+            </h2>
+            <p className="mb-3">
+              Todos os guias têm finalidade exclusivamente educativa e informativa. Eles{" "}
+              <strong>não substituem</strong> diagnóstico, prescrição medicamentosa,
+              conduta médica, psicoterapia, orientação nutricional ou consultoria jurídica e
+              previdenciária individualizada.
+            </p>
+            <p>
+              Nunca inicie, interrompa ou altere dosagens de medicamentos por conta
+              própria. Sobre benefícios assistenciais e previdenciários, confirme sempre os
+              critérios vigentes junto aos canais oficiais (gov.br, INSS, CRAS ou
+              Defensoria Pública).
+            </p>
+          </section>
 
-          <p className="text-text-dark/80 leading-relaxed mb-6">
-            Se você ou seu pai precisam de atendimento médico, consulte um profissional de saúde qualificado. Não substitua o aconselhamento de um médico por informações neste site.
-          </p>
+          <section>
+            <h2 className="font-serif text-2xl font-bold text-ink-strong mb-3">
+              3. Urgências e emergência
+            </h2>
+            <p className="mb-3">
+              Este site não realiza plantão, triagem clínica nem atendimento emergencial.
+              Em situações urgentes no Brasil, utilize diretamente os serviços públicos:
+            </p>
+            <ul className="list-disc pl-6 space-y-1.5 text-sm sm:text-base">
+              {EMERGENCY_CONTACTS.map((contact) => (
+                <li key={contact.id}>
+                  <strong>
+                    {contact.label} ({contact.phone}):
+                  </strong>{" "}
+                  {contact.description}
+                </li>
+              ))}
+            </ul>
+          </section>
 
-          <p className="text-text-dark/80 leading-relaxed mb-6">
-            Em caso de emergência, chame o SAMU (192) ou procure a emergência mais próxima.
-          </p>
+          <section>
+            <h2 className="font-serif text-2xl font-bold text-ink-strong mb-3">
+              4. Links externos e alterações de conteúdo
+            </h2>
+            <p>
+              O portal pode apontar para páginas oficiais do governo brasileiro ou fontes
+              de referência pública, mas não controla a disponibilidade nem eventuais
+              alterações desses domínios externos. Guias desatualizados podem ser removidos
+              temporariamente para revisão editorial.
+            </p>
+          </section>
 
-          <h2 className="font-display text-2xl font-bold text-text-dark mt-8 mb-4">
-            3. Limitação de Responsabilidade
-          </h2>
-
-          <p className="text-text-dark/80 leading-relaxed mb-6">
-            O Filho Cuidador não será responsável por:
-          </p>
-
-          <ul className="list-disc list-inside text-text-dark/80 space-y-2 mb-6">
-            <li>Erros ou omissões no conteúdo</li>
-            <li>Danos resultantes do uso ou impossibilidade de uso do site</li>
-            <li>Ações de terceiros</li>
-            <li>Perda de dados ou informações</li>
-          </ul>
-
-          <h2 className="font-display text-2xl font-bold text-text-dark mt-8 mb-4">
-            4. Direitos de Autor
-          </h2>
-
-          <p className="text-text-dark/80 leading-relaxed mb-6">
-            Todo o conteúdo do Filho Cuidador é protegido por direitos autorais. Você pode visualizar e imprimir artigos para uso pessoal, mas não pode reproduzir, distribuir ou modificar o conteúdo sem permissão explícita.
-          </p>
-
-          <h2 className="font-display text-2xl font-bold text-text-dark mt-8 mb-4">
-            5. Links Externos
-          </h2>
-
-          <p className="text-text-dark/80 leading-relaxed mb-6">
-            O Filho Cuidador pode conter links para sites de terceiros. Não somos responsáveis pelo conteúdo desses sites e não endossamos necessariamente suas políticas ou práticas.
-          </p>
-
-          <h2 className="font-display text-2xl font-bold text-text-dark mt-8 mb-4">
-            6. Conduta do Usuário
-          </h2>
-
-          <p className="text-text-dark/80 leading-relaxed mb-6">
-            Você concorda em não usar este site para:
-          </p>
-
-          <ul className="list-disc list-inside text-text-dark/80 space-y-2 mb-6">
-            <li>Conteúdo ilegal ou prejudicial</li>
-            <li>Assédio ou discriminação</li>
-            <li>Spam ou conteúdo comercial não autorizado</li>
-            <li>Qualquer atividade que viole direitos de terceiros</li>
-          </ul>
-
-          <h2 className="font-display text-2xl font-bold text-text-dark mt-8 mb-4">
-            7. Modificações dos Termos
-          </h2>
-
-          <p className="text-text-dark/80 leading-relaxed mb-6">
-            Reservamos o direito de modificar estes termos a qualquer momento. Alterações serão publicadas nesta página, e seu uso continuado do site implica aceitação das alterações.
-          </p>
-
-          <h2 className="font-display text-2xl font-bold text-text-dark mt-8 mb-4">
-            8. Lei Aplicável
-          </h2>
-
-          <p className="text-text-dark/80 leading-relaxed mb-6">
-            Estes termos são regidos pela lei brasileira, e qualquer disputa será resolvida nos tribunais competentes do Brasil.
-          </p>
-
-          <h2 className="font-display text-2xl font-bold text-text-dark mt-8 mb-4">
-            9. Contato
-          </h2>
-
-          <p className="text-text-dark/80 leading-relaxed mb-6">
-            Se você tiver dúvidas sobre estes termos, entre em contato conosco em <a href="mailto:esesdec@gmail.com" className="text-brand-primary hover:text-brand-accent transition">esesdec@gmail.com</a>.
-          </p>
-
-          <p className="text-text-dark/80 leading-relaxed mb-6">
-            <strong>Última atualização:</strong> 17 de julho de 2024
-          </p>
+          <section>
+            <h2 className="font-serif text-2xl font-bold text-ink-strong mb-3">
+              5. Contato e privacidade
+            </h2>
+            <p>
+              Dúvidas ou pedidos de correção editorial podem ser encaminhados pela página
+              de{" "}
+              <Link href="/contato" className="underline text-ink-strong font-medium">
+                Contato
+              </Link>
+              . O tratamento de dados segue o descrito na{" "}
+              <Link href="/privacidade" className="underline text-ink-strong font-medium">
+                Política de Privacidade
+              </Link>
+              .
+            </p>
+          </section>
         </div>
       </div>
     </main>

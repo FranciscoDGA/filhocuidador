@@ -1,6 +1,7 @@
 ---
 title: "Auxílio-Doença e INSS: Afastamento Remunerado Para Cuidador"
 slug: "auxilio-doenca-inss-cuidador"
+status: "draft"
 category: "Jurídico & Financeiro"
 date: "2 de agosto, 2024"
 author: "Equipe Filho Cuidador"

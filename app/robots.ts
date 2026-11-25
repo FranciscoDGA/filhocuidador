@@ -1,14 +1,18 @@
-import { MetadataRoute } from 'next';
+import type { MetadataRoute } from "next";
+import { getSiteUrl } from "@/lib/site";
 
 export default function robots(): MetadataRoute.Robots {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://filhocuidador.vercel.app';
+  const siteUrl = getSiteUrl();
 
   return {
-    rules: {
-      userAgent: '*',
-      allow: '/',
-      disallow: ['/api/'],
-    },
-    sitemap: `${baseUrl}/sitemap.xml`,
+    rules: [
+      {
+        userAgent: "*",
+        allow: "/",
+        disallow: ["/api/"],
+      },
+    ],
+    sitemap: `${siteUrl}/sitemap.xml`,
+    host: siteUrl,
   };
 }

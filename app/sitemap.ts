@@ -1,106 +1,73 @@
-import { MetadataRoute } from 'next';
-import fs from 'fs';
-import path from 'path';
+import type { MetadataRoute } from "next";
+import { getAllPublishedArticles } from "@/lib/articles";
+import { CATEGORIES } from "@/lib/categories";
+import { getSiteUrl } from "@/lib/site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://filhocuidador.vercel.app';
+  const siteUrl = getSiteUrl();
+  const articles = getAllPublishedArticles();
+  const latestArticleDate = articles[0]
+    ? new Date(`${articles[0].updatedAtISO ?? articles[0].dateISO}T12:00:00Z`)
+    : new Date("2026-11-24T12:00:00Z");
 
   const staticRoutes: MetadataRoute.Sitemap = [
     {
-      url: baseUrl,
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
-      priority: 1.0,
+      url: siteUrl,
+      lastModified: latestArticleDate,
+      changeFrequency: "weekly",
+      priority: 1,
     },
     {
-      url: `${baseUrl}/artigos`,
-      lastModified: new Date(),
-      changeFrequency: 'daily',
+      url: `${siteUrl}/artigos`,
+      lastModified: latestArticleDate,
+      changeFrequency: "weekly",
       priority: 0.9,
     },
     {
-      url: `${baseUrl}/sobre`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
+      url: `${siteUrl}/categorias`,
+      lastModified: latestArticleDate,
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+    {
+      url: `${siteUrl}/sobre`,
+      lastModified: new Date("2026-11-24T12:00:00Z"),
+      changeFrequency: "monthly",
       priority: 0.7,
     },
     {
-      url: `${baseUrl}/contato`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.6,
+      url: `${siteUrl}/contato`,
+      lastModified: new Date("2026-11-24T12:00:00Z"),
+      changeFrequency: "monthly",
+      priority: 0.7,
     },
     {
-      url: `${baseUrl}/privacidade`,
-      lastModified: new Date(),
-      changeFrequency: 'yearly',
+      url: `${siteUrl}/privacidade`,
+      lastModified: new Date("2026-11-24T12:00:00Z"),
+      changeFrequency: "yearly",
       priority: 0.5,
     },
     {
-      url: `${baseUrl}/termos`,
-      lastModified: new Date(),
-      changeFrequency: 'yearly',
+      url: `${siteUrl}/termos`,
+      lastModified: new Date("2026-11-24T12:00:00Z"),
+      changeFrequency: "yearly",
       priority: 0.5,
     },
   ];
 
-  const categories = [
-    'saude-emocional',
-    'cuidados-praticos',
-    'orientacao-juridica',
-    'doencas',
-    'familia',
-  ];
-
-  const categoryRoutes: MetadataRoute.Sitemap = categories.map((cat) => ({
-    url: `${baseUrl}/${cat}`,
-    lastModified: new Date(),
-    changeFrequency: 'weekly',
-    priority: 0.8,
+  const categoryRoutes: MetadataRoute.Sitemap = CATEGORIES.map((cat) => ({
+    url: `${siteUrl}/${cat.slug}`,
+    lastModified: latestArticleDate,
+    changeFrequency: "weekly",
+    priority: 0.85,
   }));
 
-  // Dynamic articles from content/articles
-  const articlesDir = path.join(process.cwd(), 'content', 'articles');
-  let articleRoutes: MetadataRoute.Sitemap = [];
-
-  try {
-    if (fs.existsSync(articlesDir)) {
-      const files = fs.readdirSync(articlesDir);
-      articleRoutes = files
-        .filter((file) => file.endsWith('.md'))
-        .map((file) => {
-          const slug = file.replace(/\.md$/, '');
-          return {
-            url: `${baseUrl}/artigos/${slug}`,
-            lastModified: new Date(),
-            changeFrequency: 'monthly',
-            priority: 0.8,
-          };
-        });
-    }
-  } catch (e) {
-    // Fallback default
-    articleRoutes = [
-      {
-        url: `${baseUrl}/artigos/reconhecendo-burnout-cuidador`,
-        lastModified: new Date(),
-        changeFrequency: 'monthly',
-        priority: 0.8,
-      },
-      {
-        url: `${baseUrl}/artigos/bpc-loas-guia-completo`,
-        lastModified: new Date(),
-        changeFrequency: 'monthly',
-        priority: 0.8,
-      },
-      {
-        url: `${baseUrl}/artigos/comunicacao-irmaos-nao-ajudam`,
-        lastModified: new Date(),
-        changeFrequency: 'monthly',
-        priority: 0.8,
-      },
-    ];
-  }
+  const articleRoutes: MetadataRoute.Sitemap = articles.map((article) => ({
+    url: `${siteUrl}/artigos/${article.slug}`,
+    lastModified: new Date(`${article.updatedAtISO ?? article.dateISO}T12:00:00Z`),
+    changeFrequency: "monthly",
+    priority: 0.8,
+  }));
 
   return [...staticRoutes, ...categoryRoutes, ...articleRoutes];
 }

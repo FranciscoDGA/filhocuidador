@@ -7,8 +7,18 @@ const nextConfig: NextConfig = {
   },
   redirects: async () => [
     {
-      source: "/sitemap.xml",
-      destination: "/api/sitemap",
+      source: "/direitos-financas",
+      destination: "/orientacao-juridica",
+      permanent: true,
+    },
+    {
+      source: "/rotina-organizacao",
+      destination: "/familia",
+      permanent: true,
+    },
+    {
+      source: "/saude-mental",
+      destination: "/saude-emocional",
       permanent: true,
     },
   ],

@@ -1,155 +1,178 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+import { notFound } from "next/navigation";
+import { ArrowLeftIcon, BookOpenIcon, ClockIcon } from "@/components/ui/Icons";
+import { getPublishedArticlesByCategorySlug } from "@/lib/articles";
+import { CATEGORIES, getCategoryBySlug } from "@/lib/categories";
+import { SITE_INFO } from "@/lib/site";
 
-const categoryInfo: { [key: string]: any } = {
-  "saude-emocional": {
-    name: "Saúde Emocional",
-    description: "Burnout, ansiedade, depressão, autocuidado e bem-estar emocional",
-    emoji: "💭",
-  },
-  "cuidados-praticos": {
-    name: "Cuidados Práticos",
-    description: "Mobilidade, higiene, medicamentos, segurança e rotina diária",
-    emoji: "🏥",
-  },
-  "orientacao-juridica": {
-    name: "Orientação Jurídica",
-    description: "Direitos, benefícios sociais, documentação e legislação",
-    emoji: "⚖️",
-  },
-  "doencas": {
-    name: "Entendendo a Doença",
-    description: "Alzheimer, Parkinson, AVC e outras condições neurodegenerativas",
-    emoji: "🧠",
-  },
-  "familia": {
-    name: "Família e Conflitos",
-    description: "Dinâmica familiar, irmãos, relacionamentos e comunicação",
-    emoji: "👨‍👩‍👧",
-  },
-};
+export const dynamicParams = true;
 
-const mockArticles: { [key: string]: any[] } = {
-  "saude-emocional": [
-    {
-      id: 1,
-      slug: "reconhecendo-burnout-cuidador",
-      title: "Reconhecendo o Burnout do Cuidador",
-      excerpt: "Sinais de alerta para quando você está no limite. E sim, sua exaustão é legítima.",
-      readTime: 8,
-      date: "17 de julho, 2024",
-    },
-  ],
-  "orientacao-juridica": [
-    {
-      id: 2,
-      slug: "bpc-loas-guia-completo",
-      title: "BPC (Benefício de Prestação Continuada): Guia Completo 2024",
-      excerpt: "Como solicitar o BPC, quem tem direito, documentos necessários e passo a passo.",
-      readTime: 12,
-      date: "20 de julho, 2024",
-    },
-  ],
-  "familia": [
-    {
-      id: 3,
-      slug: "comunicacao-irmaos-nao-ajudam",
-      title: "Quando o Irmão Não Quer Ajudar: Como Comunicar",
-      excerpt: "Estratégias práticas para conversar com irmãos que não colaboram no cuidado.",
-      readTime: 10,
-      date: "10 de agosto, 2024",
-    },
-  ],
-  "cuidados-praticos": [],
-  "doencas": [],
-};
+export function generateStaticParams() {
+  return CATEGORIES.map((cat) => ({
+    category: cat.slug,
+  }));
+}
 
-export default function CategoryPage({ params }: { params: { category: string } }) {
-  const category = categoryInfo[params.category];
-  const articles = mockArticles[params.category] || [];
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ category: string }>;
+}): Promise<Metadata> {
+  const { category: rawCategory } = await params;
+  const category = getCategoryBySlug(rawCategory);
 
   if (!category) {
-    return (
-      <div className="min-h-screen flex items-center justify-center px-4 bg-white">
-        <div className="text-center max-w-2xl">
-          <h1 className="font-display text-4xl font-light text-text-dark mb-4">
-            Categoria não encontrada
-          </h1>
-          <p className="text-text-dark/70 mb-8">
-            Desculpe, não conseguimos encontrar essa categoria.
-          </p>
-          <Link href="/" className="text-text-dark font-semibold hover:text-text-dark/70 transition">
-            Voltar à página inicial →
-          </Link>
-        </div>
-      </div>
-    );
+    return {
+      title: `Categoria não encontrada | ${SITE_INFO.name}`,
+      robots: { index: false, follow: false },
+    };
   }
 
-  return (
-    <main className="bg-white min-h-screen py-24 sm:py-32">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Breadcrumb */}
-        <div className="mb-12 flex items-center gap-2 text-sm text-text-dark/70">
-          <Link href="/" className="hover:text-text-dark transition">Início</Link>
-          <span>/</span>
-          <span className="text-text-dark font-medium">{category.name}</span>
-        </div>
+  return {
+    title: `${category.title} | ${SITE_INFO.name}`,
+    description: category.description,
+    alternates: {
+      canonical: `/${category.slug}`,
+    },
+    openGraph: {
+      title: `${category.title} | ${SITE_INFO.name}`,
+      description: category.description,
+      url: `/${category.slug}`,
+      type: "website",
+    },
+  };
+}
 
-        {/* Category Header */}
-        <div className="mb-16">
-          <h1 className="font-display text-5xl sm:text-6xl font-light text-text-dark mb-4">
-            {category.name}
+export default async function CategoryPage({
+  params,
+}: {
+  params: Promise<{ category: string }>;
+}) {
+  const { category: rawCategory } = await params;
+  const category = getCategoryBySlug(rawCategory);
+
+  if (!category) {
+    notFound();
+  }
+
+  const articles = getPublishedArticlesByCategorySlug(category.slug);
+
+  return (
+    <main id="conteudo-principal" className="bg-surface-page min-h-screen py-12 sm:py-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <nav aria-label="Navegação estrutural" className="mb-8 text-xs text-ink-muted flex flex-wrap items-center gap-2">
+          <Link href="/" className="hover:text-ink-strong transition-colors">
+            Início
+          </Link>
+          <span aria-hidden="true">/</span>
+          <Link href="/categorias" className="hover:text-ink-strong transition-colors">
+            Categorias
+          </Link>
+          <span aria-hidden="true">/</span>
+          <span className="text-ink-strong font-medium">{category.title}</span>
+        </nav>
+
+        <header className="max-w-3xl pb-8 border-b border-border-subtle mb-10">
+          <p className="text-xs font-bold uppercase tracking-widest text-ink-muted mb-2">
+            {category.accentBadge}
+          </p>
+          <h1 className="font-serif text-4xl sm:text-5xl font-bold text-ink-strong mb-4">
+            {category.title}
           </h1>
-          <p className="text-lg text-text-dark/70 max-w-2xl">
+          <p className="text-base sm:text-lg text-ink-muted leading-relaxed mb-4">
             {category.description}
           </p>
-        </div>
+          <p className="text-xs font-semibold text-ink-muted inline-flex items-center gap-1.5">
+            <BookOpenIcon className="w-4 h-4" aria-hidden="true" />
+            {articles.length}{" "}
+            {articles.length === 1 ? "guia publicado" : "guias publicados"} nesta categoria
+          </p>
+        </header>
 
-        {/* Articles Grid */}
         {articles.length > 0 ? (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-14">
             {articles.map((article) => (
-              <Link key={article.id} href={`/artigos/${article.slug}`}>
-                <article className="h-full flex flex-col bg-white rounded-xl overflow-hidden border border-gray-200 hover:border-gray-300 hover:shadow-lg transition-all duration-300 cursor-pointer group">
-                  {/* Image Placeholder */}
-                  <div className="aspect-video bg-gradient-to-br from-gray-200 to-gray-100 flex items-center justify-center group-hover:from-gray-300 group-hover:to-gray-200 transition-colors">
-                    <svg className="w-12 h-12 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                    </svg>
+              <article
+                key={article.slug}
+                className="rounded-xl border border-border-subtle bg-surface-card p-6 flex flex-col justify-between hover:border-border-strong transition-colors"
+              >
+                <div>
+                  <div className="flex items-center justify-between gap-2 text-xs text-ink-muted mb-3">
+                    <span>{article.updatedAtLabel ?? article.dateLabel}</span>
+                    <span className="inline-flex items-center gap-1">
+                      <ClockIcon className="w-3.5 h-3.5" aria-hidden="true" />
+                      {article.readTime} min
+                    </span>
                   </div>
-
-                  <div className="p-6 flex flex-col flex-grow">
-                    {/* Title */}
-                    <h3 className="font-display text-lg font-semibold text-text-dark mb-3 leading-snug line-clamp-2 group-hover:text-text-dark/80 transition-colors">
+                  <h2 className="font-serif text-xl font-bold text-ink-strong mb-2 leading-snug">
+                    <Link
+                      href={`/artigos/${article.slug}`}
+                      className="hover:underline underline-offset-4"
+                    >
                       {article.title}
-                    </h3>
+                    </Link>
+                  </h2>
+                  <p className="text-sm text-ink-muted leading-relaxed line-clamp-3 mb-5">
+                    {article.excerpt}
+                  </p>
+                </div>
 
-                    {/* Excerpt */}
-                    <p className="text-text-dark/60 text-sm mb-6 line-clamp-2 flex-grow">
-                      {article.excerpt}
-                    </p>
-
-                    {/* Meta */}
-                    <div className="flex items-center gap-3 text-xs text-text-dark/50 border-t border-gray-100 pt-4">
-                      <span>{article.readTime} min</span>
-                      <span>•</span>
-                      <span>{article.date}</span>
-                    </div>
-                  </div>
-                </article>
-              </Link>
+                <Link
+                  href={`/artigos/${article.slug}`}
+                  className="inline-flex items-center min-h-[44px] text-sm font-semibold text-ink-strong hover:underline underline-offset-4"
+                >
+                  Ler guia completo →
+                </Link>
+              </article>
             ))}
           </div>
         ) : (
-          <div className="text-center py-20">
-            <p className="text-lg text-text-dark/70 mb-8">
-              Ainda não temos artigos nessa categoria.
+          <div className="rounded-xl border border-border-subtle bg-surface-card p-8 text-center max-w-2xl mb-14">
+            <h2 className="font-serif text-2xl font-bold text-ink-strong mb-2">
+              Ainda não há guias publicados nesta categoria
+            </h2>
+            <p className="text-sm text-ink-muted mb-6">
+              Outros materiais passam por revisão de fontes e atualização antes de irem ao ar.
             </p>
-            <Link href="/artigos" className="text-text-dark font-semibold hover:text-text-dark/70 transition">
-              Ver todos os artigos →
+            <Link
+              href="/artigos"
+              className="inline-flex items-center justify-center min-h-[44px] px-5 py-2.5 rounded-lg bg-brand-primary text-surface-card text-sm font-semibold"
+            >
+              Explorar artigos publicados
             </Link>
           </div>
         )}
+
+        <section aria-labelledby="outras-categorias-heading" className="border-t border-border-subtle pt-10">
+          <div className="flex flex-wrap items-center justify-between gap-4 mb-6">
+            <h2
+              id="outras-categorias-heading"
+              className="font-serif text-2xl font-bold text-ink-strong"
+            >
+              Outras categorias do portal
+            </h2>
+            <Link
+              href="/categorias"
+              className="inline-flex items-center gap-1.5 text-sm font-semibold text-ink-strong hover:underline underline-offset-4"
+            >
+              <ArrowLeftIcon className="w-4 h-4" aria-hidden="true" />
+              Ver todas as categorias
+            </Link>
+          </div>
+
+          <div className="flex flex-wrap gap-3">
+            {CATEGORIES.filter((item) => item.slug !== category.slug).map((item) => (
+              <Link
+                key={item.slug}
+                href={`/${item.slug}`}
+                className="inline-flex items-center min-h-[44px] px-4 py-2 rounded-lg border border-border-subtle bg-surface-card text-sm font-medium text-ink-strong hover:border-border-strong transition-colors"
+              >
+                {item.title}
+              </Link>
+            ))}
+          </div>
+        </section>
       </div>
     </main>
   );

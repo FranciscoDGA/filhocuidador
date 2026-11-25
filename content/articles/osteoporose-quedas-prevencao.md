@@ -78,33 +78,31 @@ Idoso com fratura de fêmur: 20-50% morrem no primeiro ano.
 
 ### Vitamina D + Cálcio
 
-- Suplemento
-- Essencial com bifosfonato
-- Sem isto: medicação não funciona bem
+- Podem ser indicados como suporte nutricional após avaliação médica e exames laboratoriais, sempre respeitando as doses prescritas.
 
-## Nutrição Anti-Osteoporose
+## Nutrição de Apoio à Saúde Óssea
 
-### Cálcio Dietético
+### Cálcio na Alimentação
 
-**Alimentos:**
-- [ ] Leite/iogurte (600ml = ~600mg cálcio)
-- [ ] Queijo
-- [ ] Sardinha com osso (conserva)
-- [ ] Tofu
-- [ ] Bróc olis/couve/rúcula
-- [ ] Amêndoa
+**Boas fontes alimentares:**
+- [ ] Leite e iogurte natural
+- [ ] Queijos com moderação
+- [ ] Sardinha
+- [ ] Tofu fortificado
+- [ ] Brócolis, couve e rúcula
+- [ ] Amêndoas e gergelim
 
-**Meta:** 1.000-1.200mg/dia
+**Referência individualizada:** As necessidades diárias de cálcio (via dieta ou suplemento) devem ser definidas pelo médico ou nutricionista para evitar excessos e riscos renais ou cardiovasculares.
 
 ### Vitamina D
 
 **Fontes:**
-- [ ] Sol 15-30 min/dia (pele)
-- [ ] Peixes gordos (salmão, atum)
+- [ ] Exposição solar segura conforme orientação médica
+- [ ] Peixes gordos (sardinha, salmão, atum)
 - [ ] Ovo (gema)
-- [ ] Suplemento (D3 ~1.000-2.000 IU/dia)
+- [ ] Eventual suplementação somente com prescrição médica baseada em exames
 
-**Cuidado:** Maioria idoso deficiente
+**Atenção:** Deficiências são frequentes em idosos, mas doses adequadas variam caso a caso.
 
 ### Proteína
 

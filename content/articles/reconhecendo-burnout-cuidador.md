@@ -4,7 +4,7 @@ slug: "reconhecendo-burnout-cuidador"
 category: "Saúde Emocional"
 date: "2024-07-17"
 author: "Equipe Filho Cuidador"
-excerpt: "Cuidar de um pai idoso é um privilégio, mas também é exaustivo. Entenda os sinais de burnout e quando procurar ajuda."
+excerpt: "Cuidar de um pai ou mãe idoso envolve desafios profundos e desgaste real. Entenda os sinais de burnout e quando buscar apoio."
 readTime: 8
 image: "/images/burnout.jpg"
 ---
@@ -13,7 +13,7 @@ image: "/images/burnout.jpg"
 
 Burnout é mais que cansaço. É aquele sentimento de esgotamento físico, emocional e mental que vem quando você está dando tudo de si, mas sente que não é suficiente.
 
-Se você é a filha que trabalha o dia todo e ainda cuida de um pai com Alzheimer à noite, ou o filho que paga pela casa care mas se sente culpado por não estar presente — você conhece bem essa sensação.
+Se você é a pessoa que trabalha o dia todo e ainda assume os cuidados de um familiar com Alzheimer à noite, ou quem custeia o cuidado domiciliar (*home care*) e mesmo assim sente culpa por não dar conta de tudo — essa exaustão não é fraqueza, é sobrecarga.
 
 ## Sinais de Alerta
 

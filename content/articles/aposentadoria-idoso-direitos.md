@@ -1,6 +1,7 @@
 ---
 title: "Aposentadoria do Idoso: Direitos e Como Solicitar em 2024"
 slug: "aposentadoria-idoso-direitos"
+status: "draft"
 category: "Jurídico & Financeiro"
 date: "28 de julho, 2024"
 author: "Equipe Filho Cuidador"

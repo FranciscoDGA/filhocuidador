@@ -1,6 +1,7 @@
 ---
 title: "Direitos do Idoso: Tudo que Você Precisa Saber Sobre o Estatuto"
 slug: "direitos-idoso-estatuto-lei"
+status: "draft"
 category: "Jurídico & Financeiro"
 date: "31 de julho, 2024"
 author: "Equipe Filho Cuidador"

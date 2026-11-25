@@ -1,77 +1,90 @@
 import Link from "next/link";
+import { ArrowRightIcon } from "@/components/ui/Icons";
+import type { ArticleSummary } from "@/lib/articles";
+import { SITE_INFO } from "@/lib/site";
 
-export default function HeroSection() {
+interface HeroSectionProps {
+  featuredArticle?: ArticleSummary;
+  publishedCount: number;
+}
+
+export default function HeroSection({
+  featuredArticle,
+  publishedCount,
+}: HeroSectionProps) {
   return (
-    <section className="w-full pt-12 pb-12 bg-white">
-      {/* Title */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-8">
-        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-gray-200 text-xs font-medium text-gray-600 mb-4">
-          <span className="w-2 h-2 rounded-full bg-emerald-500"></span>
-          Portal de Apoio ao Cuidador Familiar
-        </div>
-        <h1 className="text-4xl md:text-6xl font-bold text-gray-900 tracking-tight leading-tight border-b-2 border-gray-100 pb-6">
-          Apoio e Orientação Prática para Quem Cuida de Pais Idosos
-        </h1>
-      </div>
-
+    <section className="py-12 sm:py-16 border-b border-border-subtle bg-surface-page">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-          {/* Content Left */}
-          <div className="lg:col-span-6 flex flex-col justify-between">
-            <div>
-              <p className="text-lg text-gray-600 leading-relaxed mb-6">
-                Cuidar de um familiar idoso é um ato de afeto que traz desafios diários, emocionais e jurídicos. Aqui você encontra informação confiável, acolhimento e passos claros para não se sentir sozinho nessa jornada.
+        <div className="max-w-3xl mb-10">
+          <p className="text-xs font-bold uppercase tracking-widest text-ink-muted mb-3">
+            Apoio prático para cuidadores familiares
+          </p>
+          <h1 className="font-serif text-4xl sm:text-5xl lg:text-[54px] font-black text-ink-strong leading-tight mb-5">
+            O único portal que fala <span className="underline decoration-2 underline-offset-4">com você</span>, não apenas sobre quem você cuida.
+          </h1>
+          <p className="text-base sm:text-lg text-ink-muted leading-relaxed mb-7">
+            Cuidar de pai, mãe ou familiar idoso exige orientações objetivas sobre a rotina,
+            saúde emocional de quem cuida e caminhos oficiais no SUS e na assistência social.
+          </p>
+
+          <div className="flex flex-wrap items-center gap-3">
+            <Link
+              href="/artigos"
+              className="inline-flex items-center justify-center gap-2 min-h-[44px] px-6 py-2.5 rounded-lg bg-brand-primary text-surface-card font-semibold text-sm hover:opacity-90 transition-opacity"
+            >
+              <span>Explorar {publishedCount} guias publicados</span>
+              <ArrowRightIcon className="w-4 h-4" aria-hidden="true" />
+            </Link>
+            <Link
+              href="/categorias"
+              className="inline-flex items-center justify-center min-h-[44px] px-6 py-2.5 rounded-lg border border-border-strong bg-surface-card text-ink-strong font-semibold text-sm hover:bg-surface-subtle transition-colors"
+            >
+              Navegar por categorias
+            </Link>
+          </div>
+        </div>
+
+        {featuredArticle && (
+          <div className="rounded-xl border border-border-subtle bg-surface-subtle p-6 sm:p-8 flex flex-col lg:flex-row lg:items-center justify-between gap-6">
+            <div className="max-w-2xl">
+              <div className="flex flex-wrap items-center gap-3 mb-2 text-xs text-ink-muted">
+                <span className="font-bold uppercase tracking-wider text-ink-strong">
+                  Guia em destaque
+                </span>
+                <span aria-hidden="true">•</span>
+                <Link
+                  href={`/${featuredArticle.categorySlug}`}
+                  className="hover:underline font-medium"
+                >
+                  {featuredArticle.categoryTitle}
+                </Link>
+                <span aria-hidden="true">•</span>
+                <span>{featuredArticle.readTime} min de leitura</span>
+              </div>
+              <h2 className="font-serif text-2xl sm:text-3xl font-bold text-ink-strong mb-2 leading-snug">
+                <Link
+                  href={`/artigos/${featuredArticle.slug}`}
+                  className="hover:underline underline-offset-4"
+                >
+                  {featuredArticle.title}
+                </Link>
+              </h2>
+              <p className="text-sm sm:text-base text-ink-body leading-relaxed">
+                {featuredArticle.excerpt}
               </p>
             </div>
-            
-            <div className="grid grid-cols-2 gap-3 pt-2">
-              <Link href="/cuidados-praticos" className="p-3.5 rounded-xl border border-gray-200 hover:border-gray-900 transition bg-gray-50/50">
-                <span className="text-xl block mb-1">🏥</span>
-                <span className="font-semibold text-sm text-gray-900 block">Cuidados Diários</span>
-                <span className="text-xs text-gray-500">Rotina, medicação e higiene</span>
-              </Link>
-              <Link href="/saude-emocional" className="p-3.5 rounded-xl border border-gray-200 hover:border-gray-900 transition bg-gray-50/50">
-                <span className="text-xl block mb-1">💭</span>
-                <span className="font-semibold text-sm text-gray-900 block">Saúde do Cuidador</span>
-                <span className="text-xs text-gray-500">Prevenção do burnout e apoio</span>
-              </Link>
-              <Link href="/orientacao-juridica" className="p-3.5 rounded-xl border border-gray-200 hover:border-gray-900 transition bg-gray-50/50">
-                <span className="text-xl block mb-1">⚖️</span>
-                <span className="font-semibold text-sm text-gray-900 block">Direitos & BPC/LOAS</span>
-                <span className="text-xs text-gray-500">Benefícios, INSS e curatela</span>
-              </Link>
-              <Link href="/familia" className="p-3.5 rounded-xl border border-gray-200 hover:border-gray-900 transition bg-gray-50/50">
-                <span className="text-xl block mb-1">👨‍👩‍👧</span>
-                <span className="font-semibold text-sm text-gray-900 block">Organização Familiar</span>
-                <span className="text-xs text-gray-500">Divisão de tarefas e diálogo</span>
-              </Link>
-            </div>
-          </div>
 
-          {/* Right Column / Guia Rápido */}
-          <div className="lg:col-span-6 bg-slate-50 border border-slate-200 rounded-2xl p-6">
-            <h3 className="text-lg font-bold text-gray-900 mb-2">Primeiros Passos para Quem Acabou de Assumir o Cuidado</h3>
-            <p className="text-sm text-gray-600 mb-4">Se você assumiu recentemente os cuidados de um idoso, confira os passos essenciais para organizar a nova rotina:</p>
-            <ul className="space-y-3 text-sm text-gray-700">
-              <li className="flex items-start gap-2">
-                <span className="text-emerald-600 font-bold">1.</span>
-                <span><strong>Centralize as informações médicas:</strong> Liste receitas atuais, horários de remédios e contatos de emergência em um só caderno ou app.</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-emerald-600 font-bold">2.</span>
-                <span><strong>Adapte a casa contra quedas:</strong> Remova tapetes soltos e instale barras de apoio no banheiro.</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-emerald-600 font-bold">3.</span>
-                <span><strong>Verifique direitos e benefícios:</strong> Confira critérios do BPC/LOAS no Meu INSS ou CRAS se houver vulnerabilidade de renda.</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-emerald-600 font-bold">4.</span>
-                <span><strong>Estabeleça limites:</strong> Peça divisão de custos e tarefas com outros familiares antes do esgotamento físico e emocional.</span>
-              </li>
-            </ul>
+            <Link
+              href={`/artigos/${featuredArticle.slug}`}
+              className="inline-flex items-center justify-center gap-2 min-h-[44px] px-5 py-2.5 rounded-lg bg-brand-primary text-surface-card text-sm font-semibold shrink-0 hover:opacity-90 transition-opacity"
+            >
+              <span>Ler guia completo</span>
+              <ArrowRightIcon className="w-4 h-4" aria-hidden="true" />
+            </Link>
           </div>
-        </div>
+        )}
+
+        <p className="mt-6 text-xs text-ink-muted">{SITE_INFO.editorialNotice}</p>
       </div>
     </section>
   );

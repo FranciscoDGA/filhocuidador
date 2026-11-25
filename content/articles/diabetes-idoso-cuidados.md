@@ -52,11 +52,11 @@ Controlada = vida normal.
 
 ### Metformina (Mais Comum)
 
-**Como funciona:** Melhora como corpo usa açúcar
+**Como funciona:** Ajuda a melhorar a sensibilidade do organismo à insulina e a controlar a glicemia
 
-**Dose:** Geralmente 1-3x/dia (500-1000mg)
+**Posologia:** Definida exclusivamente pelo médico conforme exames, função renal e perfil do idoso (nunca ajuste ou interrompa por conta própria)
 
-**Efeitos colaterais:** Diareia, náusea (passa com tempo)
+**Efeitos possíveis:** Desconforto abdominal, náusea ou diarreia (avise a equipe médica se persistirem)
 
 ### Sulfoniluréias (Glibenclamida, Glipizida)
 

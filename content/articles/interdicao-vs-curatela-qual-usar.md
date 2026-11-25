@@ -1,6 +1,7 @@
 ---
 title: "Interdição vs Curatela: Qual Usar?"
 slug: "interdicao-vs-curatela-qual-usar"
+status: "draft"
 category: "Jurídico & Financeiro"
 date: "2024-07-26"
 author: "Equipe Filho Cuidador"

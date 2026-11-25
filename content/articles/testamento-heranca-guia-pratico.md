@@ -1,6 +1,7 @@
 ---
 title: "Testamento e Herança: Guia Prático para Filhos Cuidadores"
 slug: "testamento-heranca-guia-pratico"
+status: "draft"
 category: "Jurídico & Financeiro"
 date: "30 de julho, 2024"
 author: "Equipe Filho Cuidador"

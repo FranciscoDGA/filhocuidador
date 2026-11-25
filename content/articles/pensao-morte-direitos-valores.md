@@ -1,6 +1,7 @@
 ---
 title: "Pensão por Morte: Quem Tem Direito e Quanto Recebe"
 slug: "pensao-morte-direitos-valores"
+status: "draft"
 category: "Jurídico & Financeiro"
 date: "29 de julho, 2024"
 author: "Equipe Filho Cuidador"

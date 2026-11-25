@@ -14,7 +14,7 @@ seo:
 
 # Alzheimer: Guia Prático para Filhos Cuidadores
 
-Seu pai foi diagnosticado com Alzheimer. Agora você **entrar em luto** do homem que conheceu — enquanto ele ainda está vivo.
+Seu pai foi diagnosticado com Alzheimer. Agora você pode **entrar em luto** pela pessoa que conheceu — enquanto ela ainda está viva.
 
 Mas conhecer a doença reduz o sofrimento.
 
@@ -54,7 +54,7 @@ Doença **neurodegenerativa** onde cérebro piora progressivamente.
 - Não reconhece pessoas (até você!)
 - Mudanças de comportamento (agressão, apatia)
 - Incontinência
-- Peambulação (andar sem propósito)
+- Perambulação (andar sem propósito)
 
 **O cuidador precisa:**
 - ⚠️ Supervisão constante
@@ -86,7 +86,7 @@ Se notar em seu pai/mãe:
 - [ ] Esquecimento anormal (além do envelhecimento)
 - [ ] Repete mesma história/pergunta 10x
 - [ ] Perde-se em lugares conhecidos
-- [ ] Abandon de hobbies
+- [ ] Abandono de hobbies
 - [ ] Confusão com datas/pessoas
 - [ ] Dificuldade em tomar decisões
 
@@ -130,31 +130,31 @@ Mudanças = agressão/confusão.
 
 **Apatia:** Depressão é comum. Medicamento pode ajudar.
 
-**Peambulação:** Segue por medo. Permita caminhar supervisionado.
+**Perambulação:** A pessoa pode andar pela casa por medo, dor ou desorientação. Torne o trajeto seguro e acompanhe sem confrontar.
 
 ## Medicamentos
 
-### Anti-Alzheimer
+### Tratamento medicamentoso (somente com prescrição médica)
 
-**Donepezila** (mais comum)
-- Melhora memória leve/moderada
-- Tomarà 1x/dia à noite
+**Donepezila** (comum em fases leves a moderadas)
+- Pode auxiliar na manutenção temporária de funções cognitivas
+- Uso conforme prescrição médica
 
 **Rivastigmina**
-- Idem
-- Adesivo transdérmico (fácil aplicação)
+- Também utilizada em fases leves a moderadas
+- Disponível inclusive em adesivo transdérmico, quando indicado pelo médico
 
 **Memantina**
-- Para moderado-severo
-- Funciona diferente
+- Mais utilizada em fases moderadas a avançadas
+- Mecanismo de ação distinto
 
-⚠️ **Não curam. Apenas retardam queda.**
+⚠️ **Não existe cura nem suspensão segura por conta própria.** Os medicamentos visam auxiliar no manejo dos sintomas conforme avaliação neurológica ou geriátrica.
 
-### Outros Medicamentos
+### Outros sintomas e medicamentos
 
-**Depressão:** Antidepressivos
-**Agressão:** Antipsicóticos (última opção, riscos)
-**Insônia:** Melatonina, não benzodiazepínicos
+- **Depressão ou ansiedade:** Avaliadas pelo médico, que define a necessidade de tratamento.
+- **Agitação ou agressividade:** Medidas não medicamentosas vêm primeiro; antipsicóticos exigem cautela extrema em idosos com demência e avaliação médica rigorosa.
+- **Alterações do sono:** Higiene do sono é prioridade; evite automedicação ou sedativos sem prescrição.
 
 ## Asilamento: Quando Considerar?
 
