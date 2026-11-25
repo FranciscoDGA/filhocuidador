@@ -6,7 +6,7 @@ date: "2024-07-17"
 author: "Equipe Filho Cuidador"
 excerpt: "Cuidar de um pai ou mãe idoso envolve desafios profundos e desgaste real. Entenda os sinais de burnout e quando buscar apoio."
 readTime: 8
-image: "/images/burnout.jpg"
+image: "/images/articles/reconhecendo-burnout-cuidador.jpg"
 ---
 
 ## O que é Burnout do Cuidador?

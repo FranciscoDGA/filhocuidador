@@ -23,6 +23,16 @@ for (const file of mdFiles) {
     assert.ok(!raw.includes("500-1000mg"), `Published file ${file} still has dose`);
     assert.ok(!raw.includes("Luto Anteipado"), `Published file ${file} still has typo`);
     assert.ok(!raw.includes("Peambulação"), `Published file ${file} still has typo`);
+
+    const imgMatch = raw.match(/^image:\s*"([^"]+)"/m);
+    assert.ok(imgMatch, `Published file ${file} missing image frontmatter`);
+    assert.ok(
+      imgMatch[1].startsWith("/images/articles/") && imgMatch[1].endsWith(".jpg"),
+      `Published file ${file} must use local /images/articles/*.jpg, got ${imgMatch[1]}`
+    );
+    const localImgPath = path.join(process.cwd(), "public", imgMatch[1].replace(/^\/+/, ""));
+    assert.ok(fs.existsSync(localImgPath), `Missing image file on disk for ${file}: ${localImgPath}`);
+    assert.ok(fs.statSync(localImgPath).size > 10_000, `Suspiciously small image for ${file}`);
   }
 }
 

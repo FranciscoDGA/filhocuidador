@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
@@ -53,6 +54,14 @@ export async function generateMetadata({
       type: "article",
       publishedTime: article.dateISO,
       modifiedTime: article.updatedAtISO ?? article.dateISO,
+      images: [
+        {
+          url: article.image,
+          width: 960,
+          height: 540,
+          alt: article.imageAlt,
+        },
+      ],
     },
   };
 }
@@ -155,6 +164,17 @@ export default async function ArticlePage({
           )}
         </header>
 
+        <div className="mb-8 rounded-xl overflow-hidden border border-border-subtle bg-surface-subtle aspect-[16/9]">
+          <Image
+            src={article.image}
+            alt={article.imageAlt}
+            width={960}
+            height={540}
+            priority
+            className="w-full h-full object-cover"
+          />
+        </div>
+
         <aside
           aria-label="Aviso sobre finalidade informativa"
           className="mb-8 rounded-xl border border-border-subtle bg-surface-subtle p-4 sm:p-5 flex gap-3 items-start"
@@ -234,17 +254,28 @@ export default async function ArticlePage({
                 <Link
                   key={related.slug}
                   href={`/artigos/${related.slug}`}
-                  className="rounded-xl border border-border-subtle bg-surface-card p-5 hover:border-border-strong transition-colors flex flex-col justify-between"
+                  className="rounded-xl border border-border-subtle bg-surface-card overflow-hidden hover:border-border-strong transition-colors flex flex-col justify-between group"
                 >
                   <div>
-                    <span className="text-[11px] font-bold uppercase tracking-wider text-ink-muted block mb-2">
-                      {related.categoryTitle}
-                    </span>
-                    <h3 className="font-serif text-lg font-bold text-ink-strong leading-snug mb-2">
-                      {related.title}
-                    </h3>
+                    <div className="aspect-[16/9] overflow-hidden bg-surface-subtle border-b border-border-subtle">
+                      <Image
+                        src={related.image}
+                        alt={related.imageAlt}
+                        width={640}
+                        height={360}
+                        className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-[1.02]"
+                      />
+                    </div>
+                    <div className="p-4 pb-2">
+                      <span className="text-[11px] font-bold uppercase tracking-wider text-ink-muted block mb-1.5">
+                        {related.categoryTitle}
+                      </span>
+                      <h3 className="font-serif text-base font-bold text-ink-strong leading-snug">
+                        {related.title}
+                      </h3>
+                    </div>
                   </div>
-                  <span className="text-xs font-semibold text-ink-strong mt-3">
+                  <span className="text-xs font-semibold text-ink-strong px-4 pb-4 pt-2 block">
                     Ler guia →
                   </span>
                 </Link>

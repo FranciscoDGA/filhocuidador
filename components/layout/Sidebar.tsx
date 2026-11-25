@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import type { ArticleSummary } from "@/lib/articles";
 import type { CategoryDefinition } from "@/lib/categories";
@@ -49,21 +50,27 @@ export default function Sidebar({
             Leituras Essenciais
           </h2>
           <ol className="space-y-4">
-            {essentialArticles.map((article, idx) => (
+            {essentialArticles.map((article) => (
               <li key={article.slug} className="flex gap-3 items-start">
-                <span
-                  aria-hidden="true"
-                  className="text-xs font-bold text-ink-muted bg-surface-subtle w-6 h-6 rounded-full inline-flex items-center justify-center shrink-0 mt-0.5"
+                <Link
+                  href={`/artigos/${article.slug}`}
+                  className="w-20 h-14 rounded-lg overflow-hidden shrink-0 border border-border-subtle bg-surface-subtle block"
                 >
-                  {idx + 1}
-                </span>
-                <div>
+                  <Image
+                    src={article.image}
+                    alt={article.imageAlt}
+                    width={320}
+                    height={180}
+                    className="w-full h-full object-cover"
+                  />
+                </Link>
+                <div className="min-w-0">
                   <span className="text-[11px] font-bold uppercase tracking-wider text-ink-muted block">
                     {article.categoryTitle}
                   </span>
                   <Link
                     href={`/artigos/${article.slug}`}
-                    className="text-sm font-semibold text-ink-strong hover:underline underline-offset-2 leading-snug"
+                    className="text-sm font-semibold text-ink-strong hover:underline underline-offset-2 leading-snug line-clamp-2 block"
                   >
                     {article.title}
                   </Link>

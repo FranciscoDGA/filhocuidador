@@ -73,6 +73,7 @@ async function run() {
 
   // 3. Crawl every single URL listed in sitemap.xml and verify HTTP 200 & clean HTML
   const internalHrefs = new Set();
+  const renderedImageSrcs = new Set();
   for (const rawLoc of locs) {
     const path = toLocalPath(rawLoc);
     const { res, text } = await fetchText(path);
@@ -94,6 +95,22 @@ async function run() {
       );
     }
 
+    // Require cover images on homepage, articles index, categories, and every article page
+    if (
+      path === "/" ||
+      path === "/artigos" ||
+      EXPECTED_CATEGORY_SLUGS.some((slug) => path === `/${slug}`) ||
+      path.startsWith("/artigos/")
+    ) {
+      const imgMatches = [...text.matchAll(/<img[^>]+src="(\/images\/articles\/[^"?]+)"/g)].map(
+        (m) => m[1]
+      );
+      assert.ok(imgMatches.length > 0, `Expected at least one cover image on route ${path}`);
+      for (const imgSrc of imgMatches) {
+        renderedImageSrcs.add(imgSrc);
+      }
+    }
+
     // Collect internal links to check link integrity
     const hrefMatches = [...text.matchAll(/href="(\/[^"#?]*)"/g)].map((m) => m[1]);
     for (const href of hrefMatches) {
@@ -103,6 +120,22 @@ async function run() {
     }
   }
   console.log(`PASS all ${locs.length} sitemap routes returned HTTP 200 with clean content`);
+
+  assert.equal(
+    renderedImageSrcs.size,
+    42,
+    `Expected all 42 unique article cover images rendered across the site, found ${renderedImageSrcs.size}`
+  );
+  for (const imgSrc of renderedImageSrcs) {
+    const imgRes = await fetch(`${BASE_URL}${imgSrc}`);
+    assert.equal(imgRes.status, 200, `Cover image ${imgSrc} returned HTTP ${imgRes.status}`);
+    assert.match(
+      imgRes.headers.get("content-type") || "",
+      /^image\/jpeg/i,
+      `Cover image ${imgSrc} has unexpected content-type`
+    );
+  }
+  console.log(`PASS all ${renderedImageSrcs.size} unique local cover images return HTTP 200 (image/jpeg)`);
 
   // 4. Verify all discovered internal links resolve cleanly (200 or redirect -> 200)
   for (const href of internalHrefs) {

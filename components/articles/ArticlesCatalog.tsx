@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useMemo, useState } from "react";
 import { ClockIcon, SearchIcon } from "@/components/ui/Icons";
@@ -103,37 +104,52 @@ export default function ArticlesCatalog({
           {filtered.map((article) => (
             <article
               key={article.slug}
-              className="rounded-xl border border-border-subtle bg-surface-card p-6 flex flex-col justify-between hover:border-border-strong transition-colors"
+              className="rounded-xl border border-border-subtle bg-surface-card overflow-hidden flex flex-col justify-between hover:border-border-strong transition-colors group"
             >
               <div>
-                <div className="flex items-center justify-between gap-2 mb-3">
-                  <Link
-                    href={`/${article.categorySlug}`}
-                    className="text-[11px] font-bold uppercase tracking-wider text-ink-muted hover:text-ink-strong"
-                  >
-                    {article.categoryTitle}
-                  </Link>
-                  <span className="inline-flex items-center gap-1 text-xs text-ink-muted">
-                    <ClockIcon className="w-3.5 h-3.5" aria-hidden="true" />
-                    {article.readTime} min
-                  </span>
+                <Link
+                  href={`/artigos/${article.slug}`}
+                  className="block aspect-[16/9] overflow-hidden bg-surface-subtle border-b border-border-subtle"
+                >
+                  <Image
+                    src={article.image}
+                    alt={article.imageAlt}
+                    width={960}
+                    height={540}
+                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-[1.02]"
+                  />
+                </Link>
+
+                <div className="p-6 pb-4">
+                  <div className="flex items-center justify-between gap-2 mb-3">
+                    <Link
+                      href={`/${article.categorySlug}`}
+                      className="text-[11px] font-bold uppercase tracking-wider text-ink-muted hover:text-ink-strong"
+                    >
+                      {article.categoryTitle}
+                    </Link>
+                    <span className="inline-flex items-center gap-1 text-xs text-ink-muted">
+                      <ClockIcon className="w-3.5 h-3.5" aria-hidden="true" />
+                      {article.readTime} min
+                    </span>
+                  </div>
+
+                  <h2 className="font-serif text-xl font-bold text-ink-strong mb-2 leading-snug">
+                    <Link
+                      href={`/artigos/${article.slug}`}
+                      className="hover:underline underline-offset-4"
+                    >
+                      {article.title}
+                    </Link>
+                  </h2>
+
+                  <p className="text-sm text-ink-muted leading-relaxed line-clamp-3">
+                    {article.excerpt}
+                  </p>
                 </div>
-
-                <h2 className="font-serif text-xl font-bold text-ink-strong mb-2 leading-snug">
-                  <Link
-                    href={`/artigos/${article.slug}`}
-                    className="hover:underline underline-offset-4"
-                  >
-                    {article.title}
-                  </Link>
-                </h2>
-
-                <p className="text-sm text-ink-muted leading-relaxed line-clamp-3 mb-4">
-                  {article.excerpt}
-                </p>
               </div>
 
-              <div className="pt-4 border-t border-border-subtle flex items-center justify-between gap-2 text-xs text-ink-muted">
+              <div className="mx-6 pb-6 pt-4 border-t border-border-subtle flex items-center justify-between gap-2 text-xs text-ink-muted">
                 <span>{article.updatedAtLabel ?? article.dateLabel}</span>
                 <Link
                   href={`/artigos/${article.slug}`}

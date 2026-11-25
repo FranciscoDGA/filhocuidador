@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowRightIcon } from "@/components/ui/Icons";
 import type { ArticleSummary } from "@/lib/articles";
@@ -45,42 +46,60 @@ export default function HeroSection({
         </div>
 
         {featuredArticle && (
-          <div className="rounded-xl border border-border-subtle bg-surface-subtle p-6 sm:p-8 flex flex-col lg:flex-row lg:items-center justify-between gap-6">
-            <div className="max-w-2xl">
-              <div className="flex flex-wrap items-center gap-3 mb-2 text-xs text-ink-muted">
-                <span className="font-bold uppercase tracking-wider text-ink-strong">
-                  Guia em destaque
-                </span>
-                <span aria-hidden="true">•</span>
-                <Link
-                  href={`/${featuredArticle.categorySlug}`}
-                  className="hover:underline font-medium"
-                >
-                  {featuredArticle.categoryTitle}
-                </Link>
-                <span aria-hidden="true">•</span>
-                <span>{featuredArticle.readTime} min de leitura</span>
-              </div>
-              <h2 className="font-serif text-2xl sm:text-3xl font-bold text-ink-strong mb-2 leading-snug">
-                <Link
-                  href={`/artigos/${featuredArticle.slug}`}
-                  className="hover:underline underline-offset-4"
-                >
-                  {featuredArticle.title}
-                </Link>
-              </h2>
-              <p className="text-sm sm:text-base text-ink-body leading-relaxed">
-                {featuredArticle.excerpt}
-              </p>
-            </div>
-
+          <div className="rounded-xl border border-border-subtle bg-surface-subtle overflow-hidden grid grid-cols-1 lg:grid-cols-12 items-stretch">
             <Link
               href={`/artigos/${featuredArticle.slug}`}
-              className="inline-flex items-center justify-center gap-2 min-h-[44px] px-5 py-2.5 rounded-lg bg-brand-primary text-surface-card text-sm font-semibold shrink-0 hover:opacity-90 transition-opacity"
+              className="lg:col-span-5 relative aspect-[16/9] lg:aspect-auto lg:min-h-[260px] block overflow-hidden bg-surface-card group"
             >
-              <span>Ler guia completo</span>
-              <ArrowRightIcon className="w-4 h-4" aria-hidden="true" />
+              <Image
+                src={featuredArticle.image}
+                alt={featuredArticle.imageAlt}
+                width={960}
+                height={540}
+                priority
+                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-[1.02]"
+              />
             </Link>
+
+            <div className="lg:col-span-7 p-6 sm:p-8 flex flex-col justify-between gap-5">
+              <div>
+                <div className="flex flex-wrap items-center gap-3 mb-2 text-xs text-ink-muted">
+                  <span className="font-bold uppercase tracking-wider text-ink-strong">
+                    Guia em destaque
+                  </span>
+                  <span aria-hidden="true">•</span>
+                  <Link
+                    href={`/${featuredArticle.categorySlug}`}
+                    className="hover:underline font-medium"
+                  >
+                    {featuredArticle.categoryTitle}
+                  </Link>
+                  <span aria-hidden="true">•</span>
+                  <span>{featuredArticle.readTime} min de leitura</span>
+                </div>
+                <h2 className="font-serif text-2xl sm:text-3xl font-bold text-ink-strong mb-2 leading-snug">
+                  <Link
+                    href={`/artigos/${featuredArticle.slug}`}
+                    className="hover:underline underline-offset-4"
+                  >
+                    {featuredArticle.title}
+                  </Link>
+                </h2>
+                <p className="text-sm sm:text-base text-ink-body leading-relaxed">
+                  {featuredArticle.excerpt}
+                </p>
+              </div>
+
+              <div>
+                <Link
+                  href={`/artigos/${featuredArticle.slug}`}
+                  className="inline-flex items-center justify-center gap-2 min-h-[44px] px-5 py-2.5 rounded-lg bg-brand-primary text-surface-card text-sm font-semibold hover:opacity-90 transition-opacity"
+                >
+                  <span>Ler guia completo</span>
+                  <ArrowRightIcon className="w-4 h-4" aria-hidden="true" />
+                </Link>
+              </div>
+            </div>
           </div>
         )}
 

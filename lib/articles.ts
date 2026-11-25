@@ -21,6 +21,8 @@ export interface ArticleSummary {
   updatedAtISO?: string;
   updatedAtLabel?: string;
   readTime: number;
+  image: string;
+  imageAlt: string;
   authorVerified?: string;
   reviewerVerified?: string;
   keywords: string[];
@@ -28,6 +30,28 @@ export interface ArticleSummary {
   sources: ArticleSourceLink[];
   editorialNote?: string;
   status: "published" | "draft";
+}
+
+const PUBLIC_DIR = path.join(process.cwd(), "public");
+const DEFAULT_ARTICLE_IMAGE = "/images/articles/reconhecendo-burnout-cuidador.jpg";
+
+function resolveLocalArticleImage(rawImage: unknown, slug: string): string {
+  const candidates = [
+    typeof rawImage === "string" ? rawImage.trim() : "",
+    `/images/articles/${slug}.jpg`,
+    DEFAULT_ARTICLE_IMAGE,
+  ];
+
+  for (const candidate of candidates) {
+    if (candidate.startsWith("/images/")) {
+      const relative = candidate.replace(/^\/+/, "");
+      if (fs.existsSync(path.join(PUBLIC_DIR, relative))) {
+        return candidate;
+      }
+    }
+  }
+
+  return DEFAULT_ARTICLE_IMAGE;
 }
 
 export interface ArticleDetail extends ArticleSummary {
@@ -221,9 +245,16 @@ function loadAllArticleRecords(): ArticleDetail[] {
         ? seo.metaDescription.trim()
         : excerpt;
 
+    const title = typeof data.title === "string" ? data.title.trim() : slug;
+    const image = resolveLocalArticleImage(data.image, slug);
+    const imageAlt =
+      typeof data.imageAlt === "string" && data.imageAlt.trim()
+        ? data.imageAlt.trim()
+        : `Ilustração editorial para o guia: ${title}`;
+
     items.push({
       slug,
-      title: typeof data.title === "string" ? data.title.trim() : slug,
+      title,
       excerpt,
       rawCategory,
       categoryTitle: categoryDef?.title ?? rawCategory,
@@ -233,6 +264,8 @@ function loadAllArticleRecords(): ArticleDetail[] {
       updatedAtISO,
       updatedAtLabel: updatedAtISO ? formatIsoDatePtBr(updatedAtISO) : undefined,
       readTime: estimateReadTime(content, data.readTime),
+      image,
+      imageAlt,
       authorVerified: extractVerifiedPerson(data.author),
       reviewerVerified: extractVerifiedPerson(data.reviewer),
       keywords,
@@ -282,6 +315,8 @@ function toSummary(detail: ArticleDetail): ArticleSummary {
     updatedAtISO: detail.updatedAtISO,
     updatedAtLabel: detail.updatedAtLabel,
     readTime: detail.readTime,
+    image: detail.image,
+    imageAlt: detail.imageAlt,
     authorVerified: detail.authorVerified,
     reviewerVerified: detail.reviewerVerified,
     keywords: detail.keywords,

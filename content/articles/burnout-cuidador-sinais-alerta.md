@@ -6,7 +6,7 @@ date: "2024-07-22"
 author: "Equipe Filho Cuidador"
 excerpt: "Os sinais de que você está no limite. Cansaço físico, emocional e mental que vira doença. Reconheça antes de cair."
 readTime: 9
-image: "/images/articles/burnout-sinais.jpg"
+image: "/images/articles/burnout-cuidador-sinais-alerta.jpg"
 ---
 
 ## O Que é Burnout de Cuidador?

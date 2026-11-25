@@ -7,6 +7,7 @@ updatedAt: "2026-11-24"
 author: "Equipe Filho Cuidador"
 excerpt: "Entenda os critérios legais da Lei Orgânica da Assistência Social (LOAS), o papel obrigatório do CadÚnico e como consultar ou solicitar o BPC pelos canais oficiais gratuitos."
 readTime: 9
+image: "/images/articles/bpc-loas-guia-completo.jpg"
 editorialNote: "Conteúdo meramente informativo baseado na Lei nº 8.742/1993 (LOAS), no Decreto nº 6.214/2007 e nas orientações do portal gov.br. Critérios, valores do salário mínimo e exigências cadastrais podem mudar; confira sempre a fonte oficial ou busque orientação individualizada."
 sources:
   - label: "Lei nº 8.742/1993 (LOAS) — Planalto"

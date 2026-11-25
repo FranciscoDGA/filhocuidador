@@ -6,7 +6,7 @@ date: "2024-07-24"
 author: "Equipe Filho Cuidador"
 excerpt: "Autocuidado não é luxo. É o combustível que mantém você funcionando. Pequenas ações que fazem diferença real."
 readTime: 10
-image: "/images/articles/autocuidado-cuidador.jpg"
+image: "/images/articles/cuidar-de-si-mesmo-enquanto-cuida-outro.jpg"
 ---
 
 ## Por Que Autocuidado Não É Egoísmo
